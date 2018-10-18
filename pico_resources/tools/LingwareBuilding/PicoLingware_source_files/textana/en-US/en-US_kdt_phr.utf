@@ -1,0 +1,114 @@
+! ------------------------------------------------------------------------
+! @file en-US_kdt_phr.utf
+!
+! Decision Tree <Phrasing> for language en-US
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+size = 101
+node_num = 1 quest_num = 2 subset = CONJ_CO,CONJ_SUB,PRO,PRO_V,Q_PTCL node_yes = 2 node_no = 37 
+node_num = 2 quest_num = 1 subset = ADJ,ADV,CARD,N,N_GEN,PRO,SYMBOL_E node_yes = 3 subset = CONJ_INF node_yes = 38 node_no = 4 
+node_num = 3 quest_num = 7 is_greater = 5 node_yes = 5 node_no = 39 
+node_num = 4 quest_num = 2 subset = CONJ_CO node_yes = 6 node_no = 40 
+node_num = 5 quest_num = 5 is_greater = 4 node_yes = 7 node_no = 41 
+node_num = 6 quest_num = 3 subset = ADV node_yes = 8 subset = CONJ_INF,CONJ_SUB,DET,PRO,Q_PTCL,V_AUX node_yes = 42 subset = N_GEN node_yes = 43 node_no = 44 
+node_num = 7 quest_num = 7 is_greater = 11 node_yes = 10 node_no = 9 
+node_num = 8 quest_num = 6 is_greater = 3 node_yes = 11 node_no = 45 
+node_num = 9 quest_num = 4 subset = ADJ node_yes = 12 subset = CARD node_yes = 46 subset = CONJ_CO,CONJ_INF,N_ING,N_GEN,PREP,SYMBOL_E node_yes = 47 subset = CONJ_SUB node_yes = 13 subset = DET node_yes = 14 subset = V node_yes = 15 subset = V_AUX node_yes = 16 subset = V_MODAL node_yes = 17 subset = V_PAST node_yes = 18 node_no = 48 
+node_num = 10 quest_num = 5 is_greater = 6 node_yes = 19 node_no = 49 
+node_num = 11 quest_num = 5 is_greater = 10 node_yes = 50 node_no = 51 
+node_num = 12 quest_num = 2 subset = CONJ_CO node_yes = 20 subset = PRO node_yes = 21 subset = Q_PTCL node_yes = 52 node_no = 53 
+node_num = 13 quest_num = 5 is_greater = 10 node_yes = 54 node_no = 55 
+node_num = 14 quest_num = 3 subset = ADJ,V_AUX node_yes = 56 subset = PREP node_yes = 57 node_no = 58 
+node_num = 15 quest_num = 2 subset = CONJ_CO,PRO_V node_yes = 59 node_no = 60 
+node_num = 16 quest_num = 3 subset = ADJ node_yes = 61 subset = N node_yes = 62 subset = PRO node_yes = 22 node_no = 63 
+node_num = 17 quest_num = 0 subset = DET node_yes = 64 node_no = 65 
+node_num = 18 quest_num = 2 subset = CONJ_CO node_yes = 23 subset = CONJ_SUB node_yes = 24 subset = PRO node_yes = 66 node_no = 67 
+node_num = 19 quest_num = 5 is_greater = 14 node_yes = 68 node_no = 25 
+node_num = 20 quest_num = 1 subset = ADV node_yes = 69 subset = N node_yes = 26 node_no = 70 
+node_num = 21 quest_num = 7 is_greater = 9 node_yes = 71 node_no = 72 
+node_num = 22 quest_num = 1 subset = ADJ,ADV node_yes = 73 node_no = 74 
+node_num = 23 quest_num = 5 is_greater = 13 node_yes = 75 node_no = 76 
+node_num = 24 quest_num = 6 is_greater = 7 node_yes = 77 node_no = 78 
+node_num = 25 quest_num = 1 subset = ADJ node_yes = 27 subset = N node_yes = 28 node_no = 79 
+node_num = 26 quest_num = 7 is_greater = 10 node_yes = 80 node_no = 29 
+node_num = 27 quest_num = 5 is_greater = 7 node_yes = 81 node_no = 82 
+node_num = 28 quest_num = 4 subset = ADJ node_yes = 30 subset = ADV,DET,V_PAST node_yes = 83 subset = CONJ_INF,CONJ_SUB,N_ING,V_MODAL node_yes = 84 subset = N node_yes = 31 subset = V node_yes = 32 subset = V_AUX node_yes = 33 node_no = 85 
+node_num = 29 quest_num = 5 is_greater = 7 node_yes = 86 node_no = 87 
+node_num = 30 quest_num = 5 is_greater = 7 node_yes = 88 node_no = 89 
+node_num = 31 quest_num = 2 subset = CONJ_CO node_yes = 34 subset = PRO node_yes = 90 node_no = 91 
+node_num = 32 quest_num = 6 is_greater = 9 node_yes = 92 node_no = 93 
+node_num = 33 quest_num = 2 subset = CONJ_CO node_yes = 35 subset = PRO node_yes = 94 node_no = 95 
+node_num = 34 quest_num = 0 subset = ADJ,DET node_yes = 96 subset = N,PREP node_yes = 36 node_no = 97 
+node_num = 35 quest_num = 3 subset = V_AUX node_yes = 98 node_no = 99 
+node_num = 36 quest_num = 5 is_greater = 8 node_yes = 100 node_no = 101 
+node_num = 37 decision = 0
+node_num = 38 decision = 0
+node_num = 39 decision = 0
+node_num = 40 decision = 0
+node_num = 41 decision = 0
+node_num = 42 decision = _SECBND_
+node_num = 43 decision = _SHORTBR_
+node_num = 44 decision = 0
+node_num = 45 decision = 0
+node_num = 46 decision = _SHORTBR_
+node_num = 47 decision = 0
+node_num = 48 decision = _SECBND_
+node_num = 49 decision = _SECBND_
+node_num = 50 decision = _SHORTBR_
+node_num = 51 decision = _SECBND_
+node_num = 52 decision = _SECBND_
+node_num = 53 decision = 0
+node_num = 54 decision = _SHORTBR_
+node_num = 55 decision = 0
+node_num = 56 decision = _SHORTBR_
+node_num = 57 decision = 0
+node_num = 58 decision = _SECBND_
+node_num = 59 decision = _SECBND_
+node_num = 60 decision = 0
+node_num = 61 decision = _SHORTBR_
+node_num = 62 decision = 0
+node_num = 63 decision = _SECBND_
+node_num = 64 decision = _SECBND_
+node_num = 65 decision = 0
+node_num = 66 decision = 0
+node_num = 67 decision = _SECBND_
+node_num = 68 decision = _SHORTBR_
+node_num = 69 decision = 0
+node_num = 70 decision = _SECBND_
+node_num = 71 decision = _SECBND_
+node_num = 72 decision = 0
+node_num = 73 decision = 0
+node_num = 74 decision = _SECBND_
+node_num = 75 decision = _SHORTBR_
+node_num = 76 decision = _SECBND_
+node_num = 77 decision = _SECBND_
+node_num = 78 decision = 0
+node_num = 79 decision = 0
+node_num = 80 decision = _SHORTBR_
+node_num = 81 decision = 0
+node_num = 82 decision = _SECBND_
+node_num = 83 decision = _SECBND_
+node_num = 84 decision = 0
+node_num = 85 decision = _SHORTBR_
+node_num = 86 decision = 0
+node_num = 87 decision = _SECBND_
+node_num = 88 decision = _SHORTBR_
+node_num = 89 decision = 0
+node_num = 90 decision = 0
+node_num = 91 decision = _SECBND_
+node_num = 92 decision = _SECBND_
+node_num = 93 decision = _SHORTBR_
+node_num = 94 decision = 0
+node_num = 95 decision = _SECBND_
+node_num = 96 decision = 0
+node_num = 97 decision = _SHORTBR_
+node_num = 98 decision = _SHORTBR_
+node_num = 99 decision = _SECBND_
+node_num = 100 decision = _SHORTBR_
+node_num = 101 decision = _SECBND_

@@ -1,0 +1,2731 @@
+! ------------------------------------------------------------------------
+! @file es-ES_zl0_kdt_lfz4.utf
+!
+! Decision Tree <Pitch State 4> for voice es-ES_zl0
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+size = 2717
+num_attributes = 60
+node_num = 1 quest_num = 2 subset = 36,37,38,42,45,46,48,49,52,53,58,59,60,61,62,63,65,66 node_yes = 3 node_no = 2
+node_num = 2 quest_num = 1 subset = 70,71 node_yes = 1359 node_no = 4
+node_num = 3 quest_num = 2 subset = 42,48,61,63,65 node_yes = 10 node_no = 8
+node_num = 4 quest_num = 27 subset = 1 node_yes = 6 node_no = 5
+node_num = 5 quest_num = 25 subset = 0 node_yes = 44 node_no = 7
+node_num = 6 quest_num = 6 subset = 1 node_yes = 24 node_no = 23
+node_num = 7 quest_num = 7 subset = 0 node_yes = 9 node_no = 12
+node_num = 8 quest_num = 2 subset = 46,59,62,63 node_yes = 31 node_no = 13
+node_num = 9 quest_num = 43 subset = 0 node_yes = 22 node_no = 11
+node_num = 10 quest_num = 3 subset = 69 node_yes = 41 node_no = 19
+node_num = 11 quest_num = 8 subset = 0 node_yes = 20 node_no = 14
+node_num = 12 quest_num = 3 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 71 node_no = 16
+node_num = 13 quest_num = 2 subset = 37,42 node_yes = 55 node_no = 15
+node_num = 14 quest_num = 45 subset = 0 node_yes = 25 node_no = 32
+node_num = 15 quest_num = 2 subset = 38,65 node_yes = 1360 node_no = 30
+node_num = 16 quest_num = 42 subset = 0 node_yes = 51 node_no = 17
+node_num = 17 quest_num = 1 subset = 39,41,55,56 node_yes = 29 node_no = 18
+node_num = 18 quest_num = 19 subset = 0 node_yes = 33 node_no = 39
+node_num = 19 quest_num = 2 subset = 38,49,53,65 node_yes = 114 node_no = 26
+node_num = 20 quest_num = 42 subset = 0 node_yes = 37 node_no = 21
+node_num = 21 quest_num = 19 subset = 0 node_yes = 38 node_no = 27
+node_num = 22 quest_num = 8 subset = 0 node_yes = 36 node_no = 61
+node_num = 23 quest_num = 3 subset = 61,66 node_yes = 48 node_no = 28
+node_num = 24 quest_num = 1 subset = 42,48,61,63,65 node_yes = 42 node_no = 34
+node_num = 25 quest_num = 33 subset = 0 node_yes = 56 node_no = 43
+node_num = 26 quest_num = 1 subset = 69 node_yes = 276 node_no = 35
+node_num = 27 quest_num = 1 subset = 44,47,50,57,64 node_yes = 40 node_no = 47
+node_num = 28 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 46 node_no = 58
+node_num = 29 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 157 node_no = 1361
+node_num = 30 quest_num = 2 subset = 45,58 node_yes = 66 node_no = 57
+node_num = 31 quest_num = 1 subset = 70,71 node_yes = 119 node_no = 76
+node_num = 32 quest_num = 33 subset = 0 node_yes = 99 node_no = 123
+node_num = 33 quest_num = 43 subset = 0 node_yes = 253 node_no = 152
+node_num = 34 quest_num = 26 subset = 0,1,2,3 node_yes = 73 node_no = 49
+node_num = 35 quest_num = 1 subset = 56 node_yes = 1362 node_no = 45
+node_num = 36 quest_num = 53 subset = 1,2 node_yes = 310 node_no = 79
+node_num = 37 quest_num = 2 subset = 43,50,64 node_yes = 80 node_no = 50
+node_num = 38 quest_num = 15 subset = 0,1 node_yes = 182 node_no = 64
+node_num = 39 quest_num = 1 subset = 36,37,38,42,45,46,48,49,52,53,58,59,60,61,62,63,65,66 node_yes = 78 node_no = 62
+node_num = 40 quest_num = 2 subset = 64 node_yes = 98 node_no = 63
+node_num = 41 quest_num = 53 subset = 1,2 node_yes = 463 node_no = 345
+node_num = 42 quest_num = 35 subset = 1 node_yes = 74 node_no = 70
+node_num = 43 quest_num = 27 subset = 0,1,2 node_yes = 179 node_no = 122
+node_num = 44 quest_num = 26 subset = 3 node_yes = 129 node_no = 107
+node_num = 45 quest_num = 8 subset = 0 node_yes = 59 node_no = 84
+node_num = 46 quest_num = 50 subset = 5,6,7,8 node_yes = 506 node_no = 65
+node_num = 47 quest_num = 26 subset = 0,1,2,3,4 node_yes = 752 node_no = 52
+node_num = 48 quest_num = 8 subset = 0 node_yes = 248 node_no = 1363
+node_num = 49 quest_num = 42 subset = 4,5,6 node_yes = 53 node_no = 72
+node_num = 50 quest_num = 24 subset = 0,1 node_yes = 87 node_no = 458
+node_num = 51 quest_num = 3 subset = 46,54,56,59,60,61,62,63,66 node_yes = 174 node_no = 154
+node_num = 52 quest_num = 2 subset = 44 node_yes = 112 node_no = 93
+node_num = 53 quest_num = 1 subset = 58 node_yes = 462 node_no = 54
+node_num = 54 quest_num = 1 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 142 node_no = 118
+node_num = 55 quest_num = 5 subset = 4,5 node_yes = 1364 node_no = 89
+node_num = 56 quest_num = 27 subset = 5,6,7,10 node_yes = 207 node_no = 105
+node_num = 57 quest_num = 0 subset = 39,41,55,56 node_yes = 1365 node_no = 67
+node_num = 58 quest_num = 6 subset = 1,2 node_yes = 1366 node_no = 483
+node_num = 59 quest_num = 43 subset = 0 node_yes = 498 node_no = 60
+node_num = 60 quest_num = 6 subset = 1 node_yes = 565 node_no = 69
+node_num = 61 quest_num = 35 subset = 0,1 node_yes = 108 node_no = 278
+node_num = 62 quest_num = 8 subset = 0 node_yes = 120 node_no = 94
+node_num = 63 quest_num = 1 subset = 43,64 node_yes = 131 node_no = 92
+node_num = 64 quest_num = 20 subset = 6,10 node_yes = 1367 node_no = 261
+node_num = 65 quest_num = 9 subset = 1 node_yes = 138 node_no = 181
+node_num = 66 quest_num = 2 subset = 42,48,53,58,61,62,63,65 node_yes = 88 node_no = 1368
+node_num = 67 quest_num = 2 subset = 36,37,38,52,66 node_yes = 68 node_no = 125
+node_num = 68 quest_num = 34 subset = 0 node_yes = 176 node_no = 249
+node_num = 69 quest_num = 19 subset = 0 node_yes = 1369 node_no = 1370
+node_num = 70 quest_num = 44 subset = 1 node_yes = 77 node_no = 81
+node_num = 71 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 544 node_no = 1371
+node_num = 72 quest_num = 35 subset = 1 node_yes = 83 node_no = 75
+node_num = 73 quest_num = 2 subset = 47 node_yes = 1372 node_no = 82
+node_num = 74 quest_num = 21 subset = 6,7,10 node_yes = 1373 node_no = 226
+node_num = 75 quest_num = 35 subset = 3 node_yes = 1374 node_no = 85
+node_num = 76 quest_num = 45 subset = 0 node_yes = 160 node_no = 1375
+node_num = 77 quest_num = 55 subset = 7 node_yes = 103 node_no = 95
+node_num = 78 quest_num = 26 subset = 0,1,2,3 node_yes = 121 node_no = 442
+node_num = 79 quest_num = 2 subset = 44 node_yes = 106 node_no = 113
+node_num = 80 quest_num = 3 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 91 node_no = 1376
+node_num = 81 quest_num = 17 subset = 2 node_yes = 132 node_no = 97
+node_num = 82 quest_num = 0 subset = 55 node_yes = 724 node_no = 148
+node_num = 83 quest_num = 33 subset = 4 node_yes = 127 node_no = 137
+node_num = 84 quest_num = 7 subset = 0 node_yes = 405 node_no = 128
+node_num = 85 quest_num = 50 subset = 3 node_yes = 86 node_no = 102
+node_num = 86 quest_num = 0 subset = 39,40,51,52 node_yes = 140 node_no = 101
+node_num = 87 quest_num = 2 subset = 44 node_yes = 1377 node_no = 124
+node_num = 88 quest_num = 3 subset = 43,64 node_yes = 177 node_no = 1378
+node_num = 89 quest_num = 19 subset = 0 node_yes = 90 node_no = 263
+node_num = 90 quest_num = 45 subset = 0 node_yes = 1379 node_no = 293
+node_num = 91 quest_num = 23 subset = 43,57,64 node_yes = 590 node_no = 335
+node_num = 92 quest_num = 2 subset = 42,48,53,58,61,62,63,70,65 node_yes = 1380 node_no = 126
+node_num = 93 quest_num = 4 subset = 49,53 node_yes = 1381 node_no = 96
+node_num = 94 quest_num = 17 subset = 0 node_yes = 130 node_no = 159
+node_num = 95 quest_num = 56 subset = 5 node_yes = 1382 node_no = 109
+node_num = 96 quest_num = 3 subset = 44,47,50,57,64 node_yes = 1383 node_no = 134
+node_num = 97 quest_num = 19 subset = 3 node_yes = 1384 node_no = 100
+node_num = 98 quest_num = 29 subset = 0 node_yes = 1385 node_no = 1386
+node_num = 99 quest_num = 12 subset = 1 node_yes = 403 node_no = 186
+node_num = 100 quest_num = 17 subset = 6 node_yes = 214 node_no = 110
+node_num = 101 quest_num = 0 subset = 45,46,49,53,58,62,63 node_yes = 611 node_no = 115
+node_num = 102 quest_num = 0 subset = 48 node_yes = 1387 node_no = 104
+node_num = 103 quest_num = 46 subset = 2 node_yes = 200 node_no = 563
+node_num = 104 quest_num = 21 subset = 2 node_yes = 117 node_no = 162
+node_num = 105 quest_num = 26 subset = 0,1,2,3 node_yes = 1388 node_no = 396
+node_num = 106 quest_num = 44 subset = 0,1 node_yes = 870 node_no = 308
+node_num = 107 quest_num = 3 subset = 40,54 node_yes = 194 node_no = 158
+node_num = 108 quest_num = 3 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 545 node_no = 435
+node_num = 109 quest_num = 52 subset = 7 node_yes = 1389 node_no = 259
+node_num = 110 quest_num = 15 subset = 1 node_yes = 111 node_no = 184
+node_num = 111 quest_num = 0 subset = 57 node_yes = 178 node_no = 301
+node_num = 112 quest_num = 0 subset = 43,64 node_yes = 635 node_no = 141
+node_num = 113 quest_num = 55 subset = 7 node_yes = 588 node_no = 151
+node_num = 114 quest_num = 33 subset = 0,1 node_yes = 183 node_no = 212
+node_num = 115 quest_num = 1 subset = 56 node_yes = 1390 node_no = 116
+node_num = 116 quest_num = 37 subset = 2 node_yes = 143 node_no = 171
+node_num = 117 quest_num = 17 subset = 3 node_yes = 1391 node_no = 172
+node_num = 118 quest_num = 37 subset = 7 node_yes = 1392 node_no = 187
+node_num = 119 quest_num = 3 subset = 44,47,50,57,64 node_yes = 260 node_no = 204
+node_num = 120 quest_num = 2 subset = 36,45,55,58 node_yes = 718 node_no = 139
+node_num = 121 quest_num = 3 subset = 47 node_yes = 1393 node_no = 692
+node_num = 122 quest_num = 15 subset = 0,1 node_yes = 1394 node_no = 547
+node_num = 123 quest_num = 2 subset = 64 node_yes = 213 node_no = 197
+node_num = 124 quest_num = 1 subset = 44,47,50 node_yes = 394 node_no = 227
+node_num = 125 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1395 node_no = 175
+node_num = 126 quest_num = 3 subset = 42,48,53,58,61,62,63,70,65 node_yes = 793 node_no = 620
+node_num = 127 quest_num = 56 subset = 8,9 node_yes = 1396 node_no = 471
+node_num = 128 quest_num = 33 subset = 0 node_yes = 664 node_no = 282
+node_num = 129 quest_num = 4 subset = 39,40,51 node_yes = 1397 node_no = 136
+node_num = 130 quest_num = 2 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1398 node_no = 1399
+node_num = 131 quest_num = 5 subset = 2 node_yes = 1400 node_no = 1401
+node_num = 132 quest_num = 50 subset = 7 node_yes = 1402 node_no = 133
+node_num = 133 quest_num = 51 subset = 3 node_yes = 208 node_no = 328
+node_num = 134 quest_num = 11 subset = 1,2 node_yes = 135 node_no = 1403
+node_num = 135 quest_num = 2 subset = 43,64 node_yes = 161 node_no = 284
+node_num = 136 quest_num = 4 subset = 42,48,53,58,61,62,63,70,65 node_yes = 339 node_no = 479
+node_num = 137 quest_num = 0 subset = 39 node_yes = 1404 node_no = 145
+node_num = 138 quest_num = 7 subset = 0 node_yes = 507 node_no = 1405
+node_num = 139 quest_num = 3 subset = 36,37,42,45,48,55,58 node_yes = 1406 node_no = 872
+node_num = 140 quest_num = 55 subset = 8 node_yes = 1407 node_no = 373
+node_num = 141 quest_num = 3 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 852 node_no = 372
+node_num = 142 quest_num = 1 subset = 38,49,53,65 node_yes = 473 node_no = 298
+node_num = 143 quest_num = 52 subset = 5 node_yes = 297 node_no = 144
+node_num = 144 quest_num = 0 subset = 46,54,56,59,60,61,62,66 node_yes = 300 node_no = 307
+node_num = 145 quest_num = 19 subset = 3 node_yes = 146 node_no = 170
+node_num = 146 quest_num = 24 subset = 7 node_yes = 1408 node_no = 147
+node_num = 147 quest_num = 0 subset = 47,57 node_yes = 1409 node_no = 436
+node_num = 148 quest_num = 42 subset = 6 node_yes = 149 node_no = 452
+node_num = 149 quest_num = 44 subset = 0,1,2 node_yes = 150 node_no = 1410
+node_num = 150 quest_num = 21 subset = 0 node_yes = 1411 node_no = 1412
+node_num = 151 quest_num = 3 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1413 node_no = 336
+node_num = 152 quest_num = 15 subset = 0,1 node_yes = 153 node_no = 921
+node_num = 153 quest_num = 2 subset = 40,54 node_yes = 1414 node_no = 1415
+node_num = 154 quest_num = 29 subset = 0 node_yes = 155 node_no = 210
+node_num = 155 quest_num = 3 subset = 38,49,53,65 node_yes = 156 node_no = 402
+node_num = 156 quest_num = 22 subset = 5,6,7,10 node_yes = 1416 node_no = 1417
+node_num = 157 quest_num = 8 subset = 0 node_yes = 1418 node_no = 610
+node_num = 158 quest_num = 53 subset = 1,2,3 node_yes = 243 node_no = 433
+node_num = 159 quest_num = 19 subset = 0,1,2 node_yes = 1419 node_no = 1420
+node_num = 160 quest_num = 27 subset = 0,1 node_yes = 1421 node_no = 296
+node_num = 161 quest_num = 29 subset = 0 node_yes = 1422 node_no = 1423
+node_num = 162 quest_num = 0 subset = 42,48,61,63,65 node_yes = 163 node_no = 189
+node_num = 163 quest_num = 37 subset = 0,1 node_yes = 165 node_no = 164
+node_num = 164 quest_num = 51 subset = 5 node_yes = 1424 node_no = 168
+node_num = 165 quest_num = 1 subset = 50 node_yes = 1425 node_no = 166
+node_num = 166 quest_num = 17 subset = 2 node_yes = 1426 node_no = 167
+node_num = 167 quest_num = 52 subset = 6 node_yes = 1427 node_no = 169
+node_num = 168 quest_num = 33 subset = 4 node_yes = 1428 node_no = 341
+node_num = 169 quest_num = 0 subset = 38,49,53,65 node_yes = 1429 node_no = 722
+node_num = 170 quest_num = 0 subset = 63 node_yes = 1430 node_no = 180
+node_num = 171 quest_num = 15 subset = 5,6 node_yes = 1431 node_no = 603
+node_num = 172 quest_num = 51 subset = 0,1,2,3 node_yes = 173 node_no = 252
+node_num = 173 quest_num = 1 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 246 node_no = 441
+node_num = 174 quest_num = 56 subset = 5 node_yes = 1432 node_no = 1433
+node_num = 175 quest_num = 26 subset = 0,1,2,3 node_yes = 1434 node_no = 262
+node_num = 176 quest_num = 54 subset = 1 node_yes = 215 node_no = 614
+node_num = 177 quest_num = 44 subset = 1 node_yes = 751 node_no = 688
+node_num = 178 quest_num = 52 subset = 2 node_yes = 562 node_no = 199
+node_num = 179 quest_num = 51 subset = 0,1,2 node_yes = 1435 node_no = 661
+node_num = 180 quest_num = 0 subset = 60,61,66 node_yes = 198 node_no = 209
+node_num = 181 quest_num = 1 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 254 node_no = 1436
+node_num = 182 quest_num = 36 subset = 0,1 node_yes = 211 node_no = 709
+node_num = 183 quest_num = 0 subset = 60 node_yes = 1437 node_no = 255
+node_num = 184 quest_num = 24 subset = 5 node_yes = 185 node_no = 264
+node_num = 185 quest_num = 33 subset = 1 node_yes = 662 node_no = 1438
+node_num = 186 quest_num = 2 subset = 43,50,64 node_yes = 1439 node_no = 325
+node_num = 187 quest_num = 44 subset = 5,6 node_yes = 188 node_no = 201
+node_num = 188 quest_num = 55 subset = 8 node_yes = 1440 node_no = 1441
+node_num = 189 quest_num = 39 subset = 0,1,2,3 node_yes = 193 node_no = 190
+node_num = 190 quest_num = 1 subset = 43,50,64 node_yes = 191 node_no = 205
+node_num = 191 quest_num = 42 subset = 2 node_yes = 195 node_no = 192
+node_num = 192 quest_num = 48 subset = 4 node_yes = 1442 node_no = 225
+node_num = 193 quest_num = 0 subset = 36 node_yes = 1443 node_no = 338
+node_num = 194 quest_num = 55 subset = 1,2,3,4 node_yes = 1444 node_no = 887
+node_num = 195 quest_num = 52 subset = 4 node_yes = 1445 node_no = 196
+node_num = 196 quest_num = 50 subset = 4 node_yes = 1446 node_no = 451
+node_num = 197 quest_num = 2 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1447 node_no = 224
+node_num = 198 quest_num = 37 subset = 4 node_yes = 1448 node_no = 900
+node_num = 199 quest_num = 52 subset = 5,6,7 node_yes = 924 node_no = 538
+node_num = 200 quest_num = 1 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 505 node_no = 1449
+node_num = 201 quest_num = 1 subset = 43 node_yes = 1450 node_no = 202
+node_num = 202 quest_num = 56 subset = 7 node_yes = 203 node_no = 218
+node_num = 203 quest_num = 0 subset = 46,59,60,61,62,63,66 node_yes = 769 node_no = 527
+node_num = 204 quest_num = 0 subset = 36,37,38,42,48,52,61,65,66 node_yes = 669 node_no = 552
+node_num = 205 quest_num = 19 subset = 4 node_yes = 245 node_no = 206
+node_num = 206 quest_num = 21 subset = 6 node_yes = 216 node_no = 294
+node_num = 207 quest_num = 6 subset = 1 node_yes = 1451 node_no = 1452
+node_num = 208 quest_num = 56 subset = 1,2,3,4 node_yes = 1453 node_no = 283
+node_num = 209 quest_num = 56 subset = 3 node_yes = 1454 node_no = 228
+node_num = 210 quest_num = 12 subset = 2 node_yes = 287 node_no = 666
+node_num = 211 quest_num = 2 subset = 64 node_yes = 1455 node_no = 289
+node_num = 212 quest_num = 43 subset = 0 node_yes = 1456 node_no = 707
+node_num = 213 quest_num = 1 subset = 42,48,53,58,61,62,63,65 node_yes = 1457 node_no = 477
+node_num = 214 quest_num = 0 subset = 44 node_yes = 1458 node_no = 1459
+node_num = 215 quest_num = 24 subset = 4 node_yes = 1460 node_no = 286
+node_num = 216 quest_num = 15 subset = 0,1 node_yes = 1461 node_no = 217
+node_num = 217 quest_num = 1 subset = 36,37,38,42,48,52,61,65,66 node_yes = 1462 node_no = 1463
+node_num = 218 quest_num = 51 subset = 2 node_yes = 219 node_no = 222
+node_num = 219 quest_num = 15 subset = 4 node_yes = 1464 node_no = 220
+node_num = 220 quest_num = 0 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 422 node_no = 221
+node_num = 221 quest_num = 52 subset = 6 node_yes = 1465 node_no = 285
+node_num = 222 quest_num = 33 subset = 4,5,6 node_yes = 1466 node_no = 223
+node_num = 223 quest_num = 52 subset = 6 node_yes = 464 node_no = 290
+node_num = 224 quest_num = 15 subset = 0,1 node_yes = 549 node_no = 1467
+node_num = 225 quest_num = 55 subset = 6 node_yes = 1468 node_no = 423
+node_num = 226 quest_num = 56 subset = 8 node_yes = 1469 node_no = 304
+node_num = 227 quest_num = 1 subset = 64 node_yes = 1470 node_no = 371
+node_num = 228 quest_num = 1 subset = 43,57,64 node_yes = 229 node_no = 230
+node_num = 229 quest_num = 19 subset = 2 node_yes = 239 node_no = 242
+node_num = 230 quest_num = 44 subset = 5,6 node_yes = 1471 node_no = 231
+node_num = 231 quest_num = 0 subset = 45,46,49,59 node_yes = 232 node_no = 233
+node_num = 232 quest_num = 17 subset = 0,1,2 node_yes = 1015 node_no = 1472
+node_num = 233 quest_num = 15 subset = 4,5,6 node_yes = 240 node_no = 234
+node_num = 234 quest_num = 50 subset = 6,7,8 node_yes = 235 node_no = 236
+node_num = 235 quest_num = 0 subset = 55 node_yes = 1473 node_no = 237
+node_num = 236 quest_num = 0 subset = 36,45,58 node_yes = 1474 node_no = 238
+node_num = 237 quest_num = 0 subset = 37 node_yes = 1475 node_no = 439
+node_num = 238 quest_num = 31 subset = 2 node_yes = 1476 node_no = 241
+node_num = 239 quest_num = 0 subset = 36,45,55,58 node_yes = 1477 node_no = 537
+node_num = 240 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 1478 node_no = 258
+node_num = 241 quest_num = 21 subset = 0,1,2,3 node_yes = 447 node_no = 466
+node_num = 242 quest_num = 17 subset = 5,6 node_yes = 1479 node_no = 316
+node_num = 243 quest_num = 0 subset = 39 node_yes = 244 node_no = 256
+node_num = 244 quest_num = 56 subset = 4 node_yes = 1480 node_no = 281
+node_num = 245 quest_num = 56 subset = 8 node_yes = 1481 node_no = 1482
+node_num = 246 quest_num = 44 subset = 0,1,2 node_yes = 247 node_no = 1483
+node_num = 247 quest_num = 56 subset = 3 node_yes = 1484 node_no = 424
+node_num = 248 quest_num = 56 subset = 1,2,3 node_yes = 1485 node_no = 587
+node_num = 249 quest_num = 19 subset = 0,1 node_yes = 250 node_no = 445
+node_num = 250 quest_num = 47 subset = 5,6,7,8 node_yes = 684 node_no = 251
+node_num = 251 quest_num = 0 subset = 42,48,61,63,65 node_yes = 1486 node_no = 624
+node_num = 252 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 432 node_no = 1487
+node_num = 253 quest_num = 17 subset = 1 node_yes = 1488 node_no = 1489
+node_num = 254 quest_num = 3 subset = 39,40,51 node_yes = 1490 node_no = 1491
+node_num = 255 quest_num = 52 subset = 0,1,2,3 node_yes = 903 node_no = 679
+node_num = 256 quest_num = 1 subset = 42 node_yes = 546 node_no = 257
+node_num = 257 quest_num = 26 subset = 2 node_yes = 321 node_no = 375
+node_num = 258 quest_num = 26 subset = 10 node_yes = 854 node_no = 1492
+node_num = 259 quest_num = 17 subset = 2 node_yes = 1493 node_no = 337
+node_num = 260 quest_num = 2 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 476 node_no = 280
+node_num = 261 quest_num = 45 subset = 1 node_yes = 419 node_no = 1494
+node_num = 262 quest_num = 5 subset = 4 node_yes = 1495 node_no = 326
+node_num = 263 quest_num = 5 subset = 1 node_yes = 400 node_no = 343
+node_num = 264 quest_num = 24 subset = 7,8,10 node_yes = 265 node_no = 269
+node_num = 265 quest_num = 42 subset = 4 node_yes = 266 node_no = 267
+node_num = 266 quest_num = 56 subset = 7 node_yes = 1496 node_no = 268
+node_num = 267 quest_num = 46 subset = 4 node_yes = 1497 node_no = 279
+node_num = 268 quest_num = 52 subset = 0,1,2,3 node_yes = 568 node_no = 344
+node_num = 269 quest_num = 21 subset = 2 node_yes = 1498 node_no = 270
+node_num = 270 quest_num = 17 subset = 1 node_yes = 1499 node_no = 271
+node_num = 271 quest_num = 46 subset = 5,6,7,8 node_yes = 392 node_no = 272
+node_num = 272 quest_num = 52 subset = 6,7 node_yes = 277 node_no = 273
+node_num = 273 quest_num = 0 subset = 47 node_yes = 1500 node_no = 274
+node_num = 274 quest_num = 24 subset = 4 node_yes = 1501 node_no = 275
+node_num = 275 quest_num = 50 subset = 4 node_yes = 1502 node_no = 416
+node_num = 276 quest_num = 3 subset = 43 node_yes = 1503 node_no = 1504
+node_num = 277 quest_num = 42 subset = 3 node_yes = 393 node_no = 486
+node_num = 278 quest_num = 6 subset = 1 node_yes = 1505 node_no = 438
+node_num = 279 quest_num = 52 subset = 5,6,7 node_yes = 1506 node_no = 493
+node_num = 280 quest_num = 45 subset = 0 node_yes = 859 node_no = 991
+node_num = 281 quest_num = 57 subset = 3 node_yes = 1507 node_no = 1508
+node_num = 282 quest_num = 19 subset = 0 node_yes = 1509 node_no = 340
+node_num = 283 quest_num = 35 subset = 0 node_yes = 617 node_no = 1510
+node_num = 284 quest_num = 18 subset = 0,1 node_yes = 491 node_no = 776
+node_num = 285 quest_num = 0 subset = 47 node_yes = 704 node_no = 449
+node_num = 286 quest_num = 19 subset = 5,6,10 node_yes = 1511 node_no = 745
+node_num = 287 quest_num = 2 subset = 40 node_yes = 1512 node_no = 288
+node_num = 288 quest_num = 52 subset = 0,1,2,3 node_yes = 1513 node_no = 481
+node_num = 289 quest_num = 14 subset = 1 node_yes = 1514 node_no = 792
+node_num = 290 quest_num = 37 subset = 0,1 node_yes = 609 node_no = 291
+node_num = 291 quest_num = 46 subset = 3 node_yes = 1515 node_no = 292
+node_num = 292 quest_num = 56 subset = 6 node_yes = 833 node_no = 331
+node_num = 293 quest_num = 0 subset = 39,40,41,51,54,55,56 node_yes = 1516 node_no = 420
+node_num = 294 quest_num = 19 subset = 5 node_yes = 295 node_no = 346
+node_num = 295 quest_num = 44 subset = 5 node_yes = 1517 node_no = 1518
+node_num = 296 quest_num = 3 subset = 69 node_yes = 1519 node_no = 1520
+node_num = 297 quest_num = 44 subset = 0,1 node_yes = 720 node_no = 1521
+node_num = 298 quest_num = 56 subset = 2 node_yes = 1522 node_no = 299
+node_num = 299 quest_num = 42 subset = 6 node_yes = 1523 node_no = 425
+node_num = 300 quest_num = 55 subset = 7 node_yes = 1524 node_no = 1525
+node_num = 301 quest_num = 56 subset = 1,2,3,4 node_yes = 414 node_no = 302
+node_num = 302 quest_num = 0 subset = 43,57,64 node_yes = 1526 node_no = 303
+node_num = 303 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 927 node_no = 1527
+node_num = 304 quest_num = 42 subset = 3 node_yes = 306 node_no = 305
+node_num = 305 quest_num = 55 subset = 8,9 node_yes = 689 node_no = 434
+node_num = 306 quest_num = 46 subset = 7 node_yes = 1528 node_no = 542
+node_num = 307 quest_num = 55 subset = 7,8,9 node_yes = 312 node_no = 309
+node_num = 308 quest_num = 1 subset = 39,40,51,52 node_yes = 1529 node_no = 1530
+node_num = 309 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1531 node_no = 1532
+node_num = 310 quest_num = 25 subset = 0,1,2 node_yes = 311 node_no = 467
+node_num = 311 quest_num = 24 subset = 0,1,2,3,4 node_yes = 1533 node_no = 1534
+node_num = 312 quest_num = 17 subset = 0 node_yes = 710 node_no = 313
+node_num = 313 quest_num = 0 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 314 node_no = 1024
+node_num = 314 quest_num = 2 subset = 69,70,71 node_yes = 315 node_no = 1535
+node_num = 315 quest_num = 1 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 1536 node_no = 1537
+node_num = 316 quest_num = 44 subset = 3 node_yes = 317 node_no = 319
+node_num = 317 quest_num = 19 subset = 1 node_yes = 1538 node_no = 318
+node_num = 318 quest_num = 37 subset = 5 node_yes = 1539 node_no = 397
+node_num = 319 quest_num = 56 subset = 8,9 node_yes = 1540 node_no = 320
+node_num = 320 quest_num = 46 subset = 3 node_yes = 1541 node_no = 369
+node_num = 321 quest_num = 1 subset = 47 node_yes = 323 node_no = 322
+node_num = 322 quest_num = 3 subset = 38,41,49,53,65 node_yes = 1542 node_no = 324
+node_num = 323 quest_num = 0 subset = 45,46,49,53,58,62,63 node_yes = 1543 node_no = 1544
+node_num = 324 quest_num = 56 subset = 1 node_yes = 1545 node_no = 499
+node_num = 325 quest_num = 40 subset = 0,1,2,3 node_yes = 1546 node_no = 469
+node_num = 326 quest_num = 3 subset = 43,50,64 node_yes = 327 node_no = 534
+node_num = 327 quest_num = 51 subset = 0,1,2 node_yes = 1547 node_no = 485
+node_num = 328 quest_num = 55 subset = 8 node_yes = 329 node_no = 475
+node_num = 329 quest_num = 35 subset = 0,1 node_yes = 330 node_no = 1548
+node_num = 330 quest_num = 44 subset = 3 node_yes = 1549 node_no = 1550
+node_num = 331 quest_num = 15 subset = 0,1,2 node_yes = 332 node_no = 1551
+node_num = 332 quest_num = 48 subset = 4 node_yes = 1552 node_no = 333
+node_num = 333 quest_num = 50 subset = 6 node_yes = 334 node_no = 591
+node_num = 334 quest_num = 56 subset = 4 node_yes = 695 node_no = 1553
+node_num = 335 quest_num = 3 subset = 39,40,41,51,54,55,56 node_yes = 1554 node_no = 1555
+node_num = 336 quest_num = 4 subset = 71 node_yes = 1556 node_no = 778
+node_num = 337 quest_num = 0 subset = 43,50,64 node_yes = 1557 node_no = 437
+node_num = 338 quest_num = 0 subset = 38,65 node_yes = 1558 node_no = 531
+node_num = 339 quest_num = 1 subset = 44 node_yes = 1559 node_no = 1560
+node_num = 340 quest_num = 27 subset = 0,1,2 node_yes = 1561 node_no = 1562
+node_num = 341 quest_num = 24 subset = 8 node_yes = 1563 node_no = 342
+node_num = 342 quest_num = 51 subset = 6 node_yes = 1564 node_no = 389
+node_num = 343 quest_num = 51 subset = 0,1,2 node_yes = 1565 node_no = 1566
+node_num = 344 quest_num = 0 subset = 44,47,50 node_yes = 1567 node_no = 1568
+node_num = 345 quest_num = 15 subset = 1 node_yes = 564 node_no = 622
+node_num = 346 quest_num = 55 subset = 1,2 node_yes = 347 node_no = 348
+node_num = 347 quest_num = 1 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 1569 node_no = 497
+node_num = 348 quest_num = 17 subset = 1 node_yes = 349 node_no = 350
+node_num = 349 quest_num = 42 subset = 0,1 node_yes = 358 node_no = 354
+node_num = 350 quest_num = 19 subset = 3 node_yes = 353 node_no = 351
+node_num = 351 quest_num = 21 subset = 1 node_yes = 352 node_no = 409
+node_num = 352 quest_num = 1 subset = 39,41,55,56 node_yes = 1570 node_no = 356
+node_num = 353 quest_num = 48 subset = 5 node_yes = 1571 node_no = 395
+node_num = 354 quest_num = 1 subset = 55 node_yes = 1572 node_no = 355
+node_num = 355 quest_num = 0 subset = 39,41,55,56 node_yes = 874 node_no = 364
+node_num = 356 quest_num = 1 subset = 39,40,51 node_yes = 1573 node_no = 357
+node_num = 357 quest_num = 15 subset = 6 node_yes = 1574 node_no = 359
+node_num = 358 quest_num = 55 subset = 9 node_yes = 450 node_no = 368
+node_num = 359 quest_num = 56 subset = 6 node_yes = 360 node_no = 361
+node_num = 360 quest_num = 0 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 1575 node_no = 868
+node_num = 361 quest_num = 0 subset = 36,45,55,58 node_yes = 1576 node_no = 362
+node_num = 362 quest_num = 50 subset = 5 node_yes = 363 node_no = 487
+node_num = 363 quest_num = 1 subset = 43,57,64 node_yes = 1577 node_no = 702
+node_num = 364 quest_num = 35 subset = 2 node_yes = 1578 node_no = 365
+node_num = 365 quest_num = 1 subset = 38,49,53,65 node_yes = 1579 node_no = 366
+node_num = 366 quest_num = 37 subset = 5,6,7,10 node_yes = 367 node_no = 638
+node_num = 367 quest_num = 1 subset = 39,41,55,56 node_yes = 1580 node_no = 1581
+node_num = 368 quest_num = 37 subset = 2 node_yes = 1582 node_no = 1583
+node_num = 369 quest_num = 52 subset = 4 node_yes = 370 node_no = 401
+node_num = 370 quest_num = 37 subset = 0,1,2,3 node_yes = 1584 node_no = 1585
+node_num = 371 quest_num = 1 subset = 42,48,53,58,61,62,63,70,65 node_yes = 1586 node_no = 1587
+node_num = 372 quest_num = 4 subset = 39,40,51 node_yes = 1588 node_no = 482
+node_num = 373 quest_num = 56 subset = 7 node_yes = 1589 node_no = 374
+node_num = 374 quest_num = 52 subset = 3 node_yes = 1590 node_no = 1591
+node_num = 375 quest_num = 3 subset = 44 node_yes = 526 node_no = 376
+node_num = 376 quest_num = 4 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 626 node_no = 377
+node_num = 377 quest_num = 1 subset = 43,50,64 node_yes = 1021 node_no = 378
+node_num = 378 quest_num = 43 subset = 0,1 node_yes = 381 node_no = 379
+node_num = 379 quest_num = 4 subset = 62 node_yes = 380 node_no = 382
+node_num = 380 quest_num = 19 subset = 1 node_yes = 1592 node_no = 539
+node_num = 381 quest_num = 21 subset = 0,1,2 node_yes = 509 node_no = 383
+node_num = 382 quest_num = 3 subset = 47 node_yes = 388 node_no = 421
+node_num = 383 quest_num = 3 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1593 node_no = 384
+node_num = 384 quest_num = 1 subset = 39,41,55,56 node_yes = 1594 node_no = 385
+node_num = 385 quest_num = 0 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1595 node_no = 386
+node_num = 386 quest_num = 55 subset = 7 node_yes = 1596 node_no = 387
+node_num = 387 quest_num = 46 subset = 0,1,2,3 node_yes = 1597 node_no = 1598
+node_num = 388 quest_num = 57 subset = 7 node_yes = 1599 node_no = 613
+node_num = 389 quest_num = 1 subset = 43,50,64 node_yes = 616 node_no = 390
+node_num = 390 quest_num = 48 subset = 1 node_yes = 1600 node_no = 391
+node_num = 391 quest_num = 56 subset = 9 node_yes = 1601 node_no = 406
+node_num = 392 quest_num = 0 subset = 43,50,64 node_yes = 1602 node_no = 484
+node_num = 393 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 1603 node_no = 1604
+node_num = 394 quest_num = 3 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1605 node_no = 1606
+node_num = 395 quest_num = 1 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 1607 node_no = 794
+node_num = 396 quest_num = 2 subset = 44 node_yes = 1608 node_no = 1609
+node_num = 397 quest_num = 52 subset = 5 node_yes = 398 node_no = 399
+node_num = 398 quest_num = 0 subset = 46,54,56,59,60,61,62,66 node_yes = 1610 node_no = 1611
+node_num = 399 quest_num = 0 subset = 47,57 node_yes = 1612 node_no = 1613
+node_num = 400 quest_num = 8 subset = 0 node_yes = 1614 node_no = 1615
+node_num = 401 quest_num = 0 subset = 39,40,51 node_yes = 1616 node_no = 411
+node_num = 402 quest_num = 57 subset = 4 node_yes = 1617 node_no = 623
+node_num = 403 quest_num = 2 subset = 64 node_yes = 404 node_no = 569
+node_num = 404 quest_num = 1 subset = 46,59,60,61,62,63,66 node_yes = 1618 node_no = 1619
+node_num = 405 quest_num = 40 subset = 0,1 node_yes = 1620 node_no = 418
+node_num = 406 quest_num = 0 subset = 61,66 node_yes = 407 node_no = 541
+node_num = 407 quest_num = 15 subset = 2 node_yes = 1621 node_no = 408
+node_num = 408 quest_num = 52 subset = 3 node_yes = 1622 node_no = 468
+node_num = 409 quest_num = 26 subset = 6 node_yes = 719 node_no = 410
+node_num = 410 quest_num = 56 subset = 4 node_yes = 636 node_no = 576
+node_num = 411 quest_num = 52 subset = 6,7 node_yes = 412 node_no = 465
+node_num = 412 quest_num = 0 subset = 38,49,53,65 node_yes = 1623 node_no = 413
+node_num = 413 quest_num = 17 subset = 3 node_yes = 1624 node_no = 1625
+node_num = 414 quest_num = 48 subset = 1 node_yes = 415 node_no = 1626
+node_num = 415 quest_num = 55 subset = 5 node_yes = 1627 node_no = 446
+node_num = 416 quest_num = 24 subset = 3 node_yes = 417 node_no = 1628
+node_num = 417 quest_num = 52 subset = 5 node_yes = 1629 node_no = 1630
+node_num = 418 quest_num = 3 subset = 55 node_yes = 1631 node_no = 1632
+node_num = 419 quest_num = 14 subset = 1 node_yes = 1633 node_no = 1634
+node_num = 420 quest_num = 1 subset = 47,57 node_yes = 1635 node_no = 1636
+node_num = 421 quest_num = 4 subset = 42,48,61,63,65 node_yes = 1637 node_no = 693
+node_num = 422 quest_num = 46 subset = 5,6,7,8 node_yes = 1638 node_no = 711
+node_num = 423 quest_num = 33 subset = 3 node_yes = 1639 node_no = 746
+node_num = 424 quest_num = 0 subset = 47,57 node_yes = 1640 node_no = 795
+node_num = 425 quest_num = 42 subset = 4 node_yes = 427 node_no = 426
+node_num = 426 quest_num = 44 subset = 0,1,2 node_yes = 429 node_no = 1641
+node_num = 427 quest_num = 50 subset = 0,1 node_yes = 1642 node_no = 428
+node_num = 428 quest_num = 55 subset = 5 node_yes = 1643 node_no = 511
+node_num = 429 quest_num = 24 subset = 3 node_yes = 1644 node_no = 430
+node_num = 430 quest_num = 2 subset = 43,44,47,50,57,64 node_yes = 1645 node_no = 431
+node_num = 431 quest_num = 1 subset = 36,45,58 node_yes = 1646 node_no = 1647
+node_num = 432 quest_num = 56 subset = 7 node_yes = 1648 node_no = 1649
+node_num = 433 quest_num = 3 subset = 44 node_yes = 782 node_no = 500
+node_num = 434 quest_num = 19 subset = 0 node_yes = 1650 node_no = 1651
+node_num = 435 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 488 node_no = 1652
+node_num = 436 quest_num = 56 subset = 6 node_yes = 1036 node_no = 1653
+node_num = 437 quest_num = 0 subset = 36,37,42,45,48,55,58 node_yes = 1654 node_no = 600
+node_num = 438 quest_num = 39 subset = 0,1,2,3 node_yes = 1655 node_no = 1656
+node_num = 439 quest_num = 0 subset = 38 node_yes = 1657 node_no = 440
+node_num = 440 quest_num = 1 subset = 36,37,38,52,60,66 node_yes = 1658 node_no = 558
+node_num = 441 quest_num = 0 subset = 38,49,53,65 node_yes = 1659 node_no = 738
+node_num = 442 quest_num = 10 subset = 1,2 node_yes = 1660 node_no = 443
+node_num = 443 quest_num = 15 subset = 0,1 node_yes = 785 node_no = 444
+node_num = 444 quest_num = 8 subset = 0 node_yes = 1661 node_no = 548
+node_num = 445 quest_num = 52 subset = 6,7 node_yes = 1662 node_no = 805
+node_num = 446 quest_num = 0 subset = 38,49,53,65 node_yes = 1663 node_no = 459
+node_num = 447 quest_num = 0 subset = 36,37,38,52,66 node_yes = 1664 node_no = 448
+node_num = 448 quest_num = 55 subset = 9 node_yes = 1665 node_no = 586
+node_num = 449 quest_num = 24 subset = 3 node_yes = 1666 node_no = 806
+node_num = 450 quest_num = 37 subset = 2 node_yes = 1667 node_no = 775
+node_num = 451 quest_num = 0 subset = 54,56 node_yes = 1668 node_no = 1669
+node_num = 452 quest_num = 0 subset = 38,41,49,53,65 node_yes = 457 node_no = 453
+node_num = 453 quest_num = 1 subset = 49,53 node_yes = 454 node_no = 455
+node_num = 454 quest_num = 44 subset = 2 node_yes = 1670 node_no = 1671
+node_num = 455 quest_num = 0 subset = 48 node_yes = 456 node_no = 470
+node_num = 456 quest_num = 1 subset = 47,57 node_yes = 1672 node_no = 1673
+node_num = 457 quest_num = 0 subset = 45,46,49,59 node_yes = 1674 node_no = 790
+node_num = 458 quest_num = 3 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1675 node_no = 1676
+node_num = 459 quest_num = 24 subset = 3 node_yes = 1677 node_no = 460
+node_num = 460 quest_num = 1 subset = 46,59,60,61,62,66 node_yes = 864 node_no = 461
+node_num = 461 quest_num = 17 subset = 0 node_yes = 1678 node_no = 1679
+node_num = 462 quest_num = 52 subset = 5 node_yes = 1680 node_no = 573
+node_num = 463 quest_num = 0 subset = 60 node_yes = 1681 node_no = 634
+node_num = 464 quest_num = 1 subset = 43,57,64 node_yes = 1682 node_no = 1683
+node_num = 465 quest_num = 0 subset = 38,49,53,65 node_yes = 1684 node_no = 910
+node_num = 466 quest_num = 56 subset = 6 node_yes = 1685 node_no = 1686
+node_num = 467 quest_num = 11 subset = 1,2 node_yes = 1687 node_no = 1688
+node_num = 468 quest_num = 37 subset = 4 node_yes = 1689 node_no = 524
+node_num = 469 quest_num = 24 subset = 0,1 node_yes = 1690 node_no = 478
+node_num = 470 quest_num = 1 subset = 43,64 node_yes = 1691 node_no = 490
+node_num = 471 quest_num = 52 subset = 5 node_yes = 1692 node_no = 472
+node_num = 472 quest_num = 48 subset = 3 node_yes = 1693 node_no = 508
+node_num = 473 quest_num = 55 subset = 5 node_yes = 1694 node_no = 474
+node_num = 474 quest_num = 24 subset = 0,1,2,3 node_yes = 1695 node_no = 1696
+node_num = 475 quest_num = 26 subset = 6 node_yes = 1697 node_no = 571
+node_num = 476 quest_num = 0 subset = 70,71,69 node_yes = 1698 node_no = 1699
+node_num = 477 quest_num = 3 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 1700 node_no = 1701
+node_num = 478 quest_num = 2 subset = 43,44,47,50,57,64 node_yes = 784 node_no = 1702
+node_num = 479 quest_num = 0 subset = 45,46,49,53,58,59,62,63 node_yes = 1703 node_no = 480
+node_num = 480 quest_num = 28 subset = 0,1 node_yes = 1704 node_no = 1705
+node_num = 481 quest_num = 53 subset = 1,2 node_yes = 683 node_no = 1706
+node_num = 482 quest_num = 1 subset = 46,54,56,59,60,61,62,66 node_yes = 1707 node_no = 1708
+node_num = 483 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1709 node_no = 1710
+node_num = 484 quest_num = 0 subset = 44,47,50 node_yes = 700 node_no = 1711
+node_num = 485 quest_num = 38 subset = 4 node_yes = 1712 node_no = 791
+node_num = 486 quest_num = 0 subset = 46,54,56,59,60,61,62,66 node_yes = 1713 node_no = 535
+node_num = 487 quest_num = 15 subset = 4,5,6 node_yes = 1714 node_no = 889
+node_num = 488 quest_num = 55 subset = 8,9 node_yes = 489 node_no = 1715
+node_num = 489 quest_num = 52 subset = 0,1,2 node_yes = 1716 node_no = 1717
+node_num = 490 quest_num = 0 subset = 36 node_yes = 1718 node_no = 837
+node_num = 491 quest_num = 19 subset = 0,1 node_yes = 1719 node_no = 492
+node_num = 492 quest_num = 40 subset = 5 node_yes = 1720 node_no = 1721
+node_num = 493 quest_num = 26 subset = 6 node_yes = 1722 node_no = 494
+node_num = 494 quest_num = 0 subset = 69,70,71 node_yes = 1723 node_no = 495
+node_num = 495 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 496 node_no = 1724
+node_num = 496 quest_num = 17 subset = 5 node_yes = 1725 node_no = 1726
+node_num = 497 quest_num = 2 subset = 44,47,50 node_yes = 1727 node_no = 1728
+node_num = 498 quest_num = 15 subset = 0,1,2 node_yes = 1112 node_no = 1729
+node_num = 499 quest_num = 0 subset = 43,57,64 node_yes = 1730 node_no = 1731
+node_num = 500 quest_num = 4 subset = 44 node_yes = 501 node_no = 503
+node_num = 501 quest_num = 3 subset = 47 node_yes = 1732 node_no = 502
+node_num = 502 quest_num = 0 subset = 65 node_yes = 1733 node_no = 685
+node_num = 503 quest_num = 4 subset = 59 node_yes = 536 node_no = 504
+node_num = 504 quest_num = 43 subset = 0,1,2 node_yes = 672 node_no = 902
+node_num = 505 quest_num = 42 subset = 0,1,2 node_yes = 1734 node_no = 1735
+node_num = 506 quest_num = 2 subset = 40,54 node_yes = 1736 node_no = 663
+node_num = 507 quest_num = 39 subset = 0,1 node_yes = 1737 node_no = 770
+node_num = 508 quest_num = 0 subset = 61,66 node_yes = 1738 node_no = 1739
+node_num = 509 quest_num = 39 subset = 4 node_yes = 510 node_no = 865
+node_num = 510 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 1740 node_no = 1741
+node_num = 511 quest_num = 24 subset = 10 node_yes = 1742 node_no = 512
+node_num = 512 quest_num = 46 subset = 7 node_yes = 1743 node_no = 513
+node_num = 513 quest_num = 19 subset = 3 node_yes = 514 node_no = 516
+node_num = 514 quest_num = 44 subset = 2 node_yes = 515 node_no = 1744
+node_num = 515 quest_num = 0 subset = 43,57,64 node_yes = 1745 node_no = 1746
+node_num = 516 quest_num = 56 subset = 8 node_yes = 517 node_no = 518
+node_num = 517 quest_num = 0 subset = 47,57 node_yes = 1747 node_no = 1748
+node_num = 518 quest_num = 52 subset = 6 node_yes = 520 node_no = 519
+node_num = 519 quest_num = 21 subset = 0,1,2,3 node_yes = 777 node_no = 521
+node_num = 520 quest_num = 19 subset = 0,1 node_yes = 1749 node_no = 1750
+node_num = 521 quest_num = 0 subset = 43 node_yes = 1751 node_no = 522
+node_num = 522 quest_num = 44 subset = 3 node_yes = 1752 node_no = 523
+node_num = 523 quest_num = 37 subset = 0,1 node_yes = 1753 node_no = 1754
+node_num = 524 quest_num = 48 subset = 0,1,2,3 node_yes = 525 node_no = 1755
+node_num = 525 quest_num = 56 subset = 7 node_yes = 1756 node_no = 1757
+node_num = 526 quest_num = 4 subset = 70,71,69 node_yes = 687 node_no = 625
+node_num = 527 quest_num = 37 subset = 2 node_yes = 528 node_no = 529
+node_num = 528 quest_num = 19 subset = 0,1 node_yes = 551 node_no = 1758
+node_num = 529 quest_num = 0 subset = 39,40,51 node_yes = 530 node_no = 699
+node_num = 530 quest_num = 24 subset = 0,1,2 node_yes = 1759 node_no = 1760
+node_num = 531 quest_num = 19 subset = 3 node_yes = 532 node_no = 533
+node_num = 532 quest_num = 42 subset = 0,1 node_yes = 1761 node_no = 1762
+node_num = 533 quest_num = 0 subset = 51 node_yes = 1763 node_no = 553
+node_num = 534 quest_num = 37 subset = 0,1,2,3 node_yes = 550 node_no = 1764
+node_num = 535 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1765 node_no = 1766
+node_num = 536 quest_num = 53 subset = 5 node_yes = 1767 node_no = 796
+node_num = 537 quest_num = 1 subset = 43,50,64 node_yes = 1768 node_no = 1769
+node_num = 538 quest_num = 46 subset = 5,6,7,8 node_yes = 1770 node_no = 1771
+node_num = 539 quest_num = 19 subset = 0 node_yes = 540 node_no = 1772
+node_num = 540 quest_num = 55 subset = 6 node_yes = 1773 node_no = 1774
+node_num = 541 quest_num = 37 subset = 7 node_yes = 1775 node_no = 589
+node_num = 542 quest_num = 1 subset = 48 node_yes = 1776 node_no = 543
+node_num = 543 quest_num = 48 subset = 0,1,2,3 node_yes = 567 node_no = 748
+node_num = 544 quest_num = 1 subset = 40,54 node_yes = 1777 node_no = 1778
+node_num = 545 quest_num = 33 subset = 3 node_yes = 1779 node_no = 1780
+node_num = 546 quest_num = 52 subset = 0,1,2,3 node_yes = 753 node_no = 1781
+node_num = 547 quest_num = 2 subset = 39,41,55,56 node_yes = 1782 node_no = 1783
+node_num = 548 quest_num = 20 subset = 10 node_yes = 1784 node_no = 1785
+node_num = 549 quest_num = 12 subset = 1 node_yes = 1786 node_no = 1787
+node_num = 550 quest_num = 3 subset = 36,37,38,42,48,52,60,61,63,65,66 node_yes = 1788 node_no = 941
+node_num = 551 quest_num = 0 subset = 39,40,51 node_yes = 678 node_no = 1789
+node_num = 552 quest_num = 53 subset = 3 node_yes = 1790 node_no = 1791
+node_num = 553 quest_num = 44 subset = 3 node_yes = 668 node_no = 554
+node_num = 554 quest_num = 1 subset = 36,37,42,45,48,55,58 node_yes = 1792 node_no = 555
+node_num = 555 quest_num = 21 subset = 0,1 node_yes = 556 node_no = 1793
+node_num = 556 quest_num = 19 subset = 0 node_yes = 557 node_no = 665
+node_num = 557 quest_num = 26 subset = 7 node_yes = 1794 node_no = 964
+node_num = 558 quest_num = 19 subset = 0 node_yes = 559 node_no = 560
+node_num = 559 quest_num = 39 subset = 5 node_yes = 1795 node_no = 592
+node_num = 560 quest_num = 55 subset = 9 node_yes = 1796 node_no = 561
+node_num = 561 quest_num = 44 subset = 4,5,6 node_yes = 1797 node_no = 1096
+node_num = 562 quest_num = 56 subset = 5 node_yes = 1798 node_no = 1799
+node_num = 563 quest_num = 24 subset = 7,8,10 node_yes = 1800 node_no = 734
+node_num = 564 quest_num = 4 subset = 71 node_yes = 1801 node_no = 914
+node_num = 565 quest_num = 3 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1802 node_no = 566
+node_num = 566 quest_num = 4 subset = 45,58 node_yes = 1803 node_no = 1804
+node_num = 567 quest_num = 55 subset = 6 node_yes = 1805 node_no = 670
+node_num = 568 quest_num = 0 subset = 47,57 node_yes = 1806 node_no = 1807
+node_num = 569 quest_num = 1 subset = 64 node_yes = 1808 node_no = 570
+node_num = 570 quest_num = 24 subset = 1 node_yes = 1809 node_no = 1810
+node_num = 571 quest_num = 0 subset = 57 node_yes = 585 node_no = 572
+node_num = 572 quest_num = 52 subset = 6 node_yes = 1811 node_no = 575
+node_num = 573 quest_num = 2 subset = 69,70,71 node_yes = 574 node_no = 1812
+node_num = 574 quest_num = 17 subset = 1 node_yes = 1813 node_no = 708
+node_num = 575 quest_num = 21 subset = 4 node_yes = 1814 node_no = 703
+node_num = 576 quest_num = 0 subset = 49,53 node_yes = 577 node_no = 578
+node_num = 577 quest_num = 37 subset = 4 node_yes = 1815 node_no = 621
+node_num = 578 quest_num = 56 subset = 2 node_yes = 584 node_no = 579
+node_num = 579 quest_num = 0 subset = 40 node_yes = 580 node_no = 727
+node_num = 580 quest_num = 37 subset = 5 node_yes = 1816 node_no = 581
+node_num = 581 quest_num = 15 subset = 5 node_yes = 1817 node_no = 582
+node_num = 582 quest_num = 48 subset = 6 node_yes = 1818 node_no = 583
+node_num = 583 quest_num = 56 subset = 6 node_yes = 1819 node_no = 1820
+node_num = 584 quest_num = 1 subset = 46,59,60,61,62,63,66 node_yes = 1821 node_no = 1822
+node_num = 585 quest_num = 26 subset = 0,1,2,3 node_yes = 1823 node_no = 885
+node_num = 586 quest_num = 37 subset = 5 node_yes = 1824 node_no = 916
+node_num = 587 quest_num = 0 subset = 50 node_yes = 1825 node_no = 1826
+node_num = 588 quest_num = 57 subset = 1,2,3 node_yes = 1827 node_no = 985
+node_num = 589 quest_num = 17 subset = 5 node_yes = 1828 node_no = 705
+node_num = 590 quest_num = 29 subset = 0 node_yes = 1829 node_no = 1830
+node_num = 591 quest_num = 19 subset = 0,1,2 node_yes = 1831 node_no = 1832
+node_num = 592 quest_num = 48 subset = 3 node_yes = 1833 node_no = 593
+node_num = 593 quest_num = 0 subset = 37,42 node_yes = 1834 node_no = 594
+node_num = 594 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 596 node_no = 595
+node_num = 595 quest_num = 44 subset = 2 node_yes = 597 node_no = 1835
+node_num = 596 quest_num = 48 subset = 4 node_yes = 1836 node_no = 619
+node_num = 597 quest_num = 0 subset = 40,54 node_yes = 1837 node_no = 598
+node_num = 598 quest_num = 48 subset = 6 node_yes = 1838 node_no = 599
+node_num = 599 quest_num = 52 subset = 4 node_yes = 1839 node_no = 1840
+node_num = 600 quest_num = 52 subset = 5,6,7 node_yes = 696 node_no = 601
+node_num = 601 quest_num = 42 subset = 4 node_yes = 602 node_no = 942
+node_num = 602 quest_num = 0 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 1841 node_no = 1842
+node_num = 603 quest_num = 24 subset = 5 node_yes = 1843 node_no = 604
+node_num = 604 quest_num = 15 subset = 3 node_yes = 608 node_no = 605
+node_num = 605 quest_num = 0 subset = 56 node_yes = 607 node_no = 606
+node_num = 606 quest_num = 2 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1844 node_no = 754
+node_num = 607 quest_num = 17 subset = 3 node_yes = 1845 node_no = 1846
+node_num = 608 quest_num = 37 subset = 0,1,2,3 node_yes = 1847 node_no = 1848
+node_num = 609 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1849 node_no = 954
+node_num = 610 quest_num = 2 subset = 39,40,51,52 node_yes = 1850 node_no = 1851
+node_num = 611 quest_num = 52 subset = 6 node_yes = 1852 node_no = 612
+node_num = 612 quest_num = 37 subset = 0,1 node_yes = 1853 node_no = 832
+node_num = 613 quest_num = 56 subset = 8,9 node_yes = 1854 node_no = 1031
+node_num = 614 quest_num = 46 subset = 0,1,2 node_yes = 1855 node_no = 615
+node_num = 615 quest_num = 10 subset = 5,6 node_yes = 1856 node_no = 1857
+node_num = 616 quest_num = 24 subset = 5 node_yes = 1858 node_no = 1859
+node_num = 617 quest_num = 42 subset = 4,5,6 node_yes = 618 node_no = 1860
+node_num = 618 quest_num = 55 subset = 8 node_yes = 1861 node_no = 1862
+node_num = 619 quest_num = 0 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 1863 node_no = 1864
+node_num = 620 quest_num = 3 subset = 44,47,50,57,64 node_yes = 1865 node_no = 1866
+node_num = 621 quest_num = 48 subset = 6 node_yes = 1867 node_no = 1868
+node_num = 622 quest_num = 0 subset = 40 node_yes = 1869 node_no = 1870
+node_num = 623 quest_num = 36 subset = 0 node_yes = 1871 node_no = 721
+node_num = 624 quest_num = 3 subset = 43,64 node_yes = 1872 node_no = 772
+node_num = 625 quest_num = 4 subset = 41 node_yes = 1873 node_no = 797
+node_num = 626 quest_num = 4 subset = 43 node_yes = 627 node_no = 630
+node_num = 627 quest_num = 56 subset = 2 node_yes = 1874 node_no = 628
+node_num = 628 quest_num = 3 subset = 36,37,38,42,48,52,61,63,65,66 node_yes = 1875 node_no = 629
+node_num = 629 quest_num = 53 subset = 1 node_yes = 1876 node_no = 1877
+node_num = 630 quest_num = 48 subset = 5 node_yes = 1878 node_no = 631
+node_num = 631 quest_num = 43 subset = 4 node_yes = 633 node_no = 632
+node_num = 632 quest_num = 52 subset = 7 node_yes = 1879 node_no = 1167
+node_num = 633 quest_num = 0 subset = 42,48,53,58,61,62,63,65 node_yes = 1880 node_no = 1881
+node_num = 634 quest_num = 48 subset = 5,6,7 node_yes = 1882 node_no = 698
+node_num = 635 quest_num = 1 subset = 56 node_yes = 1883 node_no = 1884
+node_num = 636 quest_num = 44 subset = 3 node_yes = 1885 node_no = 637
+node_num = 637 quest_num = 52 subset = 3 node_yes = 1886 node_no = 1887
+node_num = 638 quest_num = 19 subset = 2 node_yes = 639 node_no = 642
+node_num = 639 quest_num = 24 subset = 5 node_yes = 1888 node_no = 640
+node_num = 640 quest_num = 52 subset = 5 node_yes = 1889 node_no = 641
+node_num = 641 quest_num = 1 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 1890 node_no = 1891
+node_num = 642 quest_num = 0 subset = 50 node_yes = 643 node_no = 644
+node_num = 643 quest_num = 44 subset = 0,1,2 node_yes = 1892 node_no = 1893
+node_num = 644 quest_num = 21 subset = 5,6,7,10 node_yes = 1894 node_no = 645
+node_num = 645 quest_num = 56 subset = 7,8,9 node_yes = 656 node_no = 646
+node_num = 646 quest_num = 52 subset = 6 node_yes = 657 node_no = 647
+node_num = 647 quest_num = 0 subset = 51 node_yes = 659 node_no = 648
+node_num = 648 quest_num = 52 subset = 3 node_yes = 649 node_no = 650
+node_num = 649 quest_num = 46 subset = 2 node_yes = 1895 node_no = 654
+node_num = 650 quest_num = 24 subset = 5 node_yes = 658 node_no = 651
+node_num = 651 quest_num = 0 subset = 45,46,49,59 node_yes = 652 node_no = 653
+node_num = 652 quest_num = 56 subset = 4 node_yes = 1896 node_no = 1897
+node_num = 653 quest_num = 19 subset = 1 node_yes = 1898 node_no = 660
+node_num = 654 quest_num = 48 subset = 3 node_yes = 655 node_no = 812
+node_num = 655 quest_num = 1 subset = 47,57 node_yes = 1899 node_no = 1900
+node_num = 656 quest_num = 52 subset = 0,1,2 node_yes = 1901 node_no = 928
+node_num = 657 quest_num = 1 subset = 44,47,50 node_yes = 1902 node_no = 686
+node_num = 658 quest_num = 1 subset = 44 node_yes = 1903 node_no = 849
+node_num = 659 quest_num = 13 subset = 1,2,3,4 node_yes = 1904 node_no = 1905
+node_num = 660 quest_num = 1 subset = 43,57,64 node_yes = 1906 node_no = 813
+node_num = 661 quest_num = 2 subset = 44 node_yes = 1907 node_no = 1908
+node_num = 662 quest_num = 52 subset = 7 node_yes = 1909 node_no = 1910
+node_num = 663 quest_num = 24 subset = 5 node_yes = 1911 node_no = 788
+node_num = 664 quest_num = 4 subset = 43,50,64 node_yes = 1912 node_no = 1913
+node_num = 665 quest_num = 46 subset = 4 node_yes = 735 node_no = 1914
+node_num = 666 quest_num = 55 subset = 9 node_yes = 667 node_no = 979
+node_num = 667 quest_num = 2 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1915 node_no = 1916
+node_num = 668 quest_num = 0 subset = 46,62,63 node_yes = 1917 node_no = 1918
+node_num = 669 quest_num = 24 subset = 2 node_yes = 1919 node_no = 1920
+node_num = 670 quest_num = 44 subset = 3 node_yes = 725 node_no = 671
+node_num = 671 quest_num = 55 subset = 8,9 node_yes = 1921 node_no = 706
+node_num = 672 quest_num = 55 subset = 9 node_yes = 675 node_no = 673
+node_num = 673 quest_num = 0 subset = 61,66 node_yes = 1922 node_no = 674
+node_num = 674 quest_num = 1 subset = 43,64 node_yes = 1923 node_no = 860
+node_num = 675 quest_num = 3 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 677 node_no = 676
+node_num = 676 quest_num = 0 subset = 38,49,53,65 node_yes = 1924 node_no = 1925
+node_num = 677 quest_num = 0 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1926 node_no = 804
+node_num = 678 quest_num = 2 subset = 44,47,50 node_yes = 1927 node_no = 1928
+node_num = 679 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 681 node_no = 680
+node_num = 680 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1929 node_no = 1930
+node_num = 681 quest_num = 4 subset = 56 node_yes = 1931 node_no = 682
+node_num = 682 quest_num = 8 subset = 0 node_yes = 1932 node_no = 1933
+node_num = 683 quest_num = 20 subset = 0,1 node_yes = 1934 node_no = 1935
+node_num = 684 quest_num = 36 subset = 1 node_yes = 1936 node_no = 1937
+node_num = 685 quest_num = 0 subset = 40 node_yes = 1938 node_no = 1939
+node_num = 686 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1940 node_no = 1941
+node_num = 687 quest_num = 0 subset = 42 node_yes = 1942 node_no = 1943
+node_num = 688 quest_num = 52 subset = 3 node_yes = 1944 node_no = 1945
+node_num = 689 quest_num = 0 subset = 47,57 node_yes = 690 node_no = 1946
+node_num = 690 quest_num = 24 subset = 7,8,10 node_yes = 1947 node_no = 691
+node_num = 691 quest_num = 17 subset = 3 node_yes = 1948 node_no = 771
+node_num = 692 quest_num = 34 subset = 0,1,2 node_yes = 1949 node_no = 1950
+node_num = 693 quest_num = 45 subset = 4 node_yes = 694 node_no = 766
+node_num = 694 quest_num = 4 subset = 45 node_yes = 697 node_no = 1951
+node_num = 695 quest_num = 1 subset = 39,41,55,56 node_yes = 1952 node_no = 1953
+node_num = 696 quest_num = 37 subset = 2 node_yes = 1954 node_no = 1955
+node_num = 697 quest_num = 46 subset = 6 node_yes = 1956 node_no = 1957
+node_num = 698 quest_num = 1 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 1958 node_no = 892
+node_num = 699 quest_num = 24 subset = 3 node_yes = 1959 node_no = 815
+node_num = 700 quest_num = 35 subset = 0,1 node_yes = 701 node_no = 1960
+node_num = 701 quest_num = 44 subset = 4,5,6 node_yes = 1961 node_no = 1962
+node_num = 702 quest_num = 1 subset = 40,54 node_yes = 1963 node_no = 1964
+node_num = 703 quest_num = 46 subset = 5 node_yes = 1965 node_no = 1059
+node_num = 704 quest_num = 1 subset = 46,54,56,59,60,61,62,66 node_yes = 1966 node_no = 1967
+node_num = 705 quest_num = 33 subset = 5 node_yes = 1968 node_no = 875
+node_num = 706 quest_num = 0 subset = 44 node_yes = 1969 node_no = 1970
+node_num = 707 quest_num = 1 subset = 39,41,55,56 node_yes = 1971 node_no = 1972
+node_num = 708 quest_num = 24 subset = 0,1 node_yes = 1973 node_no = 1974
+node_num = 709 quest_num = 12 subset = 2 node_yes = 1028 node_no = 1975
+node_num = 710 quest_num = 52 subset = 4 node_yes = 1976 node_no = 1977
+node_num = 711 quest_num = 19 subset = 0,1,2 node_yes = 712 node_no = 1978
+node_num = 712 quest_num = 0 subset = 39,40,51 node_yes = 1979 node_no = 713
+node_num = 713 quest_num = 52 subset = 3 node_yes = 1980 node_no = 714
+node_num = 714 quest_num = 56 subset = 5 node_yes = 1981 node_no = 715
+node_num = 715 quest_num = 24 subset = 3 node_yes = 1982 node_no = 716
+node_num = 716 quest_num = 1 subset = 43,57,64 node_yes = 1983 node_no = 717
+node_num = 717 quest_num = 2 subset = 69,70,71 node_yes = 1984 node_no = 1985
+node_num = 718 quest_num = 19 subset = 1 node_yes = 1986 node_no = 1987
+node_num = 719 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 1988 node_no = 1989
+node_num = 720 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1990 node_no = 1991
+node_num = 721 quest_num = 38 subset = 4 node_yes = 1992 node_no = 1993
+node_num = 722 quest_num = 52 subset = 5,6,7 node_yes = 1994 node_no = 723
+node_num = 723 quest_num = 1 subset = 69,70,71 node_yes = 1995 node_no = 988
+node_num = 724 quest_num = 44 subset = 0,1,2 node_yes = 983 node_no = 1996
+node_num = 725 quest_num = 0 subset = 44,47,50 node_yes = 726 node_no = 1997
+node_num = 726 quest_num = 21 subset = 0,1 node_yes = 1998 node_no = 1999
+node_num = 727 quest_num = 19 subset = 1 node_yes = 728 node_no = 730
+node_num = 728 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2000 node_no = 729
+node_num = 729 quest_num = 24 subset = 6 node_yes = 2001 node_no = 2002
+node_num = 730 quest_num = 2 subset = 56 node_yes = 2003 node_no = 731
+node_num = 731 quest_num = 33 subset = 5 node_yes = 732 node_no = 1083
+node_num = 732 quest_num = 0 subset = 36,37,38,42,48,52,60,61,65,66 node_yes = 2004 node_no = 733
+node_num = 733 quest_num = 42 subset = 0,1,2 node_yes = 2005 node_no = 2006
+node_num = 734 quest_num = 42 subset = 2 node_yes = 2007 node_no = 858
+node_num = 735 quest_num = 17 subset = 0,1 node_yes = 736 node_no = 2008
+node_num = 736 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2009 node_no = 737
+node_num = 737 quest_num = 0 subset = 40,54 node_yes = 2010 node_no = 2011
+node_num = 738 quest_num = 50 subset = 6 node_yes = 742 node_no = 739
+node_num = 739 quest_num = 52 subset = 3 node_yes = 2012 node_no = 740
+node_num = 740 quest_num = 48 subset = 1 node_yes = 744 node_no = 741
+node_num = 741 quest_num = 19 subset = 0 node_yes = 2013 node_no = 743
+node_num = 742 quest_num = 56 subset = 6 node_yes = 2014 node_no = 2015
+node_num = 743 quest_num = 0 subset = 39,40,51,52 node_yes = 2016 node_no = 2017
+node_num = 744 quest_num = 1 subset = 47,57 node_yes = 2018 node_no = 2019
+node_num = 745 quest_num = 39 subset = 0,1,2 node_yes = 2020 node_no = 764
+node_num = 746 quest_num = 44 subset = 3 node_yes = 2021 node_no = 747
+node_num = 747 quest_num = 46 subset = 5 node_yes = 2022 node_no = 1032
+node_num = 748 quest_num = 19 subset = 0,1 node_yes = 749 node_no = 2023
+node_num = 749 quest_num = 0 subset = 47 node_yes = 750 node_no = 862
+node_num = 750 quest_num = 21 subset = 0,1,2 node_yes = 2024 node_no = 2025
+node_num = 751 quest_num = 0 subset = 39,41,55,56 node_yes = 2026 node_no = 2027
+node_num = 752 quest_num = 11 subset = 1,2 node_yes = 2028 node_no = 2029
+node_num = 753 quest_num = 24 subset = 7,8,10 node_yes = 2030 node_no = 2031
+node_num = 754 quest_num = 0 subset = 37,42 node_yes = 756 node_no = 755
+node_num = 755 quest_num = 1 subset = 44 node_yes = 759 node_no = 757
+node_num = 756 quest_num = 15 subset = 2 node_yes = 2032 node_no = 765
+node_num = 757 quest_num = 1 subset = 43,57,64 node_yes = 2033 node_no = 758
+node_num = 758 quest_num = 2 subset = 70,71,69 node_yes = 760 node_no = 2034
+node_num = 759 quest_num = 55 subset = 8 node_yes = 2035 node_no = 2036
+node_num = 760 quest_num = 56 subset = 7 node_yes = 761 node_no = 762
+node_num = 761 quest_num = 24 subset = 6 node_yes = 2037 node_no = 2038
+node_num = 762 quest_num = 37 subset = 0,1,2,3 node_yes = 763 node_no = 2039
+node_num = 763 quest_num = 55 subset = 6 node_yes = 2040 node_no = 2041
+node_num = 764 quest_num = 0 subset = 36,37,42,45,48,55,58 node_yes = 2042 node_no = 2043
+node_num = 765 quest_num = 52 subset = 0,1,2,3 node_yes = 2044 node_no = 2045
+node_num = 766 quest_num = 57 subset = 3 node_yes = 884 node_no = 767
+node_num = 767 quest_num = 15 subset = 3 node_yes = 2046 node_no = 768
+node_num = 768 quest_num = 3 subset = 43,64 node_yes = 2047 node_no = 850
+node_num = 769 quest_num = 1 subset = 47,57 node_yes = 2048 node_no = 2049
+node_num = 770 quest_num = 2 subset = 64 node_yes = 2050 node_no = 2051
+node_num = 771 quest_num = 19 subset = 0,1 node_yes = 2052 node_no = 2053
+node_num = 772 quest_num = 40 subset = 3 node_yes = 2054 node_no = 773
+node_num = 773 quest_num = 4 subset = 36,37,38,42,48,52,60,61,63,65,66 node_yes = 774 node_no = 2055
+node_num = 774 quest_num = 44 subset = 1 node_yes = 2056 node_no = 2057
+node_num = 775 quest_num = 2 subset = 43,44,47,50,57,64 node_yes = 2058 node_no = 2059
+node_num = 776 quest_num = 37 subset = 0,1,2,3 node_yes = 2060 node_no = 2061
+node_num = 777 quest_num = 24 subset = 6 node_yes = 2062 node_no = 781
+node_num = 778 quest_num = 2 subset = 50 node_yes = 2063 node_no = 779
+node_num = 779 quest_num = 24 subset = 6,7,8,10 node_yes = 780 node_no = 2064
+node_num = 780 quest_num = 2 subset = 44,47,50 node_yes = 2065 node_no = 1026
+node_num = 781 quest_num = 0 subset = 43,50,64 node_yes = 2066 node_no = 2067
+node_num = 782 quest_num = 37 subset = 6 node_yes = 2068 node_no = 783
+node_num = 783 quest_num = 21 subset = 1 node_yes = 2069 node_no = 908
+node_num = 784 quest_num = 26 subset = 0,1,2,3 node_yes = 2070 node_no = 2071
+node_num = 785 quest_num = 3 subset = 36,37,42,45,48,55,58 node_yes = 2072 node_no = 786
+node_num = 786 quest_num = 8 subset = 0 node_yes = 2073 node_no = 787
+node_num = 787 quest_num = 4 subset = 56 node_yes = 2074 node_no = 2075
+node_num = 788 quest_num = 6 subset = 1,2 node_yes = 789 node_no = 2076
+node_num = 789 quest_num = 1 subset = 39,41,55,56 node_yes = 2077 node_no = 2078
+node_num = 790 quest_num = 44 subset = 1 node_yes = 2079 node_no = 830
+node_num = 791 quest_num = 2 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2080 node_no = 2081
+node_num = 792 quest_num = 3 subset = 44,47,50,57,64 node_yes = 2082 node_no = 2083
+node_num = 793 quest_num = 2 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 2084 node_no = 2085
+node_num = 794 quest_num = 1 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 2086 node_no = 2087
+node_num = 795 quest_num = 2 subset = 43,44,47,50,57,64 node_yes = 2088 node_no = 2089
+node_num = 796 quest_num = 0 subset = 36,37,42,45,48,55,58 node_yes = 2090 node_no = 2091
+node_num = 797 quest_num = 4 subset = 57 node_yes = 2092 node_no = 798
+node_num = 798 quest_num = 49 subset = 4 node_yes = 802 node_no = 799
+node_num = 799 quest_num = 56 subset = 2 node_yes = 800 node_no = 801
+node_num = 800 quest_num = 4 subset = 36,37,38,52,60,66 node_yes = 2093 node_no = 2094
+node_num = 801 quest_num = 4 subset = 43,44,47,50,57,64 node_yes = 803 node_no = 2095
+node_num = 802 quest_num = 4 subset = 38 node_yes = 2096 node_no = 2097
+node_num = 803 quest_num = 56 subset = 3 node_yes = 2098 node_no = 2099
+node_num = 804 quest_num = 49 subset = 5,6,7 node_yes = 2100 node_no = 2101
+node_num = 805 quest_num = 33 subset = 0,1 node_yes = 2102 node_no = 2103
+node_num = 806 quest_num = 56 subset = 5 node_yes = 2104 node_no = 807
+node_num = 807 quest_num = 33 subset = 0,1,2 node_yes = 808 node_no = 2105
+node_num = 808 quest_num = 52 subset = 5 node_yes = 2106 node_no = 809
+node_num = 809 quest_num = 44 subset = 4 node_yes = 2107 node_no = 810
+node_num = 810 quest_num = 10 subset = 3 node_yes = 2108 node_no = 811
+node_num = 811 quest_num = 52 subset = 7 node_yes = 2109 node_no = 1101
+node_num = 812 quest_num = 0 subset = 36,37,38,52,60,66 node_yes = 2110 node_no = 1197
+node_num = 813 quest_num = 46 subset = 6 node_yes = 2111 node_no = 814
+node_num = 814 quest_num = 2 subset = 44,47,50 node_yes = 2112 node_no = 923
+node_num = 815 quest_num = 51 subset = 5 node_yes = 816 node_no = 817
+node_num = 816 quest_num = 1 subset = 39,40,41,51,54,55,56 node_yes = 2113 node_no = 2114
+node_num = 817 quest_num = 1 subset = 42,48,53,58,61,62,63,65 node_yes = 819 node_no = 818
+node_num = 818 quest_num = 48 subset = 2 node_yes = 2115 node_no = 822
+node_num = 819 quest_num = 19 subset = 0,1 node_yes = 2116 node_no = 820
+node_num = 820 quest_num = 19 subset = 0,1,2 node_yes = 2117 node_no = 821
+node_num = 821 quest_num = 52 subset = 6 node_yes = 2118 node_no = 2119
+node_num = 822 quest_num = 55 subset = 9 node_yes = 2120 node_no = 823
+node_num = 823 quest_num = 19 subset = 5 node_yes = 2121 node_no = 824
+node_num = 824 quest_num = 19 subset = 4 node_yes = 2122 node_no = 825
+node_num = 825 quest_num = 17 subset = 2 node_yes = 2123 node_no = 826
+node_num = 826 quest_num = 52 subset = 0,1,2,3 node_yes = 2124 node_no = 827
+node_num = 827 quest_num = 0 subset = 50 node_yes = 2125 node_no = 828
+node_num = 828 quest_num = 24 subset = 6,7,8,10 node_yes = 829 node_no = 2126
+node_num = 829 quest_num = 2 subset = 69,70,71 node_yes = 2127 node_no = 2128
+node_num = 830 quest_num = 0 subset = 42,48,61,65 node_yes = 831 node_no = 2129
+node_num = 831 quest_num = 26 subset = 3 node_yes = 2130 node_no = 2131
+node_num = 832 quest_num = 55 subset = 8,9 node_yes = 1105 node_no = 2132
+node_num = 833 quest_num = 42 subset = 4 node_yes = 834 node_no = 2133
+node_num = 834 quest_num = 48 subset = 0,1,2 node_yes = 2134 node_no = 835
+node_num = 835 quest_num = 15 subset = 0,1 node_yes = 836 node_no = 2135
+node_num = 836 quest_num = 21 subset = 1 node_yes = 2136 node_no = 2137
+node_num = 837 quest_num = 0 subset = 61,66 node_yes = 838 node_no = 841
+node_num = 838 quest_num = 1 subset = 43,57,64 node_yes = 2138 node_no = 839
+node_num = 839 quest_num = 44 subset = 0,1,2 node_yes = 840 node_no = 2139
+node_num = 840 quest_num = 17 subset = 0 node_yes = 2140 node_no = 2141
+node_num = 841 quest_num = 0 subset = 42,48,53,58,61,62,63,70,65 node_yes = 842 node_no = 1039
+node_num = 842 quest_num = 46 subset = 1 node_yes = 2142 node_no = 843
+node_num = 843 quest_num = 39 subset = 0,1 node_yes = 844 node_no = 2143
+node_num = 844 quest_num = 17 subset = 2 node_yes = 845 node_no = 846
+node_num = 845 quest_num = 1 subset = 44 node_yes = 2144 node_no = 2145
+node_num = 846 quest_num = 2 subset = 43,50,64 node_yes = 2146 node_no = 847
+node_num = 847 quest_num = 1 subset = 44 node_yes = 2147 node_no = 848
+node_num = 848 quest_num = 21 subset = 1 node_yes = 2148 node_no = 2149
+node_num = 849 quest_num = 15 subset = 1 node_yes = 1064 node_no = 2150
+node_num = 850 quest_num = 56 subset = 3 node_yes = 851 node_no = 1078
+node_num = 851 quest_num = 3 subset = 70,71,69 node_yes = 1018 node_no = 2151
+node_num = 852 quest_num = 16 subset = 0,1 node_yes = 853 node_no = 2152
+node_num = 853 quest_num = 21 subset = 1 node_yes = 2153 node_no = 2154
+node_num = 854 quest_num = 48 subset = 6 node_yes = 2155 node_no = 855
+node_num = 855 quest_num = 0 subset = 46,62 node_yes = 2156 node_no = 856
+node_num = 856 quest_num = 17 subset = 6 node_yes = 2157 node_no = 857
+node_num = 857 quest_num = 46 subset = 3 node_yes = 2158 node_no = 992
+node_num = 858 quest_num = 56 subset = 7 node_yes = 2159 node_no = 1117
+node_num = 859 quest_num = 8 subset = 0 node_yes = 2160 node_no = 1144
+node_num = 860 quest_num = 3 subset = 37,42 node_yes = 861 node_no = 888
+node_num = 861 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2161 node_no = 2162
+node_num = 862 quest_num = 52 subset = 3 node_yes = 2163 node_no = 863
+node_num = 863 quest_num = 48 subset = 4 node_yes = 2164 node_no = 2165
+node_num = 864 quest_num = 56 subset = 3 node_yes = 2166 node_no = 949
+node_num = 865 quest_num = 47 subset = 6 node_yes = 2167 node_no = 866
+node_num = 866 quest_num = 44 subset = 5 node_yes = 2168 node_no = 867
+node_num = 867 quest_num = 0 subset = 54,56 node_yes = 2169 node_no = 997
+node_num = 868 quest_num = 51 subset = 3 node_yes = 2170 node_no = 869
+node_num = 869 quest_num = 1 subset = 44,47,50 node_yes = 2171 node_no = 2172
+node_num = 870 quest_num = 51 subset = 0,1,2 node_yes = 2173 node_no = 871
+node_num = 871 quest_num = 42 subset = 2 node_yes = 2174 node_no = 2175
+node_num = 872 quest_num = 30 subset = 2 node_yes = 873 node_no = 2176
+node_num = 873 quest_num = 1 subset = 43,64 node_yes = 2177 node_no = 2178
+node_num = 874 quest_num = 46 subset = 5,6,7,8 node_yes = 2179 node_no = 961
+node_num = 875 quest_num = 48 subset = 4 node_yes = 2180 node_no = 876
+node_num = 876 quest_num = 35 subset = 2 node_yes = 2181 node_no = 877
+node_num = 877 quest_num = 44 subset = 0,1,2 node_yes = 879 node_no = 878
+node_num = 878 quest_num = 56 subset = 6 node_yes = 2182 node_no = 883
+node_num = 879 quest_num = 17 subset = 1 node_yes = 880 node_no = 881
+node_num = 880 quest_num = 46 subset = 5 node_yes = 2183 node_no = 882
+node_num = 881 quest_num = 24 subset = 5 node_yes = 2184 node_no = 938
+node_num = 882 quest_num = 2 subset = 69,70,71 node_yes = 2185 node_no = 2186
+node_num = 883 quest_num = 48 subset = 2 node_yes = 2187 node_no = 2188
+node_num = 884 quest_num = 39 subset = 1 node_yes = 2189 node_no = 912
+node_num = 885 quest_num = 56 subset = 8 node_yes = 2190 node_no = 886
+node_num = 886 quest_num = 42 subset = 4 node_yes = 2191 node_no = 2192
+node_num = 887 quest_num = 56 subset = 4 node_yes = 2193 node_no = 936
+node_num = 888 quest_num = 3 subset = 43,57,64 node_yes = 959 node_no = 1107
+node_num = 889 quest_num = 13 subset = 1,2 node_yes = 890 node_no = 2194
+node_num = 890 quest_num = 44 subset = 5 node_yes = 2195 node_no = 891
+node_num = 891 quest_num = 56 subset = 4 node_yes = 2196 node_no = 917
+node_num = 892 quest_num = 54 subset = 1 node_yes = 2197 node_no = 893
+node_num = 893 quest_num = 13 subset = 1,2,3,4 node_yes = 2198 node_no = 894
+node_num = 894 quest_num = 56 subset = 8 node_yes = 895 node_no = 896
+node_num = 895 quest_num = 50 subset = 5 node_yes = 2199 node_no = 2200
+node_num = 896 quest_num = 55 subset = 4 node_yes = 2201 node_no = 897
+node_num = 897 quest_num = 39 subset = 3 node_yes = 2202 node_no = 898
+node_num = 898 quest_num = 37 subset = 0,1,2,3 node_yes = 906 node_no = 899
+node_num = 899 quest_num = 0 subset = 55 node_yes = 2203 node_no = 951
+node_num = 900 quest_num = 52 subset = 0,1,2,3 node_yes = 901 node_no = 2204
+node_num = 901 quest_num = 17 subset = 3 node_yes = 2205 node_no = 2206
+node_num = 902 quest_num = 39 subset = 3 node_yes = 2207 node_no = 994
+node_num = 903 quest_num = 4 subset = 56 node_yes = 905 node_no = 904
+node_num = 904 quest_num = 0 subset = 57 node_yes = 2208 node_no = 2209
+node_num = 905 quest_num = 26 subset = 0,1,2,3,4 node_yes = 2210 node_no = 2211
+node_num = 906 quest_num = 1 subset = 36,37,42,45,48,55,58 node_yes = 907 node_no = 1205
+node_num = 907 quest_num = 2 subset = 46,54,56,59,60,61,62,66 node_yes = 2212 node_no = 2213
+node_num = 908 quest_num = 4 subset = 37 node_yes = 909 node_no = 2214
+node_num = 909 quest_num = 53 subset = 4 node_yes = 2215 node_no = 2216
+node_num = 910 quest_num = 0 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 2217 node_no = 911
+node_num = 911 quest_num = 55 subset = 7 node_yes = 2218 node_no = 2219
+node_num = 912 quest_num = 4 subset = 36,37,38,42,45,46,48,49,52,53,58,59,60,61,62,63,65,66 node_yes = 913 node_no = 2220
+node_num = 913 quest_num = 39 subset = 3 node_yes = 2221 node_no = 1238
+node_num = 914 quest_num = 35 subset = 0 node_yes = 915 node_no = 2222
+node_num = 915 quest_num = 0 subset = 37,42 node_yes = 2223 node_no = 2224
+node_num = 916 quest_num = 1 subset = 46,59,60,61,62,66 node_yes = 2225 node_no = 974
+node_num = 917 quest_num = 0 subset = 40,54 node_yes = 2226 node_no = 918
+node_num = 918 quest_num = 17 subset = 2 node_yes = 919 node_no = 2227
+node_num = 919 quest_num = 1 subset = 44,47,50 node_yes = 2228 node_no = 920
+node_num = 920 quest_num = 42 subset = 1 node_yes = 2229 node_no = 2230
+node_num = 921 quest_num = 18 subset = 0 node_yes = 2231 node_no = 922
+node_num = 922 quest_num = 30 subset = 2 node_yes = 2232 node_no = 2233
+node_num = 923 quest_num = 0 subset = 60,61,66 node_yes = 2234 node_no = 1109
+node_num = 924 quest_num = 24 subset = 5 node_yes = 2235 node_no = 925
+node_num = 925 quest_num = 52 subset = 6 node_yes = 926 node_no = 2236
+node_num = 926 quest_num = 24 subset = 3 node_yes = 2237 node_no = 2238
+node_num = 927 quest_num = 44 subset = 5 node_yes = 2239 node_no = 1132
+node_num = 928 quest_num = 50 subset = 5 node_yes = 929 node_no = 932
+node_num = 929 quest_num = 0 subset = 45,46,49 node_yes = 2240 node_no = 930
+node_num = 930 quest_num = 0 subset = 45,58 node_yes = 2241 node_no = 931
+node_num = 931 quest_num = 56 subset = 9 node_yes = 933 node_no = 1061
+node_num = 932 quest_num = 0 subset = 49,53 node_yes = 2242 node_no = 934
+node_num = 933 quest_num = 0 subset = 46,62,63 node_yes = 2243 node_no = 2244
+node_num = 934 quest_num = 0 subset = 45,46,49 node_yes = 2245 node_no = 935
+node_num = 935 quest_num = 1 subset = 39,41,55,56 node_yes = 2246 node_no = 995
+node_num = 936 quest_num = 24 subset = 6 node_yes = 2247 node_no = 937
+node_num = 937 quest_num = 53 subset = 6 node_yes = 2248 node_no = 2249
+node_num = 938 quest_num = 56 subset = 5 node_yes = 2250 node_no = 939
+node_num = 939 quest_num = 37 subset = 5 node_yes = 2251 node_no = 940
+node_num = 940 quest_num = 44 subset = 1 node_yes = 2252 node_no = 2253
+node_num = 941 quest_num = 34 subset = 4 node_yes = 2254 node_no = 987
+node_num = 942 quest_num = 48 subset = 3 node_yes = 2255 node_no = 943
+node_num = 943 quest_num = 1 subset = 37,42 node_yes = 2256 node_no = 944
+node_num = 944 quest_num = 26 subset = 0,1 node_yes = 945 node_no = 946
+node_num = 945 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2257 node_no = 2258
+node_num = 946 quest_num = 8 subset = 0 node_yes = 947 node_no = 2259
+node_num = 947 quest_num = 21 subset = 2 node_yes = 2260 node_no = 948
+node_num = 948 quest_num = 37 subset = 4 node_yes = 2261 node_no = 2262
+node_num = 949 quest_num = 52 subset = 0,1,2,3 node_yes = 950 node_no = 2263
+node_num = 950 quest_num = 0 subset = 39,40,51 node_yes = 2264 node_no = 958
+node_num = 951 quest_num = 56 subset = 6 node_yes = 952 node_no = 2265
+node_num = 952 quest_num = 0 subset = 46,62,63 node_yes = 2266 node_no = 953
+node_num = 953 quest_num = 0 subset = 36,37,38,42,48,52,61,65,66 node_yes = 2267 node_no = 1019
+node_num = 954 quest_num = 0 subset = 47,57 node_yes = 2268 node_no = 955
+node_num = 955 quest_num = 2 subset = 70,71,69 node_yes = 956 node_no = 2269
+node_num = 956 quest_num = 42 subset = 4 node_yes = 957 node_no = 2270
+node_num = 957 quest_num = 52 subset = 0,1,2 node_yes = 2271 node_no = 2272
+node_num = 958 quest_num = 21 subset = 0 node_yes = 1118 node_no = 2273
+node_num = 959 quest_num = 45 subset = 2 node_yes = 960 node_no = 2274
+node_num = 960 quest_num = 21 subset = 2 node_yes = 2275 node_no = 2276
+node_num = 961 quest_num = 55 subset = 8 node_yes = 2277 node_no = 962
+node_num = 962 quest_num = 0 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2278 node_no = 963
+node_num = 963 quest_num = 19 subset = 0 node_yes = 2279 node_no = 2280
+node_num = 964 quest_num = 0 subset = 40,54 node_yes = 2281 node_no = 965
+node_num = 965 quest_num = 1 subset = 40,54 node_yes = 2282 node_no = 966
+node_num = 966 quest_num = 0 subset = 45,46,49,59 node_yes = 967 node_no = 968
+node_num = 967 quest_num = 17 subset = 1 node_yes = 2283 node_no = 2284
+node_num = 968 quest_num = 39 subset = 0,1 node_yes = 971 node_no = 969
+node_num = 969 quest_num = 46 subset = 5,6,7,8 node_yes = 2285 node_no = 970
+node_num = 970 quest_num = 1 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 2286 node_no = 2287
+node_num = 971 quest_num = 0 subset = 39,41,55,56 node_yes = 972 node_no = 2288
+node_num = 972 quest_num = 17 subset = 1 node_yes = 973 node_no = 2289
+node_num = 973 quest_num = 2 subset = 43,57,64 node_yes = 2290 node_no = 2291
+node_num = 974 quest_num = 52 subset = 0,1,2,3 node_yes = 2292 node_no = 975
+node_num = 975 quest_num = 44 subset = 2 node_yes = 2293 node_no = 976
+node_num = 976 quest_num = 17 subset = 3 node_yes = 2294 node_no = 977
+node_num = 977 quest_num = 1 subset = 46,54,56,59,60,61,62,66 node_yes = 978 node_no = 2295
+node_num = 978 quest_num = 2 subset = 70,71,69 node_yes = 2296 node_no = 2297
+node_num = 979 quest_num = 52 subset = 3 node_yes = 2298 node_no = 980
+node_num = 980 quest_num = 3 subset = 57 node_yes = 2299 node_no = 981
+node_num = 981 quest_num = 16 subset = 0,1 node_yes = 2300 node_no = 982
+node_num = 982 quest_num = 2 subset = 51 node_yes = 2301 node_no = 2302
+node_num = 983 quest_num = 1 subset = 44 node_yes = 984 node_no = 2303
+node_num = 984 quest_num = 2 subset = 69,70,71 node_yes = 2304 node_no = 2305
+node_num = 985 quest_num = 3 subset = 42,48,53,58,61,62,63,70,65 node_yes = 2306 node_no = 986
+node_num = 986 quest_num = 0 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 2307 node_no = 1103
+node_num = 987 quest_num = 3 subset = 39,40,51 node_yes = 2308 node_no = 1030
+node_num = 988 quest_num = 55 subset = 7 node_yes = 2309 node_no = 989
+node_num = 989 quest_num = 1 subset = 44,47,50 node_yes = 990 node_no = 2310
+node_num = 990 quest_num = 52 subset = 0,1,2,3 node_yes = 2311 node_no = 2312
+node_num = 991 quest_num = 0 subset = 54,56 node_yes = 2313 node_no = 1070
+node_num = 992 quest_num = 56 subset = 6 node_yes = 2314 node_no = 993
+node_num = 993 quest_num = 0 subset = 46,54,56,59,60,61,62,66 node_yes = 2315 node_no = 2316
+node_num = 994 quest_num = 0 subset = 54 node_yes = 2317 node_no = 1065
+node_num = 995 quest_num = 0 subset = 36,45,58 node_yes = 996 node_no = 1104
+node_num = 996 quest_num = 24 subset = 4 node_yes = 2318 node_no = 2319
+node_num = 997 quest_num = 0 subset = 38 node_yes = 2320 node_no = 998
+node_num = 998 quest_num = 3 subset = 50 node_yes = 1000 node_no = 999
+node_num = 999 quest_num = 37 subset = 4 node_yes = 2321 node_no = 1001
+node_num = 1000 quest_num = 57 subset = 1,2 node_yes = 1006 node_no = 2322
+node_num = 1001 quest_num = 0 subset = 60,61,66 node_yes = 2323 node_no = 1002
+node_num = 1002 quest_num = 15 subset = 3 node_yes = 1005 node_no = 1003
+node_num = 1003 quest_num = 55 subset = 5 node_yes = 2324 node_no = 1004
+node_num = 1004 quest_num = 0 subset = 44 node_yes = 2325 node_no = 1007
+node_num = 1005 quest_num = 21 subset = 1 node_yes = 2326 node_no = 2327
+node_num = 1006 quest_num = 56 subset = 5 node_yes = 2328 node_no = 2329
+node_num = 1007 quest_num = 21 subset = 0,1 node_yes = 1008 node_no = 2330
+node_num = 1008 quest_num = 19 subset = 1 node_yes = 2331 node_no = 1009
+node_num = 1009 quest_num = 0 subset = 49,53 node_yes = 2332 node_no = 1010
+node_num = 1010 quest_num = 4 subset = 61 node_yes = 1011 node_no = 1013
+node_num = 1011 quest_num = 53 subset = 2 node_yes = 2333 node_no = 1012
+node_num = 1012 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 2334 node_no = 2335
+node_num = 1013 quest_num = 4 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2336 node_no = 1014
+node_num = 1014 quest_num = 47 subset = 2 node_yes = 2337 node_no = 1038
+node_num = 1015 quest_num = 48 subset = 0,1,2,3 node_yes = 1016 node_no = 2338
+node_num = 1016 quest_num = 56 subset = 7,8,9 node_yes = 2339 node_no = 1017
+node_num = 1017 quest_num = 44 subset = 3 node_yes = 2340 node_no = 2341
+node_num = 1018 quest_num = 45 subset = 2 node_yes = 2342 node_no = 1241
+node_num = 1019 quest_num = 0 subset = 42,48,53,58,61,62,63,65 node_yes = 2343 node_no = 1020
+node_num = 1020 quest_num = 21 subset = 2 node_yes = 2344 node_no = 2345
+node_num = 1021 quest_num = 56 subset = 7 node_yes = 2346 node_no = 1022
+node_num = 1022 quest_num = 0 subset = 45,58 node_yes = 2347 node_no = 1023
+node_num = 1023 quest_num = 4 subset = 36,45,55,58 node_yes = 2348 node_no = 2349
+node_num = 1024 quest_num = 52 subset = 4 node_yes = 1025 node_no = 2350
+node_num = 1025 quest_num = 1 subset = 43,57,64 node_yes = 2351 node_no = 2352
+node_num = 1026 quest_num = 11 subset = 4 node_yes = 2353 node_no = 1027
+node_num = 1027 quest_num = 0 subset = 44 node_yes = 2354 node_no = 2355
+node_num = 1028 quest_num = 20 subset = 0,1 node_yes = 2356 node_no = 1029
+node_num = 1029 quest_num = 27 subset = 0,1,2,3 node_yes = 2357 node_no = 2358
+node_num = 1030 quest_num = 0 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 2359 node_no = 1100
+node_num = 1031 quest_num = 4 subset = 46,59,62,63 node_yes = 2360 node_no = 1108
+node_num = 1032 quest_num = 0 subset = 44,47,50 node_yes = 2361 node_no = 1033
+node_num = 1033 quest_num = 56 subset = 7 node_yes = 2362 node_no = 1034
+node_num = 1034 quest_num = 52 subset = 4 node_yes = 2363 node_no = 1035
+node_num = 1035 quest_num = 42 subset = 1 node_yes = 2364 node_no = 2365
+node_num = 1036 quest_num = 50 subset = 6 node_yes = 2366 node_no = 1037
+node_num = 1037 quest_num = 2 subset = 69,70,71 node_yes = 2367 node_no = 2368
+node_num = 1038 quest_num = 0 subset = 39,40,51,52 node_yes = 2369 node_no = 1124
+node_num = 1039 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1049 node_no = 1040
+node_num = 1040 quest_num = 42 subset = 2 node_yes = 1041 node_no = 1045
+node_num = 1041 quest_num = 19 subset = 1 node_yes = 1048 node_no = 1042
+node_num = 1042 quest_num = 0 subset = 39,40,51 node_yes = 1043 node_no = 1052
+node_num = 1043 quest_num = 26 subset = 0,1 node_yes = 2370 node_no = 1044
+node_num = 1044 quest_num = 44 subset = 0,1,2 node_yes = 1046 node_no = 2371
+node_num = 1045 quest_num = 0 subset = 46,62,63 node_yes = 2372 node_no = 1050
+node_num = 1046 quest_num = 0 subset = 39,41,55,56 node_yes = 2373 node_no = 1047
+node_num = 1047 quest_num = 2 subset = 46,54,56,59,60,61,62,66 node_yes = 2374 node_no = 2375
+node_num = 1048 quest_num = 1 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 2376 node_no = 2377
+node_num = 1049 quest_num = 26 subset = 0,1 node_yes = 2378 node_no = 1053
+node_num = 1050 quest_num = 0 subset = 43,64 node_yes = 1051 node_no = 1226
+node_num = 1051 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 2379 node_no = 2380
+node_num = 1052 quest_num = 0 subset = 43,57,64 node_yes = 2381 node_no = 1114
+node_num = 1053 quest_num = 42 subset = 1 node_yes = 1054 node_no = 1057
+node_num = 1054 quest_num = 44 subset = 2 node_yes = 1055 node_no = 2382
+node_num = 1055 quest_num = 1 subset = 43,50,64 node_yes = 2383 node_no = 1056
+node_num = 1056 quest_num = 17 subset = 1 node_yes = 2384 node_no = 2385
+node_num = 1057 quest_num = 48 subset = 0,1 node_yes = 1068 node_no = 1058
+node_num = 1058 quest_num = 1 subset = 47,57 node_yes = 2386 node_no = 2387
+node_num = 1059 quest_num = 44 subset = 4,5,6 node_yes = 1060 node_no = 1073
+node_num = 1060 quest_num = 0 subset = 44 node_yes = 2388 node_no = 2389
+node_num = 1061 quest_num = 37 subset = 0,1 node_yes = 2390 node_no = 1062
+node_num = 1062 quest_num = 0 subset = 36,37,38,42,48,52,60,61,65,66 node_yes = 2391 node_no = 1063
+node_num = 1063 quest_num = 1 subset = 45,46,49,59 node_yes = 2392 node_no = 2393
+node_num = 1064 quest_num = 0 subset = 36,37,38,39,40,41,42,45,46,48,49,51,52,53,54,55,56,58,59,60,61,62,63,70,71,65,66 node_yes = 1183 node_no = 2394
+node_num = 1065 quest_num = 0 subset = 50 node_yes = 2395 node_no = 1066
+node_num = 1066 quest_num = 33 subset = 0,1 node_yes = 1129 node_no = 1067
+node_num = 1067 quest_num = 24 subset = 0,1,2,3,4 node_yes = 2396 node_no = 2397
+node_num = 1068 quest_num = 0 subset = 43 node_yes = 1069 node_no = 2398
+node_num = 1069 quest_num = 2 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 2399 node_no = 2400
+node_num = 1070 quest_num = 12 subset = 1 node_yes = 2401 node_no = 1071
+node_num = 1071 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2402 node_no = 1072
+node_num = 1072 quest_num = 3 subset = 43,50,64 node_yes = 2403 node_no = 2404
+node_num = 1073 quest_num = 1 subset = 37,42 node_yes = 2405 node_no = 1074
+node_num = 1074 quest_num = 42 subset = 2 node_yes = 2406 node_no = 1075
+node_num = 1075 quest_num = 44 subset = 0,1,2 node_yes = 1076 node_no = 1180
+node_num = 1076 quest_num = 50 subset = 4 node_yes = 1077 node_no = 2407
+node_num = 1077 quest_num = 42 subset = 4 node_yes = 2408 node_no = 2409
+node_num = 1078 quest_num = 0 subset = 56 node_yes = 1079 node_no = 1080
+node_num = 1079 quest_num = 35 subset = 0 node_yes = 2410 node_no = 2411
+node_num = 1080 quest_num = 56 subset = 5 node_yes = 2412 node_no = 1081
+node_num = 1081 quest_num = 50 subset = 1 node_yes = 1082 node_no = 1166
+node_num = 1082 quest_num = 1 subset = 42,48,53,58,61,62,63,65 node_yes = 2413 node_no = 2414
+node_num = 1083 quest_num = 0 subset = 36 node_yes = 1084 node_no = 1089
+node_num = 1084 quest_num = 1 subset = 43,57,64 node_yes = 2415 node_no = 1085
+node_num = 1085 quest_num = 21 subset = 3 node_yes = 2416 node_no = 1086
+node_num = 1086 quest_num = 44 subset = 4 node_yes = 2417 node_no = 1087
+node_num = 1087 quest_num = 48 subset = 3 node_yes = 1088 node_no = 2418
+node_num = 1088 quest_num = 44 subset = 2 node_yes = 2419 node_no = 2420
+node_num = 1089 quest_num = 1 subset = 37 node_yes = 2421 node_no = 1090
+node_num = 1090 quest_num = 44 subset = 5,6 node_yes = 1091 node_no = 1094
+node_num = 1091 quest_num = 46 subset = 5 node_yes = 1092 node_no = 2422
+node_num = 1092 quest_num = 52 subset = 6,7 node_yes = 1093 node_no = 2423
+node_num = 1093 quest_num = 0 subset = 36,37,38,42,48,52,61,63,65,66 node_yes = 2424 node_no = 2425
+node_num = 1094 quest_num = 0 subset = 36,45,58 node_yes = 1095 node_no = 1186
+node_num = 1095 quest_num = 46 subset = 4 node_yes = 2426 node_no = 1127
+node_num = 1096 quest_num = 48 subset = 4 node_yes = 2427 node_no = 1097
+node_num = 1097 quest_num = 10 subset = 2 node_yes = 2428 node_no = 1098
+node_num = 1098 quest_num = 52 subset = 3 node_yes = 2429 node_no = 1099
+node_num = 1099 quest_num = 1 subset = 42,48,53,58,61,62,63,65 node_yes = 2430 node_no = 2431
+node_num = 1100 quest_num = 4 subset = 70,71,69 node_yes = 2432 node_no = 1116
+node_num = 1101 quest_num = 1 subset = 56 node_yes = 2433 node_no = 1102
+node_num = 1102 quest_num = 52 subset = 3 node_yes = 2434 node_no = 1243
+node_num = 1103 quest_num = 0 subset = 50 node_yes = 2435 node_no = 1224
+node_num = 1104 quest_num = 0 subset = 60,61,66 node_yes = 2436 node_no = 1149
+node_num = 1105 quest_num = 56 subset = 8 node_yes = 2437 node_no = 1106
+node_num = 1106 quest_num = 0 subset = 36,37,38,45,46,49,52,59,60,66 node_yes = 2438 node_no = 2439
+node_num = 1107 quest_num = 0 subset = 51 node_yes = 2440 node_no = 1161
+node_num = 1108 quest_num = 47 subset = 7 node_yes = 2441 node_no = 1221
+node_num = 1109 quest_num = 0 subset = 42,48,53,58,61,62,63,70,65 node_yes = 1110 node_no = 1111
+node_num = 1110 quest_num = 24 subset = 0,1,2,3 node_yes = 2442 node_no = 2443
+node_num = 1111 quest_num = 55 subset = 4 node_yes = 2444 node_no = 1211
+node_num = 1112 quest_num = 54 subset = 1 node_yes = 2445 node_no = 1113
+node_num = 1113 quest_num = 57 subset = 1,2,3 node_yes = 2446 node_no = 2447
+node_num = 1114 quest_num = 1 subset = 40,54 node_yes = 2448 node_no = 1115
+node_num = 1115 quest_num = 17 subset = 0 node_yes = 2449 node_no = 2450
+node_num = 1116 quest_num = 51 subset = 6 node_yes = 2451 node_no = 1222
+node_num = 1117 quest_num = 48 subset = 0,1,2 node_yes = 1147 node_no = 2452
+node_num = 1118 quest_num = 24 subset = 0,1,2 node_yes = 1119 node_no = 1120
+node_num = 1119 quest_num = 42 subset = 0,1,2 node_yes = 2453 node_no = 2454
+node_num = 1120 quest_num = 42 subset = 0,1,2 node_yes = 2455 node_no = 1121
+node_num = 1121 quest_num = 0 subset = 44,47,50 node_yes = 1122 node_no = 2456
+node_num = 1122 quest_num = 42 subset = 5 node_yes = 1123 node_no = 2457
+node_num = 1123 quest_num = 0 subset = 47,57 node_yes = 2458 node_no = 2459
+node_num = 1124 quest_num = 42 subset = 1 node_yes = 2460 node_no = 1125
+node_num = 1125 quest_num = 1 subset = 42,48,53,58,61,62,63,65 node_yes = 2461 node_no = 1126
+node_num = 1126 quest_num = 35 subset = 1 node_yes = 2462 node_no = 1196
+node_num = 1127 quest_num = 52 subset = 0,1,2,3 node_yes = 1128 node_no = 2463
+node_num = 1128 quest_num = 2 subset = 47,57 node_yes = 2464 node_no = 2465
+node_num = 1129 quest_num = 3 subset = 46,59,60,61,62,66 node_yes = 1130 node_no = 1141
+node_num = 1130 quest_num = 24 subset = 10 node_yes = 2466 node_no = 1131
+node_num = 1131 quest_num = 44 subset = 3 node_yes = 2467 node_no = 2468
+node_num = 1132 quest_num = 1 subset = 36,37,42,45,48,55,58 node_yes = 2469 node_no = 1133
+node_num = 1133 quest_num = 56 subset = 7 node_yes = 1134 node_no = 1135
+node_num = 1134 quest_num = 24 subset = 0,1,2,3,4 node_yes = 2470 node_no = 2471
+node_num = 1135 quest_num = 44 subset = 6 node_yes = 2472 node_no = 1136
+node_num = 1136 quest_num = 56 subset = 9 node_yes = 2473 node_no = 1137
+node_num = 1137 quest_num = 48 subset = 0,1,2 node_yes = 1138 node_no = 2474
+node_num = 1138 quest_num = 24 subset = 4 node_yes = 2475 node_no = 1139
+node_num = 1139 quest_num = 42 subset = 3 node_yes = 1140 node_no = 2476
+node_num = 1140 quest_num = 44 subset = 3 node_yes = 2477 node_no = 2478
+node_num = 1141 quest_num = 55 subset = 8 node_yes = 1142 node_no = 1228
+node_num = 1142 quest_num = 19 subset = 4 node_yes = 2479 node_no = 1143
+node_num = 1143 quest_num = 47 subset = 5 node_yes = 2480 node_no = 1190
+node_num = 1144 quest_num = 0 subset = 54,56 node_yes = 2481 node_no = 1145
+node_num = 1145 quest_num = 3 subset = 50 node_yes = 1146 node_no = 2482
+node_num = 1146 quest_num = 4 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 2483 node_no = 2484
+node_num = 1147 quest_num = 1 subset = 37,42 node_yes = 2485 node_no = 1148
+node_num = 1148 quest_num = 42 subset = 4 node_yes = 2486 node_no = 2487
+node_num = 1149 quest_num = 15 subset = 0,1 node_yes = 1150 node_no = 1151
+node_num = 1150 quest_num = 37 subset = 0,1,2,3 node_yes = 1152 node_no = 2488
+node_num = 1151 quest_num = 0 subset = 36,37,38,42,45,46,48,49,52,53,58,59,60,61,62,63,65,66 node_yes = 2489 node_no = 2490
+node_num = 1152 quest_num = 0 subset = 45,46,49,59 node_yes = 1153 node_no = 1155
+node_num = 1153 quest_num = 37 subset = 0,1,2 node_yes = 2491 node_no = 1154
+node_num = 1154 quest_num = 1 subset = 43,57,64 node_yes = 2492 node_no = 2493
+node_num = 1155 quest_num = 11 subset = 1 node_yes = 1156 node_no = 2494
+node_num = 1156 quest_num = 19 subset = 1 node_yes = 1157 node_no = 1158
+node_num = 1157 quest_num = 1 subset = 43,57,64 node_yes = 2495 node_no = 2496
+node_num = 1158 quest_num = 56 subset = 8 node_yes = 1159 node_no = 1160
+node_num = 1159 quest_num = 1 subset = 47,57 node_yes = 2497 node_no = 2498
+node_num = 1160 quest_num = 0 subset = 39,40,51,52 node_yes = 2499 node_no = 1245
+node_num = 1161 quest_num = 0 subset = 42 node_yes = 2500 node_no = 1162
+node_num = 1162 quest_num = 21 subset = 5 node_yes = 2501 node_no = 1163
+node_num = 1163 quest_num = 0 subset = 59 node_yes = 2502 node_no = 1164
+node_num = 1164 quest_num = 3 subset = 46,54,56,59,60,61,62,66 node_yes = 1165 node_no = 2503
+node_num = 1165 quest_num = 1 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 2504 node_no = 2505
+node_num = 1166 quest_num = 45 subset = 6 node_yes = 2506 node_no = 1194
+node_num = 1167 quest_num = 56 subset = 5 node_yes = 1168 node_no = 1170
+node_num = 1168 quest_num = 47 subset = 0,1,2,3 node_yes = 1169 node_no = 2507
+node_num = 1169 quest_num = 3 subset = 43,57,64 node_yes = 2508 node_no = 2509
+node_num = 1170 quest_num = 21 subset = 4 node_yes = 1171 node_no = 1172
+node_num = 1171 quest_num = 0 subset = 36,37,38,42,48,52,61,65,66 node_yes = 2510 node_no = 2511
+node_num = 1172 quest_num = 3 subset = 36,37,38,52,60,66 node_yes = 1173 node_no = 1174
+node_num = 1173 quest_num = 49 subset = 2 node_yes = 2512 node_no = 2513
+node_num = 1174 quest_num = 3 subset = 38,65 node_yes = 1175 node_no = 1178
+node_num = 1175 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 1177 node_no = 1176
+node_num = 1176 quest_num = 47 subset = 4 node_yes = 2514 node_no = 2515
+node_num = 1177 quest_num = 52 subset = 0,1,2 node_yes = 2516 node_no = 2517
+node_num = 1178 quest_num = 33 subset = 2 node_yes = 2518 node_no = 1179
+node_num = 1179 quest_num = 56 subset = 9 node_yes = 2519 node_no = 1206
+node_num = 1180 quest_num = 42 subset = 4 node_yes = 1181 node_no = 2520
+node_num = 1181 quest_num = 0 subset = 47,57 node_yes = 1182 node_no = 2521
+node_num = 1182 quest_num = 24 subset = 6 node_yes = 2522 node_no = 2523
+node_num = 1183 quest_num = 0 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 2524 node_no = 1184
+node_num = 1184 quest_num = 1 subset = 43,57,64 node_yes = 1185 node_no = 2525
+node_num = 1185 quest_num = 37 subset = 2 node_yes = 2526 node_no = 2527
+node_num = 1186 quest_num = 0 subset = 38,65 node_yes = 1187 node_no = 1271
+node_num = 1187 quest_num = 48 subset = 4 node_yes = 2528 node_no = 1188
+node_num = 1188 quest_num = 1 subset = 47 node_yes = 2529 node_no = 1189
+node_num = 1189 quest_num = 48 subset = 0,1,2 node_yes = 2530 node_no = 2531
+node_num = 1190 quest_num = 1 subset = 44 node_yes = 2532 node_no = 1191
+node_num = 1191 quest_num = 4 subset = 62 node_yes = 2533 node_no = 1192
+node_num = 1192 quest_num = 3 subset = 38,65 node_yes = 2534 node_no = 1193
+node_num = 1193 quest_num = 45 subset = 3 node_yes = 2535 node_no = 1213
+node_num = 1194 quest_num = 55 subset = 1 node_yes = 1195 node_no = 2536
+node_num = 1195 quest_num = 43 subset = 6 node_yes = 2537 node_no = 2538
+node_num = 1196 quest_num = 42 subset = 4,5,6 node_yes = 2539 node_no = 1199
+node_num = 1197 quest_num = 33 subset = 0,1 node_yes = 1198 node_no = 2540
+node_num = 1198 quest_num = 37 subset = 0,1,2,3 node_yes = 1214 node_no = 2541
+node_num = 1199 quest_num = 24 subset = 4 node_yes = 1200 node_no = 1201
+node_num = 1200 quest_num = 52 subset = 0,1,2 node_yes = 2542 node_no = 2543
+node_num = 1201 quest_num = 52 subset = 2 node_yes = 2544 node_no = 1202
+node_num = 1202 quest_num = 37 subset = 2 node_yes = 2545 node_no = 1203
+node_num = 1203 quest_num = 0 subset = 53,58,62 node_yes = 2546 node_no = 1204
+node_num = 1204 quest_num = 55 subset = 4 node_yes = 2547 node_no = 2548
+node_num = 1205 quest_num = 0 subset = 40 node_yes = 2549 node_no = 1208
+node_num = 1206 quest_num = 26 subset = 1 node_yes = 2550 node_no = 1207
+node_num = 1207 quest_num = 55 subset = 6 node_yes = 2551 node_no = 1219
+node_num = 1208 quest_num = 0 subset = 45,46,49 node_yes = 2552 node_no = 1209
+node_num = 1209 quest_num = 1 subset = 64 node_yes = 2553 node_no = 1210
+node_num = 1210 quest_num = 5 subset = 4,5 node_yes = 2554 node_no = 2555
+node_num = 1211 quest_num = 42 subset = 0,1,2 node_yes = 1212 node_no = 2556
+node_num = 1212 quest_num = 44 subset = 2 node_yes = 2557 node_no = 2558
+node_num = 1213 quest_num = 1 subset = 50 node_yes = 2559 node_no = 1247
+node_num = 1214 quest_num = 2 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2560 node_no = 1215
+node_num = 1215 quest_num = 56 subset = 5 node_yes = 2561 node_no = 1216
+node_num = 1216 quest_num = 24 subset = 5 node_yes = 2562 node_no = 1217
+node_num = 1217 quest_num = 37 subset = 2 node_yes = 1218 node_no = 2563
+node_num = 1218 quest_num = 1 subset = 43,57,64 node_yes = 2564 node_no = 2565
+node_num = 1219 quest_num = 0 subset = 40 node_yes = 1220 node_no = 2566
+node_num = 1220 quest_num = 3 subset = 37,42 node_yes = 2567 node_no = 2568
+node_num = 1221 quest_num = 55 subset = 4 node_yes = 2569 node_no = 1240
+node_num = 1222 quest_num = 4 subset = 46,59,60,61,62,66 node_yes = 1223 node_no = 2570
+node_num = 1223 quest_num = 3 subset = 43,57,64 node_yes = 2571 node_no = 2572
+node_num = 1224 quest_num = 42 subset = 2 node_yes = 1225 node_no = 2573
+node_num = 1225 quest_num = 50 subset = 0,1,2,3 node_yes = 2574 node_no = 2575
+node_num = 1226 quest_num = 0 subset = 39,40,41,51,54,55,56 node_yes = 1227 node_no = 1260
+node_num = 1227 quest_num = 1 subset = 43,57,64 node_yes = 2576 node_no = 2577
+node_num = 1228 quest_num = 47 subset = 3 node_yes = 1229 node_no = 1230
+node_num = 1229 quest_num = 49 subset = 0,1,2 node_yes = 2578 node_no = 2579
+node_num = 1230 quest_num = 56 subset = 9 node_yes = 1233 node_no = 1231
+node_num = 1231 quest_num = 3 subset = 36,37,38,42,48,52,60,61,65,66 node_yes = 2580 node_no = 1232
+node_num = 1232 quest_num = 43 subset = 5,6 node_yes = 2581 node_no = 1235
+node_num = 1233 quest_num = 52 subset = 0,1,2 node_yes = 1234 node_no = 2582
+node_num = 1234 quest_num = 43 subset = 5 node_yes = 2583 node_no = 2584
+node_num = 1235 quest_num = 3 subset = 36,37,38,39,40,41,45,46,49,51,52,54,55,56,59,60,71,66 node_yes = 1236 node_no = 2585
+node_num = 1236 quest_num = 1 subset = 43,64 node_yes = 2586 node_no = 1237
+node_num = 1237 quest_num = 0 subset = 54,56 node_yes = 2587 node_no = 2588
+node_num = 1238 quest_num = 56 subset = 6,7,8,9 node_yes = 1239 node_no = 2589
+node_num = 1239 quest_num = 37 subset = 1 node_yes = 2590 node_no = 2591
+node_num = 1240 quest_num = 39 subset = 3 node_yes = 2592 node_no = 1357
+node_num = 1241 quest_num = 47 subset = 0,1,2,3 node_yes = 1242 node_no = 2593
+node_num = 1242 quest_num = 55 subset = 1,2,3,4 node_yes = 2594 node_no = 2595
+node_num = 1243 quest_num = 26 subset = 5 node_yes = 1244 node_no = 2596
+node_num = 1244 quest_num = 44 subset = 0,1,2 node_yes = 2597 node_no = 2598
+node_num = 1245 quest_num = 1 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 2599 node_no = 1246
+node_num = 1246 quest_num = 46 subset = 2 node_yes = 2600 node_no = 1249
+node_num = 1247 quest_num = 47 subset = 3 node_yes = 1248 node_no = 2601
+node_num = 1248 quest_num = 43 subset = 5 node_yes = 2602 node_no = 2603
+node_num = 1249 quest_num = 37 subset = 0,1 node_yes = 2604 node_no = 1250
+node_num = 1250 quest_num = 2 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 2605 node_no = 1251
+node_num = 1251 quest_num = 1 subset = 47,57 node_yes = 1255 node_no = 1252
+node_num = 1252 quest_num = 37 subset = 0,1,2 node_yes = 2606 node_no = 1253
+node_num = 1253 quest_num = 0 subset = 46,62,63 node_yes = 1254 node_no = 2607
+node_num = 1254 quest_num = 52 subset = 4 node_yes = 2608 node_no = 2609
+node_num = 1255 quest_num = 55 subset = 8 node_yes = 1256 node_no = 1257
+node_num = 1256 quest_num = 44 subset = 5,6 node_yes = 2610 node_no = 2611
+node_num = 1257 quest_num = 1 subset = 43,57,64 node_yes = 1258 node_no = 2612
+node_num = 1258 quest_num = 52 subset = 5 node_yes = 2613 node_no = 1259
+node_num = 1259 quest_num = 0 subset = 36,37,38,42,45,46,48,49,52,53,58,59,60,61,62,63,65,66 node_yes = 2614 node_no = 2615
+node_num = 1260 quest_num = 11 subset = 1,2 node_yes = 1261 node_no = 2616
+node_num = 1261 quest_num = 46 subset = 1 node_yes = 1262 node_no = 1265
+node_num = 1262 quest_num = 1 subset = 40,54 node_yes = 2617 node_no = 1263
+node_num = 1263 quest_num = 1 subset = 46,54,56,59,60,61,62,66 node_yes = 1264 node_no = 2618
+node_num = 1264 quest_num = 42 subset = 4 node_yes = 2619 node_no = 2620
+node_num = 1265 quest_num = 0 subset = 50 node_yes = 1266 node_no = 1268
+node_num = 1266 quest_num = 42 subset = 4 node_yes = 2621 node_no = 1267
+node_num = 1267 quest_num = 1 subset = 46,59,60,61,62,66 node_yes = 2622 node_no = 1270
+node_num = 1268 quest_num = 42 subset = 1 node_yes = 1269 node_no = 2623
+node_num = 1269 quest_num = 2 subset = 43,44,47,50,57,64 node_yes = 2624 node_no = 2625
+node_num = 1270 quest_num = 17 subset = 0 node_yes = 2626 node_no = 2627
+node_num = 1271 quest_num = 52 subset = 6 node_yes = 1272 node_no = 1292
+node_num = 1272 quest_num = 44 subset = 1 node_yes = 1279 node_no = 1273
+node_num = 1273 quest_num = 48 subset = 4 node_yes = 1278 node_no = 1274
+node_num = 1274 quest_num = 0 subset = 40,54 node_yes = 2628 node_no = 1275
+node_num = 1275 quest_num = 19 subset = 2 node_yes = 2629 node_no = 1276
+node_num = 1276 quest_num = 0 subset = 39,40,46,51,52,54,56,59,60,61,62,63,66 node_yes = 1277 node_no = 1280
+node_num = 1277 quest_num = 24 subset = 4 node_yes = 2630 node_no = 1289
+node_num = 1278 quest_num = 56 subset = 7 node_yes = 2631 node_no = 1287
+node_num = 1279 quest_num = 2 subset = 43,57,64 node_yes = 2632 node_no = 2633
+node_num = 1280 quest_num = 37 subset = 5 node_yes = 2634 node_no = 1281
+node_num = 1281 quest_num = 24 subset = 0,1,2,3,4 node_yes = 1282 node_no = 1283
+node_num = 1282 quest_num = 55 subset = 9 node_yes = 1288 node_no = 2635
+node_num = 1283 quest_num = 35 subset = 0,1 node_yes = 1284 node_no = 2636
+node_num = 1284 quest_num = 0 subset = 47,57 node_yes = 2637 node_no = 1285
+node_num = 1285 quest_num = 17 subset = 3 node_yes = 2638 node_no = 1286
+node_num = 1286 quest_num = 44 subset = 4 node_yes = 2639 node_no = 2640
+node_num = 1287 quest_num = 1 subset = 44 node_yes = 2641 node_no = 2642
+node_num = 1288 quest_num = 1 subset = 36,37,38,42,48,52,60,61,63,65,66 node_yes = 2643 node_no = 2644
+node_num = 1289 quest_num = 46 subset = 7 node_yes = 2645 node_no = 1290
+node_num = 1290 quest_num = 55 subset = 7 node_yes = 1291 node_no = 2646
+node_num = 1291 quest_num = 2 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2647 node_no = 2648
+node_num = 1292 quest_num = 56 subset = 8 node_yes = 2649 node_no = 1293
+node_num = 1293 quest_num = 0 subset = 39 node_yes = 2650 node_no = 1294
+node_num = 1294 quest_num = 13 subset = 5 node_yes = 2651 node_no = 1295
+node_num = 1295 quest_num = 19 subset = 2 node_yes = 1296 node_no = 1297
+node_num = 1296 quest_num = 48 subset = 3 node_yes = 2652 node_no = 2653
+node_num = 1297 quest_num = 2 subset = 47 node_yes = 2654 node_no = 1298
+node_num = 1298 quest_num = 46 subset = 1 node_yes = 1299 node_no = 1302
+node_num = 1299 quest_num = 1 subset = 47 node_yes = 2655 node_no = 1300
+node_num = 1300 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 1301 node_no = 2656
+node_num = 1301 quest_num = 55 subset = 8 node_yes = 2657 node_no = 1350
+node_num = 1302 quest_num = 52 subset = 0,1,2,3 node_yes = 1303 node_no = 1305
+node_num = 1303 quest_num = 17 subset = 5,6 node_yes = 1329 node_no = 1304
+node_num = 1304 quest_num = 2 subset = 43,64 node_yes = 2658 node_no = 1309
+node_num = 1305 quest_num = 0 subset = 42,48,53,58,61,62,63,70,65 node_yes = 1306 node_no = 1316
+node_num = 1306 quest_num = 51 subset = 0,1,2 node_yes = 1314 node_no = 1307
+node_num = 1307 quest_num = 46 subset = 5 node_yes = 2659 node_no = 1308
+node_num = 1308 quest_num = 1 subset = 47 node_yes = 1328 node_no = 1310
+node_num = 1309 quest_num = 51 subset = 6 node_yes = 1327 node_no = 1312
+node_num = 1310 quest_num = 44 subset = 0,1,2 node_yes = 1311 node_no = 2660
+node_num = 1311 quest_num = 1 subset = 43,57,64 node_yes = 2661 node_no = 2662
+node_num = 1312 quest_num = 1 subset = 36,37,42,45,48,55,58 node_yes = 2663 node_no = 1313
+node_num = 1313 quest_num = 0 subset = 59 node_yes = 2664 node_no = 2665
+node_num = 1314 quest_num = 50 subset = 5,6,7,8 node_yes = 1315 node_no = 2666
+node_num = 1315 quest_num = 1 subset = 47 node_yes = 2667 node_no = 2668
+node_num = 1316 quest_num = 0 subset = 36,45,55,58 node_yes = 1317 node_no = 1318
+node_num = 1317 quest_num = 17 subset = 0,1 node_yes = 2669 node_no = 2670
+node_num = 1318 quest_num = 11 subset = 1 node_yes = 1319 node_no = 2671
+node_num = 1319 quest_num = 17 subset = 5,6 node_yes = 1320 node_no = 1321
+node_num = 1320 quest_num = 46 subset = 6 node_yes = 2672 node_no = 1325
+node_num = 1321 quest_num = 15 subset = 5 node_yes = 2673 node_no = 1322
+node_num = 1322 quest_num = 24 subset = 5 node_yes = 1326 node_no = 1323
+node_num = 1323 quest_num = 17 subset = 3 node_yes = 1324 node_no = 1330
+node_num = 1324 quest_num = 0 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2674 node_no = 2675
+node_num = 1325 quest_num = 0 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2676 node_no = 2677
+node_num = 1326 quest_num = 44 subset = 0,1,2 node_yes = 2678 node_no = 2679
+node_num = 1327 quest_num = 0 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2680 node_no = 2681
+node_num = 1328 quest_num = 48 subset = 5,6,7 node_yes = 2682 node_no = 2683
+node_num = 1329 quest_num = 48 subset = 5 node_yes = 2684 node_no = 2685
+node_num = 1330 quest_num = 0 subset = 44,47,50 node_yes = 1331 node_no = 1332
+node_num = 1331 quest_num = 52 subset = 4 node_yes = 2686 node_no = 1333
+node_num = 1332 quest_num = 48 subset = 1 node_yes = 2687 node_no = 1336
+node_num = 1333 quest_num = 48 subset = 0,1,2 node_yes = 1334 node_no = 2688
+node_num = 1334 quest_num = 1 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2689 node_no = 1335
+node_num = 1335 quest_num = 1 subset = 54,56 node_yes = 2690 node_no = 1341
+node_num = 1336 quest_num = 44 subset = 2 node_yes = 1338 node_no = 1337
+node_num = 1337 quest_num = 1 subset = 46,54,56,59,60,61,62,63,66 node_yes = 2691 node_no = 1340
+node_num = 1338 quest_num = 0 subset = 46,59,62,63 node_yes = 2692 node_no = 1339
+node_num = 1339 quest_num = 1 subset = 39,40,41,43,44,47,50,51,54,55,56,57,64 node_yes = 2693 node_no = 2694
+node_num = 1340 quest_num = 37 subset = 2 node_yes = 2695 node_no = 1342
+node_num = 1341 quest_num = 2 subset = 36,37,42,44,45,47,48,50,55,58 node_yes = 2696 node_no = 2697
+node_num = 1342 quest_num = 15 subset = 1 node_yes = 2698 node_no = 1343
+node_num = 1343 quest_num = 0 subset = 46,54,56,59,60,61,62,66 node_yes = 1345 node_no = 1344
+node_num = 1344 quest_num = 35 subset = 0,1 node_yes = 1347 node_no = 1346
+node_num = 1345 quest_num = 24 subset = 7 node_yes = 2699 node_no = 1348
+node_num = 1346 quest_num = 37 subset = 5 node_yes = 2700 node_no = 2701
+node_num = 1347 quest_num = 24 subset = 6 node_yes = 2702 node_no = 2703
+node_num = 1348 quest_num = 42 subset = 0,1,2 node_yes = 1349 node_no = 2704
+node_num = 1349 quest_num = 1 subset = 44,47,50 node_yes = 2705 node_no = 2706
+node_num = 1350 quest_num = 0 subset = 43,64 node_yes = 2707 node_no = 1351
+node_num = 1351 quest_num = 2 subset = 44,47,50 node_yes = 2708 node_no = 1352
+node_num = 1352 quest_num = 52 subset = 4 node_yes = 2709 node_no = 1353
+node_num = 1353 quest_num = 0 subset = 43,57,64 node_yes = 2710 node_no = 1354
+node_num = 1354 quest_num = 52 subset = 3 node_yes = 1355 node_no = 2711
+node_num = 1355 quest_num = 1 subset = 46,54,56,59,60,61,62,66 node_yes = 2712 node_no = 1356
+node_num = 1356 quest_num = 55 subset = 6 node_yes = 2713 node_no = 2714
+node_num = 1357 quest_num = 45 subset = 0,1,2 node_yes = 2715 node_no = 1358
+node_num = 1358 quest_num = 54 subset = 0 node_yes = 2716 node_no = 2717
+node_num = 1359 decision = 1
+node_num = 1360 decision = 2
+node_num = 1361 decision = 3
+node_num = 1362 decision = 4
+node_num = 1363 decision = 5
+node_num = 1364 decision = 6
+node_num = 1365 decision = 7
+node_num = 1366 decision = 8
+node_num = 1367 decision = 9
+node_num = 1368 decision = 10
+node_num = 1369 decision = 11
+node_num = 1370 decision = 12
+node_num = 1371 decision = 13
+node_num = 1372 decision = 14
+node_num = 1373 decision = 15
+node_num = 1374 decision = 16
+node_num = 1375 decision = 17
+node_num = 1376 decision = 18
+node_num = 1377 decision = 19
+node_num = 1378 decision = 20
+node_num = 1379 decision = 21
+node_num = 1380 decision = 22
+node_num = 1381 decision = 23
+node_num = 1382 decision = 24
+node_num = 1383 decision = 25
+node_num = 1384 decision = 26
+node_num = 1385 decision = 27
+node_num = 1386 decision = 28
+node_num = 1387 decision = 29
+node_num = 1388 decision = 30
+node_num = 1389 decision = 31
+node_num = 1390 decision = 32
+node_num = 1391 decision = 33
+node_num = 1392 decision = 34
+node_num = 1393 decision = 35
+node_num = 1394 decision = 36
+node_num = 1395 decision = 37
+node_num = 1396 decision = 38
+node_num = 1397 decision = 39
+node_num = 1398 decision = 40
+node_num = 1399 decision = 41
+node_num = 1400 decision = 42
+node_num = 1401 decision = 43
+node_num = 1402 decision = 44
+node_num = 1403 decision = 45
+node_num = 1404 decision = 46
+node_num = 1405 decision = 47
+node_num = 1406 decision = 48
+node_num = 1407 decision = 49
+node_num = 1408 decision = 50
+node_num = 1409 decision = 51
+node_num = 1410 decision = 52
+node_num = 1411 decision = 53
+node_num = 1412 decision = 54
+node_num = 1413 decision = 55
+node_num = 1414 decision = 56
+node_num = 1415 decision = 57
+node_num = 1416 decision = 58
+node_num = 1417 decision = 59
+node_num = 1418 decision = 60
+node_num = 1419 decision = 61
+node_num = 1420 decision = 62
+node_num = 1421 decision = 63
+node_num = 1422 decision = 64
+node_num = 1423 decision = 65
+node_num = 1424 decision = 66
+node_num = 1425 decision = 67
+node_num = 1426 decision = 68
+node_num = 1427 decision = 69
+node_num = 1428 decision = 70
+node_num = 1429 decision = 71
+node_num = 1430 decision = 72
+node_num = 1431 decision = 73
+node_num = 1432 decision = 74
+node_num = 1433 decision = 75
+node_num = 1434 decision = 76
+node_num = 1435 decision = 77
+node_num = 1436 decision = 78
+node_num = 1437 decision = 79
+node_num = 1438 decision = 80
+node_num = 1439 decision = 81
+node_num = 1440 decision = 82
+node_num = 1441 decision = 83
+node_num = 1442 decision = 84
+node_num = 1443 decision = 85
+node_num = 1444 decision = 86
+node_num = 1445 decision = 87
+node_num = 1446 decision = 88
+node_num = 1447 decision = 89
+node_num = 1448 decision = 90
+node_num = 1449 decision = 91
+node_num = 1450 decision = 92
+node_num = 1451 decision = 93
+node_num = 1452 decision = 94
+node_num = 1453 decision = 95
+node_num = 1454 decision = 96
+node_num = 1455 decision = 97
+node_num = 1456 decision = 98
+node_num = 1457 decision = 99
+node_num = 1458 decision = 100
+node_num = 1459 decision = 101
+node_num = 1460 decision = 102
+node_num = 1461 decision = 103
+node_num = 1462 decision = 104
+node_num = 1463 decision = 105
+node_num = 1464 decision = 106
+node_num = 1465 decision = 107
+node_num = 1466 decision = 108
+node_num = 1467 decision = 109
+node_num = 1468 decision = 110
+node_num = 1469 decision = 111
+node_num = 1470 decision = 112
+node_num = 1471 decision = 113
+node_num = 1472 decision = 114
+node_num = 1473 decision = 115
+node_num = 1474 decision = 116
+node_num = 1475 decision = 117
+node_num = 1476 decision = 118
+node_num = 1477 decision = 119
+node_num = 1478 decision = 120
+node_num = 1479 decision = 121
+node_num = 1480 decision = 122
+node_num = 1481 decision = 123
+node_num = 1482 decision = 124
+node_num = 1483 decision = 125
+node_num = 1484 decision = 126
+node_num = 1485 decision = 127
+node_num = 1486 decision = 128
+node_num = 1487 decision = 129
+node_num = 1488 decision = 130
+node_num = 1489 decision = 131
+node_num = 1490 decision = 132
+node_num = 1491 decision = 133
+node_num = 1492 decision = 134
+node_num = 1493 decision = 135
+node_num = 1494 decision = 136
+node_num = 1495 decision = 137
+node_num = 1496 decision = 138
+node_num = 1497 decision = 139
+node_num = 1498 decision = 140
+node_num = 1499 decision = 141
+node_num = 1500 decision = 142
+node_num = 1501 decision = 143
+node_num = 1502 decision = 144
+node_num = 1503 decision = 145
+node_num = 1504 decision = 146
+node_num = 1505 decision = 147
+node_num = 1506 decision = 148
+node_num = 1507 decision = 149
+node_num = 1508 decision = 150
+node_num = 1509 decision = 151
+node_num = 1510 decision = 152
+node_num = 1511 decision = 153
+node_num = 1512 decision = 154
+node_num = 1513 decision = 155
+node_num = 1514 decision = 156
+node_num = 1515 decision = 157
+node_num = 1516 decision = 158
+node_num = 1517 decision = 159
+node_num = 1518 decision = 160
+node_num = 1519 decision = 161
+node_num = 1520 decision = 162
+node_num = 1521 decision = 163
+node_num = 1522 decision = 164
+node_num = 1523 decision = 165
+node_num = 1524 decision = 166
+node_num = 1525 decision = 167
+node_num = 1526 decision = 168
+node_num = 1527 decision = 169
+node_num = 1528 decision = 170
+node_num = 1529 decision = 171
+node_num = 1530 decision = 172
+node_num = 1531 decision = 173
+node_num = 1532 decision = 174
+node_num = 1533 decision = 175
+node_num = 1534 decision = 176
+node_num = 1535 decision = 177
+node_num = 1536 decision = 178
+node_num = 1537 decision = 179
+node_num = 1538 decision = 180
+node_num = 1539 decision = 181
+node_num = 1540 decision = 182
+node_num = 1541 decision = 183
+node_num = 1542 decision = 184
+node_num = 1543 decision = 185
+node_num = 1544 decision = 186
+node_num = 1545 decision = 187
+node_num = 1546 decision = 188
+node_num = 1547 decision = 189
+node_num = 1548 decision = 190
+node_num = 1549 decision = 191
+node_num = 1550 decision = 192
+node_num = 1551 decision = 193
+node_num = 1552 decision = 194
+node_num = 1553 decision = 195
+node_num = 1554 decision = 196
+node_num = 1555 decision = 197
+node_num = 1556 decision = 198
+node_num = 1557 decision = 199
+node_num = 1558 decision = 200
+node_num = 1559 decision = 201
+node_num = 1560 decision = 202
+node_num = 1561 decision = 203
+node_num = 1562 decision = 204
+node_num = 1563 decision = 205
+node_num = 1564 decision = 206
+node_num = 1565 decision = 207
+node_num = 1566 decision = 208
+node_num = 1567 decision = 209
+node_num = 1568 decision = 210
+node_num = 1569 decision = 211
+node_num = 1570 decision = 212
+node_num = 1571 decision = 213
+node_num = 1572 decision = 214
+node_num = 1573 decision = 215
+node_num = 1574 decision = 216
+node_num = 1575 decision = 217
+node_num = 1576 decision = 218
+node_num = 1577 decision = 219
+node_num = 1578 decision = 220
+node_num = 1579 decision = 221
+node_num = 1580 decision = 222
+node_num = 1581 decision = 223
+node_num = 1582 decision = 224
+node_num = 1583 decision = 225
+node_num = 1584 decision = 226
+node_num = 1585 decision = 227
+node_num = 1586 decision = 228
+node_num = 1587 decision = 229
+node_num = 1588 decision = 230
+node_num = 1589 decision = 231
+node_num = 1590 decision = 232
+node_num = 1591 decision = 233
+node_num = 1592 decision = 234
+node_num = 1593 decision = 235
+node_num = 1594 decision = 236
+node_num = 1595 decision = 237
+node_num = 1596 decision = 238
+node_num = 1597 decision = 239
+node_num = 1598 decision = 240
+node_num = 1599 decision = 241
+node_num = 1600 decision = 242
+node_num = 1601 decision = 243
+node_num = 1602 decision = 244
+node_num = 1603 decision = 245
+node_num = 1604 decision = 246
+node_num = 1605 decision = 247
+node_num = 1606 decision = 248
+node_num = 1607 decision = 249
+node_num = 1608 decision = 250
+node_num = 1609 decision = 251
+node_num = 1610 decision = 252
+node_num = 1611 decision = 253
+node_num = 1612 decision = 254
+node_num = 1613 decision = 255
+node_num = 1614 decision = 256
+node_num = 1615 decision = 257
+node_num = 1616 decision = 258
+node_num = 1617 decision = 259
+node_num = 1618 decision = 260
+node_num = 1619 decision = 261
+node_num = 1620 decision = 262
+node_num = 1621 decision = 263
+node_num = 1622 decision = 264
+node_num = 1623 decision = 265
+node_num = 1624 decision = 266
+node_num = 1625 decision = 267
+node_num = 1626 decision = 268
+node_num = 1627 decision = 269
+node_num = 1628 decision = 270
+node_num = 1629 decision = 271
+node_num = 1630 decision = 272
+node_num = 1631 decision = 273
+node_num = 1632 decision = 274
+node_num = 1633 decision = 275
+node_num = 1634 decision = 276
+node_num = 1635 decision = 277
+node_num = 1636 decision = 278
+node_num = 1637 decision = 279
+node_num = 1638 decision = 280
+node_num = 1639 decision = 281
+node_num = 1640 decision = 282
+node_num = 1641 decision = 283
+node_num = 1642 decision = 284
+node_num = 1643 decision = 285
+node_num = 1644 decision = 286
+node_num = 1645 decision = 287
+node_num = 1646 decision = 288
+node_num = 1647 decision = 289
+node_num = 1648 decision = 290
+node_num = 1649 decision = 291
+node_num = 1650 decision = 292
+node_num = 1651 decision = 293
+node_num = 1652 decision = 294
+node_num = 1653 decision = 295
+node_num = 1654 decision = 296
+node_num = 1655 decision = 297
+node_num = 1656 decision = 298
+node_num = 1657 decision = 299
+node_num = 1658 decision = 300
+node_num = 1659 decision = 301
+node_num = 1660 decision = 302
+node_num = 1661 decision = 303
+node_num = 1662 decision = 304
+node_num = 1663 decision = 305
+node_num = 1664 decision = 306
+node_num = 1665 decision = 307
+node_num = 1666 decision = 308
+node_num = 1667 decision = 309
+node_num = 1668 decision = 310
+node_num = 1669 decision = 311
+node_num = 1670 decision = 312
+node_num = 1671 decision = 313
+node_num = 1672 decision = 314
+node_num = 1673 decision = 315
+node_num = 1674 decision = 316
+node_num = 1675 decision = 317
+node_num = 1676 decision = 318
+node_num = 1677 decision = 319
+node_num = 1678 decision = 320
+node_num = 1679 decision = 321
+node_num = 1680 decision = 322
+node_num = 1681 decision = 323
+node_num = 1682 decision = 324
+node_num = 1683 decision = 325
+node_num = 1684 decision = 326
+node_num = 1685 decision = 327
+node_num = 1686 decision = 328
+node_num = 1687 decision = 329
+node_num = 1688 decision = 330
+node_num = 1689 decision = 331
+node_num = 1690 decision = 332
+node_num = 1691 decision = 333
+node_num = 1692 decision = 334
+node_num = 1693 decision = 335
+node_num = 1694 decision = 336
+node_num = 1695 decision = 337
+node_num = 1696 decision = 338
+node_num = 1697 decision = 339
+node_num = 1698 decision = 340
+node_num = 1699 decision = 341
+node_num = 1700 decision = 342
+node_num = 1701 decision = 343
+node_num = 1702 decision = 344
+node_num = 1703 decision = 345
+node_num = 1704 decision = 346
+node_num = 1705 decision = 347
+node_num = 1706 decision = 348
+node_num = 1707 decision = 349
+node_num = 1708 decision = 350
+node_num = 1709 decision = 351
+node_num = 1710 decision = 352
+node_num = 1711 decision = 353
+node_num = 1712 decision = 354
+node_num = 1713 decision = 355
+node_num = 1714 decision = 356
+node_num = 1715 decision = 357
+node_num = 1716 decision = 358
+node_num = 1717 decision = 359
+node_num = 1718 decision = 360
+node_num = 1719 decision = 361
+node_num = 1720 decision = 362
+node_num = 1721 decision = 363
+node_num = 1722 decision = 364
+node_num = 1723 decision = 365
+node_num = 1724 decision = 366
+node_num = 1725 decision = 367
+node_num = 1726 decision = 368
+node_num = 1727 decision = 369
+node_num = 1728 decision = 370
+node_num = 1729 decision = 371
+node_num = 1730 decision = 372
+node_num = 1731 decision = 373
+node_num = 1732 decision = 374
+node_num = 1733 decision = 375
+node_num = 1734 decision = 376
+node_num = 1735 decision = 377
+node_num = 1736 decision = 378
+node_num = 1737 decision = 379
+node_num = 1738 decision = 380
+node_num = 1739 decision = 381
+node_num = 1740 decision = 382
+node_num = 1741 decision = 383
+node_num = 1742 decision = 384
+node_num = 1743 decision = 385
+node_num = 1744 decision = 386
+node_num = 1745 decision = 387
+node_num = 1746 decision = 388
+node_num = 1747 decision = 389
+node_num = 1748 decision = 390
+node_num = 1749 decision = 391
+node_num = 1750 decision = 392
+node_num = 1751 decision = 393
+node_num = 1752 decision = 394
+node_num = 1753 decision = 395
+node_num = 1754 decision = 396
+node_num = 1755 decision = 397
+node_num = 1756 decision = 398
+node_num = 1757 decision = 399
+node_num = 1758 decision = 400
+node_num = 1759 decision = 401
+node_num = 1760 decision = 402
+node_num = 1761 decision = 403
+node_num = 1762 decision = 404
+node_num = 1763 decision = 405
+node_num = 1764 decision = 406
+node_num = 1765 decision = 407
+node_num = 1766 decision = 408
+node_num = 1767 decision = 409
+node_num = 1768 decision = 410
+node_num = 1769 decision = 411
+node_num = 1770 decision = 412
+node_num = 1771 decision = 413
+node_num = 1772 decision = 414
+node_num = 1773 decision = 415
+node_num = 1774 decision = 416
+node_num = 1775 decision = 417
+node_num = 1776 decision = 418
+node_num = 1777 decision = 419
+node_num = 1778 decision = 420
+node_num = 1779 decision = 421
+node_num = 1780 decision = 422
+node_num = 1781 decision = 423
+node_num = 1782 decision = 424
+node_num = 1783 decision = 425
+node_num = 1784 decision = 426
+node_num = 1785 decision = 427
+node_num = 1786 decision = 428
+node_num = 1787 decision = 429
+node_num = 1788 decision = 430
+node_num = 1789 decision = 431
+node_num = 1790 decision = 432
+node_num = 1791 decision = 433
+node_num = 1792 decision = 434
+node_num = 1793 decision = 435
+node_num = 1794 decision = 436
+node_num = 1795 decision = 437
+node_num = 1796 decision = 438
+node_num = 1797 decision = 439
+node_num = 1798 decision = 440
+node_num = 1799 decision = 441
+node_num = 1800 decision = 442
+node_num = 1801 decision = 443
+node_num = 1802 decision = 444
+node_num = 1803 decision = 445
+node_num = 1804 decision = 446
+node_num = 1805 decision = 447
+node_num = 1806 decision = 448
+node_num = 1807 decision = 449
+node_num = 1808 decision = 450
+node_num = 1809 decision = 451
+node_num = 1810 decision = 452
+node_num = 1811 decision = 453
+node_num = 1812 decision = 454
+node_num = 1813 decision = 455
+node_num = 1814 decision = 456
+node_num = 1815 decision = 457
+node_num = 1816 decision = 458
+node_num = 1817 decision = 459
+node_num = 1818 decision = 460
+node_num = 1819 decision = 461
+node_num = 1820 decision = 462
+node_num = 1821 decision = 463
+node_num = 1822 decision = 464
+node_num = 1823 decision = 465
+node_num = 1824 decision = 466
+node_num = 1825 decision = 467
+node_num = 1826 decision = 468
+node_num = 1827 decision = 469
+node_num = 1828 decision = 470
+node_num = 1829 decision = 471
+node_num = 1830 decision = 472
+node_num = 1831 decision = 473
+node_num = 1832 decision = 474
+node_num = 1833 decision = 475
+node_num = 1834 decision = 476
+node_num = 1835 decision = 477
+node_num = 1836 decision = 478
+node_num = 1837 decision = 479
+node_num = 1838 decision = 480
+node_num = 1839 decision = 481
+node_num = 1840 decision = 482
+node_num = 1841 decision = 483
+node_num = 1842 decision = 484
+node_num = 1843 decision = 485
+node_num = 1844 decision = 486
+node_num = 1845 decision = 487
+node_num = 1846 decision = 488
+node_num = 1847 decision = 489
+node_num = 1848 decision = 490
+node_num = 1849 decision = 491
+node_num = 1850 decision = 492
+node_num = 1851 decision = 493
+node_num = 1852 decision = 494
+node_num = 1853 decision = 495
+node_num = 1854 decision = 496
+node_num = 1855 decision = 497
+node_num = 1856 decision = 498
+node_num = 1857 decision = 499
+node_num = 1858 decision = 500
+node_num = 1859 decision = 501
+node_num = 1860 decision = 502
+node_num = 1861 decision = 503
+node_num = 1862 decision = 504
+node_num = 1863 decision = 505
+node_num = 1864 decision = 506
+node_num = 1865 decision = 507
+node_num = 1866 decision = 508
+node_num = 1867 decision = 509
+node_num = 1868 decision = 510
+node_num = 1869 decision = 511
+node_num = 1870 decision = 512
+node_num = 1871 decision = 513
+node_num = 1872 decision = 514
+node_num = 1873 decision = 515
+node_num = 1874 decision = 516
+node_num = 1875 decision = 517
+node_num = 1876 decision = 518
+node_num = 1877 decision = 519
+node_num = 1878 decision = 520
+node_num = 1879 decision = 521
+node_num = 1880 decision = 522
+node_num = 1881 decision = 523
+node_num = 1882 decision = 524
+node_num = 1883 decision = 525
+node_num = 1884 decision = 526
+node_num = 1885 decision = 527
+node_num = 1886 decision = 528
+node_num = 1887 decision = 529
+node_num = 1888 decision = 530
+node_num = 1889 decision = 531
+node_num = 1890 decision = 532
+node_num = 1891 decision = 533
+node_num = 1892 decision = 534
+node_num = 1893 decision = 535
+node_num = 1894 decision = 536
+node_num = 1895 decision = 537
+node_num = 1896 decision = 538
+node_num = 1897 decision = 539
+node_num = 1898 decision = 540
+node_num = 1899 decision = 541
+node_num = 1900 decision = 542
+node_num = 1901 decision = 543
+node_num = 1902 decision = 544
+node_num = 1903 decision = 545
+node_num = 1904 decision = 546
+node_num = 1905 decision = 547
+node_num = 1906 decision = 548
+node_num = 1907 decision = 549
+node_num = 1908 decision = 550
+node_num = 1909 decision = 551
+node_num = 1910 decision = 552
+node_num = 1911 decision = 553
+node_num = 1912 decision = 554
+node_num = 1913 decision = 555
+node_num = 1914 decision = 556
+node_num = 1915 decision = 557
+node_num = 1916 decision = 558
+node_num = 1917 decision = 559
+node_num = 1918 decision = 560
+node_num = 1919 decision = 561
+node_num = 1920 decision = 562
+node_num = 1921 decision = 563
+node_num = 1922 decision = 564
+node_num = 1923 decision = 565
+node_num = 1924 decision = 566
+node_num = 1925 decision = 567
+node_num = 1926 decision = 568
+node_num = 1927 decision = 569
+node_num = 1928 decision = 570
+node_num = 1929 decision = 571
+node_num = 1930 decision = 572
+node_num = 1931 decision = 573
+node_num = 1932 decision = 574
+node_num = 1933 decision = 575
+node_num = 1934 decision = 576
+node_num = 1935 decision = 577
+node_num = 1936 decision = 578
+node_num = 1937 decision = 579
+node_num = 1938 decision = 580
+node_num = 1939 decision = 581
+node_num = 1940 decision = 582
+node_num = 1941 decision = 583
+node_num = 1942 decision = 584
+node_num = 1943 decision = 585
+node_num = 1944 decision = 586
+node_num = 1945 decision = 587
+node_num = 1946 decision = 588
+node_num = 1947 decision = 589
+node_num = 1948 decision = 590
+node_num = 1949 decision = 591
+node_num = 1950 decision = 592
+node_num = 1951 decision = 593
+node_num = 1952 decision = 594
+node_num = 1953 decision = 595
+node_num = 1954 decision = 596
+node_num = 1955 decision = 597
+node_num = 1956 decision = 598
+node_num = 1957 decision = 599
+node_num = 1958 decision = 600
+node_num = 1959 decision = 601
+node_num = 1960 decision = 602
+node_num = 1961 decision = 603
+node_num = 1962 decision = 604
+node_num = 1963 decision = 605
+node_num = 1964 decision = 606
+node_num = 1965 decision = 607
+node_num = 1966 decision = 608
+node_num = 1967 decision = 609
+node_num = 1968 decision = 610
+node_num = 1969 decision = 611
+node_num = 1970 decision = 612
+node_num = 1971 decision = 613
+node_num = 1972 decision = 614
+node_num = 1973 decision = 615
+node_num = 1974 decision = 616
+node_num = 1975 decision = 617
+node_num = 1976 decision = 618
+node_num = 1977 decision = 619
+node_num = 1978 decision = 620
+node_num = 1979 decision = 621
+node_num = 1980 decision = 622
+node_num = 1981 decision = 623
+node_num = 1982 decision = 624
+node_num = 1983 decision = 625
+node_num = 1984 decision = 626
+node_num = 1985 decision = 627
+node_num = 1986 decision = 628
+node_num = 1987 decision = 629
+node_num = 1988 decision = 630
+node_num = 1989 decision = 631
+node_num = 1990 decision = 632
+node_num = 1991 decision = 633
+node_num = 1992 decision = 634
+node_num = 1993 decision = 635
+node_num = 1994 decision = 636
+node_num = 1995 decision = 637
+node_num = 1996 decision = 638
+node_num = 1997 decision = 639
+node_num = 1998 decision = 640
+node_num = 1999 decision = 641
+node_num = 2000 decision = 642
+node_num = 2001 decision = 643
+node_num = 2002 decision = 644
+node_num = 2003 decision = 645
+node_num = 2004 decision = 646
+node_num = 2005 decision = 647
+node_num = 2006 decision = 648
+node_num = 2007 decision = 649
+node_num = 2008 decision = 650
+node_num = 2009 decision = 651
+node_num = 2010 decision = 652
+node_num = 2011 decision = 653
+node_num = 2012 decision = 654
+node_num = 2013 decision = 655
+node_num = 2014 decision = 656
+node_num = 2015 decision = 657
+node_num = 2016 decision = 658
+node_num = 2017 decision = 659
+node_num = 2018 decision = 660
+node_num = 2019 decision = 661
+node_num = 2020 decision = 662
+node_num = 2021 decision = 663
+node_num = 2022 decision = 664
+node_num = 2023 decision = 665
+node_num = 2024 decision = 666
+node_num = 2025 decision = 667
+node_num = 2026 decision = 668
+node_num = 2027 decision = 669
+node_num = 2028 decision = 670
+node_num = 2029 decision = 671
+node_num = 2030 decision = 672
+node_num = 2031 decision = 673
+node_num = 2032 decision = 674
+node_num = 2033 decision = 675
+node_num = 2034 decision = 676
+node_num = 2035 decision = 677
+node_num = 2036 decision = 678
+node_num = 2037 decision = 679
+node_num = 2038 decision = 680
+node_num = 2039 decision = 681
+node_num = 2040 decision = 682
+node_num = 2041 decision = 683
+node_num = 2042 decision = 684
+node_num = 2043 decision = 685
+node_num = 2044 decision = 686
+node_num = 2045 decision = 687
+node_num = 2046 decision = 688
+node_num = 2047 decision = 689
+node_num = 2048 decision = 690
+node_num = 2049 decision = 691
+node_num = 2050 decision = 692
+node_num = 2051 decision = 693
+node_num = 2052 decision = 694
+node_num = 2053 decision = 695
+node_num = 2054 decision = 696
+node_num = 2055 decision = 697
+node_num = 2056 decision = 698
+node_num = 2057 decision = 699
+node_num = 2058 decision = 700
+node_num = 2059 decision = 701
+node_num = 2060 decision = 702
+node_num = 2061 decision = 703
+node_num = 2062 decision = 704
+node_num = 2063 decision = 705
+node_num = 2064 decision = 706
+node_num = 2065 decision = 707
+node_num = 2066 decision = 708
+node_num = 2067 decision = 709
+node_num = 2068 decision = 710
+node_num = 2069 decision = 711
+node_num = 2070 decision = 712
+node_num = 2071 decision = 713
+node_num = 2072 decision = 714
+node_num = 2073 decision = 715
+node_num = 2074 decision = 716
+node_num = 2075 decision = 717
+node_num = 2076 decision = 718
+node_num = 2077 decision = 719
+node_num = 2078 decision = 720
+node_num = 2079 decision = 721
+node_num = 2080 decision = 722
+node_num = 2081 decision = 723
+node_num = 2082 decision = 724
+node_num = 2083 decision = 725
+node_num = 2084 decision = 726
+node_num = 2085 decision = 727
+node_num = 2086 decision = 728
+node_num = 2087 decision = 729
+node_num = 2088 decision = 730
+node_num = 2089 decision = 731
+node_num = 2090 decision = 732
+node_num = 2091 decision = 733
+node_num = 2092 decision = 734
+node_num = 2093 decision = 735
+node_num = 2094 decision = 736
+node_num = 2095 decision = 737
+node_num = 2096 decision = 738
+node_num = 2097 decision = 739
+node_num = 2098 decision = 740
+node_num = 2099 decision = 741
+node_num = 2100 decision = 742
+node_num = 2101 decision = 743
+node_num = 2102 decision = 744
+node_num = 2103 decision = 745
+node_num = 2104 decision = 746
+node_num = 2105 decision = 747
+node_num = 2106 decision = 748
+node_num = 2107 decision = 749
+node_num = 2108 decision = 750
+node_num = 2109 decision = 751
+node_num = 2110 decision = 752
+node_num = 2111 decision = 753
+node_num = 2112 decision = 754
+node_num = 2113 decision = 755
+node_num = 2114 decision = 756
+node_num = 2115 decision = 757
+node_num = 2116 decision = 758
+node_num = 2117 decision = 759
+node_num = 2118 decision = 760
+node_num = 2119 decision = 761
+node_num = 2120 decision = 762
+node_num = 2121 decision = 763
+node_num = 2122 decision = 764
+node_num = 2123 decision = 765
+node_num = 2124 decision = 766
+node_num = 2125 decision = 767
+node_num = 2126 decision = 768
+node_num = 2127 decision = 769
+node_num = 2128 decision = 770
+node_num = 2129 decision = 771
+node_num = 2130 decision = 772
+node_num = 2131 decision = 773
+node_num = 2132 decision = 774
+node_num = 2133 decision = 775
+node_num = 2134 decision = 776
+node_num = 2135 decision = 777
+node_num = 2136 decision = 778
+node_num = 2137 decision = 779
+node_num = 2138 decision = 780
+node_num = 2139 decision = 781
+node_num = 2140 decision = 782
+node_num = 2141 decision = 783
+node_num = 2142 decision = 784
+node_num = 2143 decision = 785
+node_num = 2144 decision = 786
+node_num = 2145 decision = 787
+node_num = 2146 decision = 788
+node_num = 2147 decision = 789
+node_num = 2148 decision = 790
+node_num = 2149 decision = 791
+node_num = 2150 decision = 792
+node_num = 2151 decision = 793
+node_num = 2152 decision = 794
+node_num = 2153 decision = 795
+node_num = 2154 decision = 796
+node_num = 2155 decision = 797
+node_num = 2156 decision = 798
+node_num = 2157 decision = 799
+node_num = 2158 decision = 800
+node_num = 2159 decision = 801
+node_num = 2160 decision = 802
+node_num = 2161 decision = 803
+node_num = 2162 decision = 804
+node_num = 2163 decision = 805
+node_num = 2164 decision = 806
+node_num = 2165 decision = 807
+node_num = 2166 decision = 808
+node_num = 2167 decision = 809
+node_num = 2168 decision = 810
+node_num = 2169 decision = 811
+node_num = 2170 decision = 812
+node_num = 2171 decision = 813
+node_num = 2172 decision = 814
+node_num = 2173 decision = 815
+node_num = 2174 decision = 816
+node_num = 2175 decision = 817
+node_num = 2176 decision = 818
+node_num = 2177 decision = 819
+node_num = 2178 decision = 820
+node_num = 2179 decision = 821
+node_num = 2180 decision = 822
+node_num = 2181 decision = 823
+node_num = 2182 decision = 824
+node_num = 2183 decision = 825
+node_num = 2184 decision = 826
+node_num = 2185 decision = 827
+node_num = 2186 decision = 828
+node_num = 2187 decision = 829
+node_num = 2188 decision = 830
+node_num = 2189 decision = 831
+node_num = 2190 decision = 832
+node_num = 2191 decision = 833
+node_num = 2192 decision = 834
+node_num = 2193 decision = 835
+node_num = 2194 decision = 836
+node_num = 2195 decision = 837
+node_num = 2196 decision = 838
+node_num = 2197 decision = 839
+node_num = 2198 decision = 840
+node_num = 2199 decision = 841
+node_num = 2200 decision = 842
+node_num = 2201 decision = 843
+node_num = 2202 decision = 844
+node_num = 2203 decision = 845
+node_num = 2204 decision = 846
+node_num = 2205 decision = 847
+node_num = 2206 decision = 848
+node_num = 2207 decision = 849
+node_num = 2208 decision = 850
+node_num = 2209 decision = 851
+node_num = 2210 decision = 852
+node_num = 2211 decision = 853
+node_num = 2212 decision = 854
+node_num = 2213 decision = 855
+node_num = 2214 decision = 856
+node_num = 2215 decision = 857
+node_num = 2216 decision = 858
+node_num = 2217 decision = 859
+node_num = 2218 decision = 860
+node_num = 2219 decision = 861
+node_num = 2220 decision = 862
+node_num = 2221 decision = 863
+node_num = 2222 decision = 864
+node_num = 2223 decision = 865
+node_num = 2224 decision = 866
+node_num = 2225 decision = 867
+node_num = 2226 decision = 868
+node_num = 2227 decision = 869
+node_num = 2228 decision = 870
+node_num = 2229 decision = 871
+node_num = 2230 decision = 872
+node_num = 2231 decision = 873
+node_num = 2232 decision = 874
+node_num = 2233 decision = 875
+node_num = 2234 decision = 876
+node_num = 2235 decision = 877
+node_num = 2236 decision = 878
+node_num = 2237 decision = 879
+node_num = 2238 decision = 880
+node_num = 2239 decision = 881
+node_num = 2240 decision = 882
+node_num = 2241 decision = 883
+node_num = 2242 decision = 884
+node_num = 2243 decision = 885
+node_num = 2244 decision = 886
+node_num = 2245 decision = 887
+node_num = 2246 decision = 888
+node_num = 2247 decision = 889
+node_num = 2248 decision = 890
+node_num = 2249 decision = 891
+node_num = 2250 decision = 892
+node_num = 2251 decision = 893
+node_num = 2252 decision = 894
+node_num = 2253 decision = 895
+node_num = 2254 decision = 896
+node_num = 2255 decision = 897
+node_num = 2256 decision = 898
+node_num = 2257 decision = 899
+node_num = 2258 decision = 900
+node_num = 2259 decision = 901
+node_num = 2260 decision = 902
+node_num = 2261 decision = 903
+node_num = 2262 decision = 904
+node_num = 2263 decision = 905
+node_num = 2264 decision = 906
+node_num = 2265 decision = 907
+node_num = 2266 decision = 908
+node_num = 2267 decision = 909
+node_num = 2268 decision = 910
+node_num = 2269 decision = 911
+node_num = 2270 decision = 912
+node_num = 2271 decision = 913
+node_num = 2272 decision = 914
+node_num = 2273 decision = 915
+node_num = 2274 decision = 916
+node_num = 2275 decision = 917
+node_num = 2276 decision = 918
+node_num = 2277 decision = 919
+node_num = 2278 decision = 920
+node_num = 2279 decision = 921
+node_num = 2280 decision = 922
+node_num = 2281 decision = 923
+node_num = 2282 decision = 924
+node_num = 2283 decision = 925
+node_num = 2284 decision = 926
+node_num = 2285 decision = 927
+node_num = 2286 decision = 928
+node_num = 2287 decision = 929
+node_num = 2288 decision = 930
+node_num = 2289 decision = 931
+node_num = 2290 decision = 932
+node_num = 2291 decision = 933
+node_num = 2292 decision = 934
+node_num = 2293 decision = 935
+node_num = 2294 decision = 936
+node_num = 2295 decision = 937
+node_num = 2296 decision = 938
+node_num = 2297 decision = 939
+node_num = 2298 decision = 940
+node_num = 2299 decision = 941
+node_num = 2300 decision = 942
+node_num = 2301 decision = 943
+node_num = 2302 decision = 944
+node_num = 2303 decision = 945
+node_num = 2304 decision = 946
+node_num = 2305 decision = 947
+node_num = 2306 decision = 948
+node_num = 2307 decision = 949
+node_num = 2308 decision = 950
+node_num = 2309 decision = 951
+node_num = 2310 decision = 952
+node_num = 2311 decision = 953
+node_num = 2312 decision = 954
+node_num = 2313 decision = 955
+node_num = 2314 decision = 956
+node_num = 2315 decision = 957
+node_num = 2316 decision = 958
+node_num = 2317 decision = 959
+node_num = 2318 decision = 960
+node_num = 2319 decision = 961
+node_num = 2320 decision = 962
+node_num = 2321 decision = 963
+node_num = 2322 decision = 964
+node_num = 2323 decision = 965
+node_num = 2324 decision = 966
+node_num = 2325 decision = 967
+node_num = 2326 decision = 968
+node_num = 2327 decision = 969
+node_num = 2328 decision = 970
+node_num = 2329 decision = 971
+node_num = 2330 decision = 972
+node_num = 2331 decision = 973
+node_num = 2332 decision = 974
+node_num = 2333 decision = 975
+node_num = 2334 decision = 976
+node_num = 2335 decision = 977
+node_num = 2336 decision = 978
+node_num = 2337 decision = 979
+node_num = 2338 decision = 980
+node_num = 2339 decision = 981
+node_num = 2340 decision = 982
+node_num = 2341 decision = 983
+node_num = 2342 decision = 984
+node_num = 2343 decision = 985
+node_num = 2344 decision = 986
+node_num = 2345 decision = 987
+node_num = 2346 decision = 988
+node_num = 2347 decision = 989
+node_num = 2348 decision = 990
+node_num = 2349 decision = 991
+node_num = 2350 decision = 992
+node_num = 2351 decision = 993
+node_num = 2352 decision = 994
+node_num = 2353 decision = 995
+node_num = 2354 decision = 996
+node_num = 2355 decision = 997
+node_num = 2356 decision = 998
+node_num = 2357 decision = 999
+node_num = 2358 decision = 1000
+node_num = 2359 decision = 1001
+node_num = 2360 decision = 1002
+node_num = 2361 decision = 1003
+node_num = 2362 decision = 1004
+node_num = 2363 decision = 1005
+node_num = 2364 decision = 1006
+node_num = 2365 decision = 1007
+node_num = 2366 decision = 1008
+node_num = 2367 decision = 1009
+node_num = 2368 decision = 1010
+node_num = 2369 decision = 1011
+node_num = 2370 decision = 1012
+node_num = 2371 decision = 1013
+node_num = 2372 decision = 1014
+node_num = 2373 decision = 1015
+node_num = 2374 decision = 1016
+node_num = 2375 decision = 1017
+node_num = 2376 decision = 1018
+node_num = 2377 decision = 1019
+node_num = 2378 decision = 1020
+node_num = 2379 decision = 1021
+node_num = 2380 decision = 1022
+node_num = 2381 decision = 1023
+node_num = 2382 decision = 1024
+node_num = 2383 decision = 1025
+node_num = 2384 decision = 1026
+node_num = 2385 decision = 1027
+node_num = 2386 decision = 1028
+node_num = 2387 decision = 1029
+node_num = 2388 decision = 1030
+node_num = 2389 decision = 1031
+node_num = 2390 decision = 1032
+node_num = 2391 decision = 1033
+node_num = 2392 decision = 1034
+node_num = 2393 decision = 1035
+node_num = 2394 decision = 1036
+node_num = 2395 decision = 1037
+node_num = 2396 decision = 1038
+node_num = 2397 decision = 1039
+node_num = 2398 decision = 1040
+node_num = 2399 decision = 1041
+node_num = 2400 decision = 1042
+node_num = 2401 decision = 1043
+node_num = 2402 decision = 1044
+node_num = 2403 decision = 1045
+node_num = 2404 decision = 1046
+node_num = 2405 decision = 1047
+node_num = 2406 decision = 1048
+node_num = 2407 decision = 1049
+node_num = 2408 decision = 1050
+node_num = 2409 decision = 1051
+node_num = 2410 decision = 1052
+node_num = 2411 decision = 1053
+node_num = 2412 decision = 1054
+node_num = 2413 decision = 1055
+node_num = 2414 decision = 1056
+node_num = 2415 decision = 1057
+node_num = 2416 decision = 1058
+node_num = 2417 decision = 1059
+node_num = 2418 decision = 1060
+node_num = 2419 decision = 1061
+node_num = 2420 decision = 1062
+node_num = 2421 decision = 1063
+node_num = 2422 decision = 1064
+node_num = 2423 decision = 1065
+node_num = 2424 decision = 1066
+node_num = 2425 decision = 1067
+node_num = 2426 decision = 1068
+node_num = 2427 decision = 1069
+node_num = 2428 decision = 1070
+node_num = 2429 decision = 1071
+node_num = 2430 decision = 1072
+node_num = 2431 decision = 1073
+node_num = 2432 decision = 1074
+node_num = 2433 decision = 1075
+node_num = 2434 decision = 1076
+node_num = 2435 decision = 1077
+node_num = 2436 decision = 1078
+node_num = 2437 decision = 1079
+node_num = 2438 decision = 1080
+node_num = 2439 decision = 1081
+node_num = 2440 decision = 1082
+node_num = 2441 decision = 1083
+node_num = 2442 decision = 1084
+node_num = 2443 decision = 1085
+node_num = 2444 decision = 1086
+node_num = 2445 decision = 1087
+node_num = 2446 decision = 1088
+node_num = 2447 decision = 1089
+node_num = 2448 decision = 1090
+node_num = 2449 decision = 1091
+node_num = 2450 decision = 1092
+node_num = 2451 decision = 1093
+node_num = 2452 decision = 1094
+node_num = 2453 decision = 1095
+node_num = 2454 decision = 1096
+node_num = 2455 decision = 1097
+node_num = 2456 decision = 1098
+node_num = 2457 decision = 1099
+node_num = 2458 decision = 1100
+node_num = 2459 decision = 1101
+node_num = 2460 decision = 1102
+node_num = 2461 decision = 1103
+node_num = 2462 decision = 1104
+node_num = 2463 decision = 1105
+node_num = 2464 decision = 1106
+node_num = 2465 decision = 1107
+node_num = 2466 decision = 1108
+node_num = 2467 decision = 1109
+node_num = 2468 decision = 1110
+node_num = 2469 decision = 1111
+node_num = 2470 decision = 1112
+node_num = 2471 decision = 1113
+node_num = 2472 decision = 1114
+node_num = 2473 decision = 1115
+node_num = 2474 decision = 1116
+node_num = 2475 decision = 1117
+node_num = 2476 decision = 1118
+node_num = 2477 decision = 1119
+node_num = 2478 decision = 1120
+node_num = 2479 decision = 1121
+node_num = 2480 decision = 1122
+node_num = 2481 decision = 1123
+node_num = 2482 decision = 1124
+node_num = 2483 decision = 1125
+node_num = 2484 decision = 1126
+node_num = 2485 decision = 1127
+node_num = 2486 decision = 1128
+node_num = 2487 decision = 1129
+node_num = 2488 decision = 1130
+node_num = 2489 decision = 1131
+node_num = 2490 decision = 1132
+node_num = 2491 decision = 1133
+node_num = 2492 decision = 1134
+node_num = 2493 decision = 1135
+node_num = 2494 decision = 1136
+node_num = 2495 decision = 1137
+node_num = 2496 decision = 1138
+node_num = 2497 decision = 1139
+node_num = 2498 decision = 1140
+node_num = 2499 decision = 1141
+node_num = 2500 decision = 1142
+node_num = 2501 decision = 1143
+node_num = 2502 decision = 1144
+node_num = 2503 decision = 1145
+node_num = 2504 decision = 1146
+node_num = 2505 decision = 1147
+node_num = 2506 decision = 1148
+node_num = 2507 decision = 1149
+node_num = 2508 decision = 1150
+node_num = 2509 decision = 1151
+node_num = 2510 decision = 1152
+node_num = 2511 decision = 1153
+node_num = 2512 decision = 1154
+node_num = 2513 decision = 1155
+node_num = 2514 decision = 1156
+node_num = 2515 decision = 1157
+node_num = 2516 decision = 1158
+node_num = 2517 decision = 1159
+node_num = 2518 decision = 1160
+node_num = 2519 decision = 1161
+node_num = 2520 decision = 1162
+node_num = 2521 decision = 1163
+node_num = 2522 decision = 1164
+node_num = 2523 decision = 1165
+node_num = 2524 decision = 1166
+node_num = 2525 decision = 1167
+node_num = 2526 decision = 1168
+node_num = 2527 decision = 1169
+node_num = 2528 decision = 1170
+node_num = 2529 decision = 1171
+node_num = 2530 decision = 1172
+node_num = 2531 decision = 1173
+node_num = 2532 decision = 1174
+node_num = 2533 decision = 1175
+node_num = 2534 decision = 1176
+node_num = 2535 decision = 1177
+node_num = 2536 decision = 1178
+node_num = 2537 decision = 1179
+node_num = 2538 decision = 1180
+node_num = 2539 decision = 1181
+node_num = 2540 decision = 1182
+node_num = 2541 decision = 1183
+node_num = 2542 decision = 1184
+node_num = 2543 decision = 1185
+node_num = 2544 decision = 1186
+node_num = 2545 decision = 1187
+node_num = 2546 decision = 1188
+node_num = 2547 decision = 1189
+node_num = 2548 decision = 1190
+node_num = 2549 decision = 1191
+node_num = 2550 decision = 1192
+node_num = 2551 decision = 1193
+node_num = 2552 decision = 1194
+node_num = 2553 decision = 1195
+node_num = 2554 decision = 1196
+node_num = 2555 decision = 1197
+node_num = 2556 decision = 1198
+node_num = 2557 decision = 1199
+node_num = 2558 decision = 1200
+node_num = 2559 decision = 1201
+node_num = 2560 decision = 1202
+node_num = 2561 decision = 1203
+node_num = 2562 decision = 1204
+node_num = 2563 decision = 1205
+node_num = 2564 decision = 1206
+node_num = 2565 decision = 1207
+node_num = 2566 decision = 1208
+node_num = 2567 decision = 1209
+node_num = 2568 decision = 1210
+node_num = 2569 decision = 1211
+node_num = 2570 decision = 1212
+node_num = 2571 decision = 1213
+node_num = 2572 decision = 1214
+node_num = 2573 decision = 1215
+node_num = 2574 decision = 1216
+node_num = 2575 decision = 1217
+node_num = 2576 decision = 1218
+node_num = 2577 decision = 1219
+node_num = 2578 decision = 1220
+node_num = 2579 decision = 1221
+node_num = 2580 decision = 1222
+node_num = 2581 decision = 1223
+node_num = 2582 decision = 1224
+node_num = 2583 decision = 1225
+node_num = 2584 decision = 1226
+node_num = 2585 decision = 1227
+node_num = 2586 decision = 1228
+node_num = 2587 decision = 1229
+node_num = 2588 decision = 1230
+node_num = 2589 decision = 1231
+node_num = 2590 decision = 1232
+node_num = 2591 decision = 1233
+node_num = 2592 decision = 1234
+node_num = 2593 decision = 1235
+node_num = 2594 decision = 1236
+node_num = 2595 decision = 1237
+node_num = 2596 decision = 1238
+node_num = 2597 decision = 1239
+node_num = 2598 decision = 1240
+node_num = 2599 decision = 1241
+node_num = 2600 decision = 1242
+node_num = 2601 decision = 1243
+node_num = 2602 decision = 1244
+node_num = 2603 decision = 1245
+node_num = 2604 decision = 1246
+node_num = 2605 decision = 1247
+node_num = 2606 decision = 1248
+node_num = 2607 decision = 1249
+node_num = 2608 decision = 1250
+node_num = 2609 decision = 1251
+node_num = 2610 decision = 1252
+node_num = 2611 decision = 1253
+node_num = 2612 decision = 1254
+node_num = 2613 decision = 1255
+node_num = 2614 decision = 1256
+node_num = 2615 decision = 1257
+node_num = 2616 decision = 1258
+node_num = 2617 decision = 1259
+node_num = 2618 decision = 1260
+node_num = 2619 decision = 1261
+node_num = 2620 decision = 1262
+node_num = 2621 decision = 1263
+node_num = 2622 decision = 1264
+node_num = 2623 decision = 1265
+node_num = 2624 decision = 1266
+node_num = 2625 decision = 1267
+node_num = 2626 decision = 1268
+node_num = 2627 decision = 1269
+node_num = 2628 decision = 1270
+node_num = 2629 decision = 1271
+node_num = 2630 decision = 1272
+node_num = 2631 decision = 1273
+node_num = 2632 decision = 1274
+node_num = 2633 decision = 1275
+node_num = 2634 decision = 1276
+node_num = 2635 decision = 1277
+node_num = 2636 decision = 1278
+node_num = 2637 decision = 1279
+node_num = 2638 decision = 1280
+node_num = 2639 decision = 1281
+node_num = 2640 decision = 1282
+node_num = 2641 decision = 1283
+node_num = 2642 decision = 1284
+node_num = 2643 decision = 1285
+node_num = 2644 decision = 1286
+node_num = 2645 decision = 1287
+node_num = 2646 decision = 1288
+node_num = 2647 decision = 1289
+node_num = 2648 decision = 1290
+node_num = 2649 decision = 1291
+node_num = 2650 decision = 1292
+node_num = 2651 decision = 1293
+node_num = 2652 decision = 1294
+node_num = 2653 decision = 1295
+node_num = 2654 decision = 1296
+node_num = 2655 decision = 1297
+node_num = 2656 decision = 1298
+node_num = 2657 decision = 1299
+node_num = 2658 decision = 1300
+node_num = 2659 decision = 1301
+node_num = 2660 decision = 1302
+node_num = 2661 decision = 1303
+node_num = 2662 decision = 1304
+node_num = 2663 decision = 1305
+node_num = 2664 decision = 1306
+node_num = 2665 decision = 1307
+node_num = 2666 decision = 1308
+node_num = 2667 decision = 1309
+node_num = 2668 decision = 1310
+node_num = 2669 decision = 1311
+node_num = 2670 decision = 1312
+node_num = 2671 decision = 1313
+node_num = 2672 decision = 1314
+node_num = 2673 decision = 1315
+node_num = 2674 decision = 1316
+node_num = 2675 decision = 1317
+node_num = 2676 decision = 1318
+node_num = 2677 decision = 1319
+node_num = 2678 decision = 1320
+node_num = 2679 decision = 1321
+node_num = 2680 decision = 1322
+node_num = 2681 decision = 1323
+node_num = 2682 decision = 1324
+node_num = 2683 decision = 1325
+node_num = 2684 decision = 1326
+node_num = 2685 decision = 1327
+node_num = 2686 decision = 1328
+node_num = 2687 decision = 1329
+node_num = 2688 decision = 1330
+node_num = 2689 decision = 1331
+node_num = 2690 decision = 1332
+node_num = 2691 decision = 1333
+node_num = 2692 decision = 1334
+node_num = 2693 decision = 1335
+node_num = 2694 decision = 1336
+node_num = 2695 decision = 1337
+node_num = 2696 decision = 1338
+node_num = 2697 decision = 1339
+node_num = 2698 decision = 1340
+node_num = 2699 decision = 1341
+node_num = 2700 decision = 1342
+node_num = 2701 decision = 1343
+node_num = 2702 decision = 1344
+node_num = 2703 decision = 1345
+node_num = 2704 decision = 1346
+node_num = 2705 decision = 1347
+node_num = 2706 decision = 1348
+node_num = 2707 decision = 1349
+node_num = 2708 decision = 1350
+node_num = 2709 decision = 1351
+node_num = 2710 decision = 1352
+node_num = 2711 decision = 1353
+node_num = 2712 decision = 1354
+node_num = 2713 decision = 1355
+node_num = 2714 decision = 1356
+node_num = 2715 decision = 1357
+node_num = 2716 decision = 1358
+node_num = 2717 decision = 1359

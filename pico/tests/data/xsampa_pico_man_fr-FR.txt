@@ -1,0 +1,153 @@
+﻿
+# BEGIN_TEST
+
+#------------------------------
+# French (fr-FR)
+#
+# Notes: These tests use the XSAMPA examples given in the pico manual.
+#        The only differences between the manual and the test strings are:
+#        1/ replaced the primary stress character " (double quote) by its dec code &#34;
+#        2/ the XSAMPA "r\" is replaced by "r\\" (the backslash is escaped) otherwise pico says
+#           garbage or the "rrr" sound is pronounced "j" (as a french j)
+#        When a test is marked as "BUG", if possible, the tester will capture an approximate
+#        transcription of what was heard inside [ ].
+
+# Consonants
+# --------- Plosives
+
+# TEST b bon "bO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;bO~"/>.</speak>
+
+# TEST d dans "dA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;dA~"/>.</speak>
+
+# TEST g gant "gA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;gA~"/>.</speak>
+
+# TEST k quand "kA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;kA~"/>.</speak>
+
+# TEST p pont "pO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;pO~"/>.</speak>
+
+# TEST t temps "tA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;tA~"/>.</speak>
+
+
+# --------- Nasals
+
+# TEST J oignon O."JO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="O.&#34;JO~"/>.</speak>
+
+# TEST N camping kA~."piN
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="kA~.&#34;piN"/>.</speak>
+
+# TEST m mont "mO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;mO~"/>.</speak>
+
+# TEST n nom "nO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;nO~"/>.</speak>
+
+
+# --------- Fricatives
+
+# TEST R rond "RO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;RO~"/>.</speak>
+
+# TEST S champ "SA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;SA~"/>.</speak>
+
+# TEST Z gens "ZA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;ZA~"/>.</speak>
+
+# TEST f femme "fam
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;fam"/>.</speak>
+
+# TEST s sans "sA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;sA~"/>.</speak>
+
+# TEST v vent "vA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;vA~"/>.</speak>
+
+# TEST z zone "zon
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;zon"/>.</speak>
+
+
+# --------- Approximants
+
+# TEST H juin "ZHE~
+<speak xml:lang="fr-FR"> Le mois de <phoneme alphabet="xsampa" ph="&#34;ZHE~"/>, et de juin.</speak>
+
+# TEST j pierre "pjER
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;pjER"/>.</speak>
+
+# TEST l long "lO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;lO~"/>, long, et longtemps.</speak>
+
+# TEST l long "lO~ used here in a sentence (to say "longtemps")
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;lO~"/> et <phoneme alphabet="xsampa" ph="&#34;lO~tA~"/>.</speak>
+
+# TEST w coin "kwE~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;kwE~"/>, et coin.</speak>
+
+
+# ---------  Vowels
+
+# TEST 2 deux "d2
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;d2"/>.</speak>
+
+# TEST 9 neuf "n9f
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;n9f"/>.</speak>
+
+# TEST @ justement  "Zys.t@.mA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;Zys.t@.mA~"/>.</speak>
+
+# BUG E seize "sEz says [seisse]
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;sEz"/>, et seize, et césar.</speak>
+
+# TEST O comme "kOm
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;kOm"/>.</speak>
+
+# TEST a patte "pat
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;pat"/>.</speak>
+
+# TEST e ses "se
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;se"/>.</speak>
+
+# TEST i si "si
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;si"/>.</speak>
+
+# TEST o gros "gRo
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;gRo"/>.</speak>
+
+# TEST u doux "du
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;du"/>.</speak>
+
+# TEST y du "dy
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;dy"/>.</speak>
+
+# TEST 9~ brun "bR9~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;bR9~"/>.</speak>
+
+# TEST E~ vin "vE~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;vE~"/>.</speak>
+
+# TEST O~ bon "bO~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;bO~"/>.</speak>
+
+# TEST A~ vent "vA~
+<speak xml:lang="fr-FR"> Je teste <phoneme alphabet="xsampa" ph="&#34;vA~"/>.</speak>
+
+
+# END_TEST
+
+# --------- Other Symbols
+#  word separator    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+%  secondary stress  NEED TEST HERE <<<<<<<<<<<<------------------------------------
+.  syllable break    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+"  primary stress    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+
+
+# ---------
+
+

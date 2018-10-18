@@ -1,0 +1,2 @@
+# Some methods in this class are called form native code
+-keep class com.android.tts.compat.SynthProxy { *; }

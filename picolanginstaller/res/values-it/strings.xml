@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Programma di installazione dati di sintesi vocale"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"Installazione dei dati vocali nell\'archivio USB."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"Installazione dati vocali su scheda SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"I dati vocali sono stati installati correttamente. Ora puoi rimuovere in tutta sicurezza questo programma di installazione."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Disinstalla"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"Installazione dei dati vocali non riuscita. Assicurati che l\'archivio USB abbia almeno 6 MB di spazio libero."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"Installazione dati vocali non riuscita. Assicurati che la tua scheda SD sia nel dispositivo e contenga almeno 6 MB di spazio libero. Se la scheda è già nel dispositivo, prova a rimuoverla e a reinserirla."</string>
+    <string name="retry" msgid="7470276488993209974">"Riprova"</string>
+</resources>

@@ -1,0 +1,175 @@
+! ------------------------------------------------------------------------
+! @file en-US_kdt_acc.utf
+!
+! Decision Tree <Accentuation> for language en-US
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+size = 162
+node_num = 1 quest_num = 2 subset = CONJ_CO,CONJ_INF,DET,PREP,PRO,CONJ_SUB,V_AUX,V_MODAL,PRO_V node_yes = 2 node_no = 3 
+node_num = 2 quest_num = 8 is_greater = 0 node_yes = 5 node_no = 4 
+node_num = 3 quest_num = 9 is_greater = 0 node_yes = 6 node_no = 73 
+node_num = 4 quest_num = 10 is_greater = 1 node_yes = 74 node_no = 75 
+node_num = 5 quest_num = 10 is_greater = 1 node_yes = 8 node_no = 7 
+node_num = 6 quest_num = 12 is_greater = 0 node_yes = 10 node_no = 9 
+node_num = 7 quest_num = 10 is_greater = 0 node_yes = 12 node_no = 11 
+node_num = 8 quest_num = 12 is_greater = 0 node_yes = 14 node_no = 13 
+node_num = 9 quest_num = 5 subset = 1 node_yes = 76 node_no = 15 
+node_num = 10 quest_num = 2 subset = ADV,N_GEN,Q_PTCL,SYMBOL_E node_yes = 16 node_no = 17 
+node_num = 11 quest_num = 2 subset = CONJ_CO,DET,PRO node_yes = 18 node_no = 77 
+node_num = 12 quest_num = 9 is_greater = 0 node_yes = 20 node_no = 19 
+node_num = 13 quest_num = 5 subset = 3 node_yes = 78 subset = 1 node_yes = 79 node_no = 21 
+node_num = 14 quest_num = 2 subset = CONJ_CO,CONJ_INF,DET,PREP node_yes = 22 node_no = 23 
+node_num = 15 quest_num = 10 is_greater = 5 node_yes = 80 node_no = 81 
+node_num = 16 quest_num = 8 is_greater = 0 node_yes = 24 node_no = 82 
+node_num = 17 quest_num = 9 is_greater = 1 node_yes = 26 node_no = 25 
+node_num = 18 quest_num = 1 subset = ADV,CONJ_CO,PREP node_yes = 83 subset = N node_yes = 27 subset = V_AUX node_yes = 28 node_no = 84 
+node_num = 19 quest_num = 2 subset = CONJ_SUB,V_AUX,V_MODAL node_yes = 29 node_no = 85 
+node_num = 20 quest_num = 5 subset = 1 node_yes = 86 node_no = 87 
+node_num = 21 quest_num = 1 subset = ADV,PREP node_yes = 88 node_no = 89 
+node_num = 22 quest_num = 3 subset = CONJ_CO,PREP node_yes = 30 subset = 0 node_yes = 90 node_no = 31 
+node_num = 23 quest_num = 1 subset = CONJ_CO,DET,N_GEN,PREP,PRO,PRO_V,V_AUX node_yes = 32 node_no = 33 
+node_num = 24 quest_num = 7 is_greater = 0 node_yes = 34 node_no = 91 
+node_num = 25 quest_num = 5 subset = 1 node_yes = 92 node_no = 35 
+node_num = 26 quest_num = 10 is_greater = 3 node_yes = 37 node_no = 36 
+node_num = 27 quest_num = 2 subset = PRO node_yes = 93 node_no = 94 
+node_num = 28 quest_num = 7 is_greater = 2 node_yes = 95 node_no = 96 
+node_num = 29 quest_num = 5 subset = 0 node_yes = 38 node_no = 97 
+node_num = 30 quest_num = 10 is_greater = 2 node_yes = 40 node_no = 39 
+node_num = 31 quest_num = 10 is_greater = 2 node_yes = 98 node_no = 41 
+node_num = 32 quest_num = 8 is_greater = 1 node_yes = 43 node_no = 42 
+node_num = 33 quest_num = 5 subset = 0 node_yes = 44 node_no = 99 
+node_num = 34 quest_num = 8 is_greater = 1 node_yes = 45 node_no = 100 
+node_num = 35 quest_num = 3 subset = ADJ,CONJ_CO,Q_PTCL,V_PAST node_yes = 101 subset = DET node_yes = 46 subset = PREP node_yes = 47 node_no = 102 
+node_num = 36 quest_num = 11 is_greater = 3 node_yes = 48 node_no = 103 
+node_num = 37 quest_num = 7 is_greater = 0 node_yes = 104 node_no = 49 
+node_num = 38 quest_num = 1 subset = N node_yes = 105 subset = PRO_V node_yes = 106 node_no = 107 
+node_num = 39 quest_num = 5 subset = 1 node_yes = 108 subset = 3 node_yes = 109 node_no = 50 
+node_num = 40 quest_num = 12 is_greater = 2 node_yes = 110 node_no = 51 
+node_num = 41 quest_num = 3 subset = DET node_yes = 52 node_no = 111 
+node_num = 42 quest_num = 7 is_greater = 0 node_yes = 112 node_no = 113 
+node_num = 43 quest_num = 7 is_greater = 1 node_yes = 53 node_no = 114 
+node_num = 44 quest_num = 12 is_greater = 1 node_yes = 115 node_no = 116 
+node_num = 45 quest_num = 7 is_greater = 1 node_yes = 54 node_no = 117 
+node_num = 46 quest_num = 5 subset = 3 node_yes = 118 node_no = 119 
+node_num = 47 quest_num = 6 subset = 0 node_yes = 120 node_no = 121 
+node_num = 48 quest_num = 8 is_greater = 6 node_yes = 122 node_no = 55 
+node_num = 49 quest_num = 8 is_greater = 1 node_yes = 123 node_no = 124 
+node_num = 50 quest_num = 6 subset = 1 node_yes = 125 node_no = 126 
+node_num = 51 quest_num = 4 subset = PREP,CONJ_SUB,N node_yes = 56 subset = DET node_yes = 127 node_no = 128 
+node_num = 52 quest_num = 9 is_greater = 1 node_yes = 129 node_no = 130 
+node_num = 53 quest_num = 8 is_greater = 2 node_yes = 57 node_no = 131 
+node_num = 54 quest_num = 8 is_greater = 2 node_yes = 58 node_no = 132 
+node_num = 55 quest_num = 4 subset = ADJ,CONJ_CO,DET,PREP node_yes = 133 subset = N node_yes = 59 node_no = 134 
+node_num = 56 quest_num = 12 is_greater = 1 node_yes = 135 node_no = 136 
+node_num = 57 quest_num = 5 subset = 0 node_yes = 60 node_no = 137 
+node_num = 58 quest_num = 2 subset = N_GEN node_yes = 61 node_no = 62 
+node_num = 59 quest_num = 10 is_greater = 2 node_yes = 138 node_no = 139 
+node_num = 60 quest_num = 12 is_greater = 1 node_yes = 63 node_no = 140 
+node_num = 61 quest_num = 3 subset = V_PAST,ADV,V_AUX node_yes = 141 node_no = 142 
+node_num = 62 quest_num = 1 subset = CONJ_CO node_yes = 64 subset = N node_yes = 65 subset = N_GEN node_yes = 66 subset = N_ING node_yes = 143 subset = PREP node_yes = 67 subset = V_AUX node_yes = 68 subset = V_MODAL node_yes = 69 node_no = 144 
+node_num = 63 quest_num = 1 subset = CONJ_CO node_yes = 145 node_no = 146 
+node_num = 64 quest_num = 5 subset = 3 node_yes = 147 node_no = 148 
+node_num = 65 quest_num = 8 is_greater = 7 node_yes = 149 node_no = 150 
+node_num = 66 quest_num = 10 is_greater = 8 node_yes = 151 node_no = 152 
+node_num = 67 quest_num = 3 subset = ADJ,CONJ_SUB,DET,V node_yes = 153 subset = N node_yes = 70 node_no = 154 
+node_num = 68 quest_num = 7 is_greater = 2 node_yes = 155 node_no = 71 
+node_num = 69 quest_num = 6 subset = 3 node_yes = 156 node_no = 157 
+node_num = 70 quest_num = 0 subset = N node_yes = 158 node_no = 159 
+node_num = 71 quest_num = 10 is_greater = 8 node_yes = 160 node_no = 72 
+node_num = 72 quest_num = 8 is_greater = 3 node_yes = 161 node_no = 162 
+node_num = 73 decision = 1
+node_num = 74 decision = 3
+node_num = 75 decision = 1
+node_num = 76 decision = 3
+node_num = 77 decision = 1
+node_num = 78 decision = 0
+node_num = 79 decision = 3
+node_num = 80 decision = 3
+node_num = 81 decision = 1
+node_num = 82 decision = 3
+node_num = 83 decision = 1
+node_num = 84 decision = 3
+node_num = 85 decision = 0
+node_num = 86 decision = 3
+node_num = 87 decision = 1
+node_num = 88 decision = 1
+node_num = 89 decision = 0
+node_num = 90 decision = 0
+node_num = 91 decision = 0
+node_num = 92 decision = 3
+node_num = 93 decision = 1
+node_num = 94 decision = 3
+node_num = 95 decision = 1
+node_num = 96 decision = 3
+node_num = 97 decision = 0
+node_num = 98 decision = 0
+node_num = 99 decision = 0
+node_num = 100 decision = 3
+node_num = 101 decision = 3
+node_num = 102 decision = 1
+node_num = 103 decision = 3
+node_num = 104 decision = 3
+node_num = 105 decision = 0
+node_num = 106 decision = 3
+node_num = 107 decision = 1
+node_num = 108 decision = 0
+node_num = 109 decision = 1
+node_num = 110 decision = 0
+node_num = 111 decision = 0
+node_num = 112 decision = 3
+node_num = 113 decision = 0
+node_num = 114 decision = 0
+node_num = 115 decision = 0
+node_num = 116 decision = 3
+node_num = 117 decision = 0
+node_num = 118 decision = 1
+node_num = 119 decision = 3
+node_num = 120 decision = 1
+node_num = 121 decision = 3
+node_num = 122 decision = 1
+node_num = 123 decision = 0
+node_num = 124 decision = 3
+node_num = 125 decision = 3
+node_num = 126 decision = 1
+node_num = 127 decision = 3
+node_num = 128 decision = 0
+node_num = 129 decision = 3
+node_num = 130 decision = 0
+node_num = 131 decision = 3
+node_num = 132 decision = 3
+node_num = 133 decision = 3
+node_num = 134 decision = 1
+node_num = 135 decision = 0
+node_num = 136 decision = 3
+node_num = 137 decision = 0
+node_num = 138 decision = 3
+node_num = 139 decision = 1
+node_num = 140 decision = 3
+node_num = 141 decision = 0
+node_num = 142 decision = 3
+node_num = 143 decision = 0
+node_num = 144 decision = 3
+node_num = 145 decision = 3
+node_num = 146 decision = 0
+node_num = 147 decision = 3
+node_num = 148 decision = 0
+node_num = 149 decision = 0
+node_num = 150 decision = 3
+node_num = 151 decision = 3
+node_num = 152 decision = 0
+node_num = 153 decision = 0
+node_num = 154 decision = 3
+node_num = 155 decision = 3
+node_num = 156 decision = 0
+node_num = 157 decision = 3
+node_num = 158 decision = 0
+node_num = 159 decision = 3
+node_num = 160 decision = 0
+node_num = 161 decision = 0
+node_num = 162 decision = 3

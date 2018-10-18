@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources>
+    <string name="app_name">Pico TTS</string>
+    <string name="eng_usa_sample">This is an example of speech synthesis in English with Pico.</string>
+    <string name="eng_gbr_sample">This is an example of speech synthesis in English with Pico.</string>
+    <string name="fra_fra_sample">Voici un échantillon de synthèse vocale en français avec Pico.</string>
+    <string name="deu_deu_sample">Dies ist ein Beispiel für Sprachsynthese in Deutsch mit Pico.</string>
+    <string name="ita_ita_sample">Questo è un esempio di sintesi vocale in italiano con Pico.</string>
+    <string name="spa_esp_sample">Este es un ejemplo de síntesis de voz en español con Pico.</string>
+    <string name="installed">Installed</string>
+    <string name="not_installed">Not Installed</string>
+</resources>

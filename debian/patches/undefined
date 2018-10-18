@@ -1,0 +1,12 @@
+--- a/pico/Makefile.am
++++ b/pico/Makefile.am
+@@ -1,5 +1,9 @@
+ ## Makefile.am -- Process this file with automake to produce Makefile.in
+ 
++CFLAGS += -fsanitize=undefined
++CFLAGS += -fsanitize=address
++CFLAGS += -DPICO_DEBUG
++
+ ACLOCAL_AMFLAGS = -I m4
+ 
+ lib_LTLIBRARIES = libttspico.la

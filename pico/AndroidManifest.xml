@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+        ** ** Copyright 2009, The Android Open Source Project ** ** Licensed
+        under the Apache License, Version 2.0 (the "License"); ** you may not
+        use this file except in compliance with the License. ** You may obtain
+        a copy of the License at ** **
+        http://www.apache.org/licenses/LICENSE-2.0 ** ** Unless required by
+        applicable law or agreed to in writing, software ** distributed under
+        the License is distributed on an "AS IS" BASIS, ** WITHOUT WARRANTIES
+        OR CONDITIONS OF ANY KIND, either express or implied. ** See the
+        License for the specific language governing permissions and **
+        limitations under the License. */
+    -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.svox.pico" android:versionCode="1" android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:label="@string/app_name">
+
+        <service android:name=".PicoService"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.TTS_SERVICE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="android.speech.tts" android:resource="@xml/tts_engine" />
+        </service>
+
+        <activity android:name=".DownloadVoiceData" android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.INSTALL_TTS_DATA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".VoiceDataInstallerReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".LangPackUninstaller">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.TTS_DATA_INSTALLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".CheckVoiceData" android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.CHECK_TTS_DATA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".GetSampleText" android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.GET_SAMPLE_TEXT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EngineSettings" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.speech.tts.engine.CONFIGURE_ENGINE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:enabled="true" android:name=".Pico"
+            android:hasCode="false" android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.START_TTS_ENGINE" />
+                <category android:name="android.intent.category.tts_engine.PICO" />
+                <category android:name="android.intent.category.tts_lang.eng" />
+                <category android:name="android.intent.category.tts_lang.eng.USA" />
+                <category android:name="android.intent.category.tts_lang.eng.GBR" />
+                <category android:name="android.intent.category.tts_lang.fra" />
+                <category android:name="android.intent.category.tts_lang.deu" />
+                <category android:name="android.intent.category.tts_lang.ita" />
+                <category android:name="android.intent.category.tts_lang.spa" />
+            </intent-filter>
+        </activity>
+
+        <provider android:name=".providers.SettingsProvider"
+            android:authorities="com.svox.pico.providers.SettingsProvider"  />
+    </application>
+</manifest>

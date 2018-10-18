@@ -1,0 +1,26 @@
+# collection of it-IT cm0 siggen knowledge bases
+
+# header fields:
+
+NAME                    it-IT_cm0_sg_1.0.0.3-0-0
+VERSION                 1.0.0.3-0-0
+DATE                    2009-04-20
+TIME                    17:00:00.000
+CONTENT_TYPE            SIGGEN
+
+FST_SPHO_2              "../pkb/it-IT/it-IT_cm0_kfst_spho2.pkb"
+DT_DUR                  "../pkb/it-IT/it-IT_cm0_kdt_dur.pkb"
+DT_LFZ1                 "../pkb/it-IT/it-IT_cm0_kdt_lfz1.pkb"
+DT_LFZ2                 "../pkb/it-IT/it-IT_cm0_kdt_lfz2.pkb"
+DT_LFZ3                 "../pkb/it-IT/it-IT_cm0_kdt_lfz3.pkb"
+DT_LFZ4                 "../pkb/it-IT/it-IT_cm0_kdt_lfz4.pkb"
+DT_LFZ5                 "../pkb/it-IT/it-IT_cm0_kdt_lfz5.pkb"
+DT_MGC1                 "../pkb/it-IT/it-IT_cm0_kdt_mgc1.pkb"
+DT_MGC2                 "../pkb/it-IT/it-IT_cm0_kdt_mgc2.pkb"
+DT_MGC3                 "../pkb/it-IT/it-IT_cm0_kdt_mgc3.pkb"
+DT_MGC4                 "../pkb/it-IT/it-IT_cm0_kdt_mgc4.pkb"
+DT_MGC5                 "../pkb/it-IT/it-IT_cm0_kdt_mgc5.pkb"
+PDF_DUR                 "../pkb/it-IT/it-IT_cm0_kpdf_dur.pkb"
+PDF_LFZ                 "../pkb/it-IT/it-IT_cm0_kpdf_lfz.pkb"
+PDF_MGC                 "../pkb/it-IT/it-IT_cm0_kpdf_mgc.pkb"
+PDF_PHS                 "../pkb/it-IT/it-IT_cm0_kpdf_phs.pkb"

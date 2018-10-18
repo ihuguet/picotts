@@ -1,0 +1,210 @@
+﻿
+# BEGIN_TEST
+
+#------------------------------
+# Italian (it-IT)
+#
+# Notes: These tests use the XSAMPA examples given in the pico manual.
+#        The only differences between the manual and the test strings are:
+#        1/ replaced the primary stress character " (double quote) by its dec code &#34;
+#        2/ the XSAMPA "r\" is replaced by "r\\" (the backslash is escaped) otherwise pico says
+#           garbage or the [rrr] sound is pronounced "j" (as a french j)
+#        When a test is marked as "BUG", if possible, the tester will capture an approximate
+#        transcription of what was heard inside [ ].
+
+# Consonants
+# --------- Plosives
+
+# TEST b banco "baN.ko
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;baN.ko"/>.</speak>
+
+# TEST d danno "da.n:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;da.n:o"/>.</speak>
+
+# TEST g gamba "gam.ba
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;gam.ba"/>.</speak>
+
+# TEST k cane "ka:.ne
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;ka:.ne"/>.</speak>
+
+# TEST p pane "pa:.ne
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;pa:.ne"/>.</speak>
+
+# TEST t tanto "tan.to
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;tan.to"/>.</speak>
+
+# TEST b: gobbo "go.b:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;go.b:o"/>.</speak>
+
+# TEST d: cadde "ka.d:e
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;ka.d:e"/>.</speak>
+
+# IMPROVE g: fugga "fu.g:a says [fuga] wrong g (not "plosive")
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;fu.g:a"/>.</speak>
+
+# TEST k: nocca "no.k:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;no.k:a"/>.</speak>
+
+# TEST p: coppa "ko.p:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;ko.p:a"/>.</speak>
+
+# TEST t: zucchetto t_su."k:e.t:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="t_su.&#34;k:e.t:o"/>.</speak>
+
+
+# --------- Fricatives
+
+# TEST S scendo "Sen.do
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;Sen.do"/>.</speak>
+
+# TEST f fame "fa:.me
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;fa:.me"/>.</speak>
+
+# TEST s sano "sa:.no
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;sa:.no"/>.</speak>
+
+# TEST v vano "va:.no
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;va:.no"/>.</speak>
+
+# TEST z sbaglio "zba.L:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;zba.L:o"/>.</speak>
+
+# IMPROVE S: ascia "a.S:a [sh] should be longer
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;a.S:a"/>.</speak>
+
+# IMPROVE f: beffa "be.f:a [ff] should be longer
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;be.f:a"/>.</speak>
+
+# IMPROVE s: cassa "ka.s:a [ss] should be longer
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;ka.s:a"/>.</speak>
+
+# IMPROVE v: bevvi "be.v:i [vv] should be more stressed
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;be.v:i"/>.</speak>
+
+
+# --------- Affricates
+
+# TEST d_z zona "d_zO:.na
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;d_zO:.na"/>.</speak>
+
+# TEST d_Z gita "d_Zi:.ta
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;d_Zi:.ta"/>.</speak>
+
+# TEST t_s zitto "t_si.t:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;t_si.t:o"/>.</speak>
+
+# TEST t_S cena "t_Se:.na
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;t_Se:.na"/>.</speak>
+
+# TEST d_z: mezzo "mE.d_z:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;mE.d_z:o"/>.</speak>
+
+# TEST d_Z: oggi "o.d_Z:i
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;o.d_Z:i"/>.</speak>
+
+# TEST t_s: bozza "bo.t_s:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;bo.t_s:a"/>.</speak>
+
+# TEST t_S: braccio "b4a.t_S:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;b4a.t_S:o"/>.</speak>
+
+# --------- Approximants
+
+# TEST l lama "la:.ma
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;la:.ma"/>.</speak>
+
+# IMPROVE L gli "Li the L sound is hard to recognize
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;Li"/>.</speak>
+
+# TEST l: colla "ko.l:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;ko.l:a"/>.</speak>
+
+# IMPROVE L: foglio "fo.L:o the L sound is hard to recognize
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;fo.L:o"/>.</speak>
+
+# --------- Nasals
+
+# TEST J gnocchi "Jo.k:i
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;Jo.k:i"/>.</speak>
+
+# TEST N manca "maN.ka
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;maN.ka"/>.</speak>
+
+# TEST m modo "mO:.do
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;mO:.do"/>.</speak>
+
+# TEST n nato "na:.to
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;na:.to"/>.</speak>
+
+# TEST J: guadagna gu_^a."da.J:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="gu_^a.&#34;da.J:a"/>.</speak>
+
+# TEST m: partimmo pa4."ti.m:o
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="pa4.&#34;ti.m:o"/>.</speak>
+
+# TEST n: madonna ma."do.n:a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="ma.&#34;do.n:a"/>.</speak>
+
+
+# --------- Tap, trill
+# TEST 4 pera "pE:.4a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;pE:.4a"/>.</speak>
+
+# TEST r arrabiata a."ra.b:i_^a:.ta
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="a.&#34;ra.b:i_^a:.ta"/>.</speak>
+
+
+# Vowels
+
+# TEST a rata "4a:.ta
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;4a:.ta"/>.</speak>
+
+# TEST e rete "4e:.te
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;4e:.te"/>.</speak>
+
+# TEST E compiendo kom."pi_^En.do
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="kom.&#34;pi_^En.do"/>.</speak>
+
+# TEST i moderni mo."de4.ni
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="mo.&#34;de4.ni"/>.</speak>
+
+# TEST o sabato "sa:.ba.to
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="&#34;sa:.ba.to"/>.</speak>
+
+# TEST u occulta o."k:ul.ta
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="o.&#34;k:ul.ta"/>.</speak>
+
+# TEST a: abitare a.bi."ta:.4e
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="a.bi.&#34;ta:.4e"/>.</speak>
+
+# TEST e: abete a."be:.te
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="a.&#34;be:.te"/>.</speak>
+
+# TEST E: alfieri al."fi_^E:.4i
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="al.&#34;fi_^E:.4i"/>.</speak>
+
+# TEST i: alpina al."pi:.na
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="al.&#34;pi:.na"/>.</speak>
+
+# TEST o: ardore a4."do:.4e
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="a4.&#34;do:.4e"/>.</speak>
+
+# TEST O: memoria me."mO:.4i_^a
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="me.&#34;mO:.4i_^a"/>.</speak>
+
+# TEST u: salubre sa."lu:.b4e
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="sa.&#34;lu:.b4e"/>.</speak>
+
+# TEST i_^ filiale fi."li_^a:.le
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="fi.&#34;li_^a:.le"/>.</speak>
+
+# TEST u_^ frequenta f4e."ku_^En.ta
+<speak xml:lang="it-IT"> I test <phoneme alphabet="xsampa" ph="f4e.&#34;ku_^En.ta"/>.</speak>
+
+# END_TEST
+
+# --------- Other Symbols
+#  word separator    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+%  secondary stress  NEED TEST HERE <<<<<<<<<<<<------------------------------------
+.  syllable break    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+"  primary stress    NEED TEST HERE <<<<<<<<<<<<------------------------------------

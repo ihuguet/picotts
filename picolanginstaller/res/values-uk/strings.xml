@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Прогр. встан. даних синтезу мови"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"Встановлення голосових даних на носій USB."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"Встановл. голос. даних на карту SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"Голосові дані успішно встановлено. Тепер можна безпечно видалити цю програму встановлення."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Видалити"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"Не вдалося встановити голосові дані. Переконайтеся, що на носії USB є принаймні 6 Мб вільного місця."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"Не вдалося встановити голосові дані. Переконайтеся, що картку SD вставлено в пристрій і на ній є принаймні 6 Мб вільного місця. Якщо картка вже в пристрої, спробуйте вийняти її та вставити ще раз."</string>
+    <string name="retry" msgid="7470276488993209974">"Повтор."</string>
+</resources>

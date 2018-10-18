@@ -1,0 +1,106 @@
+! ------------------------------------------------------------------------
+! @file en-US_phones.utf
+!
+! Phones Symbol Table for language en-US
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! phones set Pico
+! ------------------
+!
+! mapval: decimal number encoded in a single byte (max 255)
+!   reserved values for all languages (0-31):
+!     0: error state
+!     1: not applicable
+!     5: used to mark :G2P handling need
+
+
+! reserved value for the word boundary
+:SYM "{#WB}"  :PROP mapval = 32, wordbound = 1
+
+! main phones alphabet
+:SYM "'"      :PROP mapval = 33,                          primstress = 1
+:SYM ","      :PROP mapval = 34,                          secstress = 1
+:SYM "-"      :PROP mapval = 35,                          syllbound = 1
+:SYM "3"      :PROP mapval = 36, vowel = 1
+:SYM "=l"     :PROP mapval = 37,            syllcons = 1
+:SYM "=n"     :PROP mapval = 38,            syllcons = 1
+:SYM "@"      :PROP mapval = 39, vowel = 1
+:SYM "A"      :PROP mapval = 40, vowel = 1
+:SYM "A:"     :PROP mapval = 41, vowel = 1
+:SYM "D"      :PROP mapval = 42
+:SYM "I"      :PROP mapval = 43, vowel = 1
+:SYM "I_@"    :PROP mapval = 44, vowel = 1, diphth = 1
+:SYM "N"      :PROP mapval = 45
+:SYM "O:"     :PROP mapval = 46, vowel = 1
+:SYM "O_I"    :PROP mapval = 47, vowel = 1, diphth = 1
+:SYM "S"      :PROP mapval = 48
+:SYM "T"      :PROP mapval = 49
+:SYM "U"      :PROP mapval = 50, vowel = 1
+:SYM "U_@"    :PROP mapval = 51, vowel = 1, diphth = 1
+:SYM "V"      :PROP mapval = 52, vowel = 1
+:SYM "Z"      :PROP mapval = 53
+:SYM "a_I"    :PROP mapval = 54, vowel = 1, diphth = 1
+:SYM "a_U"    :PROP mapval = 55, vowel = 1, diphth = 1
+:SYM "b"      :PROP mapval = 56
+:SYM "d"      :PROP mapval = 57
+:SYM "d_Z"    :PROP mapval = 58
+:SYM "e"      :PROP mapval = 59, vowel = 1
+:SYM "e_@"    :PROP mapval = 60, vowel = 1, diphth = 1
+:SYM "e_I"    :PROP mapval = 61, vowel = 1, diphth = 1
+:SYM "f"      :PROP mapval = 62
+:SYM "g"      :PROP mapval = 63
+:SYM "h"      :PROP mapval = 64
+:SYM "i:"     :PROP mapval = 65, vowel = 1
+:SYM "j"      :PROP mapval = 66
+:SYM "k"      :PROP mapval = 67
+:SYM "l"      :PROP mapval = 68
+:SYM "m"      :PROP mapval = 69
+:SYM "n"      :PROP mapval = 70
+:SYM "o_U"    :PROP mapval = 71, vowel = 1, diphth = 1
+:SYM "p"      :PROP mapval = 72
+:SYM "q"      :PROP mapval = 73, vowel = 1
+:SYM "r"      :PROP mapval = 74
+:SYM "s"      :PROP mapval = 75
+:SYM "t"      :PROP mapval = 76
+:SYM "t_S"    :PROP mapval = 77
+:SYM "u:"     :PROP mapval = 78, vowel = 1
+:SYM "v"      :PROP mapval = 79
+:SYM "w"      :PROP mapval = 80
+:SYM "z"      :PROP mapval = 81
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! photopho additions
+!
+
+:SYM "p_h"    :PROP mapval = 82
+:SYM "t_h"    :PROP mapval = 83
+:SYM "k_h"    :PROP mapval = 84
+:SYM "x"      :PROP mapval = 85
+:SYM "?"      :PROP mapval = 86,                          glott = 1
+:SYM "pau"    :PROP mapval = 87,                          pause = 1
+:SYM "u_c"    :PROP mapval = 88
+:SYM "v_c"    :PROP mapval = 89
+
+:SYM "3_r"    :PROP mapval = 90, vowel = 1
+:SYM "@_r"    :PROP mapval = 91, vowel = 1
+:SYM "E_I"    :PROP mapval = 92, vowel = 1, diphth = 1
+:SYM "o"      :PROP mapval = 93, vowel = 1
+:SYM "O"      :PROP mapval = 94, vowel = 1
+:SYM "4"      :PROP mapval = 95
+:SYM "?_t"    :PROP mapval = 96
+:SYM "i"      :PROP mapval = 97, vowel = 1
+:SYM "E"      :PROP mapval = 98, vowel = 1
+:SYM "%"      :PROP mapval = 99
+
+:SYM "d_x"    :PROP mapval = 100
+
+! support for X-SAMPA "W", like in <whale> [We_Il]
+! this symbol is mapped to the sequence [hw] by FST rules
+
+:SYM "W"      :PROP mapval = 101

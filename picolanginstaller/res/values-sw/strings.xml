@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Kiwekaji cha Kiundaji cha Data ya Usemi"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"Inasakinisha data ya sauti kwenye hifadhi ya USB."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"Inasakinisha data ya sauti kwenye kadi ya SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"Data ya sauti imewekwa kwa mafanikio. Sasa unaweza kuondoa kiwekaji hiki kwa usalama."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Ondoa"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"Data ya sauti haikuweza kusakinishwa. Hakikisha hifadhi yako ya USB  kwa ina angalau nafasi wazi ya 6MB."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"Data ya sauti haikuweza kusakinisha. Hakikisha kadi yako ya SD ipo kwenye kifaa chako na ina angalau nafasi tupu ya 6MB. Ikiwa kadi yako ipo tayari katika kifaa chako, jaribu kuiondoa kadi hiyo na kuiingiza upya."</string>
+    <string name="retry" msgid="7470276488993209974">"Jaribu tena"</string>
+</resources>

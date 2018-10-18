@@ -1,0 +1,248 @@
+﻿# BEGIN_TEST
+
+#------------------------------
+# German (de-DE)
+#
+# Notes: These tests use the XSAMPA examples given in the pico manual.
+#        The only differences between the manual and the test strings are:
+#        1/ replaced the primary stress character " (double quote) by its dec code &#34;
+#        2/ the XSAMPA "r\" is replaced by "r\\" (the backslash is escaped) otherwise pico says
+#           garbage or the [rrr] sound is pronounced "j" (as a french j)
+#        When a test is marked as "BUG", if possible, the tester will capture an approximate
+#        transcription of what was heard inside [ ].
+
+# Consonants
+# --------- Plosives
+
+# TEST ? Abend "?a:.b@nt
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;?a:.b@nt"/>.</speak>
+
+# TEST b Ball "bal
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bal"/>.</speak>
+
+# TEST d Dach "dax
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;dax"/>.</speak>
+
+# TEST g Gabe "ga:.b@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ga:.b@"/>.</speak>
+
+# TEST k Kamm "kam
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;kam"/>.</speak>
+
+# TEST p Post "pOst
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;pOst"/>.</speak>
+
+# TEST t Tritt "tRIt
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;tRIt"/>.</speak>
+
+
+# --------- Nasals
+
+# TEST N lang "laN
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;laN"/>.</speak>
+
+# TEST m Matte "ma.t@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ma.t@"/>.</speak>
+
+# TEST n Nest "nEst
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;nEst"/>.</speak>
+
+
+
+# --------- Fricatives
+# TEST C Milch "mIlC
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;mIlC"/>.</speak>
+
+# TEST R Rabe "Ra:.b@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;Ra:.b@"/>.</speak>
+
+# TEST S Masche "ma.S@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ma.S@"/>.</speak>
+
+# TEST Z Genie Ze."ni:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="Ze.&#34;ni"/>.</speak>
+
+# TEST f Affe "?a.f@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;?a.f@"/>.</speak>
+
+# TEST h Hund "hUnt
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;hUnt"/>.</speak>
+
+# TEST s Masse "ma.s@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ma.s@"/>.</speak>
+
+# TEST v Wahl "va:l says [val]
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;va:l"/>. Ein Wahl.</speak>
+
+# TEST x Bach "bax
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bax"/>.</speak>
+
+# TEST z Rose "Ro:.z@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;Ro:.z@"/>.</speak>
+
+# --------- Approximants
+
+# TEST j Jagd "ja:kt
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ja:kt"/>.</speak>
+
+# TEST l Luft "lUft
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;lUft"/>.</speak>
+
+# --------- Syllabic Consonants
+
+# TEST l= Nabel "na:.bl=
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;na:.bl="/>.</speak>
+
+# TEST m= hartem "haR.tm=
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;haR.tm="/>.</speak>
+
+# TEST n= Latten "la.tn=
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;la.tn="/>.</speak>
+
+
+# --------- Affricates
+
+# TEST d_Z Dschungel "d_ZU.N@l
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;d_ZU.N@l"/>.</speak>
+
+# TEST p_f Dampf "damp_f
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;damp_f"/>.</speak>
+
+# TEST t_S Klatsch "klat_S
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;klat_S"/>.</speak>
+
+# TEST t_s Zunge "t_sU.N@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;t_sU.N@"/>.</speak>
+
+# Monophthongs
+
+# --------- Short
+
+# TEST 2 Ökonom ?2.ko."no:m
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="?2.ko.&#34;no:m"/>.</speak>
+
+# TEST 6 Halter "hal.t6
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;hal.t6"/>.</speak>
+
+# TEST 9 göttlich "g9t.lIC
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;g9t.lIC"/>.</speak>
+
+# TEST @ Lage "la:.g@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;la:.g@"/>.</speak>
+
+# TEST E Kette "kE.t@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;kE.t@"/>.</speak>
+
+# TEST I Kiste "kIs.t@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;kIs.t@"/>.</speak>
+
+# TEST O Kopf "kOp_f
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;kOp_f"/>.</speak>
+
+# TEST U Kunst "kUnst
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;kUnst"/>.</speak>
+
+# TEST Y füllen "fY.l@n
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;fY.l@n"/>.</speak>
+
+# TEST a Kappe "ka.p@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ka.p@"/>.</speak>
+
+# TEST e Theorie te.o."Ri:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="te.o.&#34;Ri:"/>.</speak>
+
+# TEST i Politik po.li."ti:k
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="po.li.&#34;ti:k"/>.</speak>
+
+# TEST o polieren po."li:.R@n
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="po.&#34;li:.R@n"/>.</speak>
+
+# TEST u Kurier ku."Ri:6_^
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="ku.&#34;Ri:6_^"/>.</speak>
+
+# TEST y Mythologie my.to.lo."gi:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="my.to.lo.&#34;gi:"/>.</speak>
+
+
+
+# --------- Long
+
+# TEST 2: Öl "
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;?2:l"/>.</speak>
+
+# TEST E: Bär "bE:6_^
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bE:6_^"/>.</speak>
+
+# TEST a: Kater "ka:.t6
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ka:.t6"/>.</speak>
+
+# TEST e: Beet "be:t
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;be:t"/>.</speak>
+
+# TEST i: Biene "bi:.n@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bi:.n@"/>.</speak>
+
+# TEST o: Boot "bo:t
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bo:t"/>.</speak>
+
+# TEST u: Hut "hu:t
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;hu:t"/>.</speak>
+
+# TEST y: kühl "ky:l
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ky:l"/>.</speak>
+
+
+# --------- Nasalized
+
+# TEST 9~: parfum par."f9~:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="par.&#34;f9~:"/>.</speak>
+
+# TEST E~: Timbre "tE~:.bR@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;tE~:.bR@"/>.</speak>
+
+# TEST a~: Chance "Sa~:.s@
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;Sa~:.s@"/>.</speak>
+
+# TEST o~: fond "fo~:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;fo~:"/>.</speak>
+
+
+# --------- Non-syllabic
+
+# TEST 6_^ Bier "bi:6_^
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;bi:6_^"/>.</speak>
+
+# TEST i_^ Mumie "mu:.mi_^@"
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;mu:.mi_^@&#34;"/>.</speak>
+
+# TEST o_^ foyer fo_^a."je:
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="fo_^a.&#34;je:"/>.</speak>
+
+# TEST u_^ aktuell ?ak."tu_^El
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="?ak.&#34;tu_^El"/>.</speak>
+
+
+# --------- Diphthongs
+
+# TEST O_Y Deutsch "dO_Yt_S
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;dO_Yt_S"/>.</speak>
+
+# TEST a_I Bein "ba_In
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ba_In"/>.</speak>
+
+# TEST a_U Kauf "ka_Uf
+<speak xml:lang="de-DE"> Ich teste <phoneme alphabet="xsampa" ph="&#34;ka_Uf"/>.</speak>
+
+# END_TEST
+
+
+# --------- Other Symbols
+#  word separator    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+%  secondary stress  NEED TEST HERE <<<<<<<<<<<<------------------------------------
+.  syllable break    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+"  primary stress    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+
+
+# ---------
+
+

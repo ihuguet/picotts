@@ -1,0 +1,49 @@
+! ------------------------------------------------------------------------
+! @file es-ES_map-xsampa_aut.utf
+!
+! Finite-State Transducer <X-SAMPA-to-internal mapping> for language es-ES
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+:ALPHABET
+    '{XS:t}'/@  '{XS:u}'/@  '#'  '{XS:_}'  '{XS:/}'  '{XS:-}'  '{XS:*}'  '{XS:_"}'  '{XS:~}'  '{XS:`}'  '{XS:_~}'  '{XS:_}}'  '{XS:_x}'  '{XS:_w}'  '{XS:_v}'
+  '{XS:_t}'  '{XS:_r}'  '{XS:_q}'  '{XS:_o}'  '{XS:_n}'  '{XS:_m}'  '{XS:_l}'  '{XS:_k}'  '{XS:_j}'  '{XS:_h}'  '{XS:_e}'  '{XS:_d}'  '{XS:_c}'  '{XS:_a}'  '{XS:_^}'
+  '{XS:_O}'  '{XS:_N}'  '{XS:_G}'  '{XS:_A}'  '{XS:_?\}'  '{XS:_=}'  '{XS:_0}'  '{XS:_-}'  '{XS:_+}'  '{XS:=}'  '{XS:5}'  '{XS:''}'  '{XS:_6}'  '{XS:_5}'  '{XS:_4}'
+  '{XS:_3}'  '{XS:_2}'  '{XS:_1}'  '{XS:<R>}'  '{XS:<F>}'  '{XS:>}'  '{XS:<}'  '{XS:_R_F}'  '{XS:_R}'  '{XS:_H_T}'  '{XS:_F}'  '{XS:_B_L}'  '{XS:_\}'  '{XS:_T}'  '{XS:_M}'
+  '{XS:_L}'  '{XS:_H}'  '{XS:_B}'  '{XS:_/}'  '{XS:^}'  '{XS:!}'  '{XS:"}'/''''  '{XS:||}'  '{XS:|}'  '{XS:_X}'  '{XS::\}'  '{XS::}'  '{XS:.}'/'-'  '{XS:-\}'  '{XS:%}'/','
+  '{XS:#}'/'{#WB}'  '{XS:U\}'  '{XS:I\}'  '{XS:}}'  '{XS:{}'  '{XS:y}'  '{XS:u}'/'u'  '{XS:o}'/'o'  '{XS:i}'/'i'  '{XS:e}'/'e'  '{XS:a}'/'a'  '{XS:Y}'  '{XS:V}'  '{XS:U}'  '{XS:Q}'
+  '{XS:O}'  '{XS:M}'  '{XS:I}'  '{XS:E}'  '{XS:A}'  '{XS:@\}'  '{XS:@}'  '{XS:9}'  '{XS:8}'  '{XS:7}'  '{XS:6}'  '{XS:3\}'  '{XS:3}'  '{XS:2}'  '{XS:1}'
+  '{XS:&}'  '{XS:_>}'  '{XS:_<}'  '{XS:|\|\}'  '{XS:|\}'  '{XS:O\}'  '{XS:=\}'  '{XS:!\}'  '{XS:z`}'  '{XS:z\}'  '{XS:z}'  '{XS:x\}'  '{XS:x}'/'x'  '{XS:w}'  '{XS:v\}'
+  '{XS:v}'  '{XS:t`}'  '{XS:t}'/'t'  '{XS:s`}'  '{XS:s\}'  '{XS:s}'/'s'  '{XS:r`}'  '{XS:r\`}'  '{XS:r\}'  '{XS:r}'/'r_r'  '{XS:q}'  '{XS:p\}'  '{XS:p}'/'p'  '{XS:n`}'  '{XS:n}'/'n'
+  '{XS:m}'/'m'  '{XS:l`}'  '{XS:l\}'  '{XS:l}'/'l'  '{XS:k}'/'k'  '{XS:j\}'/'j_j'  '{XS:j}'/'j'  '{XS:h\}'  '{XS:h}'  '{XS:g}'/'g'  '{XS:f}'/'f'  '{XS:d`}'  '{XS:d}'/'d'  '{XS:c}'  '{XS:b}'/'b'
+  '{XS:Z}'  '{XS:X\}'  '{XS:X}'  '{XS:W}'  '{XS:T}'/'T'  '{XS:S}'  '{XS:R\}'  '{XS:R}'  '{XS:P}'  '{XS:N\}'  '{XS:N}'/'N'  '{XS:M\}'  '{XS:L\}'  '{XS:L}'/'L'  '{XS:K\}'
+  '{XS:K}'  '{XS:J\}'  '{XS:J}'/'J'  '{XS:H\}'  '{XS:H}'  '{XS:G\}'  '{XS:G}'/'G'  '{XS:F}'  '{XS:D}'/'D'  '{XS:C}'  '{XS:B\}'  '{XS:B}'/'B'  '{XS:?\}'  '{XS:?}'  '{XS:>\}'
+  '{XS:<\}'  '{XS:4}'/'r'  '{XS:_}'/@  '{XS:_^}'/'^u'  '{XS:S}'/'t_S'
+*
+
+
+:AUTOMATON ""
+:DEFAULTCLASS 1
+:CLASS 2 :IS  '{XS:u}'/@
+:CLASS 3 :IS  '#'  '{XS:/}'  '{XS:-}'  '{XS:*}'  '{XS:_"}'  '{XS:~}'  '{XS:`}'  '{XS:_~}'  '{XS:_}}'  '{XS:_x}'  '{XS:_w}'  '{XS:_v}'  '{XS:_t}'  '{XS:_r}'  '{XS:_q}'  '{XS:_o}'  '{XS:_n}'  '{XS:_m}'  '{XS:_l}'  '{XS:_k}'  '{XS:_j}'  '{XS:_h}'  '{XS:_e}'  '{XS:_d}'  '{XS:_c}'  '{XS:_a}'  '{XS:_O}'  '{XS:_N}'  '{XS:_G}'  '{XS:_A}'  '{XS:_?\}'  '{XS:_=}'  '{XS:_0}'  '{XS:_-}'  '{XS:_+}'  '{XS:=}'  '{XS:5}'  '{XS:''}'  '{XS:_6}'  '{XS:_5}'  '{XS:_4}'  '{XS:_3}'  '{XS:_2}'  '{XS:_1}'  '{XS:<R>}'  '{XS:<F>}'  '{XS:>}'  '{XS:<}'  '{XS:_R_F}'  '{XS:_R}'  '{XS:_H_T}'  '{XS:_F}'  '{XS:_B_L}'  '{XS:_\}'  '{XS:_T}'  '{XS:_M}'  '{XS:_L}'  '{XS:_H}'  '{XS:_B}'  '{XS:_/}'  '{XS:^}'  '{XS:!}'  '{XS:"}'/''''  '{XS:||}'  '{XS:|}'  '{XS:_X}'  '{XS::\}'  '{XS::}'  '{XS:.}'/'-'  '{XS:-\}'  '{XS:%}'/','  '{XS:#}'/'{#WB}'  '{XS:U\}'  '{XS:I\}'  '{XS:}}'  '{XS:{}'  '{XS:y}'  '{XS:o}'/'o'  '{XS:i}'/'i'  '{XS:e}'/'e'  '{XS:a}'/'a'  '{XS:Y}'  '{XS:V}'  '{XS:U}'  '{XS:Q}'  '{XS:O}'  '{XS:M}'  '{XS:I}'  '{XS:E}'  '{XS:A}'  '{XS:@\}'  '{XS:@}'  '{XS:9}'  '{XS:8}'  '{XS:7}'  '{XS:6}'  '{XS:3\}'  '{XS:3}'  '{XS:2}'  '{XS:1}'  '{XS:&}'  '{XS:_>}'  '{XS:_<}'  '{XS:|\|\}'  '{XS:|\}'  '{XS:O\}'  '{XS:=\}'  '{XS:!\}'  '{XS:z`}'  '{XS:z\}'  '{XS:z}'  '{XS:x\}'  '{XS:x}'/'x'  '{XS:w}'  '{XS:v\}'  '{XS:v}'  '{XS:t`}'  '{XS:s`}'  '{XS:s\}'  '{XS:s}'/'s'  '{XS:r`}'  '{XS:r\`}'  '{XS:r\}'  '{XS:r}'/'r_r'  '{XS:q}'  '{XS:p\}'  '{XS:p}'/'p'  '{XS:n`}'  '{XS:n}'/'n'  '{XS:m}'/'m'  '{XS:l`}'  '{XS:l\}'  '{XS:l}'/'l'  '{XS:k}'/'k'  '{XS:j\}'/'j_j'  '{XS:j}'/'j'  '{XS:h\}'  '{XS:h}'  '{XS:g}'/'g'  '{XS:f}'/'f'  '{XS:d`}'  '{XS:d}'/'d'  '{XS:c}'  '{XS:b}'/'b'  '{XS:Z}'  '{XS:X\}'  '{XS:X}'  '{XS:W}'  '{XS:T}'/'T'  '{XS:R\}'  '{XS:R}'  '{XS:P}'  '{XS:N\}'  '{XS:N}'/'N'  '{XS:M\}'  '{XS:L\}'  '{XS:L}'/'L'  '{XS:K\}'  '{XS:K}'  '{XS:J\}'  '{XS:J}'/'J'  '{XS:H\}'  '{XS:H}'  '{XS:G\}'  '{XS:G}'/'G'  '{XS:F}'  '{XS:D}'/'D'  '{XS:C}'  '{XS:B\}'  '{XS:B}'/'B'  '{XS:?\}'  '{XS:?}'  '{XS:>\}'  '{XS:<\}'  '{XS:4}'/'r'
+:CLASS 4 :IS  '{XS:_}'
+:CLASS 5 :IS  '{XS:_^}'
+:CLASS 6 :IS  '{XS:u}'/'u'
+:CLASS 7 :IS  '{XS:t}'/'t'
+:CLASS 8 :IS  '{XS:S}'
+:CLASS 9 :IS  '{XS:_}'/@
+:CLASS 10 :IS  '{XS:_^}'/'^u'
+:CLASS 11 :IS  '{XS:S}'/'t_S'
+:TRANS  1 :TO  2  3  1  1  1  4  5  1  0  0  0
+:TRANS  2 :TO  0  0  0  0  0  0  0  0  6  0  0
+:TRANS  3 :TO  0  0  0  0  0  0  0  0  0  1  0
+:TRANS  4 :TO  2  3  1  1  0  4  5  1  0  0  0
+:TRANS  5 :TO  2  3  1  7  1  4  5  1  0  0  0
+:TRANS  6 :TO  0  0  0  0  0  0  0  0  0  0  1
+:TRANS  7 :TO  2  3  1  1  1  4  5  0  0  0  0
+*

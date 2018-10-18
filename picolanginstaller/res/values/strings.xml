@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+
+<resources>
+    <!-- This is the name and title of the application that installs the required files for speech synthesis on the user's SD card  -->
+    <string name="app_name">Speech Synthesis Data Installer</string>
+
+    <!-- After launching the application that installs the required files for speech synthesis on the user's SD card, this message is shown during the installation.  CHAR LIMIT=80  -->
+    <string name="installing_message" product="nosdcard">Installing voice data on USB storage.</string>
+    <!-- After launching the application that installs the required files for speech synthesis on the user's SD card, this message is shown during the installation  -->
+    <string name="installing_message" product="default">Installing voice data on SD card.</string>
+
+    <!-- After the successful installation of the required files for speech synthesis, the installer shows this message to the user  -->
+    <string name="uninstall_message">The voice data has been installed successfully. You can now safely remove this installer.</string>
+
+    <!-- Text on the button to let the user remove from the phone the application that was just run (the voice data installer)   -->
+    <string name="uninstall">Uninstall</string>
+
+    <!-- Text shown to the user when the application that tries to install voice data files on the user's SD card failed the installation [CHAR LIMIT=NONE] -->
+    <string name="retry_message" product="nosdcard">The voice data couldn\'t install. Make sure your USB storage has at least 6MB of free space.</string>
+    <!-- Text shown to the user when the application that tries to install voice data files on the user's SD card failed the installation  -->
+    <string name="retry_message" product="default">The voice data couldn\'t install. Make sure your SD card is in your device and has at least 6MB of free space. If your card is already in your device, try removing the card and reinserting it.</string>
+
+    <!-- Text on the button to let the user try one more time to install the installation of the voice data files   -->
+    <string name="retry">Retry</string>
+</resources>

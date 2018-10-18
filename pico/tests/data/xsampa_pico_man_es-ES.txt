@@ -1,0 +1,131 @@
+﻿
+# BEGIN_TEST
+
+#------------------------------
+# Spanish (es-ES)
+#
+# Notes: These tests use the XSAMPA examples given in the pico manual.
+#        The only differences between the manual and the test strings are:
+#        1/ replaced the primary stress character " (double quote) by its dec code &#34;
+#        2/ the XSAMPA "r\" is replaced by "r\\" (the backslash is escaped) otherwise pico says
+#           garbage or the [rrr] sound is pronounced "j" (as a french j)
+#        When a test is marked as "BUG", if possible, the tester will capture an approximate
+#        transcription of what was heard inside [ ].
+
+# Consonants
+# --------- Plosives
+
+# TEST b vino "bi.no
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;bi.no"/>.</speak>
+
+# TEST d donde "don.de
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;don.de"/>.</speak>
+
+# TEST g gato "ga.to
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;ga.to"/>.</speak>
+
+# TEST k casa "ka.sa
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;ka.sa"/>.</speak>
+
+# TEST p puente "pu_^en.te
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;pu_^en.te "/>.</speak>
+
+# TEST t tiempo "tjem.po
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;tjem.po"/>.</speak>
+
+
+# --------- Fricatives
+# TEST f fácil "fa.Til
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;fa.Til"/>.</speak>
+
+# TEST x hijo "i.xo
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;i.xo"/>.</speak>
+
+# TEST s sopa "so.pa
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;so.pa"/>.</speak>
+
+# TEST B cabeza ka."Be.Ta
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="ka.&#34;Be.Ta"/>.</speak>
+
+# TEST D dedo "de.Do
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;de.Do"/>.</speak>
+
+# TEST G luego "lu_^e.Go
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;lu_^e.Go"/>.</speak>
+
+# TEST T zona "To.na
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;To.na"/>.</speak>
+
+# TEST j\ cónyuge "kon.j\u.xe
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;kon.j\u.xe"/>.</speak>
+
+
+# --------- Affricates
+# TEST t_S mucho "mu.t_So
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;mu.t_So"/>.</speak>
+
+
+# --------- Approximants
+# TEST l lejos "le.xos
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;le.xos"/>.</speak>
+
+# TEST L caballo ka."Ba.Lo
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="ka.&#34;Ba.Lo"/>.</speak>
+
+# IMPROVE j rey "rej [r] is not a strong r, should be
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;rej"/>.</speak>
+
+
+# --------- Nasals
+# TEST J año "a.Jo
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;a.Jo"/>.</speak>
+
+# TEST N nunca "nuN.ka
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;nuN.ka"/>.</speak>
+
+# TEST m monte "mon.te
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;mon.te"/>.</speak>
+
+# TEST n nota "no.ta
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;no.ta"/>.</speak>
+
+
+# --------- Tap, trill
+# TEST 4 hora "o.4a
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;o.4a"/>.</speak>
+
+# TEST r torre "to.re
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;to.re"/>.</speak>
+
+# Vowels
+# TEST a valle "ba.Le
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;ba.Le"/>.</speak>
+
+# TEST e pero "pe.4o
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;pe.4o"/>.</speak>
+
+# TEST i pico "pi.ko
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;pi.ko"/>.</speak>
+
+# TEST o toro "to.4o
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;to.4o"/>.</speak>
+
+# TEST u duro "du.4o
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;du.4o"/>.</speak>
+
+# TEST u_^ bueno "bu_^e.no
+<speak xml:lang="es-ES"> Puedo probar <phoneme alphabet="xsampa" ph="&#34;bu_^e.no"/>.</speak>
+
+
+# END_TEST
+
+# --------- Other Symbols
+#  word separator    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+%  secondary stress  NEED TEST HERE <<<<<<<<<<<<------------------------------------
+.  syllable break    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+"  primary stress    NEED TEST HERE <<<<<<<<<<<<------------------------------------
+
+
+# ---------
+
+

@@ -1,0 +1,27 @@
+# collection of de-DE gl0 siggen knowledge bases
+
+# header fields:
+
+NAME                    de-DE_gl0_sg_1.0.0.3-0-1
+VERSION                 1.0.0.3-0-1
+DATE                    2009-05-20
+TIME                    17:00:00.000
+CONTENT_TYPE            SIGGEN
+
+
+FST_SPHO_2              "../pkb/de-DE/de-DE_gl0_kfst_spho2.pkb"
+DT_DUR                  "../pkb/de-DE/de-DE_gl0_kdt_dur.pkb"
+DT_LFZ1                 "../pkb/de-DE/de-DE_gl0_kdt_lfz1.pkb"
+DT_LFZ2                 "../pkb/de-DE/de-DE_gl0_kdt_lfz2.pkb"
+DT_LFZ3                 "../pkb/de-DE/de-DE_gl0_kdt_lfz3.pkb"
+DT_LFZ4                 "../pkb/de-DE/de-DE_gl0_kdt_lfz4.pkb"
+DT_LFZ5                 "../pkb/de-DE/de-DE_gl0_kdt_lfz5.pkb"
+DT_MGC1                 "../pkb/de-DE/de-DE_gl0_kdt_mgc1.pkb"
+DT_MGC2                 "../pkb/de-DE/de-DE_gl0_kdt_mgc2.pkb"
+DT_MGC3                 "../pkb/de-DE/de-DE_gl0_kdt_mgc3.pkb"
+DT_MGC4                 "../pkb/de-DE/de-DE_gl0_kdt_mgc4.pkb"
+DT_MGC5                 "../pkb/de-DE/de-DE_gl0_kdt_mgc5.pkb"
+PDF_DUR                 "../pkb/de-DE/de-DE_gl0_kpdf_dur.pkb"
+PDF_LFZ                 "../pkb/de-DE/de-DE_gl0_kpdf_lfz.pkb"
+PDF_MGC                 "../pkb/de-DE/de-DE_gl0_kpdf_mgc.pkb"
+PDF_PHS                 "../pkb/de-DE/de-DE_gl0_kpdf_phs.pkb"

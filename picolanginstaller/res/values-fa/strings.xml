@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"نصب کننده داده ترکیب صوتی"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"نصب داده‌های صوتی در حافظهٔ USB."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"نصب داده‌های صوتی در کارت SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"داده صوتی با موفقیت نصب شد. اکنون می‌توانید نصب کننده را با ایمنی کامل خارج کنید."</string>
+    <string name="uninstall" msgid="6195983436684617741">"حذف نصب"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"داده‌های صوتی نصب نشد. لطفاً مطمئن شوید که در حافظهٔ USB شما حداقل 6 مگابایت فضای آزاد وجود دارد."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"داده صوتی نصب نشد. لطفاً بررسی کنید که کارت SD در دستگاه شما وجود داشته باشد و حداقل 6 مگابایت فضای آزاد داشته باشد. اگر کارت شما اکنون در دستگاه وجود دارد، لطفاً آن را خارج کرده و دوباره نصب کنید."</string>
+    <string name="retry" msgid="7470276488993209974">"امتحان مجدد"</string>
+</resources>

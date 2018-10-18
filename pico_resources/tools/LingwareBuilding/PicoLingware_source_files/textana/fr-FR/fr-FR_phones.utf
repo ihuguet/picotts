@@ -1,0 +1,90 @@
+! ------------------------------------------------------------------------
+! @file fr-FR_phones.utf
+!
+! Phones Symbol Table for language fr-FR
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! phones set Pico
+! ------------------
+!
+! mapval: decimal number encoded in a single byte (max 255)
+!   reserved values for all languages (0-31):
+!     0: error state
+!     1: not applicable
+!     5: used to mark :G2P handling need
+
+
+! reserved value for the word boundary
+:SYM "{#WB}"  :PROP mapval = 32, wordbound = 1
+
+! main phones alphabet
+:SYM "'"     :PROP mapval = 33,                          primstress = 1
+:SYM "("     :PROP mapval = 34
+:SYM ")"     :PROP mapval = 35
+:SYM ","     :PROP mapval = 36,                          secstress = 1
+:SYM "-"     :PROP mapval = 37,                          syllbound = 1
+:SYM "2"     :PROP mapval = 38, vowel = 1
+:SYM "6"     :PROP mapval = 39, vowel = 1
+:SYM "9"     :PROP mapval = 40, vowel = 1
+:SYM "?"     :PROP mapval = 41,                          glott = 1
+:SYM "@"     :PROP mapval = 42, vowel = 1
+:SYM "E"     :PROP mapval = 43, vowel = 1
+:SYM "E_E"   :PROP mapval = 44, vowel = 1
+:SYM "H"     :PROP mapval = 45
+:SYM "J"     :PROP mapval = 46
+:SYM "N"     :PROP mapval = 47
+:SYM "O"     :PROP mapval = 48, vowel = 1
+:SYM "O_O"   :PROP mapval = 49, vowel = 1
+:SYM "R"     :PROP mapval = 50
+:SYM "S"     :PROP mapval = 51
+:SYM "Z"     :PROP mapval = 52
+:SYM "a"     :PROP mapval = 53, vowel = 1
+:SYM "a_a"   :PROP mapval = 54, vowel = 1
+:SYM "b"     :PROP mapval = 55
+:SYM "d"     :PROP mapval = 56
+:SYM "e"     :PROP mapval = 57, vowel = 1
+:SYM "f"     :PROP mapval = 58
+:SYM "g"     :PROP mapval = 59
+:SYM "i"     :PROP mapval = 60, vowel = 1
+:SYM "j"     :PROP mapval = 61, vowel = 1
+:SYM "k"     :PROP mapval = 62
+:SYM "l"     :PROP mapval = 63
+:SYM "m"     :PROP mapval = 64
+:SYM "n"     :PROP mapval = 65
+:SYM "o"     :PROP mapval = 66, vowel = 1
+:SYM "p"     :PROP mapval = 67
+:SYM "s"     :PROP mapval = 68
+:SYM "t"     :PROP mapval = 69
+:SYM "u"     :PROP mapval = 70, vowel = 1
+:SYM "v"     :PROP mapval = 71
+:SYM "w"     :PROP mapval = 72, vowel = 1
+:SYM "y"     :PROP mapval = 73, vowel = 1
+:SYM "z"     :PROP mapval = 74
+:SYM "~9"    :PROP mapval = 75, vowel = 1
+:SYM "~E"    :PROP mapval = 76, vowel = 1
+:SYM "~O"    :PROP mapval = 77, vowel = 1
+:SYM "~a"    :PROP mapval = 78, vowel = 1
+:SYM "Ø"     :PROP mapval = 79, vowel = 1
+:SYM "Ü"     :PROP mapval = 80
+:SYM "Þ"     :PROP mapval = 81
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! sentence-level FSTs additions
+!
+
+:SYM "pau"   :PROP mapval = 82,                          pause = 1
+:SYM "u_c"   :PROP mapval = 83
+:SYM "v_c"   :PROP mapval = 84
+:SYM "a:"    :PROP mapval = 85, vowel = 1
+:SYM "E:"    :PROP mapval = 86, vowel = 1
+:SYM "i:"    :PROP mapval = 87, vowel = 1
+:SYM "~a:"   :PROP mapval = 88, vowel = 1
+
+! temporary syllable boundary, needed to support accphr prediction
+:SYM "."     :PROP mapval = 89

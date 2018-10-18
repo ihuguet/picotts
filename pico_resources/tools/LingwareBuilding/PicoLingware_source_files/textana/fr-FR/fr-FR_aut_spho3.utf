@@ -1,0 +1,107 @@
+! ------------------------------------------------------------------------
+! @file fr-FR_aut_spho3.utf
+!
+! Finite-State Transducer <Sentence Phonology 3> for language fr-FR
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+:ALPHABET
+    '@'  '6'  '2'  '9'  'a'  'e'  'E'  'i'  'o'  'O'  'u'  'y'  '~9'  '~a'  '~E'
+  '~O'  '?'  'b'  'p'  'd'  't'  'g'  'k'  'f'  'R'  's'  'S'  'v'  'z'  'Z'
+  'm'  'n'  'N'  'J'  'H'  'j'  'l'  'w'  '('  ')'  'E_E'  'O_O'  'a_a'  'Ø'  'Ü'
+  'Þ'  '{A0}'  '{A1}'  '{A2}'  '{A3}'  '{A4}'  '{P:ABBREV}'  '{P:ADJ_PL}'  '{P:ADJ_SG}'  '{P:ADV}'  '{P:CARD}'  '{P:CLITIC}'  '{P:CONJ_CO}'  '{P:CONJ_QUE}'  '{P:CONJ_SUB}'
+  '{P:DET_PL}'  '{P:DET_SG}'  '{P:NEG}'  '{P:N_ADJ_M_PL}'  '{P:N_ADJ_F_PL}'  '{P:N_ADJ_M_SG}'  '{P:N_ADJ_F_SG}'  '{P:N_M_PL}'  '{P:N_F_PL}'  '{P:N_M_SG}'  '{P:N_F_SG}'  '{P:PREP}'  '{P:PRON_ADV}'  '{P:PRO_PL}'  '{P:PRO_SG}'
+  '{P:Q_PTCL}'  '{P:V_AUX_INF}'  '{P:V_AUX_PART}'  '{P:V_AUX_PL}'  '{P:V_AUX_SG}'  '{P:V_INF}'  '{P:V_MODAL_INF}'  '{P:V_MODAL_PART}'  '{P:V_MODAL_PL}'  '{P:V_MODAL_SG}'  '{P:V_PART}'  '{P:V_PART_PRES}'  '{P:V_PL}'  '{P:V_SG}'  '{P:N_SG}'
+  '{WB}'  '{P1}'  '{P2}'  '{P3}'  '{P0}'  '-'  '&'  '#'  'z'/@  '@'/@
+*
+
+
+:AUTOMATON ""
+:DEFAULTCLASS 1
+:CLASS 2 :IS  '6'  '2'  '9'  'a'  'e'  'E'  'i'  'o'  'O'  'u'  '~9'  '~a'  '~E'  '~O'  'E_E'  'O_O'  'a_a'
+:CLASS 3 :IS  'y'
+:CLASS 4 :IS  '?'  'b'  'd'  't'  'g'  'k'  'f'  'R'  's'  'S'  'v'  'Z'  'm'  'n'  'N'  'J'  'H'
+:CLASS 5 :IS  'p'
+:CLASS 6 :IS  'z'
+:CLASS 7 :IS  'j'  'w'
+:CLASS 8 :IS  'l'
+:CLASS 9 :IS  '('
+:CLASS 10 :IS  ')'
+:CLASS 11 :IS  'Ø'  'Ü'
+:CLASS 12 :IS  'Þ'
+:CLASS 13 :IS  '{A0}'  '{A1}'  '{A2}'  '{A3}'  '{A4}'
+:CLASS 14 :IS  '{P:ABBREV}'  '{P:ADV}'  '{P:CARD}'  '{P:CLITIC}'  '{P:CONJ_CO}'  '{P:CONJ_QUE}'  '{P:CONJ_SUB}'  '{P:DET_PL}'  '{P:DET_SG}'  '{P:NEG}'  '{P:N_ADJ_M_PL}'  '{P:N_ADJ_F_PL}'  '{P:N_ADJ_M_SG}'  '{P:N_ADJ_F_SG}'  '{P:N_M_PL}'  '{P:N_F_PL}'  '{P:N_M_SG}'  '{P:N_F_SG}'  '{P:PREP}'  '{P:PRON_ADV}'  '{P:PRO_PL}'  '{P:PRO_SG}'  '{P:Q_PTCL}'  '{P:V_AUX_INF}'  '{P:V_AUX_PART}'  '{P:V_AUX_PL}'  '{P:V_AUX_SG}'  '{P:V_INF}'  '{P:V_MODAL_INF}'  '{P:V_MODAL_PART}'  '{P:V_MODAL_PL}'  '{P:V_MODAL_SG}'  '{P:V_PL}'  '{P:V_SG}'  '{P:N_SG}'
+:CLASS 15 :IS  '{P:ADJ_PL}'  '{P:ADJ_SG}'  '{P:V_PART}'  '{P:V_PART_PRES}'
+:CLASS 16 :IS  '{WB}'
+:CLASS 17 :IS  '{P1}'  '{P2}'  '{P3}'  '{P0}'
+:CLASS 18 :IS  '-'
+:CLASS 19 :IS  '&'  '#'
+:CLASS 20 :IS  'z'/@
+:CLASS 21 :IS  '@'/@
+:TRANS  1 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS  2 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1  1  1  4  4  5  1  0  0
+:TRANS  3 :TO  2  2  2  1  1  6  1  1  3  1  1  1  1  1  1  4  4  1  1  7  0
+:TRANS  4 :TO  2  2  2  1  1  1  1  1  3  1  1  1  8  1  1  4  4  1  1  0  0
+:TRANS  5 :TO  2  2  2  1  1  1  1  1  3  1  1  1  9  1  1  4  4  1  1  0  0
+:TRANS  6 :TO  2  2  2  1  1  1  1  1  3 10  1  1  1  1  1  4  4  1  1  0  0
+:TRANS  7 :TO  0  0  0  0  0  0  0  0  0 11  0  0  0  0  0  0  0  0  0  0  0
+:TRANS  8 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1 12 12  4  4  1  1  0  0
+:TRANS  9 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1 13 13  4  4  1  1  0  0
+:TRANS 10 :TO  2  2  2  1  1  1  1  1  3  1 14 14  1  1  1 15  4  1  1  0  0
+:TRANS 11 :TO  0  0  0  0  0  0  0  0  0  0 16 16  0  0  0 17  0  0  0  0  0
+:TRANS 12 :TO  2  2  2  1 18  1  1  1  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 13 :TO  2  2  2 19 19 19 19 19  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 14 :TO  2  2  2  1  1  1  1  1  3  1  1 14  1  1  1 15  4  1  1  0  0
+:TRANS 15 :TO  2  2  2  1  1  1  1  1  3  1  1  1 20  1  1  4  4  1  1  0  0
+:TRANS 16 :TO  0  0  0  0  0  0  0  0  0  0  0 16  0  0  0 17  0  0  0  0  0
+:TRANS 17 :TO  0  0  0  0  0  0  0  0  0  0  0  0 21  0  0  0  0  0  0  0  0
+:TRANS 18 :TO  2  2  2  1  1  1  1 22  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 19 :TO  2  2  2  1  1  1  1  1 23  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 20 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1 24 24  4  4  1  1  0  0
+:TRANS 21 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0 25 25  0  0  0  0  0  0
+:TRANS 22 :TO  2  2 26  1  1  1  1  1  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 23 :TO 27  2  2  1  1  6  1  1  3  1  1  1  1  1  1  4  4  1  1  7 28
+:TRANS 24 :TO  2  2  2  0  0  0  1  0  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 25 :TO  0  0  0  1 18  1  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 26 :TO  2  2  2  1  1  1  1  1 29  1  1  1  1  1  1  4  4  5  1  0  0
+:TRANS 27 :TO  2  2  2  1  1  1  1  1  3 30  1  1  1  1  1  4  4  5  1  0  0
+:TRANS 28 :TO  0  0  0  0  0  0  0  0  0 31  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 29 :TO  2  2  2  1  1 32  1  1  3  1  1  1  1  1  1  4  4  1  1 33  0
+:TRANS 30 :TO  2  2  2  1  1  1  1  1 34  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 31 :TO  0  0  0  0  0  0  0  0 35  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 32 :TO  2  2  2  1  1  1  1  1  3 36  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 33 :TO  0  0  0  0  0  0  0  0  0 37  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 34 :TO  2  2  2  1  1 38  1  1  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 35 :TO  0  0  0  0  0 39  0  0  0  0  0  0  0  0  0  0  0  0  0  7  0
+:TRANS 36 :TO  2  2  2  1  1  1  1  1  3  1 40 40  1  1  1 41 42  1  1  0  0
+:TRANS 37 :TO  0  0  0  0  0  0  0  0  0  0 43 43  0  0  0 44 45  0  0  0  0
+:TRANS 38 :TO  2  2  2  1  1  1  1  1  3 46  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 39 :TO  0  0  0  0  0  0  0  0  0 47  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 40 :TO  2  2  2  1  1  1  1  1  3  1 48 40  1  1  1 41 42  1  1  0  0
+:TRANS 41 :TO  2  2  2  1  1  1  1  1  3  1  1  1 49  1  1  4  4  1  1  0  0
+:TRANS 42 :TO  2  2  2  1  1  1  1  1  3  1  1  1 50  1  1  4  4  1  1  0  0
+:TRANS 43 :TO  0  0  0  0  0  0  0  0  0  0 51 43  0  0  0 44 45  0  0  0  0
+:TRANS 44 :TO  0  0  0  0  0  0  0  0  0  0  0  0 52  0  0  0  0  0  0  0  0
+:TRANS 45 :TO  0  0  0  0  0  0  0  0  0  0  0  0 53  0  0  0  0  0  0  0  0
+:TRANS 46 :TO  2  2  2  1  1  1  1  1  3  1 54 54  1  1  1 55  4  1  1  0  0
+:TRANS 47 :TO  0  0  0  0  0  0  0  0  0  0 56 56  0  0  0 57  0  0  0  0  0
+:TRANS 48 :TO  2  2  2  1  1  1  1  1  3  1 48 48  1  1  1 42 42  1  1  0  0
+:TRANS 49 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1  0 24  4  4  1  1  0  0
+:TRANS 50 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1  0 12  4  4  1  1  0  0
+:TRANS 51 :TO  0  0  0  0  0  0  0  0  0  0 51 51  0  0  0 45 45  0  0  0  0
+:TRANS 52 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0 12 25  0  0  0  0  0  0
+:TRANS 53 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0
+:TRANS 54 :TO  2  2  2  1  1  1  1  1  3  1  1 54  1  1  1 55  4  1  1  0  0
+:TRANS 55 :TO  2  2  2  1  1  1  1  1  3  1  1  1 58  1  1  4  4  1  1  0  0
+:TRANS 56 :TO  0  0  0  0  0  0  0  0  0  0  0 56  0  0  0 57  0  0  0  0  0
+:TRANS 57 :TO  0  0  0  0  0  0  0  0  0  0  0  0 59  0  0  0  0  0  0  0  0
+:TRANS 58 :TO  2  2  2  1  1  1  1  1  3  1  1  1  1 60 60  4  4  1  1  0  0
+:TRANS 59 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0 61 61  0  0  0  0  0  0
+:TRANS 60 :TO  2  2  2  0  0  0  0  0  3  1  1  1  1  1  1  4  4  1  1  0  0
+:TRANS 61 :TO  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+*

@@ -1,0 +1,34 @@
+Git main branches:
+ * upstream (synced from https://android.googlesource.com/platform/external/svox)
+ * upstream+patches (from upstream): non-Debian specific patches
+ * debian-sid (from upstream+patches)
+
+Quick setup:
+  git clone ssh://git.debian.org/git/collab-maint/svox.git
+  cd svox/
+  git branch debian-sid origin/debian-sid
+  git branch upstream origin/upstream
+  git branch upstream+patches origin/upstream+patches
+  git remote add android https://android.googlesource.com/platform/external/svox
+  git fetch android
+  git branch android-master android/master
+
+Quick merge:
+  git checkout upstream
+  git merge android/master
+  git checkout upstream+patches
+  git merge upstream
+  git checkout debian-sid
+  git merge upstream+patches
+
+To build the package, run:
+ git-buildpackage
+ 
+(you can also follow https://wiki.ubuntu.com/PbuilderHowto and add the following
+option: --git-builder="DIST=sid pdebuild --debbuildopts '-i\.git -I.git'")
+
+svox is in non-free because some source is unavailable, see
+
+https://code.google.com/p/android/issues/detail?id=4415
+
+which seem to be getting ignored by google...

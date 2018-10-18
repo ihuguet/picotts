@@ -1,0 +1,7 @@
+You can test pico by running:
+
+$ pico2wave --wave test.wav Hello
+
+and play test.wav. And in another language:
+
+$ pico2wave  --wave test.wav -l fr-FR Bonjour

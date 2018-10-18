@@ -1,0 +1,416 @@
+Fix various undefined behaviors reported by -fsanitize=undefined
+
+--- a/pico/lib/picocep.c
++++ b/pico/lib/picocep.c
+@@ -487,10 +487,13 @@ static picoos_int32 picocep_fixptmultpow
+     picoos_int32 zzz;
+ 
+     if (picocep_highestBitS(a,zzz) + pow < 32) {
++      if (a >= 0)
+         b = a << pow;
++      else 
++        b = -(-a << pow);
+     } else {
+         /* clip to maximum positive or negative value */
+-        b = 1 << 31; /* maximum negative value */
++        b = 1U << 31; /* maximum negative value */
+         if (a > 0) {
+             b -= 1; /* maximum positive value */
+         }PICODBG_WARN(("picocep_fixptmultpow warning: overflow in fixed point multiplication %i*1<<%i.  Clipping to %i\n", a, pow, b));
+@@ -544,27 +547,44 @@ static picoos_int32 picocep_fixptmultdou
+     /* a = floor(x/big); */
+     if (x >= 0) {
+         a = x >> bigpow;
+-        b = x - (a << bigpow);
++        if (a >= 0)
++          b = x - (a << bigpow);
++        else
++          b = x + (-a << bigpow);
+     } else {
+         a = -1 * ((x * -1) >> bigpow); /* most significant 2 bytes of x */
+-        b = x - (a << bigpow);
++        if (a >= 0)
++          b = x - (a << bigpow);
++        else
++          b = x + (-a << bigpow);
+     }
+ 
+     /* least significant 2 bytes of x i.e. x modulo big */
+     /* c = floor(y/big); */
+     if (y >= 0) {
+         c = y >> bigpow;
+-        d = y - (c << bigpow);
++        if (c >= 0)
++          d = y - (c << bigpow);
++        else
++          d = y + (-c << bigpow);
+     } else {
+         c = -1 * ((y * -1) >> bigpow);
+-        d = y - (c << bigpow);
++        if (c >= 0)
++          d = y - (c << bigpow);
++        else
++          d = y + (-c << bigpow);
+     }
+ 
+     if (invDoubleDec == 1) {
+         e = a * d + b * c + picocep_fixptdivpow(b * d, bigpow);
+         z = a * c + picocep_fixptdivpow(e, bigpow);
+     } else {
+-        z = ((a * c) << bigpow) + (a * d + b * c) + picocep_fixptdivpow(b * d,
++        picoos_int32 f = a * c;
++        if (f >= 0)
++          f <<= bigpow;
++        else
++          f = -(-f << bigpow);
++        z = f + (a * d + b * c) + picocep_fixptdivpow(b * d,
+                 bigpow); /* 4 mult and 3 add instead of 1 mult. */
+     }
+ 
+@@ -722,7 +742,7 @@ static picoos_int32 picocep_fixptInvDiag
+     } else {
+         *rowscpow = 0;
+     }
+-    r = 1 << invpow;
++    r = 1U << invpow;
+     b = d << (*rowscpow);
+ 
+     /* first */
+@@ -874,11 +894,22 @@ static void invMatrix(cep_subobj_t * cep
+     prevrowscpow = 0;
+     cep->invdiag0[0] = picocep_fixptInvDiagEle(cep->diag0[0], &rowscpow,
+             bigpow, invpow); /* inverse has fixed point basis 1<<invpow */
+-    cep->diag1[0] = picocep_fixptinv((cep->diag1[0]) << rowscpow,
++    if (cep->diag1[0] >= 0)
++      cep->diag1[0] <<= rowscpow;
++    else
++      cep->diag1[0] = -(-cep->diag1[0] << rowscpow);
++    cep->diag1[0] = picocep_fixptinv(cep->diag1[0],
+             cep->invdiag0[0], bigpow, invpow, invDoubleDec); /* perform division via inverse */
+-    cep->diag2[0] = picocep_fixptinv((cep->diag2[0]) << rowscpow,
++    if (cep->diag2[0] >= 0)
++      cep->diag2[0] <<= rowscpow;
++    else
++      cep->diag2[0] = -(-cep->diag2[0] << rowscpow);
++    cep->diag2[0] = picocep_fixptinv(cep->diag2[0],
+             cep->invdiag0[0], bigpow, invpow, invDoubleDec);
+-    cep->WUm[0] = (cep->WUm[0]) << rowscpow; /* if diag0 too low, multiply LHS and RHS of row in matrix equation by 1<<rowscpow */
++    if (cep->WUm[0] >= 0)
++      cep->WUm[0] = (cep->WUm[0]) << rowscpow; /* if diag0 too low, multiply LHS and RHS of row in matrix equation by 1<<rowscpow */
++    else
++      cep->WUm[0] = -(-cep->WUm[0] << rowscpow); /* if diag0 too low, multiply LHS and RHS of row in matrix equation by 1<<rowscpow */
+     for (j = 1; j < N; j++) {
+         /* do forward substitution */
+         cep->WUm[j] = cep->WUm[j] - picocep_fixptmult(cep->diag1[j - 1],
+@@ -902,15 +933,26 @@ static void invMatrix(cep_subobj_t * cep
+         prevrowscpow = rowscpow;
+         cep->invdiag0[j] = picocep_fixptInvDiagEle(cep->diag0[j], &rowscpow,
+                 bigpow, invpow); /* inverse has fixed point basis 1<<invpow */
+-        cep->WUm[j] = (cep->WUm[j]) << rowscpow;
++        if (cep->WUm[j] >= 0)
++          cep->WUm[j] = (cep->WUm[j]) << rowscpow;
++        else
++          cep->WUm[j] = -(-cep->WUm[j] << rowscpow);
+         if (j < N - 1) {
+             h = picocep_fixptmult(cep->diag2[j - 1], v1, bigpow, invDoubleDec);
+-            cep->diag1[j] = picocep_fixptinv((cep->diag1[j] - h) << rowscpow,
+-                    cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
++            if (cep->diag1[j] - h >= 0)
++              cep->diag1[j] = picocep_fixptinv((cep->diag1[j] - h) << rowscpow,
++                      cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
++            else
++              cep->diag1[j] = picocep_fixptinv(-(-(cep->diag1[j] - h) << rowscpow),
++                      cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
+         }
+         if (j < N - 2) {
+-            cep->diag2[j] = picocep_fixptinv((cep->diag2[j]) << rowscpow,
+-                    cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
++            if (cep->diag2[j] >= 0)
++              cep->diag2[j] = picocep_fixptinv((cep->diag2[j]) << rowscpow,
++                      cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
++            else
++              cep->diag2[j] = picocep_fixptinv(-(-cep->diag2[j] << rowscpow),
++                      cep->invdiag0[j], bigpow, invpow, invDoubleDec); /* eliminate column j below pivot */
+         }
+     }
+ 
+@@ -1017,7 +1059,10 @@ static picoos_uint8 makeWUWandWUm(cep_su
+             prev_diag0 = cep->diag0[i] = ivar << 2; /* multiply ivar by 4 (4 used to be first entry of xsq) */
+             mean = getFromPdf(pdf, vecstart, cepnum, PICOCEP_WANTMEAN,
+                     PICOCEP_WANTSTATIC);
+-            prev_WUm = cep->WUm[i] = mean << 1; /* multiply mean by 2 (2 used to be first entry of x) */
++            if (mean >= 0)
++              prev_WUm = cep->WUm[i] = mean << 1; /* multiply mean by 2 (2 used to be first entry of x) */
++            else
++              prev_WUm = cep->WUm[i] = -(-mean << 1); /* multiply mean by 2 (2 used to be first entry of x) */
+         }
+ 
+         /* process delta means and delta inverse variances */
+@@ -1152,13 +1197,21 @@ static picoos_int32 getFromPdf(picokpdf_
+                 cc = pdf->ceporder + cepnum;
+                 p = pdf->content + (vecstart + pdf->numvuv + cc * 2); /* cepnum'th delta mean */
+                         mean = ((picoos_int32) ((picoos_int16) (*(p + 1) << 8))
+-                                | *p) << (pdf->meanpowUm[cc]);
++                                | *p);
++                        if (mean >= 0)
++                          mean <<= (pdf->meanpowUm[cc]);
++                        else
++                          mean = -(-mean << pdf->meanpowUm[cc]);
+                         break;
+                     case PICOCEP_WANTDELTA2:
+                 cc = pdf->ceporder * 2 + cepnum;
+                 p = pdf->content + (vecstart + pdf->numvuv + cc * 2); /* cepnum'th delta delta mean */
+                         mean = ((picoos_int32) ((picoos_int16) (*(p + 1) << 8))
+-                                | *p) << (pdf->meanpowUm[cc]);
++                                | *p);
++                        if (mean >= 0)
++                          mean <<= (pdf->meanpowUm[cc]);
++                        else
++                          mean = -(-mean << pdf->meanpowUm[cc]);
+                         break;
+                     default:
+                         /* should never come here */
+@@ -1204,7 +1257,11 @@ static picoos_int32 getFromPdf(picokpdf_
+                         p = pdf->content
+                                 + (vecstart + pdf->numvuv + cepnum * 2); /* cepnum'th static mean */
+                         mean = ((picoos_int32) ((picoos_int16) (*(p + 1) << 8))
+-                                | *p) << (pdf->meanpowUm[cepnum]);
++                                | *p);
++                        if (mean >= 0)
++                          mean <<= (pdf->meanpowUm[cepnum]);
++                        else
++                          mean = -(-mean << (pdf->meanpowUm[cepnum]));
+                 return mean;
+                         break;
+                     case PICOCEP_WANTDELTA:
+@@ -1220,9 +1277,11 @@ static picoos_int32 getFromPdf(picokpdf_
+                                 + pdf->numdeltas + s * 2; /* s'th sparse delta mean, corresponds to cepnum'th delta mean */
+                                 mean
+                                         = ((picoos_int32) ((picoos_int16) ((pdf->content[k
+-                                + 1]) << 8)) | pdf->content[k])
+-                                                << (pdf->meanpowUm[ceporder
+-                                                        + cepnum]);
++                                + 1]) << 8)) | pdf->content[k]);
++                                if (mean >= 0)
++                                  mean <<= (pdf->meanpowUm[ceporder + cepnum]);
++                                else
++                                  mean = -(-mean << (pdf->meanpowUm[ceporder + cepnum]));
+                         return mean;
+                     }
+                     s++;
+@@ -1242,9 +1301,11 @@ static picoos_int32 getFromPdf(picokpdf_
+                                         + pdf->numdeltas + s * 2; /* s'th sparse delta mean, corresponds to cepnum'th delta delta mean */
+                                 mean
+                                         = ((picoos_int32) ((picoos_int16) ((pdf->content[k
+-                                + 1]) << 8)) | pdf->content[k])
+-                                                << (pdf->meanpowUm[ceporder2
+-                                                        + cepnum]);
++                                + 1]) << 8)) | pdf->content[k]);
++                                if (mean >= 0)
++                                  mean <<= (pdf->meanpowUm[ceporder2 + cepnum]);
++                                else
++                                  mean = -(-mean << (pdf->meanpowUm[ceporder2 + cepnum]));
+                         return mean;
+                     }
+                 }
+--- a/pico/lib/picokpr.c
++++ b/pico/lib/picokpr.c
+@@ -162,7 +162,7 @@ typedef struct kpr_subobj
+ 
+ static picoos_uint32 kpr_getUInt32(picoos_uint8 * p)
+ {
+-    return p[0] + 256*p[1] + 256*256*p[2] + 256*256*256*p[3];
++    return p[0] + 256*p[1] + 256*256*p[2] + 256U*256U*256U*p[3];
+ }
+ 
+ 
+@@ -345,7 +345,7 @@ extern picoos_int32 picokpr_getAttrValAr
+     picoos_uint32 c =              p[KPR_ATTRVAL_INT_OFS] +
+                                256*p[KPR_ATTRVAL_INT_OFS+1] +
+                            256*256*p[KPR_ATTRVAL_INT_OFS+2] +
+-                       256*256*256*p[KPR_ATTRVAL_INT_OFS+3];
++                       256U*256U*256U*p[KPR_ATTRVAL_INT_OFS+3];
+ 
+     if (c > KPR_MAX_INT32) {
+         return (c - KPR_MAX_INT32) - 1;
+@@ -381,7 +381,7 @@ extern picokpr_StrArrOffset picokpr_getO
+     return             p[KPR_OUTITEM_STROFS_OFS+0] +
+                    256*p[KPR_OUTITEM_STROFS_OFS+1] +
+                256*256*p[KPR_OUTITEM_STROFS_OFS+2] +
+-           256*256*256*p[KPR_OUTITEM_STROFS_OFS+3];
++           256U*256U*256U*p[KPR_OUTITEM_STROFS_OFS+3];
+ }
+ 
+ 
+@@ -391,7 +391,7 @@ extern picokpr_VarStrPtr picokpr_getOutI
+     picoos_uint32 c =  p[KPR_OUTITEM_STROFS_OFS+0] +
+                    256*p[KPR_OUTITEM_STROFS_OFS+1] +
+                256*256*p[KPR_OUTITEM_STROFS_OFS+2] +
+-           256*256*256*p[KPR_OUTITEM_STROFS_OFS+3];
++           256U*256U*256U*p[KPR_OUTITEM_STROFS_OFS+3];
+ 
+     return (picoos_uint8 *)&(((kpr_SubObj)preproc)->rStrArr[c]);
+ }
+@@ -402,7 +402,7 @@ extern picoos_int32 picokpr_getOutItemVa
+     picoos_uint32 c =  p[KPR_OUTITEM_VAL_OFS+0] +
+                    256*p[KPR_OUTITEM_VAL_OFS+1] +
+                256*256*p[KPR_OUTITEM_VAL_OFS+2] +
+-           256*256*256*p[KPR_OUTITEM_VAL_OFS+3];
++           256U*256U*256U*p[KPR_OUTITEM_VAL_OFS+3];
+ 
+     if (c > KPR_MAX_INT32) {
+         return (c - KPR_MAX_INT32) - 1;
+@@ -419,7 +419,7 @@ extern picokpr_OutItemArrOffset picokpr_
+     return             p[KPR_OUTITEM_ARGOFS_OFS+0] +
+                    256*p[KPR_OUTITEM_ARGOFS_OFS+1] +
+                256*256*p[KPR_OUTITEM_ARGOFS_OFS+2] +
+-           256*256*256*p[KPR_OUTITEM_ARGOFS_OFS+3];
++           256U*256U*256U*p[KPR_OUTITEM_ARGOFS_OFS+3];
+ }
+ 
+ 
+@@ -447,7 +447,7 @@ extern picokpr_TokSetNP picokpr_getTokSe
+     c =                p[KPR_TOK_SETNP_OFS+0] +
+                    256*p[KPR_TOK_SETNP_OFS+1] +
+                256*256*p[KPR_TOK_SETNP_OFS+2] +
+-           256*256*256*p[KPR_TOK_SETNP_OFS+3];
++           256U*256U*256U*p[KPR_TOK_SETNP_OFS+3];
+ 
+     b = 0;
+     i = 0;
+@@ -483,7 +483,7 @@ extern picokpr_TokSetWP picokpr_getTokSe
+     c =                p[KPR_TOK_SETWP_OFS+0] +
+                    256*p[KPR_TOK_SETWP_OFS+1] +
+                256*256*p[KPR_TOK_SETWP_OFS+2] +
+-           256*256*256*p[KPR_TOK_SETWP_OFS+3];
++           256U*256U*256U*p[KPR_TOK_SETWP_OFS+3];
+ 
+     b = 0;
+     i = 0;
+@@ -555,7 +555,7 @@ extern picoos_int32 picokpr_getProdPrefC
+     picoos_uint32 c =  p[KPR_PROD_PRODPREFCOST_OFS+0] +
+                    256*p[KPR_PROD_PRODPREFCOST_OFS+1] +
+                256*256*p[KPR_PROD_PRODPREFCOST_OFS+2] +
+-           256*256*256*p[KPR_PROD_PRODPREFCOST_OFS+3];
++           256U*256U*256U*p[KPR_PROD_PRODPREFCOST_OFS+3];
+ 
+ 
+     if (c > KPR_MAX_INT32) {
+@@ -573,7 +573,7 @@ extern picokpr_StrArrOffset picokpr_getP
+     return             p[KPR_PROD_PRODNAMEOFS_OFS+0] +
+                    256*p[KPR_PROD_PRODNAMEOFS_OFS+1] +
+                256*256*p[KPR_PROD_PRODNAMEOFS_OFS+2] +
+-           256*256*256*p[KPR_PROD_PRODNAMEOFS_OFS+3];
++           256U*256U*256U*p[KPR_PROD_PRODNAMEOFS_OFS+3];
+ 
+ }
+ 
+@@ -609,7 +609,7 @@ extern picokpr_StrArrOffset picokpr_getC
+     return             p[KPR_CTX_CTXNAMEOFS_OFS+0] +
+                    256*p[KPR_CTX_CTXNAMEOFS_OFS+1] +
+                256*256*p[KPR_CTX_CTXNAMEOFS_OFS+2] +
+-           256*256*256*p[KPR_CTX_CTXNAMEOFS_OFS+3];
++           256U*256U*256U*p[KPR_CTX_CTXNAMEOFS_OFS+3];
+ }
+ 
+ 
+@@ -620,7 +620,7 @@ extern picokpr_StrArrOffset picokpr_getC
+     return             p[KPR_CTX_NETNAMEOFS_OFS+0] +
+                    256*p[KPR_CTX_NETNAMEOFS_OFS+1] +
+                256*256*p[KPR_CTX_NETNAMEOFS_OFS+2] +
+-           256*256*256*p[KPR_CTX_NETNAMEOFS_OFS+3];
++           256U*256U*256U*p[KPR_CTX_NETNAMEOFS_OFS+3];
+ }
+ 
+ 
+@@ -631,7 +631,7 @@ extern picokpr_StrArrOffset picokpr_getC
+     return             p[KPR_CTX_PRODNAMEOFS_OFS+0] +
+                    256*p[KPR_CTX_PRODNAMEOFS_OFS+1] +
+                256*256*p[KPR_CTX_PRODNAMEOFS_OFS+2] +
+-           256*256*256*p[KPR_CTX_PRODNAMEOFS_OFS+3];
++           256U*256U*256U*p[KPR_CTX_PRODNAMEOFS_OFS+3];
+ }
+ 
+ /* *****************************************************************************/
+--- a/pico/lib/picosig2.c
++++ b/pico/lib/picosig2.c
+@@ -550,7 +550,10 @@ void mel_2_lin_lookup(sig_innerobj_t *si
+     K1 = (picoos_single) PICODSP_START_FLOAT_NORM * K2;
+     XXr[0] = (picoos_int32) ((picoos_single) c1[0] * K1);
+     for (nI = 1; nI < m1; nI++) {
+-        XXr[nI] = c1[nI] << shift;
++        if (c1[nI] >= 0)
++          XXr[nI] = c1[nI] << shift;
++        else
++          XXr[nI] = -(-c1[nI] << shift);
+     }
+     i = sizeof(picoos_int32) * (PICODSP_FFTSIZE - m1);
+     picoos_mem_set(XXr + m1, 0, i);
+@@ -571,7 +574,7 @@ void mel_2_lin_lookup(sig_innerobj_t *si
+         term2 = XXr[k];
+         term1 = XXr[k + 1];
+         delta = term1 - term2;
+-        XXr[nI] = term2 + ((D[nI] * delta) >> 5); /* ok because nI<=A[nI] <=B[nI] */
++        XXr[nI] = term2 + (((picoos_single)D[nI] * (picoos_single)delta) / 32); /* ok because nI<=A[nI] <=B[nI] */
+     }
+ }/*mel_2_lin_lookup*/
+ 
+@@ -637,7 +640,7 @@ void phase_spec2(sig_innerobj_t *sig_inO
+         }
+ 
+         /* handle rest of components - at least one side does not exist */
+-        for (i=k; i<n_comp; i++) {
++        for (i=k; i<n_comp + 1; i++) {
+             ang[i] = -(phs[i]<<6); /* - simple copy without smoothing */
+         }
+ 
+@@ -986,7 +989,12 @@ void overlap_add(sig_innerobj_t *sig_inO
+     w = sig_inObj->WavBuff_p;
+     v = sig_inObj->sig_vec1;
+ 
+-    FAST_DEVICE(PICODSP_FFTSIZE, *(w++)+=*(v++)<<PICODSP_SHIFT_FACT6;);
++    FAST_DEVICE(PICODSP_FFTSIZE, 
++        if (*v >= 0)
++          *(w++)+=*(v++)<<PICODSP_SHIFT_FACT6;
++        else
++          *(w++)+=-(-*(v++)<<PICODSP_SHIFT_FACT6);
++        );
+ 
+ }/*overlap_add*/
+ 
+--- a/pico/lib/picoacph.c
++++ b/pico/lib/picoacph.c
+@@ -754,7 +754,7 @@ static picoos_uint8 acphAccGetNrsLeft(re
+         i--;
+     }
+ 
+-    if ((acph->headx[i].boundstrength != PICODATA_ITEMINFO1_BOUND_PHR0) &&
++    if (i > 0 && (acph->headx[i].boundstrength != PICODATA_ITEMINFO1_BOUND_PHR0) &&
+         (acph->headx[i].head.type == PICODATA_ITEM_WORDPHON)) {
+         (*nrwordspre)++;
+         *nrsyllspre += acphGetNrSylls(this, acph, i);
+--- a/pico/lib/picokdt.c
++++ b/pico/lib/picokdt.c
+@@ -1849,7 +1849,7 @@ picoos_uint8 picokdt_dtPosPconstructInVe
+                        dtposp->invec[3], dtposp->invec[4], dtposp->invec[5],
+                        dtposp->invec[6], dtposp->invec[7], dtposp->invec[8],
+                        dtposp->invec[9], dtposp->invec[10],
+-                       dtposp->invec[11], dtposp->invec[12]));
++                       dtposp->invec[11]));
+         dtposp->inveclen = PICOKDT_NRINPMT_POSP;
+         return TRUE;
+     }
+--- a/pico/lib/picodata.c
++++ b/pico/lib/picodata.c
+@@ -754,7 +754,10 @@ static void transDurWeighted(
+         if (out < 0) {
+             out = 0;
+         }
+-        rest -= ((out-inout[i]) << PICODATA_PRECISION);
++        if (out-inout[i] >= 0)
++          rest -= ((out-inout[i]) << PICODATA_PRECISION);
++        else
++          rest += ((inout[i]-out) << PICODATA_PRECISION);
+         inout[i] = out;
+     }
+    (*restdur) = rest >> (PICODATA_PRECISION - frame_duration_exp);

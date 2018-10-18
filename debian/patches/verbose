@@ -1,0 +1,45 @@
+Warn when clipping happens
+
+--- a/pico/lib/picosig.c
++++ b/pico/lib/picosig.c
+@@ -600,10 +600,14 @@ static pico_status_t sigProcess(register
+                         f_data >>= 14;
+                     else
+                         f_data = -(-f_data >> 14);
+-                    if (f_data > PICOSIG_MAXAMP)
++                    if (f_data > PICOSIG_MAXAMP) {
++                        fprintf(stderr,"oops, clipping %d\n", f_data);
+                         f_data = PICOSIG_MAXAMP;
+-                    if (f_data < PICOSIG_MINAMP)
++                    }
++                    if (f_data < PICOSIG_MINAMP) {
++                        fprintf(stderr,"oops, clipping %d\n", f_data);
+                         f_data = PICOSIG_MINAMP;
++                    }
+                     *s_data = (picoos_int16) (f_data);
+                     s_data++;
+                 }
+@@ -1154,8 +1158,10 @@ static picodata_step_result_t sigStep(re
+                         sf_data = (picoos_int32) (*s_t1) * sf_mlt;
+                         sf_data >>= 4;
+                         if (sf_data > PICOSIG_MAXAMP) {
++                            fprintf(stderr,"oops, clipping2 %d\n", sf_data);
+                             sf_data = PICOSIG_MAXAMP;
+                         } else if (sf_data < PICOSIG_MINAMP) {
++                            fprintf(stderr,"oops, clipping2 %d\n", sf_data);
+                             sf_data = PICOSIG_MINAMP;
+                         }
+                         *s_t1 = (picoos_int16) (sf_data);
+--- a/pico/lib/picoos.c
++++ b/pico/lib/picoos.c
+@@ -1832,8 +1832,10 @@ extern picoos_bool picoos_sdfPutSamples
+         for (i = 0; i < nrSamples; i++) {
+             s = samples[i];
+             if ((s > PICOOS_INT16_MAX)) {
++                fprintf(stderr,"clipping3 %d\n", s);
+                 s = PICOOS_INT16_MAX;
+             } else if (s < PICOOS_INT16_MIN) {
++                fprintf(stderr,"clipping3 %d\n", s);
+                 s = PICOOS_INT16_MIN;
+             }
+             sdFile->buf[sdFile->bufPos++] = s;

@@ -1,0 +1,12 @@
+# collection of en-GB dbg knowledge bases
+
+# header fields:
+
+NAME                    en-GB_dbg
+VERSION                 0.8-A
+DATE                    2008-05-16
+TIME                    13:00:00.000
+CONTENT_TYPE            DEBUG
+
+
+DBG                     "../pkb/en-GB/en-GB_kdbg.pkb"

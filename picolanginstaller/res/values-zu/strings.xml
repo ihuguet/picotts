@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Isifakeli Sedatha Sokuhleliwe Komqondo Wamazwi"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"Ifaka idatha yezwi kwisitoreji se-USB."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"Ifaka idatha yezwi ekhadini le-SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"Idatha yezwi ifakwe ngempumelelo. Manje usungakhipha ngempumelelo lesi sifaki."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Khipha"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"Idatha yezwi yehlulekile ukufakwa. Sicela uqiniseke ukuthi isitoreji sakho se-USB kunesikhala esikhululekile okungenani esingu-6MB."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"Idatha yezwi yehlulekile ukufaka. Sicela uqiniseke ukuthi ikhadi lakho le-SD likwidivaysi yakho futhi inesikhala esikhululekile okungenani esingu-6MB. Uma ikhadi lakho likwidivaysi yakho kakade, sicela uzama ukukhipha ikhadi bese ulifaka futhi."</string>
+    <string name="retry" msgid="7470276488993209974">"Zama futhi"</string>
+</resources>

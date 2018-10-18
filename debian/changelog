@@ -1,0 +1,150 @@
+svox (1.0+git20130326-8) unstable; urgency=medium
+
+  * control: Remove Mathieu Parent from uploaders, on his request.
+  * patches/0003-pico2wave-Convert-text-to-.wav-using-svox-text-to-sp.patch:
+    Update to support stdin input (Closes: #883156).
+
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 05 Jan 2018 19:44:54 +0100
+
+svox (1.0+git20130326-7) unstable; urgency=medium
+
+  * Team upload
+  * Rebuild svox with fixed debhelper (migration was blocked due to
+    #879667 which confused/broke britney)
+
+ -- Paul Gevers <elbrus@debian.org>  Tue, 07 Nov 2017 21:13:50 +0100
+
+svox (1.0+git20130326-6) unstable; urgency=medium
+
+  * Use canonical anonscm vcs URL.
+  * control: Update maintainer mailing list.
+  * control: Build-Depend on automake instead of automake1.11.
+    (Closes: Bug#865268)
+  * control: Migrate priority to optional.
+  * control: Bump Standards-Version to 4.1.1.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 22 Oct 2017 17:53:47 +0200
+
+svox (1.0+git20130326-5) unstable; urgency=medium
+
+  * patches/git-0-Use-long-to-store-pointer: Port upstream fix for 64bit.
+  * patches/0008-64bits.patch: Remove, replaced by patch above.
+  * patches/git-1-fix-memset-overflow-of-wcep_pI: Port upstream fix.
+  * patches/git-fix: Fix upstream build.
+  * patches/volume: Reduce volume to avoid sound clipping.
+  * patches/fix-undefined: Fix various undefined behaviors.
+  * patches/undefined: optional patch to make gcc detect issues.
+  * patches/verbose: optional patch to make pico verbose about clipping.
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 11 Sep 2016 00:43:30 +0200
+
+svox (1.0+git20130326-4) unstable; urgency=medium
+
+  * Bump Standards-Version to 3.9.8 (no changes).
+  * control: Drop multiarch-support from pre-depend.
+  * rules: clear. Set hardening.
+  * control: Drop hardening-wrapper dependency (Closes: #836656).
+
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 04 Sep 2016 19:07:10 +0200
+
+svox (1.0+git20130326-3) unstable; urgency=medium
+
+  * patches/0010-platform.patch: Fix !linux and big endian builds.
+  * patches/0001-autoconf-building-of-library-using-libtool.patch: Fix
+    autogen script.
+
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 29 Aug 2014 22:02:12 +0200
+
+svox (1.0+git20130326-2) unstable; urgency=low
+
+  * Bump Standards-Version to 3.9.5 (no changes).
+  * patches/0009-Fix-link-order.patch: Added to resolve FTBFS with
+    new toolchain (Closes: #729424).  Thanks Daniel T Chen for the patch.
+  * control: Switch to automake1.11.  Thanks Eric for the notice.
+    (Closes: #741887)
+  * README.testing: Add testing documentation.
+  * control: Fix Vcs-Browser URL.
+
+ -- Samuel Thibault <sthibault@debian.org>  Tue, 25 Mar 2014 22:51:07 +0100
+
+svox (1.0+git20130326-1) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * control:
+    - Make libttspico-dev Multi-Arch: same.
+    - Move libttspico0 to non-free/libs.
+    - svox2wave -> pico2wave.
+    - Add automake1.9 build-dep.
+
+  [ Mathieu Parent ]
+  * New upstream snapshot
+  * Move to debhelper 9:
+    - d/compat
+    - d/control: Build-Depends upgraded to dh9
+  * With lintian's assistance
+    - Fix copyright format URL
+    - remove "(C)" in copyright file
+    - Update upstream source URL
+    - Update copyright fields (Format-Specification to Format, and Contact to
+      Upstream-Contact)
+    - Fix Vcs-* fields
+    - Standards-Version: 3.9.3 -> 3.9.4 (no changes)
+  * Added gbp.conf 
+
+ -- Samuel Thibault <sthibault@debian.org>  Sat, 13 Jul 2013 19:57:25 +0200
+
+svox (1.0+git20110131-2) unstable; urgency=low
+
+  * control:
+    - Add myself as uploader.
+    - Depend on hardening-check.
+    - Bump Standards-Version to 3.9.3 (no changes).
+    - Set libttspico0 multi-arch: same.
+    - Set libttspico-data multi-arch: foreign.
+  * rules:
+    - Set DEB_BUILD_HARDENING=1 to enable hardening.
+    - Set multi-arch libdir.
+  * debian/libttspico0.install,libttspico-dev.install: Use multi-arch path.
+
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 08 Jun 2012 23:17:24 +0200
+
+svox (1.0+git20110131-1) unstable; urgency=low
+
+  [ Samuel Thibault ]
+  * d/patches/0008-64bits.patch: New patch to fix execution on 64bit
+    archs.
+  * d/control: Bump Standards-Version to 3.9.2 (no change needed).
+
+  [ Mathieu Parent ]
+  * New upstream snapshot, updated symbols 
+  * Mention explicitly required .wav extension (Closes: #596135)
+  * Specify libraries in the proper variable in Makefile.am (Closes: #616406)
+  * Merged 0007-Add-to-pico-lang-path.patch into 0006-Set-picolangdir.patch
+  * d/control: Maintainer is now Debian Accessibility Team (/me is Uploader)
+  * d/control: Fix "package description formating issues" (Closes: #582689)
+  * d/control: Breaks+Replaces instead of Conflicts as recommended by
+    lintian 
+  * d/control, debian/copyright: Allow automatic building
+  * d/README.Source: more info on workflow
+  * d/watch: removed, this points to android versions
+
+ -- Mathieu Parent <sathieu@debian.org>  Sun, 03 Jul 2011 14:32:51 +0200
+
+svox (1.0+git20100205-2) unstable; urgency=low
+
+  * Switch to dpkg-source 3.0 (quilt) format
+  * Fix "pico2wave should be in a separate package" by creating a
+    libttspico-utils package containing only pico2wave (Closes: #582092)
+
+ -- Mathieu Parent <sathieu@debian.org>  Fri, 21 May 2010 16:03:21 +0200
+
+svox (1.0+git20100205-1) unstable; urgency=low
+
+  * Initial release. (Closes: #552499)
+  * Git snapshot (2010-02-05)
+  * non-free because source for lingware files is not included
+  * debian/rules: make autogen.sh executable before executing it 
+  * debian/control: Build-depends on automake, autoconf, libtool
+  * debian/control: Build-depends on libpopt-dev 
+
+ -- Mathieu Parent <sathieu@debian.org>  Fri, 12 Mar 2010 19:29:55 +0100

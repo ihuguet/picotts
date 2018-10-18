@@ -1,0 +1,2789 @@
+! ------------------------------------------------------------------------
+! @file fr-FR_kdt_g2p.utf
+!
+! Decision Tree <Grapheme-To-Phoneme> for language fr-FR
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+size = 2776
+node_num = 1 quest_num = 4 subset = a,à node_yes = 2 subset = b,g,j,p node_yes = 3 subset = c,k,l,q,s,z,ç node_yes = 4 subset = d,v,x,è,ê,î,é node_yes = 5 subset = e node_yes = 6 subset = i,y,ï node_yes = 7 subset = o,u,w,ô,û node_yes = 8 subset = r node_yes = 9 subset = t node_yes = 10 node_no = 11 
+node_num = 2 quest_num = 12 is_true node_yes = 13 node_no = 12 
+node_num = 3 quest_num = 4 subset = b node_yes = 14 subset = p node_yes = 15 node_no = 16 
+node_num = 4 quest_num = 5 subset = _eow_ node_yes = 17 subset = ',_,x,ë,ï node_yes = 1125 node_no = 18 
+node_num = 5 quest_num = 11 is_greater = 0 node_yes = 20 node_no = 19 
+node_num = 6 quest_num = 12 is_true node_yes = 22 node_no = 21 
+node_num = 7 quest_num = 12 is_true node_yes = 24 node_no = 23 
+node_num = 8 quest_num = 12 is_true node_yes = 26 node_no = 25 
+node_num = 9 quest_num = 5 subset = _eow_ node_yes = 27 subset = r node_yes = 28 subset = _,w,à,ë,ï node_yes = 1126 node_no = 29 
+node_num = 10 quest_num = 6 subset = 0 node_yes = 30 subset = _,w,ç,ë,î,û node_yes = 1127 node_no = 31 
+node_num = 11 quest_num = 11 is_greater = 0 node_yes = 33 node_no = 32 
+node_num = 12 quest_num = 6 subset = 0 node_yes = 34 subset = ',-,_,a,i,j,o,w,y,à,â,ç,è,é,ê,ë,î,ï,ô,û node_yes = 1128 node_no = 35 
+node_num = 13 quest_num = 13 subset = ACC1-E,ACC1-~E,E,E_E,O_O,ACC1-O,O,ACC1-o,ACC1-~a,o,~a node_yes = 36 subset = ACC1-i,_epsilon_,e,i,j,ACC1-~O,Z,b,d,k-s,m,n,p,s,v,z,R,f,g,k,t,l,w node_yes = 37 node_no = 1129 
+node_num = 14 quest_num = 5 subset = b node_yes = 1130 node_no = 1131 
+node_num = 15 quest_num = 5 subset = h,p node_yes = 1132 subset = ',-,_,b,g,j,c,m,v,d,q,x,z,w,à,ë,ï,û node_yes = 1133 node_no = 38 
+node_num = 16 quest_num = 5 subset = -,g,s,t,d,n,_eow_ node_yes = 39 subset = b,m,y,h,l,r,z,a,â,o,u node_yes = 40 node_no = 1134 
+node_num = 17 quest_num = 9 subset = N_F_SG,N_M_PL,N_M_SG,V_PART,V_PL,V_SG,N_F_PL node_yes = 41 subset = V_INF,V_PART_PRES node_yes = 1135 node_no = 42 
+node_num = 18 quest_num = 4 subset = l node_yes = 43 node_no = 44 
+node_num = 19 quest_num = 4 subset = d node_yes = 45 subset = v node_yes = 1136 subset = x node_yes = 46 node_no = 1137 
+node_num = 20 quest_num = 12 is_true node_yes = 48 node_no = 47 
+node_num = 21 quest_num = 5 subset = s,n,_eow_ node_yes = 49 subset = g,t,c,m,d,f,y,l,p,r,x,e,k,z,a,u,i node_yes = 50 node_no = 1138 
+node_num = 22 quest_num = 13 subset = _epsilon_,j,a,J,Z,b,d,g-z,k-s,m,n,p,s,v,z,(-z-),0,R,f,g,k,t,l node_yes = 51 node_no = 1139 
+node_num = 23 quest_num = 3 subset = e,o,â,a node_yes = 52 subset = ',_,q,à,ç,è,ê,ë,î,ô,û,ï node_yes = 1140 node_no = 53 
+node_num = 24 quest_num = 5 subset = e,a,â,è,é,o,u,i node_yes = 54 subset = ',_,y,à,ë,ï,û,_eow_,ê,î,ô node_yes = 1141 node_no = 55 
+node_num = 25 quest_num = 4 subset = o node_yes = 56 subset = w node_yes = 1142 node_no = 57 
+node_num = 26 quest_num = 5 subset = ',y,e,ë,û,a,â,è,é,ê,î,o,u,i node_yes = 58 subset = _,à,_eow_,ô node_yes = 1143 node_no = 59 
+node_num = 27 quest_num = 3 subset = r,i,u,y,o,û,a,ï node_yes = 60 subset = e node_yes = 61 node_no = 1144 
+node_num = 28 quest_num = 1 subset = y node_yes = 1145 node_no = 1146 
+node_num = 29 quest_num = 13 subset = (-z-),(-z-)-Þ node_yes = 62 node_no = 1147 
+node_num = 30 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 63 subset = V_INF,N_ADJ_F_PL,N_F_PL,N_ADJ_M_PL node_yes = 1148 node_no = 64 
+node_num = 31 quest_num = 5 subset = b,g,j,s,t node_yes = 65 subset = ',ç,d,q,x,k,à,ë,ï,û,_eow_ node_yes = 1149 node_no = 66 
+node_num = 32 quest_num = 4 subset = m node_yes = 67 subset = n node_yes = 68 subset = â,ë node_yes = 1150 node_no = 69 
+node_num = 33 quest_num = 12 is_true node_yes = 71 node_no = 70 
+node_num = 34 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_F_PL,N_ADJ_M_SG,N_ADJ_F_SG,N_ADJ_M_PL node_yes = 1151 node_no = 1152 
+node_num = 35 quest_num = 5 subset = y,e,i node_yes = 72 subset = ',-,_,j,ç,w,à,ë,û,_eow_,a,â,è,é,ê,î,ô node_yes = 1153 node_no = 73 
+node_num = 36 quest_num = 5 subset = e,è,o node_yes = 1154 node_no = 1155 
+node_num = 37 quest_num = 5 subset = y,e,o,i node_yes = 74 node_no = 1156 
+node_num = 38 quest_num = 13 subset = (-t-),(-t-)-Þ,Þ,(-z-)-Þ,0,t node_yes = 75 node_no = 1157 
+node_num = 39 quest_num = 13 subset = Z,n,s,Þ,(-z-),(-z-)-Þ,0 node_yes = 76 node_no = 1158 
+node_num = 40 quest_num = 4 subset = j node_yes = 77 node_no = 78 
+node_num = 41 quest_num = 4 subset = s,z node_yes = 79 subset = q,ç node_yes = 1159 node_no = 80 
+node_num = 42 quest_num = 4 subset = s node_yes = 81 subset = q,z,ç node_yes = 1160 node_no = 82 
+node_num = 43 quest_num = 5 subset = l node_yes = 1161 subset = j,ç,r,w node_yes = 1162 node_no = 83 
+node_num = 44 quest_num = 5 subset = -,s,ç,h node_yes = 84 subset = à node_yes = 1163 node_no = 85 
+node_num = 45 quest_num = 5 subset = -,s,d,_eow_ node_yes = 86 node_no = 1164 
+node_num = 46 quest_num = 5 subset = -,s,t,c,f,y,h,p,q,e,a,è,é,o,u,i node_yes = 87 subset = _eow_ node_yes = 88 node_no = 1165 
+node_num = 47 quest_num = 4 subset = é node_yes = 89 subset = d,v,x node_yes = 1166 node_no = 90 
+node_num = 48 quest_num = 4 subset = é node_yes = 91 subset = d,v,x node_yes = 1167 node_no = 92 
+node_num = 49 quest_num = 14 subset = _epsilon_,n,t,(-z-)-Þ,s,k node_yes = 1168 subset = Þ,0 node_yes = 93 node_no = 1169 
+node_num = 50 quest_num = 5 subset = d,r,e,z,a,u node_yes = 94 node_no = 95 
+node_num = 51 quest_num = 6 subset = a,i,o,y,à,â,è,é,ê,î,ô,û,0,e,u node_yes = 96 subset = ',_,w,ë,ï,_eow_,x node_yes = 1170 node_no = 97 
+node_num = 52 quest_num = 5 subset = _eow_ node_yes = 98 subset = b,g,s,c,m,v,d,f,l,n,q,r,x,e,k,z node_yes = 99 subset = t node_yes = 100 node_no = 1171 
+node_num = 53 quest_num = 5 subset = _eow_ node_yes = 101 subset = b,g,s,t,c,m,v,d,f,l,n,p,q,r,x,e,k,z node_yes = 102 node_no = 1172 
+node_num = 54 quest_num = 15 subset = ACC1-~O,b,ACC1-E,ACC1-a-Þ node_yes = 103 subset = (-R-)-Þ,(-n-),2,@,ACC1-2,ACC1-e-(-R-),N,a-d,a_a,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,o,s-t,s-Þ,u,w-a,~9,~a,Ü,ACC1-9,ACC1-~E,E_E,ACC1-y-Þ,ACC1-~9,9,ACC1-E-n,ACC1-E-s,H,J,w node_yes = 1173 node_no = 104 
+node_num = 55 quest_num = 13 subset = ACC1-~E,~E node_yes = 1174 subset = _epsilon_,j,N,Z,b,d,k-s,m,n,p,s,v,z,R,f,g,k,t,l,w node_yes = 105 node_no = 1175 
+node_num = 56 quest_num = 5 subset = e,î,i node_yes = 1176 subset = n node_yes = 106 subset = ',-,_,j,ç,h,w,à,ë,ï,û,â,è,é,ê,ô,o node_yes = 1177 node_no = 107 
+node_num = 57 quest_num = 13 subset = (-@-),(-@-)-Þ node_yes = 1178 subset = _epsilon_,j,(-t-),(-t-)-Þ,N,R-Þ,Z,b,d,k-s,k-s-Þ,k-Þ,l-Þ,m,n,p,s,s-t,v,z,Þ,(-z-),(-z-)-Þ,0,R,f,g,k,t,l node_yes = 108 node_no = 1179 
+node_num = 58 quest_num = 3 subset = o node_yes = 109 subset = _,à,â,è,ê,ë,î,ô,û,ï node_yes = 1180 node_no = 110 
+node_num = 59 quest_num = 3 subset = e,o node_yes = 111 subset = ',_,q,w,à,â,è,ê,ë,î,ô,û node_yes = 1181 node_no = 112 
+node_num = 60 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 1182 node_no = 1183 
+node_num = 61 quest_num = 9 subset = ADJ_SG,N_ADJ_M_SG node_yes = 113 subset = N_F_SG,N_M_PL,N_M_SG,N_F_PL node_yes = 114 node_no = 1184 
+node_num = 62 quest_num = 2 subset = h,y,g,i,l node_yes = 115 node_no = 1185 
+node_num = 63 quest_num = 3 subset = n,i,p,e,o,î,a node_yes = 116 subset = c,r,s,u,ê node_yes = 117 node_no = 1186 
+node_num = 64 quest_num = 3 subset = c,g,n,r,i,t,s,e,o,ê,ô,a node_yes = 118 subset = p,u,â,î,û,ï node_yes = 119 node_no = 1187 
+node_num = 65 quest_num = 3 subset = _eow_,c,p,t,l,s,f,ï node_yes = 120 subset = g,n,r,i,e,u,o,â,ê,ô,û,a node_yes = 121 node_no = 1188 
+node_num = 66 quest_num = 13 subset = j node_yes = 122 subset = (-R-)-Þ,(-n-),(-t-),(-t-)-Þ,2,9,ACC1-2,ACC1-e-(-R-),J,N,R-Þ,S,Z,a-d,b,d,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,l-Þ,o,s-t,z,~9,~a,Ü,(-z-),(-z-)-Þ,0,ACC1-9,g,k,t node_yes = 1189 node_no = 123 
+node_num = 67 quest_num = 5 subset = b,t,m,p node_yes = 124 subset = ',_,g,j,c,ç,d,f,h,q,r,x,k,z,à,ë,ï node_yes = 1190 node_no = 125 
+node_num = 68 quest_num = 5 subset = y,h,e,k,û,a,â,è,é,ê,î,ô,o,u,i node_yes = 126 subset = ',_,w,à,ë,ï node_yes = 1191 node_no = 127 
+node_num = 69 quest_num = 3 subset = c node_yes = 128 subset = z,v,_,y,j,q,ç,ê,ë,î,ô,û node_yes = 1192 node_no = 129 
+node_num = 70 quest_num = 4 subset = ë node_yes = 1193 node_no = 1194 
+node_num = 71 quest_num = 9 subset = N_F_SG,N_M_PL,N_M_SG,N_ADJ_F_PL,N_F_PL node_yes = 130 node_no = 131 
+node_num = 72 quest_num = 6 subset = l node_yes = 132 node_no = 1195 
+node_num = 73 quest_num = 9 subset = V_PART_PRES node_yes = 133 subset = V_PART node_yes = 1196 node_no = 134 
+node_num = 74 quest_num = 14 subset = (-@-),_epsilon_,d,m,n,t,z,6,@,ACC1-E,ACC1-O,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-o,ACC1-y,ACC1-~O,ACC1-~a,O,O_O,R,a,f,ACC1-u,b,l,u,w,Þ,(-z-)-Þ,g,p,s node_yes = 135 subset = ACC1-~E,E,~E node_yes = 136 node_no = 1197 
+node_num = 75 quest_num = 2 subset = h,y,z,0,g,p,_eow_,c,d,l,n,r,s,t,é node_yes = 137 subset = b,a,o,e,u node_yes = 138 node_no = 1198 
+node_num = 76 quest_num = 3 subset = n,r node_yes = 139 node_no = 1199 
+node_num = 77 quest_num = 13 subset = 6 node_yes = 1200 node_no = 1201 
+node_num = 78 quest_num = 13 subset = ACC1-i,i node_yes = 140 node_no = 1202 
+node_num = 79 quest_num = 1 subset = - node_yes = 141 subset = ',0,_,à node_yes = 1203 node_no = 142 
+node_num = 80 quest_num = 4 subset = k node_yes = 143 subset = l node_yes = 144 node_no = 1204 
+node_num = 81 quest_num = 9 subset = ADV node_yes = 1205 node_no = 1206 
+node_num = 82 quest_num = 4 subset = l node_yes = 145 node_no = 146 
+node_num = 83 quest_num = 2 subset = i node_yes = 147 subset = ',_,q,ê,î,ô,û,à,ï node_yes = 1207 node_no = 148 
+node_num = 84 quest_num = 13 subset = _epsilon_,Þ,(-z-),(-z-)-Þ node_yes = 149 subset = S,s node_yes = 150 node_no = 1208 
+node_num = 85 quest_num = 4 subset = s,z,ç node_yes = 151 node_no = 152 
+node_num = 86 quest_num = 9 subset = N_M_SG,V_SG node_yes = 153 subset = ADV node_yes = 1209 node_no = 154 
+node_num = 87 quest_num = 13 subset = ACC1-E,ACC1-i,E,E_E,_epsilon_,e,i,ACC1-a,O_O,a,ACC1-O,ACC1-y,y,O node_yes = 155 node_no = 1210 
+node_num = 88 quest_num = 9 subset = ADJ_PL,ADJ_SG,N_ADJ_M_SG,N_ADJ_M_PL node_yes = 156 subset = N_F_SG,N_M_PL,N_M_SG,V_SG,N_F_PL node_yes = 157 node_no = 1211 
+node_num = 89 quest_num = 9 subset = N_F_SG,N_M_SG,V_PART,V_SG node_yes = 158 node_no = 1212 
+node_num = 90 quest_num = 4 subset = î node_yes = 159 node_no = 160 
+node_num = 91 quest_num = 15 subset = n,z,ACC1-9,ACC1-~a,6,i node_yes = 161 node_no = 1213 
+node_num = 92 quest_num = 3 subset = _eow_,b,d node_yes = 162 subset = a node_yes = 163 subset = c,g,n,r,h,i,m,p,t,l,s,v,u,f node_yes = 164 subset = o node_yes = 1214 node_no = 1215 
+node_num = 93 quest_num = 9 subset = N_F_SG,N_M_SG,V_INF,V_SG node_yes = 165 subset = V_PART_PRES node_yes = 1216 node_no = 166 
+node_num = 94 quest_num = 13 subset = _epsilon_,(-R-)-Þ,d,Þ,(-z-)-Þ node_yes = 167 subset = R-Þ,R node_yes = 1217 node_no = 1218 
+node_num = 95 quest_num = 13 subset = j,p node_yes = 168 node_no = 1219 
+node_num = 96 quest_num = 9 subset = ADV node_yes = 169 node_no = 170 
+node_num = 97 quest_num = 7 subset = d,_eow_,b,c,f,s,t,-,g node_yes = 171 subset = ',0,_,j,k,w,x,ç,ê,ë,ï,ô,v,q node_yes = 1220 node_no = 172 
+node_num = 98 quest_num = 9 subset = ADJ_PL,ADJ_SG,N_ADJ_F_SG node_yes = 173 node_no = 1221 
+node_num = 99 quest_num = 4 subset = i node_yes = 174 node_no = 175 
+node_num = 100 quest_num = 4 subset = ï node_yes = 1222 subset = y node_yes = 1223 node_no = 176 
+node_num = 101 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_F_PL,N_ADJ_M_SG node_yes = 1224 node_no = 1225 
+node_num = 102 quest_num = 5 subset = m,n node_yes = 177 node_no = 178 
+node_num = 103 quest_num = 13 subset = @,E_E,e,O_O,a node_yes = 179 subset = E,_epsilon_,y node_yes = 180 node_no = 1226 
+node_num = 104 quest_num = 2 subset = 0,b,p,d,f,t node_yes = 181 subset = ',_,è,à node_yes = 1227 node_no = 182 
+node_num = 105 quest_num = 3 subset = e,o,â,a node_yes = 183 subset = ',-,i,_,j,q,à,ç,è,ê,ë,î,ô,û,ï node_yes = 1228 node_no = 184 
+node_num = 106 quest_num = 6 subset = e,n node_yes = 1229 node_no = 1230 
+node_num = 107 quest_num = 13 subset = (-t-),z,Þ,(-z-),(-z-)-Þ,0 node_yes = 185 subset = _epsilon_,j,R-Þ,Z,b,d,k-s,k-s-Þ,k-Þ,l-Þ,m,p,s,s-t,v,R,f,g,k,t,l,w node_yes = 186 node_no = 1231 
+node_num = 108 quest_num = 3 subset = e node_yes = 187 subset = ',-,u,_,é,w,à,â,è,ê,ë,î,ô,û,ï node_yes = 1232 node_no = 188 
+node_num = 109 quest_num = 13 subset = ACC1-E,ACC1-e,ACC1-e-Þ,ACC1-~E,E,E_E,a node_yes = 189 subset = ACC1-i,ACC1-i-Þ,_epsilon_,i,j,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-~O,ACC1-~a node_yes = 190 node_no = 1233 
+node_num = 110 quest_num = 10 is_greater = 1 node_yes = 192 node_no = 191 
+node_num = 111 quest_num = 4 subset = u,û node_yes = 193 subset = w node_yes = 1234 node_no = 194 
+node_num = 112 quest_num = 4 subset = u,û node_yes = 195 node_no = 196 
+node_num = 113 quest_num = 9 subset = N_ADJ_M_SG node_yes = 1235 node_no = 197 
+node_num = 114 quest_num = 2 subset = k,z,b,g,m,p,v,x,c,d,f,l,n,s,t node_yes = 1236 node_no = 1237 
+node_num = 115 quest_num = 3 subset = i,o,a node_yes = 1238 subset = e node_yes = 198 node_no = 1239 
+node_num = 116 quest_num = 2 subset = b,m,v,a,i,o,d,e,l,r,s,t,é node_yes = 199 subset = h,g,p,c,f,n,u node_yes = 200 node_no = 1240 
+node_num = 117 quest_num = 3 subset = r,ê node_yes = 1241 node_no = 1242 
+node_num = 118 quest_num = 2 subset = k,ç,î,j,y,a,i,o,e node_yes = 201 subset = ',_,q,w,è,ê,ô,û,à,ï,-,z,â,0,x,_eow_ node_yes = 1243 node_no = 202 
+node_num = 119 quest_num = 9 subset = N_M_PL,N_M_SG node_yes = 1244 node_no = 1245 
+node_num = 120 quest_num = 1 subset = e,p,o,i node_yes = 203 node_no = 1246 
+node_num = 121 quest_num = 7 subset = z node_yes = 204 subset = ',_,h,j,k,w,x,â,ç,ê,ë,î,ï,ô,û,d node_yes = 1247 node_no = 205 
+node_num = 122 quest_num = 3 subset = _eow_,b,h,t,l,s,e,â,ê,î,ô,x node_yes = 1248 subset = c,n,r,i,p,u,é,o,a,ï node_yes = 206 node_no = 1249 
+node_num = 123 quest_num = 14 subset = Þ node_yes = 207 subset = @,ACC1-E-n,ACC1-i-s,ACC1-y-Þ,a_a,ACC1-e-(-R-),a-d,g-z,j-ACC1-e,s-Þ,~9,Ü,J,ACC1-~9 node_yes = 1250 node_no = 208 
+node_num = 124 quest_num = 3 subset = e,u,a node_yes = 209 subset = i,y,o node_yes = 210 node_no = 1251 
+node_num = 125 quest_num = 5 subset = _eow_ node_yes = 211 subset = s,n node_yes = 212 node_no = 1252 
+node_num = 126 quest_num = 3 subset = g node_yes = 213 subset = ',f,j,q,w,à,ç,ë,û,x node_yes = 1253 node_no = 214 
+node_num = 127 quest_num = 13 subset = _epsilon_,ACC1-~a,(-t-),(-t-)-Þ,N,Z,b,d,k-s,k-s-Þ,m,n,p,s,v,z,(-z-),(-z-)-Þ,0,R,f,g,k,t,l node_yes = 215 subset = Þ node_yes = 216 node_no = 1254 
+node_num = 128 quest_num = 5 subset = s,t,y,e,_eow_,a,â,è,é,ê,î,ô,o,u,i node_yes = 217 subset = m,l,n,p,r node_yes = 1255 node_no = 1256 
+node_num = 129 quest_num = 4 subset = f node_yes = 218 node_no = 219 
+node_num = 130 quest_num = 8 subset = 0,u node_yes = 1257 node_no = 1258 
+node_num = 131 quest_num = 8 subset = -,0,_eow_,a,e,r,i,m,n,o,s,t,z,l node_yes = 220 subset = h,x,è,é,u,d node_yes = 221 node_no = 1259 
+node_num = 132 quest_num = 13 subset = _epsilon_ node_yes = 1260 node_no = 1261 
+node_num = 133 quest_num = 2 subset = n node_yes = 222 node_no = 1262 
+node_num = 134 quest_num = 3 subset = e node_yes = 223 subset = ',-,_,q,à,â,è,ê,ë,î,ô,û,a node_yes = 1263 node_no = 224 
+node_num = 135 quest_num = 6 subset = a,i,o,â,è,é,b,d,e,f,g,m,n,p,r,s,t,u node_yes = 225 subset = l node_yes = 226 node_no = 1264 
+node_num = 136 quest_num = 5 subset = y node_yes = 1265 node_no = 1266 
+node_num = 137 quest_num = 1 subset = d node_yes = 1267 node_no = 1268 
+node_num = 138 quest_num = 1 subset = -,_eow_,c,e,h,l node_yes = 227 subset = t,é,d,s,r,x,j node_yes = 228 node_no = 1269 
+node_num = 139 quest_num = 9 subset = N_M_SG node_yes = 229 subset = V_PART,V_INF,V_PART_PRES,V_PL,V_SG,N_ADJ_F_SG,N_F_PL node_yes = 1270 node_no = 230 
+node_num = 140 quest_num = 3 subset = g node_yes = 1271 node_no = 1272 
+node_num = 141 quest_num = 0 subset = e node_yes = 1273 subset = l node_yes = 1274 node_no = 1275 
+node_num = 142 quest_num = 9 subset = N_F_SG,N_M_SG node_yes = 231 subset = V_SG node_yes = 232 node_no = 233 
+node_num = 143 quest_num = 3 subset = c node_yes = 1276 node_no = 1277 
+node_num = 144 quest_num = 2 subset = a,e,u node_yes = 234 node_no = 1278 
+node_num = 145 quest_num = 3 subset = i,u,û node_yes = 235 node_no = 1279 
+node_num = 146 quest_num = 0 subset = b,t node_yes = 236 node_no = 1280 
+node_num = 147 quest_num = 1 subset = _eow_,c,n,p,t,g,v,h,é,b,d,f,m,o,s,l,r,x node_yes = 237 subset = â,a,e,u node_yes = 238 node_no = 1281 
+node_num = 148 quest_num = 13 subset = (-z-)-Þ node_yes = 239 node_no = 1282 
+node_num = 149 quest_num = 4 subset = s node_yes = 240 node_no = 1283 
+node_num = 150 quest_num = 7 subset = x node_yes = 241 node_no = 1284 
+node_num = 151 quest_num = 3 subset = g,i,z,u,é,y,o,è,ô,a node_yes = 242 subset = ',v,_,f,j,q,w,à,â,ç,ê,ë,î,û node_yes = 1285 node_no = 243 
+node_num = 152 quest_num = 5 subset = c,y,q,e,k,è,é,ê,i node_yes = 244 subset = g,j,v,f,z,w,î node_yes = 1286 node_no = 245 
+node_num = 153 quest_num = 13 subset = d,(-z-)-Þ node_yes = 1287 subset = _epsilon_ node_yes = 246 subset = s node_yes = 1288 node_no = 1289 
+node_num = 154 quest_num = 3 subset = n,r,o,a node_yes = 247 subset = i,e node_yes = 248 subset = u node_yes = 249 subset = ï node_yes = 1290 node_no = 1291 
+node_num = 155 quest_num = 2 subset = h,0,_eow_,o,n,é node_yes = 250 subset = b,m,v,a,i,d,e,f,l,r,s,t node_yes = 251 node_no = 1292 
+node_num = 156 quest_num = 3 subset = e,o,a node_yes = 1293 node_no = 1294 
+node_num = 157 quest_num = 3 subset = n,e,y,o,a node_yes = 1295 subset = i,u node_yes = 252 node_no = 1296 
+node_num = 158 quest_num = 14 subset = (-z-)-Þ node_yes = 1297 subset = _epsilon_,0 node_yes = 253 node_no = 1298 
+node_num = 159 quest_num = 6 subset = _eow_,e,h,r node_yes = 254 subset = m,t node_yes = 1299 node_no = 1300 
+node_num = 160 quest_num = 13 subset = Þ node_yes = 255 node_no = 1301 
+node_num = 161 quest_num = 13 subset = ACC1-E,E,_epsilon_,e,i,O_O,y,Z,b,d,m,n,p,v,z,R,f,g,k,t,l node_yes = 256 subset = a,s node_yes = 257 node_no = 1302 
+node_num = 162 quest_num = 4 subset = î node_yes = 1303 node_no = 1304 
+node_num = 163 quest_num = 9 subset = ADV,N_M_PL,N_M_SG,V_INF,V_PART_PRES,V_PL,V_SG node_yes = 258 node_no = 1305 
+node_num = 164 quest_num = 6 subset = a,i,o,é,r node_yes = 259 node_no = 1306 
+node_num = 165 quest_num = 7 subset = 0 node_yes = 260 subset = _eow_ node_yes = 261 node_no = 1307 
+node_num = 166 quest_num = 3 subset = i,é node_yes = 262 subset = ',-,_eow_,_,j,o,q,w,à,â,ç,è,ê,ë,î,ô,û,a node_yes = 1308 node_no = 263 
+node_num = 167 quest_num = 7 subset = 0,_eow_,l node_yes = 264 subset = e,i node_yes = 1309 node_no = 1310 
+node_num = 168 quest_num = 3 subset = e node_yes = 1311 subset = u node_yes = 1312 node_no = 1313 
+node_num = 169 quest_num = 15 subset = 2,Z,b,u,~a,k,s,t,E,R,_epsilon_ node_yes = 265 subset = ACC1-~a node_yes = 266 node_no = 1314 
+node_num = 170 quest_num = 2 subset = _eow_ node_yes = 267 subset = ',_,k,w,ç,à,j,x node_yes = 1315 node_no = 268 
+node_num = 171 quest_num = 6 subset = -,h,s,t,l node_yes = 269 subset = n node_yes = 1316 node_no = 1317 
+node_num = 172 quest_num = 13 subset = _epsilon_,j,a,(-z-) node_yes = 270 subset = b,d,p,v,f,g,t node_yes = 271 subset = J,Z,z,0 node_yes = 1318 node_no = 272 
+node_num = 173 quest_num = 0 subset = _eow_ node_yes = 1319 node_no = 1320 
+node_num = 174 quest_num = 5 subset = l node_yes = 273 subset = q node_yes = 1321 node_no = 274 
+node_num = 175 quest_num = 4 subset = ï node_yes = 275 node_no = 276 
+node_num = 176 quest_num = 13 subset = _epsilon_,(-t-),t node_yes = 1322 subset = Þ node_yes = 277 node_no = 1323 
+node_num = 177 quest_num = 6 subset = _eow_,b,p,t node_yes = 278 node_no = 1324 
+node_num = 178 quest_num = 6 subset = _eow_,z,q,b,c,d,e,f,g,h,k,m,n,p,r,s,t,u,v node_yes = 279 subset = l node_yes = 280 node_no = 1325 
+node_num = 179 quest_num = 3 subset = r,u node_yes = 281 node_no = 1326 
+node_num = 180 quest_num = 3 subset = o,a node_yes = 1327 node_no = 1328 
+node_num = 181 quest_num = 3 subset = _eow_,g,h,p,t,s,z,v,é,f,o,a node_yes = 282 subset = r,l,u node_yes = 283 node_no = 1329 
+node_num = 182 quest_num = 8 subset = -,z node_yes = 284 subset = ',j,k,w,x,à,ê,ë,î,ï,ô,û,â node_yes = 1330 node_no = 285 
+node_num = 183 quest_num = 6 subset = -,a,i,o,â,è,é,î,c,e,f,m,n,r,s,t,u,v node_yes = 286 subset = j,h,l node_yes = 287 node_no = 1331 
+node_num = 184 quest_num = 14 subset = d,b,p node_yes = 288 subset = ACC1-E-s,~E,a_a,o,u,Þ,(-z-)-Þ,(-@-)-Þ,(-R-)-Þ,(-n-),(-t-),(-t-)-Þ,(-z-),0,2,9,ACC1-2,ACC1-9,ACC1-e-(-R-),N,R-Þ,a-d,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,l-Þ,s-t,s-Þ,~9,~a,Ü node_yes = 1332 node_no = 289 
+node_num = 185 quest_num = 5 subset = m node_yes = 1333 subset = u node_yes = 1334 node_no = 1335 
+node_num = 186 quest_num = 3 subset = o node_yes = 290 subset = ',-,k,_,q,w,à,â,è,ê,ë,î,ô,û,ï node_yes = 1336 node_no = 291 
+node_num = 187 quest_num = 5 subset = s,t,d,x,e,_eow_ node_yes = 292 subset = b,g,v,f,l,n,p,r,i node_yes = 293 node_no = 1337 
+node_num = 188 quest_num = 3 subset = a node_yes = 294 subset = o node_yes = 295 node_no = 296 
+node_num = 189 quest_num = 15 subset = d,n,ACC1-E node_yes = 1338 node_no = 1339 
+node_num = 190 quest_num = 4 subset = u node_yes = 297 subset = ô,û node_yes = 1340 node_no = 1341 
+node_num = 191 quest_num = 3 subset = _eow_ node_yes = 298 node_no = 1342 
+node_num = 192 quest_num = 5 subset = y,î,i node_yes = 299 node_no = 300 
+node_num = 193 quest_num = 3 subset = o node_yes = 301 node_no = 302 
+node_num = 194 quest_num = 6 subset = d,t node_yes = 1343 node_no = 1344 
+node_num = 195 quest_num = 3 subset = a node_yes = 303 subset = -,u,ï node_yes = 1345 node_no = 304 
+node_num = 196 quest_num = 6 subset = -,j,ç,z,q,b,c,d,f,g,p,s,t,v node_yes = 305 subset = ',_,w,ë,ï,ô,û,_eow_,x,0 node_yes = 1346 node_no = 306 
+node_num = 197 quest_num = 2 subset = m,p node_yes = 1347 node_no = 1348 
+node_num = 198 quest_num = 9 subset = ADJ_SG,N_ADJ_M_SG,N_F_PL node_yes = 1349 node_no = 1350 
+node_num = 199 quest_num = 0 subset = n node_yes = 307 node_no = 1351 
+node_num = 200 quest_num = 0 subset = 0,i node_yes = 1352 subset = a,é,_eow_,u,b,e,l,r,s,t,n,o,f node_yes = 308 node_no = 1353 
+node_num = 201 quest_num = 0 subset = _eow_,t,v node_yes = 309 node_no = 1354 
+node_num = 202 quest_num = 9 subset = V_PART,V_SG node_yes = 310 node_no = 1355 
+node_num = 203 quest_num = 2 subset = a node_yes = 1356 node_no = 1357 
+node_num = 204 quest_num = 3 subset = i,u,o,a node_yes = 1358 node_no = 1359 
+node_num = 205 quest_num = 13 subset = s,Þ node_yes = 1360 node_no = 1361 
+node_num = 206 quest_num = 7 subset = _eow_,b,c,e,i,l,s,t,u,-,n node_yes = 311 subset = r,z,g,m node_yes = 312 node_no = 1362 
+node_num = 207 quest_num = 9 subset = N_F_SG node_yes = 313 node_no = 1363 
+node_num = 208 quest_num = 5 subset = -,h node_yes = 314 node_no = 1364 
+node_num = 209 quest_num = 12 is_true node_yes = 316 node_no = 315 
+node_num = 210 quest_num = 2 subset = z node_yes = 317 node_no = 1365 
+node_num = 211 quest_num = 9 subset = N_M_SG node_yes = 1366 node_no = 1367 
+node_num = 212 quest_num = 2 subset = a,d,f,n,t node_yes = 318 node_no = 1368 
+node_num = 213 quest_num = 1 subset = 0,_eow_,t node_yes = 319 subset = w,y,i node_yes = 1369 node_no = 1370 
+node_num = 214 quest_num = 9 subset = V_PART_PRES node_yes = 320 node_no = 321 
+node_num = 215 quest_num = 6 subset = 0 node_yes = 322 subset = ',_,ç,ë,ï,x node_yes = 1371 node_no = 323 
+node_num = 216 quest_num = 9 subset = N_F_SG,N_M_SG node_yes = 324 node_no = 1372 
+node_num = 217 quest_num = 2 subset = y,c node_yes = 325 subset = ',_,q,w,ç,ô,à,ï,h,j,z,0,b,g,m,p,v,x node_yes = 1373 node_no = 326 
+node_num = 218 quest_num = 13 subset = f node_yes = 327 subset = (-R-)-Þ,(-n-),(-t-),(-t-)-Þ,2,9,ACC1-2,ACC1-E-n,ACC1-E-s,ACC1-e-(-R-),ACC1-y-Þ,J,N,R-Þ,S,Z,a-d,b,d,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,l-Þ,m,n,o,p,s,s-t,s-Þ,u,v,z,~9,~E,~a,Ü,Þ node_yes = 1374 node_no = 328 
+node_num = 219 quest_num = 3 subset = -,_eow_ node_yes = 329 subset = p,â,è,ï node_yes = 1375 node_no = 330 
+node_num = 220 quest_num = 14 subset = _epsilon_,ACC1-a,ACC1-i-Þ,ACC1-y,O_O,i,j,y node_yes = 331 node_no = 1376 
+node_num = 221 quest_num = 0 subset = 0,o node_yes = 332 subset = _eow_,t node_yes = 1377 node_no = 1378 
+node_num = 222 quest_num = 3 subset = n node_yes = 1379 node_no = 1380 
+node_num = 223 quest_num = 5 subset = b,g,s,t,d,n,k node_yes = 333 node_no = 1381 
+node_num = 224 quest_num = 5 subset = h,u node_yes = 334 subset = m,n,o node_yes = 335 node_no = 336 
+node_num = 225 quest_num = 9 subset = ADV,V_INF,V_PART_PRES,V_PL,V_SG node_yes = 337 node_no = 338 
+node_num = 226 quest_num = 14 subset = l node_yes = 339 node_no = 1382 
+node_num = 227 quest_num = 3 subset = i,o node_yes = 1383 node_no = 1384 
+node_num = 228 quest_num = 13 subset = t node_yes = 340 subset = 0 node_yes = 1385 node_no = 341 
+node_num = 229 quest_num = 5 subset = _eow_ node_yes = 342 subset = s node_yes = 1386 node_no = 1387 
+node_num = 230 quest_num = 2 subset = y,a,o,e,u node_yes = 1388 subset = i node_yes = 343 node_no = 1389 
+node_num = 231 quest_num = 4 subset = z node_yes = 1390 node_no = 344 
+node_num = 232 quest_num = 3 subset = n,d,i,p,t,u,o,î,a node_yes = 345 subset = r,e node_yes = 346 node_no = 1391 
+node_num = 233 quest_num = 3 subset = s,è node_yes = 347 node_no = 1392 
+node_num = 234 quest_num = 3 subset = l,e,u,a node_yes = 1393 node_no = 1394 
+node_num = 235 quest_num = 9 subset = ADJ_PL,N_ADJ_M_SG node_yes = 1395 node_no = 1396 
+node_num = 236 quest_num = 4 subset = k node_yes = 1397 node_no = 1398 
+node_num = 237 quest_num = 3 subset = l node_yes = 348 node_no = 1399 
+node_num = 238 quest_num = 3 subset = b,g,n,r node_yes = 1400 subset = l node_yes = 349 node_no = 1401 
+node_num = 239 quest_num = 3 subset = i node_yes = 350 node_no = 1402 
+node_num = 240 quest_num = 13 subset = Þ node_yes = 1403 subset = (-z-)-Þ node_yes = 1404 node_no = 351 
+node_num = 241 quest_num = 0 subset = 0 node_yes = 1405 node_no = 1406 
+node_num = 242 quest_num = 5 subset = e,a,â,è,é,î,o,u,i node_yes = 352 subset = w,û,ê,ô node_yes = 1407 node_no = 353 
+node_num = 243 quest_num = 14 subset = S node_yes = 1408 subset = @,ACC1-E-n,ACC1-E-s,ACC1-i-s,ACC1-y-Þ,H,a_a,ACC1-e-(-R-),a-d,g-z,j-ACC1-e,k-s-Þ,k-t,k-Þ,s-t,s-Þ,~9,Ü,ACC1-~9 node_yes = 1409 node_no = 354 
+node_num = 244 quest_num = 4 subset = k node_yes = 1410 subset = q node_yes = 1411 node_no = 355 
+node_num = 245 quest_num = 13 subset = (-t-),Þ node_yes = 356 node_no = 1412 
+node_num = 246 quest_num = 5 subset = - node_yes = 1413 node_no = 1414 
+node_num = 247 quest_num = 2 subset = e,l node_yes = 357 node_no = 1415 
+node_num = 248 quest_num = 2 subset = k,a,e node_yes = 358 node_no = 1416 
+node_num = 249 quest_num = 2 subset = p,a,o,e node_yes = 359 subset = s node_yes = 1417 node_no = 1418 
+node_num = 250 quest_num = 5 subset = -,s,t,c,y node_yes = 360 subset = f,p,q node_yes = 1419 node_no = 361 
+node_num = 251 quest_num = 5 subset = - node_yes = 362 node_no = 1420 
+node_num = 252 quest_num = 9 subset = N_F_SG,N_M_SG node_yes = 1421 node_no = 363 
+node_num = 253 quest_num = 5 subset = s node_yes = 1422 node_no = 1423 
+node_num = 254 quest_num = 3 subset = e,a node_yes = 1424 subset = o node_yes = 1425 node_no = 1426 
+node_num = 255 quest_num = 4 subset = ê node_yes = 1427 node_no = 364 
+node_num = 256 quest_num = 3 subset = r,t,f node_yes = 365 subset = ',e,_,q,à,â,ç,è,ê,ë,î,ô,û,ï node_yes = 1428 node_no = 366 
+node_num = 257 quest_num = 9 subset = V_INF,V_PART_PRES,V_PL,V_SG node_yes = 367 node_no = 1429 
+node_num = 258 quest_num = 1 subset = _eow_,f node_yes = 368 subset = a,c,e,n,p,t node_yes = 369 node_no = 1430 
+node_num = 259 quest_num = 4 subset = î node_yes = 1431 node_no = 370 
+node_num = 260 quest_num = 5 subset = n node_yes = 371 node_no = 372 
+node_num = 261 quest_num = 5 subset = s node_yes = 1432 node_no = 1433 
+node_num = 262 quest_num = 5 subset = _eow_ node_yes = 373 node_no = 1434 
+node_num = 263 quest_num = 9 subset = V_PART node_yes = 374 node_no = 375 
+node_num = 264 quest_num = 5 subset = r,z node_yes = 376 subset = u node_yes = 1435 node_no = 377 
+node_num = 265 quest_num = 5 subset = s,c,m,l,n,r,a node_yes = 378 subset = x node_yes = 1436 node_no = 1437 
+node_num = 266 quest_num = 3 subset = i node_yes = 1438 node_no = 1439 
+node_num = 267 quest_num = 5 subset = x,a node_yes = 379 subset = b,g,j,s,t,c,m,v,ç,d,f,y,h,l,n,p,q,r node_yes = 380 node_no = 1440 
+node_num = 268 quest_num = 13 subset = g-z,k-s node_yes = 1441 subset = a,J,(-z-) node_yes = 1442 node_no = 381 
+node_num = 269 quest_num = 3 subset = _eow_,i,é node_yes = 382 subset = c,b,g,n,r,d,h,m,p,t,l,s,v,u,y,f node_yes = 383 node_no = 1443 
+node_num = 270 quest_num = 9 subset = ADV,V_INF,V_PART_PRES,V_PL,V_SG node_yes = 384 node_no = 385 
+node_num = 271 quest_num = 14 subset = z,R,l node_yes = 386 subset = _epsilon_,d,m,n,t,s node_yes = 1444 node_no = 1445 
+node_num = 272 quest_num = 14 subset = R node_yes = 387 subset = d,m,n,t,z,f,b,g,p,s,k,v,Z node_yes = 388 subset = _epsilon_,l node_yes = 389 node_no = 1446 
+node_num = 273 quest_num = 3 subset = o node_yes = 1447 node_no = 390 
+node_num = 274 quest_num = 13 subset = (-n-),Þ node_yes = 391 subset = _epsilon_,R-Þ,Z,b,d,k-Þ,m,n,v,z,(-z-),(-z-)-Þ,R,f,g node_yes = 392 node_no = 1448 
+node_num = 275 quest_num = 13 subset = (-@-),(-@-)-Þ,(-z-),(-z-)-Þ node_yes = 1449 node_no = 1450 
+node_num = 276 quest_num = 13 subset = _epsilon_,Þ,(-z-)-Þ node_yes = 1451 node_no = 1452 
+node_num = 277 quest_num = 9 subset = N_M_SG node_yes = 1453 node_no = 1454 
+node_num = 278 quest_num = 13 subset = n node_yes = 1455 node_no = 1456 
+node_num = 279 quest_num = 13 subset = Þ node_yes = 393 node_no = 1457 
+node_num = 280 quest_num = 14 subset = _epsilon_ node_yes = 1458 node_no = 1459 
+node_num = 281 quest_num = 0 subset = é,i node_yes = 1460 node_no = 1461 
+node_num = 282 quest_num = 11 is_greater = 1 node_yes = 395 node_no = 394 
+node_num = 283 quest_num = 13 subset = ACC1-E,ACC1-e,ACC1-e-Þ,E,E_E,_epsilon_,e,ACC1-a,O_O,a,ACC1-O,ACC1-y,O,ACC1-a-Þ,ACC1-a_a,ACC1-o,ACC1-~O,~O,ACC1-~a node_yes = 396 subset = j,j-ACC1-e node_yes = 1462 node_no = 1463 
+node_num = 284 quest_num = 3 subset = o,a node_yes = 397 subset = c,n,r,d,t,l,s,v,u,f node_yes = 398 node_no = 1464 
+node_num = 285 quest_num = 6 subset = -,é,x,m node_yes = 399 subset = ',_,j,w,y,à,â,ç,è,ê,ë,î,ï,ô,û,0,h node_yes = 1465 node_no = 400 
+node_num = 286 quest_num = 4 subset = i node_yes = 1466 node_no = 401 
+node_num = 287 quest_num = 14 subset = _epsilon_,Z,S node_yes = 402 subset = l node_yes = 1467 node_no = 1468 
+node_num = 288 quest_num = 5 subset = -,b,g,s,d,l,p,r,z node_yes = 1469 subset = m,n node_yes = 403 node_no = 1470 
+node_num = 289 quest_num = 3 subset = u node_yes = 404 subset = y node_yes = 1471 node_no = 405 
+node_num = 290 quest_num = 0 subset = a node_yes = 1472 node_no = 1473 
+node_num = 291 quest_num = 5 subset = m,u node_yes = 406 subset = z,_eow_ node_yes = 1474 node_no = 407 
+node_num = 292 quest_num = 6 subset = 0 node_yes = 408 node_no = 1475 
+node_num = 293 quest_num = 13 subset = j,R-Þ,b,l-Þ,n,p,v,R,f,g node_yes = 409 subset = _epsilon_,l node_yes = 410 node_no = 1476 
+node_num = 294 quest_num = 6 subset = 0 node_yes = 411 subset = _eow_,e,f,h,n,r,s,t,u node_yes = 412 node_no = 1477 
+node_num = 295 quest_num = 5 subset = _eow_ node_yes = 413 subset = n,a node_yes = 1478 node_no = 1479 
+node_num = 296 quest_num = 4 subset = ô node_yes = 1480 node_no = 414 
+node_num = 297 quest_num = 14 subset = _epsilon_,m,ACC1-e,ACC1-~O,ACC1-~a,R,ACC1-u,b,s,(-t-),(-t-)-Þ,0,ACC1-2,ACC1-9,R-Þ,l-Þ,~a,Z node_yes = 415 subset = n,z,ACC1-~E,Þ,(-z-)-Þ,(-z-),k node_yes = 416 node_no = 1481 
+node_num = 298 quest_num = 7 subset = h,c,e,l,t node_yes = 1482 node_no = 1483 
+node_num = 299 quest_num = 4 subset = o node_yes = 417 subset = u node_yes = 418 node_no = 1484 
+node_num = 300 quest_num = 13 subset = ACC1-E,ACC1-e,ACC1-e-Þ,E,E_E,_epsilon_,e,ACC1-a,O_O,a,ACC1-O,O,ACC1-a-Þ,ACC1-a_a,ACC1-o,ACC1-~O,ACC1-~a,ACC1-E-s node_yes = 419 node_no = 1485 
+node_num = 301 quest_num = 5 subset = h,ï node_yes = 420 node_no = 1486 
+node_num = 302 quest_num = 13 subset = _epsilon_,b,n,p,v,R,g,l node_yes = 421 subset = Z,d,m,s,z,k,t node_yes = 1487 node_no = 1488 
+node_num = 303 quest_num = 6 subset = -,a,i,o,â,è,é,ô,b,e,f,h,r,s,u,l node_yes = 422 subset = c,m,p,t node_yes = 1489 node_no = 1490 
+node_num = 304 quest_num = 0 subset = e node_yes = 423 subset = ',_,w,x,z,à,â,è,ê,î,ï,ô,û,ç node_yes = 1491 node_no = 424 
+node_num = 305 quest_num = 5 subset = j,m,v,ç,h,n,q,k,z,w node_yes = 1492 node_no = 425 
+node_num = 306 quest_num = 4 subset = w node_yes = 1493 node_no = 426 
+node_num = 307 quest_num = 1 subset = n,f node_yes = 1494 node_no = 1495 
+node_num = 308 quest_num = 9 subset = ADJ_PL node_yes = 1496 node_no = 1497 
+node_num = 309 quest_num = 1 subset = m,s,i node_yes = 427 node_no = 1498 
+node_num = 310 quest_num = 3 subset = r node_yes = 1499 node_no = 1500 
+node_num = 311 quest_num = 8 subset = x,-,0,_eow_,a,e,r,é,i,n,o,s,t,c,l node_yes = 428 subset = d node_yes = 1501 node_no = 1502 
+node_num = 312 quest_num = 14 subset = _epsilon_,ACC1-E,ACC1-a,ACC1-e,E node_yes = 429 subset = ACC1-O,a node_yes = 1503 node_no = 1504 
+node_num = 313 quest_num = 3 subset = i,p,u,é,o,a node_yes = 430 subset = n,r,s node_yes = 1505 node_no = 1506 
+node_num = 314 quest_num = 6 subset = a,i,o,y,è,é,_eow_,e,n,u node_yes = 1507 subset = m,r,s,l node_yes = 431 node_no = 1508 
+node_num = 315 quest_num = 3 subset = e node_yes = 432 node_no = 433 
+node_num = 316 quest_num = 5 subset = m node_yes = 434 subset = t node_yes = 1509 node_no = 435 
+node_num = 317 quest_num = 3 subset = o node_yes = 1510 node_no = 1511 
+node_num = 318 quest_num = 3 subset = e,u node_yes = 1512 node_no = 1513 
+node_num = 319 quest_num = 0 subset = 0,a,_eow_,n node_yes = 436 subset = s node_yes = 1514 node_no = 1515 
+node_num = 320 quest_num = 12 is_true node_yes = 1516 node_no = 1517 
+node_num = 321 quest_num = 13 subset = (-@-),(-@-)-Þ,6,@,ACC1-E,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-Þ,ACC1-~E,E,E_E,_epsilon_,e,i,j,ACC1-a,O_O,a,ACC1-O,ACC1-y,y,O,ACC1-a-Þ,ACC1-a_a,ACC1-i-s,ACC1-o,ACC1-~O,H,w-ACC1-a,w-a,~O,9,ACC1-2,ACC1-y-Þ,a-d,~E,ACC1-9,ACC1-u,a_a node_yes = 437 subset = k-Þ,k node_yes = 438 node_no = 1518 
+node_num = 322 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 439 node_no = 1519 
+node_num = 323 quest_num = 3 subset = e,a node_yes = 440 subset = i,ï node_yes = 441 subset = n,r,u,y,o,î node_yes = 442 node_no = 1520 
+node_num = 324 quest_num = 3 subset = i,u,o node_yes = 443 node_no = 1521 
+node_num = 325 quest_num = 7 subset = 0,u,m node_yes = 1522 node_no = 1523 
+node_num = 326 quest_num = 6 subset = 0 node_yes = 444 subset = a,o,y,ï,z,d,l node_yes = 445 subset = ',_,j,w,à,â,ç,è,ê,ë,ô,û node_yes = 1524 node_no = 446 
+node_num = 327 quest_num = 3 subset = e node_yes = 447 node_no = 1525 
+node_num = 328 quest_num = 2 subset = h,a node_yes = 448 node_no = 1526 
+node_num = 329 quest_num = 15 subset = (-@-),ACC1-~O,S,(-@-)-Þ,(-R-)-Þ,(-t-),(-z-)-Þ,0,@,ACC1-u,Z,b,d,g,k-Þ,l-Þ,n,s-t,Þ,k,s,t,ACC1-E,ACC1-a,ACC1-a-Þ,a,ACC1-~a,ACC1-o,R,_epsilon_,j,l,p,ACC1-e,ACC1-e-Þ,ACC1-a_a,f node_yes = 449 subset = v,m,E,O_O,6,ACC1-O,ACC1-i,E_E,O,i,~O,e,ACC1-E-n node_yes = 450 node_no = 1527 
+node_num = 330 quest_num = 5 subset = _eow_ node_yes = 451 subset = ',-,_,ç,x,k,w,ë,ï,û,ê,î node_yes = 1528 node_no = 452 
+node_num = 331 quest_num = 9 subset = ADJ_PL,ADJ_SG,V_PART node_yes = 453 subset = N_ADJ_F_SG node_yes = 1529 node_no = 454 
+node_num = 332 quest_num = 5 subset = b node_yes = 1530 node_no = 1531 
+node_num = 333 quest_num = 2 subset = b,l node_yes = 1532 subset = h,r,t node_yes = 1533 subset = j node_yes = 1534 node_no = 1535 
+node_num = 334 quest_num = 5 subset = u node_yes = 1536 node_no = 455 
+node_num = 335 quest_num = 14 subset = _epsilon_,b,Þ,p,0 node_yes = 456 node_no = 1537 
+node_num = 336 quest_num = 3 subset = _eow_,u,o,w node_yes = 457 node_no = 458 
+node_num = 337 quest_num = 15 subset = (-@-),ACC1-~O,(-z-)-Þ,0,Þ,m,s,ACC1-E,ACC1-a,ACC1-a-Þ,ACC1-~a,E,_epsilon_,j,ACC1-e,ACC1-a_a,6,J node_yes = 459 subset = (-R-)-Þ,(-t-),(-t-)-Þ,n,a,O_O,R,l,ACC1-O,ACC1-i,ACC1-y,O,i,e,H node_yes = 460 node_no = 1538 
+node_num = 338 quest_num = 11 is_greater = 4 node_yes = 462 node_no = 461 
+node_num = 339 quest_num = 15 subset = _epsilon_ node_yes = 1539 node_no = 1540 
+node_num = 340 quest_num = 0 subset = é,_eow_,p,r,n node_yes = 1541 subset = e node_yes = 463 node_no = 1542 
+node_num = 341 quest_num = 3 subset = e,u node_yes = 1543 node_no = 1544 
+node_num = 342 quest_num = 2 subset = a node_yes = 1545 node_no = 1546 
+node_num = 343 quest_num = 1 subset = a,o node_yes = 1547 node_no = 1548 
+node_num = 344 quest_num = 3 subset = d,t,e,a node_yes = 1549 node_no = 1550 
+node_num = 345 quest_num = 3 subset = d node_yes = 464 node_no = 1551 
+node_num = 346 quest_num = 2 subset = a,i,o,e,u node_yes = 465 node_no = 1552 
+node_num = 347 quest_num = 2 subset = c node_yes = 1553 subset = r node_yes = 466 node_no = 1554 
+node_num = 348 quest_num = 13 subset = (-@-),(-@-)-Þ,6,@,ACC1-E,ACC1-e,ACC1-e-Þ,E,_epsilon_,ACC1-a,O_O,ACC1-O,O,ACC1-a-Þ,ACC1-a_a,ACC1-o,ACC1-~O,ACC1-~a node_yes = 467 subset = ACC1-i,E_E,e,i,j,a,ACC1-y,y,w-ACC1-a,(-z-)-Þ node_yes = 468 node_no = 1555 
+node_num = 349 quest_num = 0 subset = q,g node_yes = 469 subset = ',-,0,_,a,k,w,x,y,z,à,â,è,é,ê,î,ï,ô,û node_yes = 1556 node_no = 470 
+node_num = 350 quest_num = 2 subset = m,x,o,c,f,r node_yes = 1557 node_no = 1558 
+node_num = 351 quest_num = 5 subset = ç,h node_yes = 1559 node_no = 471 
+node_num = 352 quest_num = 4 subset = ç node_yes = 1560 node_no = 472 
+node_num = 353 quest_num = 4 subset = z node_yes = 473 subset = ç node_yes = 1561 node_no = 474 
+node_num = 354 quest_num = 4 subset = z node_yes = 475 node_no = 476 
+node_num = 355 quest_num = 13 subset = (-@-),(-@-)-Þ,6,@,ACC1-E,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-Þ,ACC1-~E,E,E_E,_epsilon_,e,i,j,~E node_yes = 477 subset = ACC1-~a,k node_yes = 1562 subset = s,Þ node_yes = 1563 node_no = 1564 
+node_num = 356 quest_num = 3 subset = n,e node_yes = 478 node_no = 1565 
+node_num = 357 quest_num = 5 subset = _eow_ node_yes = 1566 subset = s node_yes = 479 node_no = 1567 
+node_num = 358 quest_num = 5 subset = _eow_ node_yes = 1568 node_no = 1569 
+node_num = 359 quest_num = 5 subset = _eow_ node_yes = 480 node_no = 1570 
+node_num = 360 quest_num = 2 subset = 0 node_yes = 1571 node_no = 1572 
+node_num = 361 quest_num = 3 subset = y,a node_yes = 1573 node_no = 1574 
+node_num = 362 quest_num = 0 subset = 0 node_yes = 1575 node_no = 1576 
+node_num = 363 quest_num = 2 subset = l,n,r node_yes = 481 node_no = 1577 
+node_num = 364 quest_num = 3 subset = c node_yes = 1578 subset = r,i,m,p,t,u,o node_yes = 482 node_no = 1579 
+node_num = 365 quest_num = 5 subset = c node_yes = 483 node_no = 1580 
+node_num = 366 quest_num = 2 subset = m,p,i,l node_yes = 484 node_no = 1581 
+node_num = 367 quest_num = 14 subset = ACC1-i,i,l node_yes = 485 subset = n,t,j,Z node_yes = 1582 node_no = 1583 
+node_num = 368 quest_num = 2 subset = n node_yes = 1584 node_no = 1585 
+node_num = 369 quest_num = 9 subset = N_M_PL,N_M_SG node_yes = 486 node_no = 1586 
+node_num = 370 quest_num = 2 subset = b,g,_eow_,c,l,u node_yes = 487 node_no = 1587 
+node_num = 371 quest_num = 3 subset = d,h,m,p,t,l,s,k,v node_yes = 1588 node_no = 1589 
+node_num = 372 quest_num = 3 subset = i,e,é,a node_yes = 488 subset = ',-,_eow_,_,j,o,q,w,à,â,ç,è,ê,ë,î,ô,û node_yes = 1590 node_no = 489 
+node_num = 373 quest_num = 3 subset = é node_yes = 1591 node_no = 490 
+node_num = 374 quest_num = 5 subset = s node_yes = 491 subset = n node_yes = 1592 node_no = 492 
+node_num = 375 quest_num = 13 subset = _epsilon_,(-n-),n,s,s-t,Þ node_yes = 493 subset = (-t-),(-z-),(-z-)-Þ,0 node_yes = 494 node_no = 1593 
+node_num = 376 quest_num = 2 subset = l,r node_yes = 495 node_no = 1594 
+node_num = 377 quest_num = 3 subset = i node_yes = 1595 node_no = 1596 
+node_num = 378 quest_num = 11 is_greater = 1 node_yes = 1597 node_no = 1598 
+node_num = 379 quest_num = 5 subset = x node_yes = 1599 node_no = 1600 
+node_num = 380 quest_num = 15 subset = ACC1-~O,(-R-)-Þ,(-z-),b,k-s-Þ,l-Þ,ACC1-E,ACC1-a,a,ACC1-o,O_O,ACC1-e,ACC1-e-Þ,ACC1-O,ACC1-i,ACC1-y,i,e node_yes = 496 subset = (-@-),S,(-@-)-Þ,(-n-),2,@,ACC1-e-(-R-),N,a-d,a_a,g-z,i-j,j-ACC1-e,k-t,k-Þ,o,s-t,s-Þ,w-a,~9,Ü,6,E_E,O,y,~O,ACC1-y-Þ,ACC1-~9,w-ACC1-a,ACC1-i-s,ACC1-i-Þ,ACC1-E-n,ACC1-E-s,H,J node_yes = 1601 node_no = 497 
+node_num = 381 quest_num = 11 is_greater = 1 node_yes = 499 node_no = 498 
+node_num = 382 quest_num = 2 subset = v,o,c,f,l,n,r,u node_yes = 1602 node_no = 1603 
+node_num = 383 quest_num = 13 subset = j,n,s,R node_yes = 1604 subset = _epsilon_ node_yes = 500 subset = a node_yes = 1605 node_no = 1606 
+node_num = 384 quest_num = 15 subset = (-@-),ACC1-~O,@,ACC1-E,ACC1-a-Þ,ACC1-~a,R,_epsilon_,j,ACC1-e,ACC1-a_a,6,J node_yes = 501 subset = (-@-)-Þ,w-a,ACC1-a,a,ACC1-o,E,O_O,l,ACC1-O,ACC1-i,ACC1-y,E_E,O,i,y,~O,e,w-ACC1-a,H node_yes = 502 node_no = 1607 
+node_num = 385 quest_num = 5 subset = - node_yes = 503 subset = g,s,t,c,m,d,f,l,n,p,r,ï,a,i node_yes = 504 node_no = 1608 
+node_num = 386 quest_num = 2 subset = -,_eow_ node_yes = 505 subset = a,i,n,s,é node_yes = 506 subset = c,e,r,t node_yes = 1609 node_no = 1610 
+node_num = 387 quest_num = 0 subset = 0 node_yes = 1611 subset = e node_yes = 1612 node_no = 1613 
+node_num = 388 quest_num = 8 subset = u node_yes = 507 node_no = 1614 
+node_num = 389 quest_num = 5 subset = c,l,n,r,x node_yes = 508 subset = s node_yes = 509 node_no = 1615 
+node_num = 390 quest_num = 13 subset = l-Þ,l node_yes = 1616 node_no = 1617 
+node_num = 391 quest_num = 5 subset = m,n node_yes = 1618 node_no = 1619 
+node_num = 392 quest_num = 5 subset = m,d node_yes = 510 node_no = 1620 
+node_num = 393 quest_num = 5 subset = l node_yes = 1621 subset = s node_yes = 511 node_no = 1622 
+node_num = 394 quest_num = 4 subset = y node_yes = 512 subset = ï node_yes = 1623 node_no = 1624 
+node_num = 395 quest_num = 4 subset = i node_yes = 513 node_no = 1625 
+node_num = 396 quest_num = 5 subset = e node_yes = 514 node_no = 1626 
+node_num = 397 quest_num = 4 subset = y node_yes = 1627 node_no = 1628 
+node_num = 398 quest_num = 5 subset = e node_yes = 515 subset = â,u,i node_yes = 1629 node_no = 1630 
+node_num = 399 quest_num = 3 subset = o,a node_yes = 516 subset = c,b,n,r,d,p,t,l,s,z,v,u,x node_yes = 517 node_no = 1631 
+node_num = 400 quest_num = 13 subset = 6,ACC1-E,ACC1-e,ACC1-e-Þ,ACC1-~E,E,E_E,_epsilon_,e,ACC1-a,O_O,a,ACC1-O,ACC1-y,O,ACC1-a-Þ,ACC1-a_a,ACC1-o,ACC1-~O,~O,ACC1-~a,ACC1-2,ACC1-E-s,o,ACC1-u,a_a node_yes = 518 subset = ACC1-i,y,j-ACC1-e node_yes = 519 node_no = 1632 
+node_num = 401 quest_num = 3 subset = a node_yes = 520 subset = o node_yes = 521 node_no = 1633 
+node_num = 402 quest_num = 15 subset = j node_yes = 1634 node_no = 1635 
+node_num = 403 quest_num = 13 subset = m,n node_yes = 1636 node_no = 1637 
+node_num = 404 quest_num = 6 subset = l node_yes = 522 node_no = 1638 
+node_num = 405 quest_num = 7 subset = h node_yes = 523 node_no = 1639 
+node_num = 406 quest_num = 5 subset = u node_yes = 524 node_no = 525 
+node_num = 407 quest_num = 14 subset = (-@-),_epsilon_,d,m,n,t,R,f,b,l,Þ,g,p,s,(-@-)-Þ,0,s-t,k,v,J,Z,S node_yes = 526 subset = (-z-)-Þ,(-z-),l-Þ node_yes = 527 node_no = 1640 
+node_num = 408 quest_num = 9 subset = ADJ_SG,ADV,N_ADJ_M_SG node_yes = 1641 node_no = 1642 
+node_num = 409 quest_num = 6 subset = e node_yes = 528 node_no = 1643 
+node_num = 410 quest_num = 2 subset = ï,b,c,l,s,u node_yes = 1644 subset = m,v,i,o node_yes = 1645 node_no = 1646 
+node_num = 411 quest_num = 9 subset = ADJ_SG,N_ADJ_M_SG node_yes = 1647 node_no = 1648 
+node_num = 412 quest_num = 5 subset = r node_yes = 1649 node_no = 1650 
+node_num = 413 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_ADJ_M_SG node_yes = 1651 node_no = 1652 
+node_num = 414 quest_num = 6 subset = 0 node_yes = 529 subset = _eow_,q,b,c,d,e,f,g,h,n,p,r,s,t,u,v,l node_yes = 530 subset = i,k node_yes = 1653 node_no = 1654 
+node_num = 415 quest_num = 2 subset = a node_yes = 1655 subset = h,j,y,z,b,g,m,p,v,c,d,f,l,n,r,s,t node_yes = 531 node_no = 1656 
+node_num = 416 quest_num = 14 subset = n,z,ACC1-~E node_yes = 1657 node_no = 532 
+node_num = 417 quest_num = 6 subset = -,a,i,o,â,è,é,d,e,f,g,r,s,t,u,v,l node_yes = 533 subset = c,n node_yes = 534 node_no = 1658 
+node_num = 418 quest_num = 3 subset = c,b,n,r,d,h,m,p,t,l,s,f,j node_yes = 535 subset = e node_yes = 536 subset = g,q node_yes = 537 node_no = 1659 
+node_num = 419 quest_num = 3 subset = ',_eow_,g,v,f,q node_yes = 538 subset = -,u,é,y,w,ç,a node_yes = 1660 node_no = 539 
+node_num = 420 quest_num = 0 subset = _eow_ node_yes = 1661 node_no = 1662 
+node_num = 421 quest_num = 14 subset = (-@-),_epsilon_,d,n,t,@,ACC1-E,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-Þ,ACC1-o,ACC1-~O,ACC1-~a,R,i,j,w-ACC1-a,l node_yes = 540 subset = ACC1-O,ACC1-y,E_E,O_O,a,e,f,b,J node_yes = 1663 node_no = 1664 
+node_num = 422 quest_num = 8 subset = y,-,m node_yes = 541 subset = ',j,k,w,x,à,ç,ê,ë,î,ï,ô,û,f,â node_yes = 1665 node_no = 542 
+node_num = 423 quest_num = 13 subset = _epsilon_,i node_yes = 543 node_no = 1666 
+node_num = 424 quest_num = 8 subset = h node_yes = 544 subset = ',j,w,à,ê,ë,î,ï,ô node_yes = 1667 node_no = 545 
+node_num = 425 quest_num = 13 subset = ACC1-i,_epsilon_,i node_yes = 546 subset = j,b,d,k-s,p,s,R,f,g,k,t,l node_yes = 547 node_no = 1668 
+node_num = 426 quest_num = 14 subset = (-@-) node_yes = 548 subset = 6,@,ACC1-E,ACC1-E-n,ACC1-E-s,ACC1-O,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-s,ACC1-i-Þ,ACC1-o,ACC1-y,ACC1-y-Þ,ACC1-~E,E,~E,ACC1-~O,ACC1-~a,E_E,H,O,O_O,R,a,a_a,e,f,i,j,o,w-ACC1-a,w-a,y,~O node_yes = 549 subset = _epsilon_,m,n,l,k,J,S node_yes = 550 node_no = 1669 
+node_num = 427 quest_num = 2 subset = a,o node_yes = 1670 subset = e node_yes = 551 node_no = 1671 
+node_num = 428 quest_num = 9 subset = V_PL node_yes = 552 node_no = 553 
+node_num = 429 quest_num = 15 subset = (-R-)-Þ node_yes = 1672 node_no = 1673 
+node_num = 430 quest_num = 13 subset = ACC1-~E,ACC1-y,ACC1-~O node_yes = 1674 node_no = 1675 
+node_num = 431 quest_num = 5 subset = h node_yes = 554 node_no = 1676 
+node_num = 432 quest_num = 5 subset = m node_yes = 1677 node_no = 1678 
+node_num = 433 quest_num = 6 subset = _eow_ node_yes = 1679 node_no = 1680 
+node_num = 434 quest_num = 3 subset = e node_yes = 1681 node_no = 1682 
+node_num = 435 quest_num = 3 subset = u node_yes = 1683 node_no = 1684 
+node_num = 436 quest_num = 14 subset = _epsilon_,m,ACC1-o,R,b,(-z-)-Þ,(-R-)-Þ,(-t-),0,ACC1-2 node_yes = 555 subset = f,s node_yes = 1685 node_no = 1686 
+node_num = 437 quest_num = 8 subset = d node_yes = 556 subset = ',j,w,à,ê,ë,ô,û node_yes = 1687 node_no = 557 
+node_num = 438 quest_num = 12 is_true node_yes = 559 node_no = 558 
+node_num = 439 quest_num = 3 subset = a node_yes = 1688 subset = r,u,o,ï node_yes = 560 node_no = 1689 
+node_num = 440 quest_num = 12 is_true node_yes = 562 node_no = 561 
+node_num = 441 quest_num = 12 is_true node_yes = 564 node_no = 563 
+node_num = 442 quest_num = 13 subset = ACC1-~a,k-s-Þ node_yes = 565 subset = (-t-),(-t-)-Þ,N,k-s,p,0 node_yes = 1690 node_no = 566 
+node_num = 443 quest_num = 3 subset = i node_yes = 567 node_no = 1691 
+node_num = 444 quest_num = 9 subset = ADJ_PL,ADJ_SG node_yes = 1692 node_no = 1693 
+node_num = 445 quest_num = 8 subset = 0,_eow_,a,e,r,è,i,m,n,s,t,u,c node_yes = 568 subset = ï,é,o,l,p node_yes = 1694 node_no = 1695 
+node_num = 446 quest_num = 13 subset = E,e,O_O,ACC1-i-s,~O,ACC1-E-n,(-z-)-Þ node_yes = 569 node_no = 1696 
+node_num = 447 quest_num = 12 is_true node_yes = 1697 node_no = 1698 
+node_num = 448 quest_num = 7 subset = ',b,s,r node_yes = 570 node_no = 1699 
+node_num = 449 quest_num = 13 subset = ACC1-E,ACC1-e,E_E,_epsilon_,j,ACC1-a,O_O,a,ACC1-O,ACC1-y,y,ACC1-a_a,ACC1-o,ACC1-~O,~O,ACC1-~a,u,ACC1-9,a_a node_yes = 571 subset = ACC1-i,E,e,i,O,H,w-a,~9,ACC1-~9 node_yes = 572 node_no = 1700 
+node_num = 450 quest_num = 8 subset = a,s,c node_yes = 573 node_no = 1701 
+node_num = 451 quest_num = 3 subset = g,t node_yes = 1702 subset = s node_yes = 1703 node_no = 1704 
+node_num = 452 quest_num = 3 subset = s node_yes = 574 node_no = 1705 
+node_num = 453 quest_num = 15 subset = 0,ACC1-9,ACC1-~E,ACC1-~a node_yes = 1706 node_no = 1707 
+node_num = 454 quest_num = 6 subset = i,o,e,l node_yes = 575 subset = u node_yes = 1708 node_no = 1709 
+node_num = 455 quest_num = 9 subset = ADV,N_M_PL node_yes = 1710 node_no = 1711 
+node_num = 456 quest_num = 3 subset = n node_yes = 1712 node_no = 1713 
+node_num = 457 quest_num = 2 subset = g,o,c,t node_yes = 576 node_no = 1714 
+node_num = 458 quest_num = 13 subset = _epsilon_ node_yes = 577 node_no = 1715 
+node_num = 459 quest_num = 14 subset = (-@-),_epsilon_,d,m,n,t,z,ACC1-a-Þ,ACC1-e,ACC1-~O,R,a node_yes = 578 subset = ACC1-E,ACC1-O,O,O_O,s node_yes = 579 node_no = 1716 
+node_num = 460 quest_num = 3 subset = _eow_,g,n,r,h,m,p,t,l,s,z node_yes = 580 subset = b,i,y,f node_yes = 581 node_no = 1717 
+node_num = 461 quest_num = 5 subset = o node_yes = 582 node_no = 583 
+node_num = 462 quest_num = 0 subset = u node_yes = 1718 node_no = 1719 
+node_num = 463 quest_num = 9 subset = V_PART_PRES,V_PL,V_SG node_yes = 1720 node_no = 1721 
+node_num = 464 quest_num = 2 subset = r node_yes = 1722 node_no = 1723 
+node_num = 465 quest_num = 1 subset = q,g node_yes = 1724 node_no = 1725 
+node_num = 466 quest_num = 1 subset = a,é,o node_yes = 1726 node_no = 1727 
+node_num = 467 quest_num = 1 subset = _eow_,c,v,h,o,x node_yes = 584 subset = g,é,l node_yes = 1728 node_no = 585 
+node_num = 468 quest_num = 0 subset = r,n,g node_yes = 586 node_no = 1729 
+node_num = 469 quest_num = 1 subset = a node_yes = 1730 subset = u node_yes = 587 node_no = 1731 
+node_num = 470 quest_num = 0 subset = c node_yes = 588 subset = s node_yes = 589 node_no = 1732 
+node_num = 471 quest_num = 6 subset = a,i,à node_yes = 1733 subset = é,e node_yes = 1734 node_no = 1735 
+node_num = 472 quest_num = 6 subset = x,c,p node_yes = 590 subset = è,f,g,m,l node_yes = 591 subset = ',_,j,w,à,â,ç,ê,ë,î,ô,û,0,h,k node_yes = 1736 node_no = 592 
+node_num = 473 quest_num = 5 subset = z node_yes = 1737 node_no = 1738 
+node_num = 474 quest_num = 13 subset = ACC1-i-Þ,Þ node_yes = 593 node_no = 1739 
+node_num = 475 quest_num = 2 subset = m,_eow_,r node_yes = 594 node_no = 1740 
+node_num = 476 quest_num = 2 subset = b,m,p node_yes = 595 subset = ',_,k,q,w,ç,è,ê,î,ô,û node_yes = 1741 node_no = 596 
+node_num = 477 quest_num = 3 subset = s,x node_yes = 1742 node_no = 1743 
+node_num = 478 quest_num = 2 subset = f,l node_yes = 1744 node_no = 1745 
+node_num = 479 quest_num = 3 subset = a node_yes = 1746 node_no = 1747 
+node_num = 480 quest_num = 1 subset = l node_yes = 1748 node_no = 1749 
+node_num = 481 quest_num = 1 subset = _eow_,a,e,t node_yes = 1750 node_no = 1751 
+node_num = 482 quest_num = 2 subset = g node_yes = 1752 node_no = 1753 
+node_num = 483 quest_num = 9 subset = ADJ_PL,ADJ_SG,N_F_SG,V_PART,N_F_PL node_yes = 1754 subset = V_INF,V_PART_PRES,V_PL,V_SG node_yes = 597 node_no = 1755 
+node_num = 484 quest_num = 1 subset = f,m,o,s,u node_yes = 598 node_no = 1756 
+node_num = 485 quest_num = 3 subset = d node_yes = 1757 node_no = 1758 
+node_num = 486 quest_num = 7 subset = a,u,n node_yes = 1759 node_no = 1760 
+node_num = 487 quest_num = 9 subset = ADJ_PL,ADJ_SG,ADV,N_F_SG,N_M_PL,N_M_SG,V_PART node_yes = 599 node_no = 1761 
+node_num = 488 quest_num = 3 subset = é node_yes = 1762 node_no = 600 
+node_num = 489 quest_num = 13 subset = _epsilon_,0 node_yes = 601 subset = Þ node_yes = 1763 node_no = 1764 
+node_num = 490 quest_num = 9 subset = ADJ_PL,ADJ_SG,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 1765 node_no = 1766 
+node_num = 491 quest_num = 3 subset = u,ï node_yes = 1767 node_no = 1768 
+node_num = 492 quest_num = 3 subset = u,ï node_yes = 1769 node_no = 1770 
+node_num = 493 quest_num = 10 is_greater = 5 node_yes = 1771 node_no = 602 
+node_num = 494 quest_num = 3 subset = e,ï node_yes = 603 subset = u,y node_yes = 604 node_no = 605 
+node_num = 495 quest_num = 1 subset = c,p,t,g,v,h,b,d,f node_yes = 606 node_no = 1772 
+node_num = 496 quest_num = 5 subset = t,c,m,v,p node_yes = 1773 subset = g,j,ç,f,y node_yes = 1774 node_no = 607 
+node_num = 497 quest_num = 3 subset = b,p,o node_yes = 608 subset = c,g,m,t,l,s,v,f node_yes = 609 subset = n,r,d,j node_yes = 610 node_no = 1775 
+node_num = 498 quest_num = 1 subset = 0 node_yes = 611 subset = _eow_ node_yes = 612 node_no = 1776 
+node_num = 499 quest_num = 15 subset = (-R-)-Þ,(-n-),(-t-),(-t-)-Þ,(-z-),(-z-)-Þ,0,ACC1-2,ACC1-u,N,R-Þ,Z,b,d,k-s-Þ,k-t,k-Þ,n,u,v,~E,Þ,ACC1-9,k,m,s,t,ACC1-E,ACC1-a,ACC1-a-Þ,a,ACC1-~E,ACC1-~a,ACC1-o,E,O_O,R,_epsilon_ node_yes = 613 subset = ACC1-~O,l-Þ,z,~a,j,l,ACC1-e,ACC1-i,i node_yes = 614 node_no = 1777 
+node_num = 500 quest_num = 5 subset = -,s,n node_yes = 615 subset = t,c node_yes = 1778 node_no = 1779 
+node_num = 501 quest_num = 3 subset = _eow_,c,b,g,n,r,d,i,m,p,t,l,s,v,é,y,f,j node_yes = 616 subset = u node_yes = 617 node_no = 1780 
+node_num = 502 quest_num = 6 subset = c,n,r,s,t,l node_yes = 618 subset = g,h node_yes = 619 node_no = 1781 
+node_num = 503 quest_num = 0 subset = _eow_,m,p,u node_yes = 1782 node_no = 1783 
+node_num = 504 quest_num = 6 subset = -,q,b,f,h,p node_yes = 620 subset = j,ç,v node_yes = 1784 node_no = 621 
+node_num = 505 quest_num = 6 subset = r,l node_yes = 622 subset = z node_yes = 1785 node_no = 1786 
+node_num = 506 quest_num = 15 subset = ACC1-y node_yes = 1787 subset = _epsilon_ node_yes = 1788 node_no = 1789 
+node_num = 507 quest_num = 15 subset = R node_yes = 623 node_no = 1790 
+node_num = 508 quest_num = 3 subset = _eow_,b,d,h,m,p,t,v,é,f,o node_yes = 624 subset = r node_yes = 625 node_no = 1791 
+node_num = 509 quest_num = 6 subset = c node_yes = 626 subset = l node_yes = 1792 node_no = 1793 
+node_num = 510 quest_num = 6 subset = _eow_ node_yes = 1794 subset = e,s node_yes = 627 node_no = 1795 
+node_num = 511 quest_num = 9 subset = N_F_SG node_yes = 628 subset = N_M_SG node_yes = 1796 node_no = 1797 
+node_num = 512 quest_num = 14 subset = R,ACC1-2 node_yes = 1798 node_no = 1799 
+node_num = 513 quest_num = 3 subset = o,a node_yes = 1800 node_no = 1801 
+node_num = 514 quest_num = 8 subset = -,n,o,s,z node_yes = 1802 subset = 0,_eow_,a,e node_yes = 629 node_no = 1803 
+node_num = 515 quest_num = 14 subset = _epsilon_,R node_yes = 630 subset = ~E node_yes = 1804 node_no = 1805 
+node_num = 516 quest_num = 4 subset = y node_yes = 1806 node_no = 1807 
+node_num = 517 quest_num = 13 subset = _epsilon_,e,a,O node_yes = 631 node_no = 1808 
+node_num = 518 quest_num = 3 subset = r,l node_yes = 632 subset = u node_yes = 633 subset = y node_yes = 1809 subset = ',_eow_,i,_,j,q,w,à,â,ç,è,ê,ë,î,ô,û,ï node_yes = 1810 node_no = 634 
+node_num = 519 quest_num = 3 subset = d,a node_yes = 1811 node_no = 1812 
+node_num = 520 quest_num = 0 subset = 0,j,m,l,r,d node_yes = 635 subset = _eow_ node_yes = 1813 node_no = 1814 
+node_num = 521 quest_num = 0 subset = _eow_,p,h node_yes = 1815 node_no = 1816 
+node_num = 522 quest_num = 14 subset = _epsilon_ node_yes = 636 subset = j,l node_yes = 1817 node_no = 1818 
+node_num = 523 quest_num = 4 subset = y node_yes = 637 subset = ï node_yes = 1819 node_no = 1820 
+node_num = 524 quest_num = 14 subset = t,Þ node_yes = 1821 node_no = 1822 
+node_num = 525 quest_num = 6 subset = e,m,n,s node_yes = 638 node_no = 1823 
+node_num = 526 quest_num = 6 subset = _eow_,q,b,c,d,e,f,g,h,k,m,n,p,r,t,u,v,l node_yes = 639 subset = s node_yes = 640 node_no = 1824 
+node_num = 527 quest_num = 13 subset = j,b,p,R,k,t,l node_yes = 1825 node_no = 1826 
+node_num = 528 quest_num = 2 subset = g node_yes = 1827 node_no = 1828 
+node_num = 529 quest_num = 9 subset = ADJ_SG,N_ADJ_M_SG node_yes = 1829 node_no = 1830 
+node_num = 530 quest_num = 5 subset = b,g,s,t,c,v,d,f,l,p,q,r,x,e,z node_yes = 641 subset = m,n,k node_yes = 642 node_no = 1831 
+node_num = 531 quest_num = 15 subset = n node_yes = 1832 node_no = 1833 
+node_num = 532 quest_num = 1 subset = -,_eow_,m,r node_yes = 1834 node_no = 1835 
+node_num = 533 quest_num = 3 subset = _eow_,c,g node_yes = 643 subset = u,a node_yes = 1836 node_no = 1837 
+node_num = 534 quest_num = 14 subset = ACC1-~E,~E,Þ,(-t-) node_yes = 1838 subset = n node_yes = 1839 node_no = 1840 
+node_num = 535 quest_num = 13 subset = j node_yes = 1841 node_no = 1842 
+node_num = 536 quest_num = 2 subset = l node_yes = 1843 node_no = 1844 
+node_num = 537 quest_num = 2 subset = -,i node_yes = 644 subset = x,_eow_,a,o,c,e,n,r,s,u,é node_yes = 645 node_no = 1845 
+node_num = 538 quest_num = 14 subset = _epsilon_,m,n,t,z,ACC1-E,ACC1-a,ACC1-~a,R,e,f,b,l,Þ,(-z-)-Þ,g,p,s,(-R-)-Þ,(-t-),(-t-)-Þ,(-z-),0,9,ACC1-2,ACC1-9,~a,v,Z node_yes = 646 subset = d,j,R-Þ,l-Þ,k node_yes = 647 node_no = 1846 
+node_num = 539 quest_num = 4 subset = o node_yes = 648 subset = u node_yes = 649 node_no = 1847 
+node_num = 540 quest_num = 2 subset = b,_eow_,d,f node_yes = 650 subset = h,j,y,m,p,v,i,o,l,n,r,s,t,u node_yes = 651 node_no = 1848 
+node_num = 541 quest_num = 15 subset = (-@-),t node_yes = 1849 subset = _epsilon_ node_yes = 1850 node_no = 1851 
+node_num = 542 quest_num = 14 subset = (-@-),_epsilon_,~O node_yes = 652 subset = 6,@,ACC1-E,ACC1-O,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-Þ,ACC1-o,ACC1-y,ACC1-~E,E,ACC1-~O,ACC1-~a,O,O_O,R,a,e,f,i,j,w-ACC1-a,y,ACC1-u,b,l,s,ACC1-9,S node_yes = 653 node_no = 1852 
+node_num = 543 quest_num = 1 subset = x node_yes = 1853 node_no = 1854 
+node_num = 544 quest_num = 3 subset = c,n,m node_yes = 1855 node_no = 1856 
+node_num = 545 quest_num = 13 subset = _epsilon_,m,n,g node_yes = 654 subset = i node_yes = 1857 node_no = 1858 
+node_num = 546 quest_num = 5 subset = - node_yes = 1859 subset = d,l,r,x node_yes = 1860 node_no = 655 
+node_num = 547 quest_num = 15 subset = k,t,p node_yes = 1861 subset = (-@-)-Þ,(-R-)-Þ,(-n-),(-t-),(-t-)-Þ,(-z-),(-z-)-Þ,0,2,@,ACC1-2,ACC1-e-(-R-),ACC1-u,N,R-Þ,Z,a-d,a_a,b,d,g,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,l-Þ,n,o,s-t,s-Þ,u,v,w-a,z,~9,~E,~a,Ü,Þ node_yes = 1862 node_no = 656 
+node_num = 548 quest_num = 5 subset = s node_yes = 1863 node_no = 1864 
+node_num = 549 quest_num = 13 subset = j,Z,b,d,m,n,p,s,v,z,R,f,g,k,t,l,w node_yes = 1865 subset = _epsilon_ node_yes = 657 node_no = 1866 
+node_num = 550 quest_num = 7 subset = h,p,î,l,t,r,q,-,m node_yes = 658 subset = y,â,ê,û,a,e,i,é,o,u,n,è node_yes = 659 node_no = 1867 
+node_num = 551 quest_num = 9 subset = N_M_SG,V_PL node_yes = 1868 node_no = 1869 
+node_num = 552 quest_num = 14 subset = ACC1-E,E,ACC1-~O node_yes = 660 subset = _epsilon_,ACC1-O,O,O_O node_yes = 661 node_no = 1870 
+node_num = 553 quest_num = 1 subset = 0,k,w,h node_yes = 662 subset = ',_,à,ç,è,ê,î,ï,ô,û,z,â node_yes = 1871 node_no = 663 
+node_num = 554 quest_num = 3 subset = _eow_ node_yes = 664 subset = s node_yes = 1872 node_no = 1873 
+node_num = 555 quest_num = 1 subset = 0 node_yes = 665 node_no = 1874 
+node_num = 556 quest_num = 7 subset = r node_yes = 1875 node_no = 1876 
+node_num = 557 quest_num = 14 subset = (-t-) node_yes = 666 subset = ACC1-O node_yes = 667 node_no = 1877 
+node_num = 558 quest_num = 3 subset = a node_yes = 1878 node_no = 1879 
+node_num = 559 quest_num = 3 subset = e,u node_yes = 1880 node_no = 1881 
+node_num = 560 quest_num = 3 subset = o node_yes = 668 subset = u node_yes = 1882 node_no = 1883 
+node_num = 561 quest_num = 13 subset = (-t-)-Þ,(-z-),(-z-)-Þ node_yes = 669 subset = n node_yes = 1884 subset = ACC1-~a,N,b,k-s,k-s-Þ,m,p,z,0 node_yes = 1885 node_no = 670 
+node_num = 562 quest_num = 6 subset = - node_yes = 671 subset = à,û,_eow_,z node_yes = 1886 node_no = 672 
+node_num = 563 quest_num = 13 subset = N,n node_yes = 1887 subset = ACC1-~a,(-t-)-Þ,b,k-s,m,p,v,z,0,l node_yes = 1888 node_no = 673 
+node_num = 564 quest_num = 13 subset = n node_yes = 1889 subset = ACC1-~a,(-t-),(-t-)-Þ,N,k-s,k-s-Þ,p,(-z-),(-z-)-Þ,0 node_yes = 1890 node_no = 674 
+node_num = 565 quest_num = 3 subset = y node_yes = 1891 node_no = 1892 
+node_num = 566 quest_num = 2 subset = x,a,o node_yes = 675 subset = ',_,q,w,è,ê,î,ô,û,à,-,â,0 node_yes = 1893 node_no = 676 
+node_num = 567 quest_num = 9 subset = N_M_SG node_yes = 677 node_no = 1894 
+node_num = 568 quest_num = 14 subset = _epsilon_,d,ACC1-a-Þ,ACC1-~O,ACC1-~a,a,j,l,(-z-)-Þ node_yes = 678 subset = ACC1-O,ACC1-a,ACC1-i,ACC1-o,O_O,i,l-Þ node_yes = 679 node_no = 1895 
+node_num = 569 quest_num = 2 subset = i,o,r,é node_yes = 680 subset = k,è,ê,î,û,d,f,l node_yes = 1896 node_no = 681 
+node_num = 570 quest_num = 13 subset = ACC1-E,E,j,ACC1-~9,R node_yes = 1897 subset = _epsilon_ node_yes = 682 node_no = 1898 
+node_num = 571 quest_num = 8 subset = ç,ê,ï,è,i,n,o,u,z,c node_yes = 683 subset = ',j,k,w,x,à,ë,î,ô,û,f,m,q node_yes = 1899 node_no = 684 
+node_num = 572 quest_num = 15 subset = ACC1-~O,S,ACC1-u,s,ACC1-a-Þ,ACC1-o,_epsilon_,ACC1-e,ACC1-e-Þ node_yes = 685 subset = (-@-),(-@-)-Þ,(-R-)-Þ,(-t-),0,@,Z,g,k-Þ,l-Þ,s-t,ACC1-~a,ACC1-a_a,f node_yes = 1900 node_no = 686 
+node_num = 573 quest_num = 14 subset = _epsilon_,R node_yes = 687 node_no = 1901 
+node_num = 574 quest_num = 0 subset = 0,b,o,f,g node_yes = 688 node_no = 1902 
+node_num = 575 quest_num = 3 subset = c node_yes = 689 node_no = 1903 
+node_num = 576 quest_num = 3 subset = _eow_,w node_yes = 1904 node_no = 690 
+node_num = 577 quest_num = 14 subset = t,R,f,l,(-z-)-Þ,p,s,(-z-),l-Þ,k,J,S node_yes = 691 subset = _epsilon_,0 node_yes = 692 node_no = 1905 
+node_num = 578 quest_num = 7 subset = _eow_,c,e,s,-,n,z node_yes = 693 subset = â,a,i,o,m,è node_yes = 694 node_no = 1906 
+node_num = 579 quest_num = 15 subset = Þ node_yes = 1907 node_no = 1908 
+node_num = 580 quest_num = 6 subset = è node_yes = 1909 subset = i,é,b,f,m,p,u node_yes = 1910 node_no = 1911 
+node_num = 581 quest_num = 5 subset = i node_yes = 695 subset = y node_yes = 1912 node_no = 1913 
+node_num = 582 quest_num = 11 is_greater = 1 node_yes = 1914 node_no = 696 
+node_num = 583 quest_num = 3 subset = f node_yes = 697 subset = ',_,é,y,j,o,q,w,à,â,ç,è,ê,ë,î,ô,û,a,ï,x node_yes = 1915 node_no = 698 
+node_num = 584 quest_num = 0 subset = -,0,_eow_,c,s,n,i node_yes = 1916 subset = a,é,u,e,r node_yes = 699 node_no = 1917 
+node_num = 585 quest_num = 7 subset = p,r node_yes = 700 node_no = 1918 
+node_num = 586 quest_num = 13 subset = j node_yes = 1919 node_no = 1920 
+node_num = 587 quest_num = 5 subset = i node_yes = 1921 node_no = 1922 
+node_num = 588 quest_num = 1 subset = u node_yes = 1923 node_no = 1924 
+node_num = 589 quest_num = 15 subset = (-z-),z node_yes = 701 node_no = 1925 
+node_num = 590 quest_num = 13 subset = ACC1-E,e,i,ACC1-a,O_O,a,ACC1-O node_yes = 702 subset = E,y node_yes = 1926 node_no = 1927 
+node_num = 591 quest_num = 8 subset = c,l,d node_yes = 703 subset = ',h,j,k,w,x,à,ç,ê,ë,î,ï,ô,û,f,v,y,b,p node_yes = 1928 node_no = 704 
+node_num = 592 quest_num = 5 subset = u node_yes = 705 node_no = 1929 
+node_num = 593 quest_num = 5 subset = y node_yes = 1930 node_no = 1931 
+node_num = 594 quest_num = 3 subset = e node_yes = 1932 node_no = 1933 
+node_num = 595 quest_num = 13 subset = ACC1-E,ACC1-e,ACC1-e-Þ,ACC1-i,E_E,_epsilon_,j,ACC1-a,O_O,ACC1-O,ACC1-y,y,ACC1-a-Þ,ACC1-~a,d,w node_yes = 706 node_no = 1934 
+node_num = 596 quest_num = 0 subset = t node_yes = 707 subset = ',_,k,w,z,à,è,ï,ç,j node_yes = 1935 node_no = 708 
+node_num = 597 quest_num = 6 subset = r node_yes = 1936 node_no = 1937 
+node_num = 598 quest_num = 11 is_greater = 2 node_yes = 1938 node_no = 709 
+node_num = 599 quest_num = 6 subset = i node_yes = 710 subset = é node_yes = 711 node_no = 1939 
+node_num = 600 quest_num = 5 subset = s node_yes = 1940 node_no = 1941 
+node_num = 601 quest_num = 3 subset = u,y,ï node_yes = 712 node_no = 1942 
+node_num = 602 quest_num = 13 subset = (-n-) node_yes = 1943 subset = _epsilon_ node_yes = 1944 subset = Þ node_yes = 1945 node_no = 1946 
+node_num = 603 quest_num = 1 subset = _eow_ node_yes = 1947 subset = o node_yes = 1948 node_no = 1949 
+node_num = 604 quest_num = 2 subset = ç,h,b,m,p,v,o,c,d,e,f,l,n,r,s,t node_yes = 1950 node_no = 1951 
+node_num = 605 quest_num = 9 subset = N_M_PL node_yes = 713 node_no = 1952 
+node_num = 606 quest_num = 3 subset = u,é node_yes = 1953 node_no = 1954 
+node_num = 607 quest_num = 15 subset = k-s-Þ,ACC1-a,a,ACC1-O node_yes = 1955 node_no = 1956 
+node_num = 608 quest_num = 11 is_greater = 1 node_yes = 1957 node_no = 714 
+node_num = 609 quest_num = 13 subset = m,n,s,v,z,R,k,l node_yes = 715 subset = j,d,p node_yes = 716 node_no = 1958 
+node_num = 610 quest_num = 5 subset = n,q node_yes = 717 subset = y,h,r node_yes = 1959 node_no = 718 
+node_num = 611 quest_num = 5 subset = a node_yes = 1960 node_no = 1961 
+node_num = 612 quest_num = 3 subset = c node_yes = 1962 subset = h node_yes = 719 subset = j node_yes = 1963 node_no = 1964 
+node_num = 613 quest_num = 2 subset = b,g,p,v,d,f,r,t node_yes = 720 subset = 0 node_yes = 1965 node_no = 721 
+node_num = 614 quest_num = 3 subset = c,b,g,n,r,d,h,m,p,t,l,s,v,u,y,x node_yes = 722 subset = i,é,f,j,o node_yes = 723 node_no = 1966 
+node_num = 615 quest_num = 3 subset = u node_yes = 724 node_no = 1967 
+node_num = 616 quest_num = 2 subset = _eow_ node_yes = 725 subset = ',_,k,q,w,ç,è,ê,î,ô,û,à,ï,-,h,j,y,z,â node_yes = 1968 node_no = 726 
+node_num = 617 quest_num = 5 subset = i node_yes = 1969 subset = r node_yes = 1970 node_no = 1971 
+node_num = 618 quest_num = 3 subset = m,v,y node_yes = 727 subset = r node_yes = 728 node_no = 1972 
+node_num = 619 quest_num = 8 subset = e,q node_yes = 1973 node_no = 1974 
+node_num = 620 quest_num = 6 subset = - node_yes = 729 subset = b node_yes = 1975 subset = h node_yes = 730 node_no = 1976 
+node_num = 621 quest_num = 3 subset = u,j,o node_yes = 731 subset = ',-,z,e,_,é,q,à,â,ç,è,ê,ë,î,ô,û,ï,x node_yes = 1977 node_no = 732 
+node_num = 622 quest_num = 15 subset = ACC1-~O,i-j,~E,ACC1-E,ACC1-a,a,ACC1-~a,E,O_O,_epsilon_,6,ACC1-O,ACC1-i,ACC1-y,E_E,O,i,~O,e,ACC1-i-Þ node_yes = 733 subset = w-a,ACC1-a-Þ,ACC1-e,ACC1-e-Þ,y node_yes = 734 node_no = 1978 
+node_num = 623 quest_num = 3 subset = r node_yes = 1979 node_no = 1980 
+node_num = 624 quest_num = 5 subset = n node_yes = 735 node_no = 1981 
+node_num = 625 quest_num = 7 subset = a,o node_yes = 1982 subset = u node_yes = 1983 node_no = 1984 
+node_num = 626 quest_num = 8 subset = r,m node_yes = 1985 node_no = 1986 
+node_num = 627 quest_num = 5 subset = m node_yes = 736 node_no = 1987 
+node_num = 628 quest_num = 3 subset = b,r node_yes = 1988 node_no = 1989 
+node_num = 629 quest_num = 6 subset = z node_yes = 737 node_no = 1990 
+node_num = 630 quest_num = 13 subset = E node_yes = 1991 node_no = 1992 
+node_num = 631 quest_num = 7 subset = a,s,o node_yes = 1993 subset = y,e,f,i,l,é,r node_yes = 738 node_no = 1994 
+node_num = 632 quest_num = 2 subset = g,v,c node_yes = 1995 subset = k,q,w,ç,ê,î,ï,j,z,â,m,x,s node_yes = 1996 node_no = 739 
+node_num = 633 quest_num = 4 subset = y node_yes = 740 node_no = 1997 
+node_num = 634 quest_num = 14 subset = d,O_O,R,g,p,s,2,~a,k node_yes = 741 node_no = 1998 
+node_num = 635 quest_num = 5 subset = l,n node_yes = 742 node_no = 1999 
+node_num = 636 quest_num = 8 subset = o node_yes = 2000 node_no = 2001 
+node_num = 637 quest_num = 13 subset = l node_yes = 2002 node_no = 2003 
+node_num = 638 quest_num = 1 subset = 0,n,t,d,o,u,l,r node_yes = 743 subset = _eow_,a,c,g,h,m,i node_yes = 744 node_no = 2004 
+node_num = 639 quest_num = 5 subset = a node_yes = 2005 subset = t node_yes = 745 node_no = 2006 
+node_num = 640 quest_num = 5 subset = a node_yes = 2007 subset = s node_yes = 746 node_no = 2008 
+node_num = 641 quest_num = 14 subset = (-@-),_epsilon_,d,R,b,l,(-z-)-Þ,g,p,(-@-)-Þ,(-t-),(-z-),0,k,v,J,Z,S node_yes = 2009 subset = n,t,f,Þ,s node_yes = 747 node_no = 2010 
+node_num = 642 quest_num = 6 subset = _eow_,b,g,p,s,t node_yes = 748 node_no = 2011 
+node_num = 643 quest_num = 6 subset = f,s,t node_yes = 2012 node_no = 2013 
+node_num = 644 quest_num = 6 subset = o,è,_eow_,q,d,e,n,t node_yes = 749 subset = s,l node_yes = 2014 node_no = 2015 
+node_num = 645 quest_num = 14 subset = _epsilon_,m,n,t,z,ACC1-E,ACC1-a,ACC1-e,ACC1-~E,E,ACC1-~O,O_O,R,e,b,l,Þ,(-z-)-Þ,p,(-t-)-Þ,(-z-),0,R-Þ,v node_yes = 2016 subset = d,~E,s node_yes = 750 node_no = 2017 
+node_num = 646 quest_num = 13 subset = ACC1-a,O_O,a node_yes = 751 subset = ACC1-O,O,ACC1-o node_yes = 2018 node_no = 752 
+node_num = 647 quest_num = 5 subset = a,o node_yes = 753 subset = e node_yes = 754 node_no = 2019 
+node_num = 648 quest_num = 13 subset = E_E,_epsilon_,ACC1-O node_yes = 755 subset = ACC1-e,ACC1-e-Þ,ACC1-a_a,ACC1-~O,ACC1-~a node_yes = 2020 node_no = 756 
+node_num = 649 quest_num = 14 subset = _epsilon_,d,m,n,t,z,ACC1-~a,O_O,R,b,l,Þ,(-z-)-Þ,s,(-R-)-Þ,(-t-),(-t-)-Þ,(-z-),0,2,9,ACC1-2,ACC1-9,l-Þ,~a,v,Z node_yes = 757 subset = j node_yes = 758 node_no = 2021 
+node_num = 650 quest_num = 5 subset = v,r node_yes = 759 node_no = 2022 
+node_num = 651 quest_num = 14 subset = _epsilon_,j node_yes = 760 node_no = 2023 
+node_num = 652 quest_num = 7 subset = v,b,f,l,t,r,-,g,m node_yes = 761 subset = p,a,c,e,i,s,o,u,n node_yes = 762 node_no = 2024 
+node_num = 653 quest_num = 13 subset = _epsilon_ node_yes = 763 subset = k-s node_yes = 2025 node_no = 2026 
+node_num = 654 quest_num = 6 subset = d,k node_yes = 764 subset = ',-,_,j,w,y,à,ç,ê,ë,î,ï,ô,û,_eow_,x,0,z,q node_yes = 2027 node_no = 765 
+node_num = 655 quest_num = 14 subset = d,t,z,f,b,g,p,s,k,Z node_yes = 766 subset = _epsilon_ node_yes = 2028 node_no = 2029 
+node_num = 656 quest_num = 5 subset = s,p node_yes = 767 node_no = 2030 
+node_num = 657 quest_num = 5 subset = h,p,r,ï node_yes = 768 subset = n node_yes = 2031 node_no = 2032 
+node_num = 658 quest_num = 15 subset = k,m,t,R,_epsilon_,l,p,ACC1-i node_yes = 769 subset = ~a,ACC1-~a,e node_yes = 2033 node_no = 2034 
+node_num = 659 quest_num = 13 subset = ACC1-i,_epsilon_,i,Z,b,d,n,p,v,z,f,g,k,t,l node_yes = 770 subset = j,k-s,m,s,R node_yes = 771 node_no = 2035 
+node_num = 660 quest_num = 7 subset = i node_yes = 2036 node_no = 2037 
+node_num = 661 quest_num = 7 subset = l node_yes = 2038 node_no = 2039 
+node_num = 662 quest_num = 0 subset = _eow_ node_yes = 2040 node_no = 2041 
+node_num = 663 quest_num = 15 subset = (-t-),(-z-),2,ACC1-2,b,n,~a,Þ,s,t,ACC1-~a,ACC1-o,_epsilon_,l node_yes = 772 subset = (-z-)-Þ,0,~E,ACC1-~E node_yes = 773 node_no = 2042 
+node_num = 664 quest_num = 7 subset = a,o node_yes = 2043 node_no = 2044 
+node_num = 665 quest_num = 13 subset = O_O node_yes = 2045 node_no = 2046 
+node_num = 666 quest_num = 15 subset = _epsilon_ node_yes = 2047 node_no = 2048 
+node_num = 667 quest_num = 7 subset = m node_yes = 2049 node_no = 2050 
+node_num = 668 quest_num = 9 subset = ADJ_PL node_yes = 2051 node_no = 2052 
+node_num = 669 quest_num = 2 subset = h,z,b,g,m,p,v,x,c,d,e,f,l,n,r,s,t,u node_yes = 774 subset = ï,y,i,é node_yes = 775 node_no = 2053 
+node_num = 670 quest_num = 9 subset = ADJ_SG,V_PART_PRES,N_ADJ_M_SG node_yes = 776 subset = N_M_SG node_yes = 777 node_no = 2054 
+node_num = 671 quest_num = 9 subset = ADJ_PL,N_F_SG,N_M_PL,N_M_SG,V_SG,N_F_PL node_yes = 778 node_no = 2055 
+node_num = 672 quest_num = 13 subset = n node_yes = 779 subset = ACC1-~a,(-t-),(-t-)-Þ,N,b,k-s-Þ,m,(-z-),(-z-)-Þ,0 node_yes = 2056 node_no = 780 
+node_num = 673 quest_num = 3 subset = ï node_yes = 2057 node_no = 2058 
+node_num = 674 quest_num = 0 subset = a,s node_yes = 781 node_no = 2059 
+node_num = 675 quest_num = 2 subset = o node_yes = 2060 node_no = 2061 
+node_num = 676 quest_num = 3 subset = n,r node_yes = 2062 node_no = 782 
+node_num = 677 quest_num = 5 subset = g node_yes = 783 subset = n node_yes = 2063 subset = t node_yes = 2064 node_no = 2065 
+node_num = 678 quest_num = 13 subset = O_O node_yes = 2066 node_no = 2067 
+node_num = 679 quest_num = 9 subset = N_F_SG,V_SG,N_F_PL node_yes = 2068 node_no = 2069 
+node_num = 680 quest_num = 6 subset = i,_eow_,m,n node_yes = 784 node_no = 2070 
+node_num = 681 quest_num = 5 subset = s,o node_yes = 785 node_no = 2071 
+node_num = 682 quest_num = 6 subset = u node_yes = 2072 node_no = 2073 
+node_num = 683 quest_num = 15 subset = (-@-),ACC1-~O,S,Z,b,d,n,k,s,t,ACC1-a,ACC1-~a,_epsilon_,p node_yes = 786 subset = ACC1-E,a,R,j,l node_yes = 787 node_no = 2074 
+node_num = 684 quest_num = 5 subset = y,e,i node_yes = 788 subset = ô node_yes = 2075 node_no = 2076 
+node_num = 685 quest_num = 5 subset = u node_yes = 2077 node_no = 2078 
+node_num = 686 quest_num = 14 subset = _epsilon_,n,i,l node_yes = 789 node_no = 2079 
+node_num = 687 quest_num = 7 subset = é,o,m node_yes = 790 node_no = 2080 
+node_num = 688 quest_num = 4 subset = - node_yes = 2081 node_no = 2082 
+node_num = 689 quest_num = 14 subset = _epsilon_ node_yes = 2083 node_no = 2084 
+node_num = 690 quest_num = 5 subset = t,c,v,d,l,p,q node_yes = 2085 subset = r node_yes = 791 node_no = 2086 
+node_num = 691 quest_num = 10 is_greater = 1 node_yes = 2087 node_no = 792 
+node_num = 692 quest_num = 9 subset = ADJ_PL,ADJ_SG node_yes = 2088 node_no = 2089 
+node_num = 693 quest_num = 3 subset = _eow_,c,b,g,n,r,d,i,m,t,l,s,v,u,y,f,ç node_yes = 793 subset = e node_yes = 2090 subset = h,p node_yes = 794 node_no = 2091 
+node_num = 694 quest_num = 14 subset = _epsilon_,t node_yes = 2092 subset = ACC1-a-Þ,ACC1-e,ACC1-~O,a node_yes = 2093 node_no = 795 
+node_num = 695 quest_num = 11 is_greater = 1 node_yes = 2094 node_no = 796 
+node_num = 696 quest_num = 10 is_greater = 4 node_yes = 2095 node_no = 2096 
+node_num = 697 quest_num = 5 subset = y node_yes = 2097 subset = e node_yes = 2098 node_no = 797 
+node_num = 698 quest_num = 14 subset = ACC1-E,ACC1-a,ACC1-a-Þ,ACC1-i,O_O,a node_yes = 798 subset = (-@-),6,ACC1-a_a,ACC1-o,ACC1-~a,ACC1-u,b,l,u,w,Þ node_yes = 2099 node_no = 799 
+node_num = 699 quest_num = 1 subset = o,x node_yes = 2100 subset = _eow_,h node_yes = 2101 node_no = 800 
+node_num = 700 quest_num = 14 subset = _epsilon_ node_yes = 2102 node_no = 2103 
+node_num = 701 quest_num = 1 subset = a node_yes = 2104 node_no = 2105 
+node_num = 702 quest_num = 1 subset = 0,a,n,u node_yes = 2106 subset = _eow_,c,p,h,d,m,o,i node_yes = 801 node_no = 2107 
+node_num = 703 quest_num = 15 subset = ACC1-a,p,ACC1-i node_yes = 2108 node_no = 2109 
+node_num = 704 quest_num = 2 subset = h,b,g,m,p,v,_eow_,a,i,o,d,e,f,l,n,r,s,u node_yes = 802 subset = c,t node_yes = 803 node_no = 2110 
+node_num = 705 quest_num = 7 subset = v,r node_yes = 804 node_no = 2111 
+node_num = 706 quest_num = 4 subset = ç node_yes = 2112 node_no = 805 
+node_num = 707 quest_num = 5 subset = i node_yes = 806 subset = j,d,y,r,z,w,û,â,ê,î,ô node_yes = 2113 node_no = 807 
+node_num = 708 quest_num = 13 subset = d,Þ node_yes = 808 subset = (-R-)-Þ,(-n-),(-t-),(-t-)-Þ,2,ACC1-2,ACC1-E-s,ACC1-e-(-R-),J,N,R-Þ,S,Z,a-d,g-z,i-j,j-ACC1-e,k-s,k-s-Þ,k-t,k-Þ,l-Þ,o,s,s-t,s-Þ,u,z,~9,~a,Ü,(-z-),(-z-)-Þ,0,ACC1-9,ACC1-u,ACC1-~9,R,a_a,f,g node_yes = 2114 node_no = 809 
+node_num = 709 quest_num = 9 subset = ADV,N_F_SG,V_PART,N_F_PL node_yes = 2115 node_no = 2116 
+node_num = 710 quest_num = 11 is_greater = 1 node_yes = 2117 node_no = 2118 
+node_num = 711 quest_num = 5 subset = l node_yes = 810 subset = p node_yes = 2119 subset = v node_yes = 811 node_no = 2120 
+node_num = 712 quest_num = 2 subset = h,b,m,p,v,o,c,d,e,l,n,r,s,t,u node_yes = 812 node_no = 2121 
+node_num = 713 quest_num = 5 subset = _eow_ node_yes = 2122 node_no = 2123 
+node_num = 714 quest_num = 14 subset = _epsilon_,ACC1-E,ACC1-a,ACC1-a-Þ,ACC1-e,ACC1-e-Þ,E,ACC1-~O,w-ACC1-a node_yes = 813 subset = ACC1-O,ACC1-i,ACC1-o,ACC1-y,E_E,O,O_O,a,i,y,w node_yes = 814 node_no = 2124 
+node_num = 715 quest_num = 7 subset = ç,_eow_,c,e,i,s,t,r,u,-,n,z,g,m node_yes = 815 subset = a,v,l node_yes = 816 node_no = 2125 
+node_num = 716 quest_num = 15 subset = n,Þ,_epsilon_ node_yes = 2126 node_no = 2127 
+node_num = 717 quest_num = 8 subset = ç,v,0,_eow_,i,m,n,o,s,t,c,l,d node_yes = 817 subset = a,e,r,è,é node_yes = 2128 node_no = 2129 
+node_num = 718 quest_num = 7 subset = a,e,- node_yes = 818 node_no = 2130 
+node_num = 719 quest_num = 2 subset = c node_yes = 819 subset = s node_yes = 2131 node_no = 2132 
+node_num = 720 quest_num = 3 subset = c,b,g,n,d,i,m,p,t,s,u,é,f,a node_yes = 820 subset = r,h,l,k,v node_yes = 821 node_no = 2133 
+node_num = 721 quest_num = 14 subset = ACC1-i-Þ,ACC1-~E,E_E,O,j,w-ACC1-a,w,0 node_yes = 822 subset = _epsilon_,ACC1-E,ACC1-E-n,ACC1-O,ACC1-a,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-o,ACC1-y,ACC1-y-Þ,E,ACC1-~O,ACC1-~a,O_O,a,i,w-a,y,~O,ACC1-u node_yes = 823 node_no = 2134 
+node_num = 722 quest_num = 13 subset = _epsilon_,t node_yes = 824 subset = m,n,v node_yes = 825 subset = j,Z,0,g node_yes = 2135 node_no = 826 
+node_num = 723 quest_num = 6 subset = a,e node_yes = 2136 node_no = 2137 
+node_num = 724 quest_num = 2 subset = b,o,l,n,t node_yes = 2138 node_no = 2139 
+node_num = 725 quest_num = 3 subset = n,d node_yes = 2140 subset = _eow_,r,i,l,é,y node_yes = 2141 node_no = 827 
+node_num = 726 quest_num = 11 is_greater = 1 node_yes = 829 node_no = 828 
+node_num = 727 quest_num = 7 subset = e node_yes = 2142 node_no = 2143 
+node_num = 728 quest_num = 2 subset = _eow_ node_yes = 830 subset = g,p,d,t,é node_yes = 831 node_no = 2144 
+node_num = 729 quest_num = 5 subset = r node_yes = 2145 node_no = 2146 
+node_num = 730 quest_num = 1 subset = n node_yes = 2147 node_no = 2148 
+node_num = 731 quest_num = 15 subset = ACC1-~O,n,ACC1-E,_epsilon_ node_yes = 832 node_no = 2149 
+node_num = 732 quest_num = 8 subset = -,r,m,t node_yes = 833 subset = ',h,j,k,w,x,à,ç,ê,ë,î,ï,ô,û,0,z,â node_yes = 2150 node_no = 834 
+node_num = 733 quest_num = 8 subset = x,e,p node_yes = 835 node_no = 2151 
+node_num = 734 quest_num = 5 subset = g,p node_yes = 2152 node_no = 2153 
+node_num = 735 quest_num = 10 is_greater = 2 node_yes = 2154 node_no = 2155 
+node_num = 736 quest_num = 6 subset = s node_yes = 2156 node_no = 2157 
+node_num = 737 quest_num = 4 subset = y node_yes = 2158 node_no = 2159 
+node_num = 738 quest_num = 8 subset = t node_yes = 2160 node_no = 2161 
+node_num = 739 quest_num = 4 subset = y node_yes = 836 node_no = 2162 
+node_num = 740 quest_num = 1 subset = y,t,g node_yes = 2163 node_no = 2164 
+node_num = 741 quest_num = 15 subset = (-z-),0,g,Þ,ACC1-a,E,ACC1-i,y,~O node_yes = 837 subset = S,(-t-),(-t-)-Þ,(-z-)-Þ,ACC1-u,R-Þ,l-Þ,v,ACC1-a_a,f,6,ACC1-O,O,w-ACC1-a,ACC1-i-s,ACC1-i-Þ node_yes = 2165 node_no = 838 
+node_num = 742 quest_num = 4 subset = ï node_yes = 2166 node_no = 2167 
+node_num = 743 quest_num = 14 subset = (-z-)-Þ node_yes = 839 subset = Þ node_yes = 2168 node_no = 2169 
+node_num = 744 quest_num = 2 subset = h,b,g,x,a,i,d,é node_yes = 2170 subset = o node_yes = 840 node_no = 2171 
+node_num = 745 quest_num = 9 subset = ADJ_PL,ADJ_SG node_yes = 841 node_no = 2172 
+node_num = 746 quest_num = 3 subset = c,b,g,r,l node_yes = 842 subset = d,f node_yes = 2173 node_no = 2174 
+node_num = 747 quest_num = 7 subset = _eow_,s node_yes = 843 node_no = 2175 
+node_num = 748 quest_num = 13 subset = _epsilon_,(-t-),N,k-Þ,Þ node_yes = 844 subset = m node_yes = 845 node_no = 2176 
+node_num = 749 quest_num = 2 subset = i node_yes = 2177 node_no = 2178 
+node_num = 750 quest_num = 1 subset = 0,a,e,o,l,r node_yes = 846 subset = _eow_,i node_yes = 2179 node_no = 2180 
+node_num = 751 quest_num = 15 subset = (-@-),(-@-)-Þ,(-z-),(-z-)-Þ,0,t,ACC1-E,ACC1-a,ACC1-a-Þ,a,E,O_O,j,ACC1-i,ACC1-y,E_E,y,e node_yes = 847 subset = R,_epsilon_,l,O,i node_yes = 2181 node_no = 2182 
+node_num = 752 quest_num = 7 subset = 0,p,x,_eow_,a,v,b,c,e,f,i,l,s,t,é,o,r,u node_yes = 848 subset = n node_yes = 849 node_no = 2183 
+node_num = 753 quest_num = 13 subset = ACC1-a,O_O,a node_yes = 850 subset = E_E node_yes = 851 node_no = 2184 
+node_num = 754 quest_num = 1 subset = _eow_ node_yes = 2185 node_no = 2186 
+node_num = 755 quest_num = 3 subset = c,b,n,h,s node_yes = 852 subset = r,m,t node_yes = 853 node_no = 2187 
+node_num = 756 quest_num = 2 subset = l node_yes = 2188 node_no = 2189 
+node_num = 757 quest_num = 3 subset = z,e,j node_yes = 854 subset = i,k node_yes = 2190 node_no = 855 
+node_num = 758 quest_num = 3 subset = t node_yes = 2191 node_no = 2192 
+node_num = 759 quest_num = 1 subset = 0 node_yes = 2193 node_no = 2194 
+node_num = 760 quest_num = 5 subset = f,n node_yes = 856 node_no = 2195 
+node_num = 761 quest_num = 6 subset = - node_yes = 2196 subset = e node_yes = 857 node_no = 2197 
+node_num = 762 quest_num = 14 subset = ~O node_yes = 2198 node_no = 2199 
+node_num = 763 quest_num = 15 subset = _epsilon_ node_yes = 858 node_no = 2200 
+node_num = 764 quest_num = 8 subset = _eow_,e node_yes = 859 subset = r,n node_yes = 2201 node_no = 2202 
+node_num = 765 quest_num = 2 subset = b,i,d node_yes = 860 node_no = 2203 
+node_num = 766 quest_num = 8 subset = h,-,r,m,l node_yes = 861 node_no = 2204 
+node_num = 767 quest_num = 14 subset = t,p,s,k,Z node_yes = 862 subset = _epsilon_ node_yes = 863 node_no = 2205 
+node_num = 768 quest_num = 7 subset = t node_yes = 2206 node_no = 2207 
+node_num = 769 quest_num = 6 subset = h node_yes = 864 node_no = 2208 
+node_num = 770 quest_num = 15 subset = (-@-),n,_epsilon_,ACC1-i-Þ,ACC1-E-n node_yes = 865 subset = ACC1-~O,(-@-)-Þ,@,ACC1-2,i-j,u,~E,~a,ACC1-9,ACC1-E,ACC1-a,ACC1-a-Þ,a,ACC1-~E,ACC1-~a,ACC1-o,E,O_O,j,ACC1-e,ACC1-e-Þ,ACC1-a_a,6,ACC1-O,ACC1-i,ACC1-y,E_E,O,i,y,~O,ACC1-y-Þ,ACC1-~9,e,w-ACC1-a node_yes = 866 node_no = 2209 
+node_num = 771 quest_num = 14 subset = _epsilon_ node_yes = 867 node_no = 2210 
+node_num = 772 quest_num = 14 subset = ACC1-E,ACC1-~E node_yes = 868 subset = _epsilon_,ACC1-O,ACC1-a,ACC1-e,ACC1-e-Þ,E,ACC1-~O,ACC1-~a,O,O_O,a,e,o,~O node_yes = 2211 node_no = 2212 
+node_num = 773 quest_num = 9 subset = N_F_SG,N_M_PL,V_SG,N_F_PL node_yes = 869 node_no = 2213 
+node_num = 774 quest_num = 3 subset = e node_yes = 870 node_no = 2214 
+node_num = 775 quest_num = 3 subset = e node_yes = 2215 node_no = 2216 
+node_num = 776 quest_num = 13 subset = _epsilon_ node_yes = 871 node_no = 2217 
+node_num = 777 quest_num = 7 subset = 0 node_yes = 2218 node_no = 2219 
+node_num = 778 quest_num = 2 subset = i node_yes = 2220 node_no = 2221 
+node_num = 779 quest_num = 14 subset = (-@-),_epsilon_,@,ACC1-E,ACC1-O,ACC1-a,ACC1-a-Þ,ACC1-e,ACC1-e-Þ,ACC1-i,ACC1-i-s,ACC1-i-Þ,ACC1-y,E,ACC1-~O,O_O,a,i,j,w-ACC1-a,y,~O node_yes = 872 subset = E_E,H node_yes = 873 node_no = 2222 
+node_num = 780 quest_num = 2 subset = y,i node_yes = 874 subset = _,q,w,ç,è,ê,î,ô,û,à,ï,â,0,a node_yes = 2223 node_no = 875 
+node_num = 781 quest_num = 14 subset = ACC1-E,O_O,w node_yes = 2224 node_no = 2225 
+node_num = 782 quest_num = 13 subset = _epsilon_ node_yes = 876 node_no = 2226 
+node_num = 783 quest_num = 2 subset = a,o,e node_yes = 2227 node_no = 2228 
+node_num = 784 quest_num = 13 subset = (-z-)-Þ node_yes = 877 subset = E,O_O,ACC1-i-s node_yes = 2229 node_no = 2230 
+node_num = 785 quest_num = 14 subset = R node_yes = 2231 node_no = 2232 
+node_num = 786 quest_num = 5 subset = e,a,â,o node_yes = 878 subset = y,u,i node_yes = 879 node_no = 2233 
+node_num = 787 quest_num = 6 subset = ï,b,t,v node_yes = 2234 node_no = 2235 
+node_num = 788 quest_num = 7 subset = _eow_,s,r,n node_yes = 880 subset = d,b,l node_yes = 2236 node_no = 2237 
+node_num = 789 quest_num = 8 subset = a,i,s node_yes = 2238 node_no = 2239 
+node_num = 790 quest_num = 5 subset = a node_yes = 2240 node_no = 2241 
+node_num = 791 quest_num = 2 subset = o node_yes = 2242 node_no = 2243 
+node_num = 792 quest_num = 6 subset = l node_yes = 2244 node_no = 2245 
+node_num = 793 quest_num = 15 subset = ACC1-e,6 node_yes = 881 node_no = 2246 
+node_num = 794 quest_num = 15 subset = s,ACC1-e,6 node_yes = 2247 node_no = 2248 
+node_num = 795 quest_num = 15 subset = _epsilon_ node_yes = 2249 subset = (-@-),(-z-)-Þ,0,Þ,s,ACC1-e,6,J node_yes = 2250 node_no = 882 
+node_num = 796 quest_num = 8 subset = e node_yes = 2251 node_no = 2252 
+node_num = 797 quest_num = 2 subset = f node_yes = 883 node_no = 2253 
+node_num = 798 quest_num = 3 subset = _eow_,b,d,m,k node_yes = 2254 subset = r,p,l,s,u node_yes = 884 node_no = 2255 
+node_num = 799 quest_num = 7 subset = v,c node_yes = 2256 subset = e,s,t node_yes = 885 node_no = 2257 
+node_num = 800 quest_num = 12 is_true node_yes = 2258 node_no = 886 
+node_num = 801 quest_num = 8 subset = _eow_,e,r,i,n,o,s,t,u,l node_yes = 887 subset = a node_yes = 888 node_no = 2259 
+node_num = 802 quest_num = 3 subset = o node_yes = 889 subset = z,è,ô node_yes = 2260 node_no = 890 
+node_num = 803 quest_num = 3 subset = i,a node_yes = 891 node_no = 2261 
+node_num = 804 quest_num = 2 subset = r node_yes = 2262 node_no = 2263 
+node_num = 805 quest_num = 3 subset = b,e node_yes = 892 subset = p node_yes = 2264 node_no = 2265 
+node_num = 806 quest_num = 1 subset = h,o node_yes = 2266 node_no = 2267 
+node_num = 807 quest_num = 6 subset = c,t,l node_yes = 893 node_no = 2268 
+node_num = 808 quest_num = 5 subset = d node_yes = 2269 node_no = 2270 
+node_num = 809 quest_num = 3 subset = b,l,ï node_yes = 894 subset = h,x node_yes = 2271 node_no = 2272 
+node_num = 810 quest_num = 9 subset = V_PART node_yes = 2273 node_no = 2274 
+node_num = 811 quest_num = 9 subset = ADJ_PL,ADJ_SG node_yes = 2275 node_no = 2276 
+node_num = 812 quest_num = 3 subset = y node_yes = 2277 node_no = 2278 
+node_num = 813 quest_num = 10 is_greater = 3 node_yes = 895 node_no = 2279 
+node_num = 814 quest_num = 8 subset = y,_eow_,a,r,t,l node_yes = 2280 subset = h,e,n,o,s node_yes = 896 node_no = 2281 
+node_num = 815 quest_num = 8 subset = i,n,q,c node_yes = 897 node_no = 2282 
+node_num = 816 quest_num = 3 subset = c,s node_yes = 2283 node_no = 2284 
+node_num = 817 quest_num = 6 subset = i node_yes = 898 node_no = 2285 
+node_num = 818 quest_num = 5 subset = t,c,m,v,ç node_yes = 899 subset = l,p node_yes = 2286 node_no = 2287 
+node_num = 819 quest_num = 8 subset = 0,t,u node_yes = 2288 subset = x,_eow_,a,e,è,é,i,o,s,c,l node_yes = 900 node_no = 2289 
+node_num = 820 quest_num = 13 subset = _epsilon_,R node_yes = 901 subset = j,Z,p,s,z,0,g node_yes = 2290 node_no = 902 
+node_num = 821 quest_num = 2 subset = r node_yes = 903 node_no = 904 
+node_num = 822 quest_num = 6 subset = 0,u node_yes = 905 subset = a,i,o,î,e node_yes = 906 node_no = 2291 
+node_num = 823 quest_num = 2 subset = è,ô,-,e,l node_yes = 907 subset = z node_yes = 2292 node_no = 908 
+node_num = 824 quest_num = 0 subset = _eow_,p,u,b,h,r,n node_yes = 2293 subset = c,t node_yes = 2294 node_no = 2295 
+node_num = 825 quest_num = 2 subset = b,g,p,a,c,f,r,t node_yes = 909 subset = i,o,e,l,n,s,u,é node_yes = 910 node_no = 2296 
+node_num = 826 quest_num = 9 subset = ADJ_SG,N_F_SG,V_INF,V_PART_PRES,N_F_PL,N_ADJ_M_PL node_yes = 911 subset = N_ADJ_F_PL,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 2297 node_no = 912 
+node_num = 827 quest_num = 8 subset = u node_yes = 2298 node_no = 2299 
+node_num = 828 quest_num = 8 subset = y,a,i,n,u node_yes = 913 node_no = 2300 
+node_num = 829 quest_num = 7 subset = â,a,e,r,n,è node_yes = 914 subset = i,l,o node_yes = 915 node_no = 2301 
+node_num = 830 quest_num = 8 subset = s node_yes = 916 node_no = 2302 
+node_num = 831 quest_num = 8 subset = - node_yes = 2303 subset = i,b node_yes = 917 node_no = 2304 
+node_num = 832 quest_num = 6 subset = n,l node_yes = 918 subset = t node_yes = 919 node_no = 2305 
+node_num = 833 quest_num = 15 subset = (-@-),_epsilon_,e node_yes = 920 subset = ACC1-E,ACC1-a,a,ACC1-o,E,O_O,ACC1-a_a,6,ACC1-O,ACC1-i,ACC1-y,E_E,O,i,y,~O node_yes = 921 node_no = 2306 
+node_num = 834 quest_num = 7 subset = a,e,o,u node_yes = 922 subset = h,n,m node_yes = 923 node_no = 2307 
+node_num = 835 quest_num = 6 subset = r node_yes = 2308 node_no = 2309 
+node_num = 836 quest_num = 2 subset = o node_yes = 2310 node_no = 2311 
+node_num = 837 quest_num = 13 subset = ACC1-E,e,ACC1-a,O_O,a node_yes = 924 subset = _epsilon_,ACC1-O node_yes = 925 node_no = 2312 
+node_num = 838 quest_num = 10 is_greater = 6 node_yes = 926 node_no = 2313 
+node_num = 839 quest_num = 13 subset = _epsilon_ node_yes = 2314 node_no = 2315 
+node_num = 840 quest_num = 3 subset = s node_yes = 2316 node_no = 2317 
+node_num = 841 quest_num = 1 subset = 0,y,z,a,p,g,u node_yes = 2318 node_no = 2319 
+node_num = 842 quest_num = 2 subset = g node_yes = 2320 node_no = 2321 
+node_num = 843 quest_num = 5 subset = s,r node_yes = 2322 node_no = 2323 
+node_num = 844 quest_num = 13 subset = N,k-Þ node_yes = 2324 node_no = 2325 
+node_num = 845 quest_num = 8 subset = _eow_ node_yes = 2326 node_no = 2327 
+node_num = 846 quest_num = 3 subset = q node_yes = 927 node_no = 2328 
+node_num = 847 quest_num = 6 subset = -,c,g node_yes = 2329 node_no = 2330 
+node_num = 848 quest_num = 4 subset = o node_yes = 928 node_no = 2331 
+node_num = 849 quest_num = 6 subset = i,e node_yes = 2332 node_no = 2333 
+node_num = 850 quest_num = 8 subset = _eow_,i,s node_yes = 929 node_no = 2334 
+node_num = 851 quest_num = 0 subset = u node_yes = 2335 node_no = 2336 
+node_num = 852 quest_num = 5 subset = a node_yes = 2337 node_no = 2338 
+node_num = 853 quest_num = 14 subset = s node_yes = 2339 node_no = 2340 
+node_num = 854 quest_num = 0 subset = _eow_ node_yes = 2341 node_no = 2342 
+node_num = 855 quest_num = 3 subset = c,h node_yes = 930 node_no = 2343 
+node_num = 856 quest_num = 0 subset = d node_yes = 2344 node_no = 2345 
+node_num = 857 quest_num = 14 subset = (-@-) node_yes = 2346 node_no = 2347 
+node_num = 858 quest_num = 8 subset = n,u node_yes = 2348 node_no = 2349 
+node_num = 859 quest_num = 13 subset = _epsilon_ node_yes = 2350 node_no = 2351 
+node_num = 860 quest_num = 6 subset = f,h,p,s node_yes = 931 node_no = 2352 
+node_num = 861 quest_num = 15 subset = (-@-),_epsilon_ node_yes = 2353 node_no = 2354 
+node_num = 862 quest_num = 3 subset = _eow_,c,b,g,n,r,d,h,i,m,p,t node_yes = 932 subset = é node_yes = 2355 node_no = 2356 
+node_num = 863 quest_num = 2 subset = p node_yes = 2357 node_no = 2358 
+node_num = 864 quest_num = 7 subset = l,r node_yes = 2359 node_no = 2360 
+node_num = 865 quest_num = 8 subset = î,_eow_,a,e,i,n,s,u node_yes = 933 node_no = 2361 
+node_num = 866 quest_num = 13 subset = b,d,v,g,l node_yes = 934 node_no = 2362 
+node_num = 867 quest_num = 15 subset = 2,ACC1-2,ACC1-u,u,~E,~a,ACC1-9,ACC1-~E,ACC1-~a,ACC1-o,_epsilon_,i node_yes = 935 subset = n node_yes = 2363 node_no = 2364 
+node_num = 868 quest_num = 14 subset = ACC1-~E node_yes = 2365 node_no = 936 
+node_num = 869 quest_num = 6 subset = a,o node_yes = 2366 node_no = 2367 
+node_num = 870 quest_num = 9 subset = N_M_PL node_yes = 2368 node_no = 2369 
+node_num = 871 quest_num = 2 subset = p,f,l,r,s,t node_yes = 2370 subset = h,m,i,n,u node_yes = 937 node_no = 2371 
+node_num = 872 quest_num = 8 subset = g,l node_yes = 938 node_no = 2372 
+node_num = 873 quest_num = 3 subset = e node_yes = 2373 node_no = 2374 
+node_num = 874 quest_num = 5 subset = -,s,v,d,f node_yes = 939 node_no = 2375 
+node_num = 875 quest_num = 2 subset = z,b,g,p,o node_yes = 940 node_no = 2376 
+node_num = 876 quest_num = 6 subset = a,é,_eow_ node_yes = 941 node_no = 2377 
+node_num = 877 quest_num = 2 subset = o node_yes = 2378 node_no = 2379 
+node_num = 878 quest_num = 8 subset = ç,ê,z node_yes = 2380 subset = ï node_yes = 2381 node_no = 942 
+node_num = 879 quest_num = 8 subset = n node_yes = 2382 node_no = 2383 
+node_num = 880 quest_num = 9 subset = ADV,N_M_PL,N_M_SG,N_ADJ_F_PL,N_ADJ_M_SG,N_ADJ_F_SG node_yes = 943 node_no = 2384 
+node_num = 881 quest_num = 6 subset = i,r,t node_yes = 2385 node_no = 2386 
+node_num = 882 quest_num = 2 subset = c,f node_yes = 944 node_no = 2387 
+node_num = 883 quest_num = 6 subset = s node_yes = 945 node_no = 2388 
+node_num = 884 quest_num = 2 subset = a,i node_yes = 946 node_no = 2389 
+node_num = 885 quest_num = 10 is_greater = 6 node_yes = 2390 node_no = 947 
+node_num = 886 quest_num = 9 subset = N_M_PL,N_M_SG node_yes = 2391 node_no = 2392 
+node_num = 887 quest_num = 5 subset = é node_yes = 2393 node_no = 2394 
+node_num = 888 quest_num = 6 subset = p node_yes = 2395 node_no = 2396 
+node_num = 889 quest_num = 0 subset = a,y,i node_yes = 2397 node_no = 2398 
+node_num = 890 quest_num = 7 subset = _eow_,v,f,s,g,m node_yes = 948 node_no = 2399 
+node_num = 891 quest_num = 2 subset = t node_yes = 949 node_no = 2400 
+node_num = 892 quest_num = 0 subset = r,t node_yes = 2401 node_no = 2402 
+node_num = 893 quest_num = 7 subset = p,l,s,t,é node_yes = 950 node_no = 2403 
+node_num = 894 quest_num = 14 subset = m,s node_yes = 951 subset = t,z,ACC1-a-Þ,ACC1-a_a,ACC1-e,ACC1-e-Þ,ACC1-i-Þ,ACC1-o,E,~E,E_E,O,a,o,w-ACC1-a,w-a,~O,b,w,Þ,g,p,(-n-),(-t-)-Þ,2,9,N,R-Þ,i-j,k-s,l-Þ,J,Z node_yes = 2404 node_no = 952 
+node_num = 895 quest_num = 8 subset = s node_yes = 2405 node_no = 2406 
+node_num = 896 quest_num = 5 subset = d node_yes = 2407 node_no = 2408 
+node_num = 897 quest_num = 5 subset = l,n,q,r node_yes = 953 subset = s,m,v node_yes = 2409 node_no = 2410 
+node_num = 898 quest_num = 8 subset = _eow_,n node_yes = 2411 node_no = 2412 
+node_num = 899 quest_num = 7 subset = - node_yes = 2413 node_no = 2414 
+node_num = 900 quest_num = 6 subset = u node_yes = 2415 node_no = 2416 
+node_num = 901 quest_num = 0 subset = j,e node_yes = 954 subset = ',-,_,k,w,y,z,à,â,è,ê,î,ï,ô,û,q,ç node_yes = 2417 node_no = 955 
+node_num = 902 quest_num = 2 subset = b,r node_yes = 956 subset = v,d node_yes = 2418 node_no = 957 
+node_num = 903 quest_num = 5 subset = t,m,f,l,r,a node_yes = 958 subset = c,n,q node_yes = 2419 node_no = 2420 
+node_num = 904 quest_num = 13 subset = _epsilon_ node_yes = 2421 subset = j,z,0,g node_yes = 2422 node_no = 959 
+node_num = 905 quest_num = 1 subset = _eow_ node_yes = 2423 node_no = 2424 
+node_num = 906 quest_num = 3 subset = c,b,n,r,m,l,v,f node_yes = 2425 subset = d,h,p,t,s,u node_yes = 960 node_no = 2426 
+node_num = 907 quest_num = 1 subset = i node_yes = 961 subset = ',0,_,à,-,k,q,w,y,ç,è,ê,î,ï,ô,û,z,â,x,j node_yes = 2427 node_no = 962 
+node_num = 908 quest_num = 8 subset = h,-,i,m,b node_yes = 963 subset = ',j,w,à,ç,ê,ë,î,ï,ô,û,v,y,z,â node_yes = 2428 node_no = 964 
+node_num = 909 quest_num = 6 subset = i node_yes = 965 node_no = 2429 
+node_num = 910 quest_num = 8 subset = ç,e,é,n,t,z,c node_yes = 966 subset = i,l,d node_yes = 2430 node_no = 2431 
+node_num = 911 quest_num = 2 subset = -,g,a,n,s,u,é node_yes = 2432 node_no = 2433 
+node_num = 912 quest_num = 3 subset = u node_yes = 967 node_no = 2434 
+node_num = 913 quest_num = 15 subset = (-@-),ACC1-~O,ACC1-E,ACC1-~a node_yes = 968 node_no = 2435 
+node_num = 914 quest_num = 15 subset = ACC1-~a node_yes = 969 node_no = 2436 
+node_num = 915 quest_num = 3 subset = c,i,t,f node_yes = 970 subset = _eow_,g,n,d,é,y,j node_yes = 2437 node_no = 971 
+node_num = 916 quest_num = 7 subset = a node_yes = 2438 node_no = 2439 
+node_num = 917 quest_num = 15 subset = E node_yes = 2440 node_no = 2441 
+node_num = 918 quest_num = 1 subset = 0 node_yes = 972 subset = n node_yes = 2442 node_no = 2443 
+node_num = 919 quest_num = 8 subset = r node_yes = 2444 node_no = 2445 
+node_num = 920 quest_num = 6 subset = s node_yes = 973 node_no = 2446 
+node_num = 921 quest_num = 3 subset = r node_yes = 974 subset = n,h,k,y,w,a node_yes = 2447 node_no = 975 
+node_num = 922 quest_num = 3 subset = r,d node_yes = 976 node_no = 2448 
+node_num = 923 quest_num = 6 subset = c node_yes = 2449 subset = g node_yes = 977 node_no = 2450 
+node_num = 924 quest_num = 2 subset = -,n node_yes = 2451 node_no = 2452 
+node_num = 925 quest_num = 13 subset = _epsilon_ node_yes = 978 node_no = 2453 
+node_num = 926 quest_num = 3 subset = t,f node_yes = 979 node_no = 2454 
+node_num = 927 quest_num = 11 is_greater = 1 node_yes = 2455 node_no = 980 
+node_num = 928 quest_num = 5 subset = é node_yes = 2456 node_no = 2457 
+node_num = 929 quest_num = 10 is_greater = 5 node_yes = 2458 node_no = 2459 
+node_num = 930 quest_num = 2 subset = _eow_,a,o node_yes = 981 subset = c,e,é node_yes = 982 node_no = 2460 
+node_num = 931 quest_num = 3 subset = t node_yes = 2461 node_no = 2462 
+node_num = 932 quest_num = 15 subset = (-@-),ACC1-~O,ACC1-E,ACC1-a,ACC1-a-Þ,ACC1-~a,E,R,j,ACC1-e,ACC1-e-Þ,ACC1-a_a,6,ACC1-i,ACC1-y,i,y,e,ACC1-i-s node_yes = 983 subset = m,a,O_O,_epsilon_,f node_yes = 984 node_no = 2463 
+node_num = 933 quest_num = 13 subset = v,g,l node_yes = 2464 subset = i,Z,d,f node_yes = 2465 node_no = 985 
+node_num = 934 quest_num = 14 subset = m,n,k node_yes = 2466 node_no = 2467 
+node_num = 935 quest_num = 13 subset = k-s node_yes = 2468 node_no = 2469 
+node_num = 936 quest_num = 9 subset = N_F_SG,V_SG,N_F_PL node_yes = 986 node_no = 2470 
+node_num = 937 quest_num = 1 subset = l node_yes = 2471 node_no = 2472 
+node_num = 938 quest_num = 3 subset = e node_yes = 2473 node_no = 2474 
+node_num = 939 quest_num = 1 subset = c,p,r node_yes = 2475 node_no = 2476 
+node_num = 940 quest_num = 5 subset = g,s,t,c,ç,d,l,q,z node_yes = 987 subset = j node_yes = 2477 node_no = 2478 
+node_num = 941 quest_num = 12 is_true node_yes = 2479 node_no = 988 
+node_num = 942 quest_num = 6 subset = m,l node_yes = 989 node_no = 2480 
+node_num = 943 quest_num = 8 subset = y,0,é,t node_yes = 2481 node_no = 2482 
+node_num = 944 quest_num = 3 subset = f node_yes = 2483 node_no = 2484 
+node_num = 945 quest_num = 8 subset = e node_yes = 2485 node_no = 2486 
+node_num = 946 quest_num = 1 subset = b node_yes = 2487 node_no = 2488 
+node_num = 947 quest_num = 8 subset = e,r,m,t node_yes = 990 node_no = 2489 
+node_num = 948 quest_num = 6 subset = è,l node_yes = 991 subset = m node_yes = 2490 node_no = 2491 
+node_num = 949 quest_num = 3 subset = i node_yes = 2492 node_no = 2493 
+node_num = 950 quest_num = 1 subset = i node_yes = 2494 node_no = 2495 
+node_num = 951 quest_num = 8 subset = o,s node_yes = 2496 node_no = 2497 
+node_num = 952 quest_num = 1 subset = h,b,d,s,r node_yes = 992 node_no = 2498 
+node_num = 953 quest_num = 3 subset = c,g node_yes = 2499 node_no = 2500 
+node_num = 954 quest_num = 3 subset = i,u node_yes = 2501 node_no = 2502 
+node_num = 955 quest_num = 8 subset = -,u,l,p node_yes = 993 subset = f,0,_eow_,e,g,i,n,s,t node_yes = 994 node_no = 2503 
+node_num = 956 quest_num = 1 subset = a,e,o,u,i node_yes = 995 subset = t,g,b node_yes = 2504 node_no = 2505 
+node_num = 957 quest_num = 8 subset = 0,_eow_,e,g,s,t,d node_yes = 996 subset = l node_yes = 2506 node_no = 2507 
+node_num = 958 quest_num = 1 subset = a,e node_yes = 997 subset = u node_yes = 998 node_no = 2508 
+node_num = 959 quest_num = 3 subset = h node_yes = 999 node_no = 2509 
+node_num = 960 quest_num = 6 subset = a node_yes = 2510 node_no = 2511 
+node_num = 961 quest_num = 3 subset = c,r,i,m,u node_yes = 2512 subset = l node_yes = 1000 node_no = 2513 
+node_num = 962 quest_num = 3 subset = c,g,n,r,i,p,t,l,s,v,u,f,j,x node_yes = 1001 subset = d,m node_yes = 1002 node_no = 2514 
+node_num = 963 quest_num = 3 subset = c,t node_yes = 2515 subset = g,n,r,h,p,v,u node_yes = 1003 node_no = 2516 
+node_num = 964 quest_num = 6 subset = à,â,è,ê node_yes = 1004 subset = y,î,û,0 node_yes = 2517 node_no = 1005 
+node_num = 965 quest_num = 3 subset = h,m node_yes = 2518 node_no = 2519 
+node_num = 966 quest_num = 14 subset = @,j node_yes = 1006 node_no = 2520 
+node_num = 967 quest_num = 2 subset = b,o,l,n node_yes = 2521 node_no = 2522 
+node_num = 968 quest_num = 3 subset = _eow_,c node_yes = 1007 node_no = 2523 
+node_num = 969 quest_num = 5 subset = l node_yes = 2524 node_no = 2525 
+node_num = 970 quest_num = 11 is_greater = 3 node_yes = 2526 node_no = 2527 
+node_num = 971 quest_num = 1 subset = d,m node_yes = 2528 node_no = 2529 
+node_num = 972 quest_num = 3 subset = j node_yes = 2530 node_no = 2531 
+node_num = 973 quest_num = 11 is_greater = 1 node_yes = 2532 node_no = 2533 
+node_num = 974 quest_num = 1 subset = 0 node_yes = 1008 subset = _eow_ node_yes = 2534 node_no = 2535 
+node_num = 975 quest_num = 10 is_greater = 2 node_yes = 2536 node_no = 1009 
+node_num = 976 quest_num = 5 subset = g,s,t,l,i node_yes = 1010 subset = n node_yes = 2537 node_no = 2538 
+node_num = 977 quest_num = 8 subset = e node_yes = 1011 node_no = 2539 
+node_num = 978 quest_num = 3 subset = o,a node_yes = 2540 node_no = 2541 
+node_num = 979 quest_num = 0 subset = a,_eow_ node_yes = 2542 node_no = 2543 
+node_num = 980 quest_num = 10 is_greater = 7 node_yes = 2544 node_no = 1012 
+node_num = 981 quest_num = 0 subset = a node_yes = 2545 node_no = 2546 
+node_num = 982 quest_num = 0 subset = 0 node_yes = 2547 node_no = 2548 
+node_num = 983 quest_num = 11 is_greater = 2 node_yes = 1013 node_no = 2549 
+node_num = 984 quest_num = 8 subset = a,r,o,t,p node_yes = 2550 node_no = 2551 
+node_num = 985 quest_num = 15 subset = (-@-),n node_yes = 1014 node_no = 2552 
+node_num = 986 quest_num = 6 subset = a node_yes = 2553 node_no = 2554 
+node_num = 987 quest_num = 2 subset = o node_yes = 2555 subset = z node_yes = 1015 node_no = 1016 
+node_num = 988 quest_num = 9 subset = N_M_SG node_yes = 2556 node_no = 2557 
+node_num = 989 quest_num = 8 subset = è,o node_yes = 2558 node_no = 2559 
+node_num = 990 quest_num = 6 subset = d,n,r,s node_yes = 1017 subset = t node_yes = 2560 node_no = 2561 
+node_num = 991 quest_num = 7 subset = f,g node_yes = 2562 node_no = 1018 
+node_num = 992 quest_num = 5 subset = e,a,i node_yes = 1019 node_no = 2563 
+node_num = 993 quest_num = 13 subset = _epsilon_ node_yes = 1020 node_no = 1021 
+node_num = 994 quest_num = 9 subset = N_F_SG,N_M_PL,N_M_SG,N_F_PL node_yes = 1022 node_no = 2564 
+node_num = 995 quest_num = 7 subset = c node_yes = 2565 node_no = 2566 
+node_num = 996 quest_num = 1 subset = _eow_ node_yes = 1023 node_no = 2567 
+node_num = 997 quest_num = 5 subset = m,l node_yes = 1024 node_no = 1025 
+node_num = 998 quest_num = 5 subset = m node_yes = 2568 subset = r node_yes = 2569 node_no = 2570 
+node_num = 999 quest_num = 5 subset = r node_yes = 1026 node_no = 2571 
+node_num = 1000 quest_num = 5 subset = f,n node_yes = 2572 subset = r node_yes = 1027 subset = t node_yes = 1028 node_no = 2573 
+node_num = 1001 quest_num = 9 subset = V_INF,V_PART_PRES,V_PL,V_SG node_yes = 1029 node_no = 1030 
+node_num = 1002 quest_num = 2 subset = è node_yes = 2574 subset = ô,- node_yes = 2575 node_no = 1031 
+node_num = 1003 quest_num = 7 subset = c,u,-,n,g node_yes = 1032 subset = t,r node_yes = 1033 node_no = 2576 
+node_num = 1004 quest_num = 7 subset = - node_yes = 1034 subset = g node_yes = 2577 subset = q node_yes = 2578 subset = t,r node_yes = 1035 node_no = 2579 
+node_num = 1005 quest_num = 15 subset = (-R-)-Þ,R-Þ node_yes = 1036 subset = (-n-),d,k-s-Þ,~E,ACC1-9,k,m,s,t node_yes = 1037 subset = (-t-)-Þ,k-t,v,ACC1-E,ACC1-a,ACC1-a-Þ,a node_yes = 2580 node_no = 1038 
+node_num = 1006 quest_num = 3 subset = c,m,v node_yes = 1039 node_no = 2581 
+node_num = 1007 quest_num = 5 subset = r node_yes = 2582 node_no = 2583 
+node_num = 1008 quest_num = 5 subset = d node_yes = 2584 node_no = 2585 
+node_num = 1009 quest_num = 5 subset = l node_yes = 2586 node_no = 2587 
+node_num = 1010 quest_num = 1 subset = 0 node_yes = 1040 node_no = 2588 
+node_num = 1011 quest_num = 1 subset = e node_yes = 2589 node_no = 2590 
+node_num = 1012 quest_num = 8 subset = a,e,i,o node_yes = 2591 subset = u node_yes = 1041 node_no = 2592 
+node_num = 1013 quest_num = 7 subset = a,i node_yes = 2593 node_no = 2594 
+node_num = 1014 quest_num = 13 subset = ACC1-i node_yes = 2595 node_no = 2596 
+node_num = 1015 quest_num = 0 subset = f node_yes = 2597 node_no = 2598 
+node_num = 1016 quest_num = 7 subset = c,g node_yes = 1042 subset = ',0,_,h,j,k,p,w,x,y,à,â,ç,ê,ë,î,ï,ô,û node_yes = 2599 node_no = 1043 
+node_num = 1017 quest_num = 3 subset = _eow_,n,r,t,v node_yes = 2600 subset = c,b,i,m,p,l node_yes = 1044 node_no = 2601 
+node_num = 1018 quest_num = 0 subset = p,g node_yes = 2602 node_no = 2603 
+node_num = 1019 quest_num = 3 subset = l node_yes = 1045 node_no = 2604 
+node_num = 1020 quest_num = 15 subset = _epsilon_ node_yes = 1046 subset = t node_yes = 2605 node_no = 2606 
+node_num = 1021 quest_num = 2 subset = f node_yes = 2607 node_no = 2608 
+node_num = 1022 quest_num = 7 subset = x,v,e,- node_yes = 1047 subset = _eow_,s,t,n node_yes = 2609 node_no = 2610 
+node_num = 1023 quest_num = 5 subset = t node_yes = 2611 node_no = 2612 
+node_num = 1024 quest_num = 3 subset = r node_yes = 2613 node_no = 2614 
+node_num = 1025 quest_num = 3 subset = k node_yes = 2615 subset = v node_yes = 1048 node_no = 2616 
+node_num = 1026 quest_num = 0 subset = l node_yes = 2617 node_no = 2618 
+node_num = 1027 quest_num = 11 is_greater = 4 node_yes = 1050 node_no = 1049 
+node_num = 1028 quest_num = 0 subset = u node_yes = 1051 node_no = 2619 
+node_num = 1029 quest_num = 1 subset = c,g,l,r node_yes = 1052 subset = n node_yes = 2620 node_no = 1053 
+node_num = 1030 quest_num = 3 subset = s node_yes = 2621 subset = p,u,f,x node_yes = 2622 node_no = 1054 
+node_num = 1031 quest_num = 0 subset = c,s node_yes = 2623 node_no = 2624 
+node_num = 1032 quest_num = 0 subset = a,_eow_ node_yes = 2625 node_no = 2626 
+node_num = 1033 quest_num = 14 subset = O_O node_yes = 2627 node_no = 2628 
+node_num = 1034 quest_num = 9 subset = N_F_SG,N_F_PL node_yes = 2629 node_no = 2630 
+node_num = 1035 quest_num = 3 subset = l,v,j node_yes = 2631 node_no = 2632 
+node_num = 1036 quest_num = 3 subset = g,r,p,t,l,s,j node_yes = 2633 node_no = 2634 
+node_num = 1037 quest_num = 10 is_greater = 3 node_yes = 1056 node_no = 1055 
+node_num = 1038 quest_num = 13 subset = j,d node_yes = 1057 subset = n,s,v,t,l node_yes = 1058 subset = z node_yes = 1059 subset = 0 node_yes = 2635 node_no = 1060 
+node_num = 1039 quest_num = 5 subset = v node_yes = 1061 node_no = 2636 
+node_num = 1040 quest_num = 3 subset = r node_yes = 1062 node_no = 2637 
+node_num = 1041 quest_num = 7 subset = q node_yes = 1063 node_no = 2638 
+node_num = 1042 quest_num = 15 subset = Z,k node_yes = 2639 subset = g,s node_yes = 1064 node_no = 2640 
+node_num = 1043 quest_num = 0 subset = m,t node_yes = 2641 node_no = 2642 
+node_num = 1044 quest_num = 10 is_greater = 3 node_yes = 1065 node_no = 2643 
+node_num = 1045 quest_num = 1 subset = b node_yes = 2644 node_no = 2645 
+node_num = 1046 quest_num = 1 subset = u node_yes = 2646 node_no = 2647 
+node_num = 1047 quest_num = 1 subset = _eow_ node_yes = 2648 subset = a,e,n,o,u,i node_yes = 1066 node_no = 2649 
+node_num = 1048 quest_num = 6 subset = i node_yes = 2650 node_no = 2651 
+node_num = 1049 quest_num = 0 subset = c,t node_yes = 2652 node_no = 2653 
+node_num = 1050 quest_num = 0 subset = e node_yes = 2654 node_no = 2655 
+node_num = 1051 quest_num = 6 subset = a,e node_yes = 2656 node_no = 2657 
+node_num = 1052 quest_num = 3 subset = i,f node_yes = 2658 subset = g,r,p,s,u,x node_yes = 2659 node_no = 1067 
+node_num = 1053 quest_num = 2 subset = ô node_yes = 2660 subset = - node_yes = 2661 node_no = 1068 
+node_num = 1054 quest_num = 5 subset = v,n node_yes = 1069 subset = s,y node_yes = 2662 node_no = 2663 
+node_num = 1055 quest_num = 1 subset = n,p node_yes = 2664 node_no = 2665 
+node_num = 1056 quest_num = 5 subset = d,y,r node_yes = 1070 node_no = 2666 
+node_num = 1057 quest_num = 14 subset = _epsilon_,ACC1-E,ACC1-e node_yes = 2667 subset = ACC1-~O,ACC1-~a node_yes = 2668 node_no = 2669 
+node_num = 1058 quest_num = 1 subset = â,b,s node_yes = 1071 subset = ',0,_,à,-,k,q,w,y,ç,è,ê,î,ï,ô,û,x node_yes = 2670 node_no = 1072 
+node_num = 1059 quest_num = 3 subset = m,l node_yes = 2671 node_no = 2672 
+node_num = 1060 quest_num = 7 subset = x,d,_eow_,a,e,i,s,t,r,u,-,n,z node_yes = 1073 subset = l node_yes = 1074 node_no = 2673 
+node_num = 1061 quest_num = 1 subset = r node_yes = 2674 node_no = 2675 
+node_num = 1062 quest_num = 15 subset = ACC1-E,y,H node_yes = 2676 node_no = 2677 
+node_num = 1063 quest_num = 10 is_greater = 4 node_yes = 2678 node_no = 2679 
+node_num = 1064 quest_num = 3 subset = e node_yes = 2680 node_no = 2681 
+node_num = 1065 quest_num = 5 subset = y node_yes = 2682 node_no = 2683 
+node_num = 1066 quest_num = 13 subset = _epsilon_ node_yes = 2684 node_no = 1075 
+node_num = 1067 quest_num = 2 subset = e node_yes = 1076 subset = ô node_yes = 1077 node_no = 2685 
+node_num = 1068 quest_num = 11 is_greater = 4 node_yes = 1078 node_no = 2686 
+node_num = 1069 quest_num = 0 subset = _eow_,e,t node_yes = 2687 subset = m,r node_yes = 2688 node_no = 2689 
+node_num = 1070 quest_num = 1 subset = a,e,g,v node_yes = 2690 node_no = 2691 
+node_num = 1071 quest_num = 2 subset = û,a,i,c node_yes = 2692 node_no = 2693 
+node_num = 1072 quest_num = 9 subset = V_PART_PRES,V_PL,V_SG node_yes = 1079 node_no = 1080 
+node_num = 1073 quest_num = 3 subset = b,i,k,v node_yes = 1081 subset = c,g,n,r,d,h,m,p,t,l,s,z,u,f,x node_yes = 1082 node_no = 2694 
+node_num = 1074 quest_num = 5 subset = m node_yes = 2695 subset = r node_yes = 1083 node_no = 2696 
+node_num = 1075 quest_num = 2 subset = r node_yes = 1084 node_no = 2697 
+node_num = 1076 quest_num = 3 subset = v node_yes = 2698 node_no = 2699 
+node_num = 1077 quest_num = 11 is_greater = 2 node_yes = 2700 node_no = 2701 
+node_num = 1078 quest_num = 1 subset = a node_yes = 2702 node_no = 2703 
+node_num = 1079 quest_num = 3 subset = c,d,h,m,p,s,v,u node_yes = 1085 subset = g,n,r,t,l,j node_yes = 1086 node_no = 2704 
+node_num = 1080 quest_num = 3 subset = l,j node_yes = 1087 subset = r,p,u node_yes = 1088 node_no = 2705 
+node_num = 1081 quest_num = 2 subset = a node_yes = 1089 subset = h,m,i,o,c,n,u node_yes = 1090 subset = ê node_yes = 1091 node_no = 2706 
+node_num = 1082 quest_num = 2 subset = q,c,s node_yes = 1092 subset = ï node_yes = 2707 node_no = 1093 
+node_num = 1083 quest_num = 1 subset = _eow_ node_yes = 1094 subset = i node_yes = 2708 node_no = 2709 
+node_num = 1084 quest_num = 3 subset = c,m node_yes = 2710 node_no = 2711 
+node_num = 1085 quest_num = 0 subset = 0,é,_eow_,m,p,u,b,c,e,h,l,r,s,t node_yes = 1095 subset = a,n,o node_yes = 2712 node_no = 2713 
+node_num = 1086 quest_num = 7 subset = _eow_,i,n,z node_yes = 1096 subset = r node_yes = 2714 node_no = 2715 
+node_num = 1087 quest_num = 5 subset = n node_yes = 2716 subset = t,v,ç node_yes = 1097 node_no = 2717 
+node_num = 1088 quest_num = 0 subset = 0,a,i node_yes = 1098 node_no = 2718 
+node_num = 1089 quest_num = 10 is_greater = 5 node_yes = 1099 node_no = 2719 
+node_num = 1090 quest_num = 3 subset = i node_yes = 2720 subset = k node_yes = 2721 node_no = 1100 
+node_num = 1091 quest_num = 6 subset = i node_yes = 2722 node_no = 2723 
+node_num = 1092 quest_num = 3 subset = r,l node_yes = 2724 subset = g,n,p,z,x node_yes = 2725 node_no = 1101 
+node_num = 1093 quest_num = 2 subset = ê,â,u node_yes = 1102 node_no = 2726 
+node_num = 1094 quest_num = 2 subset = é node_yes = 2727 node_no = 2728 
+node_num = 1095 quest_num = 13 subset = n,v node_yes = 2729 node_no = 1103 
+node_num = 1096 quest_num = 5 subset = l node_yes = 1104 node_no = 2730 
+node_num = 1097 quest_num = 0 subset = p node_yes = 1105 node_no = 2731 
+node_num = 1098 quest_num = 14 subset = ACC1-e-Þ node_yes = 2732 subset = i node_yes = 2733 node_no = 2734 
+node_num = 1099 quest_num = 15 subset = _epsilon_ node_yes = 1106 subset = Þ node_yes = 2735 node_no = 2736 
+node_num = 1100 quest_num = 2 subset = o node_yes = 1107 subset = h,c,n node_yes = 2737 node_no = 1108 
+node_num = 1101 quest_num = 6 subset = e node_yes = 1109 subset = i node_yes = 1110 node_no = 2738 
+node_num = 1102 quest_num = 3 subset = n node_yes = 1111 subset = h,u,f,x node_yes = 2739 node_no = 1112 
+node_num = 1103 quest_num = 2 subset = i,c,é node_yes = 1113 subset = m,u node_yes = 2740 node_no = 2741 
+node_num = 1104 quest_num = 0 subset = m,c node_yes = 2742 node_no = 2743 
+node_num = 1105 quest_num = 9 subset = V_PART node_yes = 2744 node_no = 2745 
+node_num = 1106 quest_num = 8 subset = e node_yes = 1114 subset = t node_yes = 2746 node_no = 2747 
+node_num = 1107 quest_num = 11 is_greater = 2 node_yes = 2748 node_no = 2749 
+node_num = 1108 quest_num = 1 subset = a node_yes = 1115 node_no = 2750 
+node_num = 1109 quest_num = 3 subset = t,u node_yes = 1116 node_no = 2751 
+node_num = 1110 quest_num = 3 subset = h,s,u node_yes = 1117 subset = t node_yes = 2752 node_no = 2753 
+node_num = 1111 quest_num = 2 subset = ê node_yes = 2754 node_no = 2755 
+node_num = 1112 quest_num = 1 subset = a,e,h node_yes = 1118 node_no = 2756 
+node_num = 1113 quest_num = 1 subset = a node_yes = 1119 subset = d node_yes = 1120 subset = n node_yes = 2757 node_no = 2758 
+node_num = 1114 quest_num = 3 subset = v node_yes = 2759 node_no = 2760 
+node_num = 1115 quest_num = 5 subset = r node_yes = 1121 node_no = 2761 
+node_num = 1116 quest_num = 5 subset = m node_yes = 1122 node_no = 2762 
+node_num = 1117 quest_num = 1 subset = s,r node_yes = 1123 node_no = 2763 
+node_num = 1118 quest_num = 0 subset = _eow_,r,t node_yes = 1124 node_no = 2764 
+node_num = 1119 quest_num = 0 subset = t node_yes = 2765 node_no = 2766 
+node_num = 1120 quest_num = 3 subset = c,p node_yes = 2767 node_no = 2768 
+node_num = 1121 quest_num = 0 subset = l node_yes = 2769 node_no = 2770 
+node_num = 1122 quest_num = 1 subset = a,n node_yes = 2771 node_no = 2772 
+node_num = 1123 quest_num = 0 subset = o node_yes = 2773 node_no = 2774 
+node_num = 1124 quest_num = 5 subset = m,a node_yes = 2775 node_no = 2776 
+node_num = 1125 decision = s
+node_num = 1126 decision = R
+node_num = 1127 decision = t
+node_num = 1128 decision = ACC1-E
+node_num = 1129 decision = a
+node_num = 1130 decision = _epsilon_
+node_num = 1131 decision = b
+node_num = 1132 decision = _epsilon_
+node_num = 1133 decision = p
+node_num = 1134 decision = Z
+node_num = 1135 decision = (-z-)-Þ
+node_num = 1136 decision = v
+node_num = 1137 decision = d
+node_num = 1138 decision = (-@-)
+node_num = 1139 decision = _epsilon_
+node_num = 1140 decision = ACC1-i
+node_num = 1141 decision = i
+node_num = 1142 decision = ACC1-~O
+node_num = 1143 decision = O_O
+node_num = 1144 decision = (-R-)-Þ
+node_num = 1145 decision = R
+node_num = 1146 decision = _epsilon_
+node_num = 1147 decision = R
+node_num = 1148 decision = Þ
+node_num = 1149 decision = t
+node_num = 1150 decision = _epsilon_
+node_num = 1151 decision = ACC1-a
+node_num = 1152 decision = ACC1-a-Þ
+node_num = 1153 decision = ACC1-E
+node_num = 1154 decision = a
+node_num = 1155 decision = _epsilon_
+node_num = 1156 decision = a
+node_num = 1157 decision = p
+node_num = 1158 decision = _epsilon_
+node_num = 1159 decision = (-z-)-Þ
+node_num = 1160 decision = (-z-)
+node_num = 1161 decision = _epsilon_
+node_num = 1162 decision = l
+node_num = 1163 decision = s
+node_num = 1164 decision = d
+node_num = 1165 decision = k-s
+node_num = 1166 decision = ACC1-e
+node_num = 1167 decision = e
+node_num = 1168 decision = ACC1-E
+node_num = 1169 decision = (-@-)
+node_num = 1170 decision = E
+node_num = 1171 decision = _epsilon_
+node_num = 1172 decision = ACC1-i
+node_num = 1173 decision = j
+node_num = 1174 decision = _epsilon_
+node_num = 1175 decision = i
+node_num = 1176 decision = w-ACC1-a
+node_num = 1177 decision = ACC1-~O
+node_num = 1178 decision = _epsilon_
+node_num = 1179 decision = ACC1-y
+node_num = 1180 decision = _epsilon_
+node_num = 1181 decision = O_O
+node_num = 1182 decision = R
+node_num = 1183 decision = R-Þ
+node_num = 1184 decision = (-R-)-Þ
+node_num = 1185 decision = R
+node_num = 1186 decision = (-t-)
+node_num = 1187 decision = Þ
+node_num = 1188 decision = _epsilon_
+node_num = 1189 decision = t
+node_num = 1190 decision = m
+node_num = 1191 decision = n
+node_num = 1192 decision = f
+node_num = 1193 decision = ACC1-y
+node_num = 1194 decision = ACC1-a_a
+node_num = 1195 decision = ACC1-E
+node_num = 1196 decision = ACC1-a
+node_num = 1197 decision = E_E
+node_num = 1198 decision = p
+node_num = 1199 decision = g
+node_num = 1200 decision = d-Z
+node_num = 1201 decision = Z
+node_num = 1202 decision = g
+node_num = 1203 decision = (-z-)-Þ
+node_num = 1204 decision = _epsilon_
+node_num = 1205 decision = s
+node_num = 1206 decision = (-z-)
+node_num = 1207 decision = l
+node_num = 1208 decision = _epsilon_
+node_num = 1209 decision = _epsilon_
+node_num = 1210 decision = k-s
+node_num = 1211 decision = (-z-)
+node_num = 1212 decision = ACC1-e
+node_num = 1213 decision = e
+node_num = 1214 decision = _epsilon_
+node_num = 1215 decision = E
+node_num = 1216 decision = (-@-)
+node_num = 1217 decision = ACC1-E
+node_num = 1218 decision = ACC1-e
+node_num = 1219 decision = ACC1-E
+node_num = 1220 decision = E
+node_num = 1221 decision = Þ
+node_num = 1222 decision = ACC1-i
+node_num = 1223 decision = (-t-)
+node_num = 1224 decision = ACC1-i
+node_num = 1225 decision = ACC1-i-Þ
+node_num = 1226 decision = i
+node_num = 1227 decision = j
+node_num = 1228 decision = i
+node_num = 1229 decision = ACC1-O
+node_num = 1230 decision = ACC1-~O
+node_num = 1231 decision = ACC1-O
+node_num = 1232 decision = ACC1-y
+node_num = 1233 decision = u
+node_num = 1234 decision = u
+node_num = 1235 decision = ACC1-e-(-R-)
+node_num = 1236 decision = R-Þ
+node_num = 1237 decision = Þ
+node_num = 1238 decision = R
+node_num = 1239 decision = _epsilon_
+node_num = 1240 decision = (-t-)
+node_num = 1241 decision = _epsilon_
+node_num = 1242 decision = t
+node_num = 1243 decision = Þ
+node_num = 1244 decision = Þ
+node_num = 1245 decision = (-t-)-Þ
+node_num = 1246 decision = t
+node_num = 1247 decision = t
+node_num = 1248 decision = t
+node_num = 1249 decision = s
+node_num = 1250 decision = t
+node_num = 1251 decision = _epsilon_
+node_num = 1252 decision = m
+node_num = 1253 decision = n
+node_num = 1254 decision = _epsilon_
+node_num = 1255 decision = _epsilon_
+node_num = 1256 decision = S
+node_num = 1257 decision = a_a
+node_num = 1258 decision = a
+node_num = 1259 decision = a_a
+node_num = 1260 decision = ACC1-E
+node_num = 1261 decision = ACC1-a
+node_num = 1262 decision = ACC1-~a
+node_num = 1263 decision = ACC1-a
+node_num = 1264 decision = E_E
+node_num = 1265 decision = E_E
+node_num = 1266 decision = _epsilon_
+node_num = 1267 decision = _epsilon_
+node_num = 1268 decision = p
+node_num = 1269 decision = _epsilon_
+node_num = 1270 decision = Þ
+node_num = 1271 decision = g
+node_num = 1272 decision = Z
+node_num = 1273 decision = (-z-)-Þ
+node_num = 1274 decision = _epsilon_
+node_num = 1275 decision = Þ
+node_num = 1276 decision = Þ
+node_num = 1277 decision = k-Þ
+node_num = 1278 decision = l-Þ
+node_num = 1279 decision = l
+node_num = 1280 decision = k
+node_num = 1281 decision = _epsilon_
+node_num = 1282 decision = l
+node_num = 1283 decision = k
+node_num = 1284 decision = _epsilon_
+node_num = 1285 decision = s
+node_num = 1286 decision = k
+node_num = 1287 decision = _epsilon_
+node_num = 1288 decision = d
+node_num = 1289 decision = Þ
+node_num = 1290 decision = d
+node_num = 1291 decision = _epsilon_
+node_num = 1292 decision = g-z
+node_num = 1293 decision = k-s
+node_num = 1294 decision = (-z-)
+node_num = 1295 decision = k-s-Þ
+node_num = 1296 decision = (-z-)-Þ
+node_num = 1297 decision = ACC1-e
+node_num = 1298 decision = ACC1-e-Þ
+node_num = 1299 decision = ACC1-~E
+node_num = 1300 decision = ACC1-i
+node_num = 1301 decision = ACC1-E
+node_num = 1302 decision = e
+node_num = 1303 decision = i
+node_num = 1304 decision = E
+node_num = 1305 decision = E_E
+node_num = 1306 decision = E
+node_num = 1307 decision = (-@-)-Þ
+node_num = 1308 decision = (-@-)
+node_num = 1309 decision = ACC1-E
+node_num = 1310 decision = ACC1-e
+node_num = 1311 decision = ACC1-i
+node_num = 1312 decision = _epsilon_
+node_num = 1313 decision = ACC1-E
+node_num = 1314 decision = (-@-)
+node_num = 1315 decision = _epsilon_
+node_num = 1316 decision = _epsilon_
+node_num = 1317 decision = (-@-)
+node_num = 1318 decision = E
+node_num = 1319 decision = j
+node_num = 1320 decision = _epsilon_
+node_num = 1321 decision = _epsilon_
+node_num = 1322 decision = _epsilon_
+node_num = 1323 decision = (-t-)
+node_num = 1324 decision = ACC1-i
+node_num = 1325 decision = ACC1-i
+node_num = 1326 decision = j
+node_num = 1327 decision = _epsilon_
+node_num = 1328 decision = i
+node_num = 1329 decision = j
+node_num = 1330 decision = j
+node_num = 1331 decision = _epsilon_
+node_num = 1332 decision = i
+node_num = 1333 decision = ACC1-~O
+node_num = 1334 decision = ACC1-u
+node_num = 1335 decision = ACC1-o
+node_num = 1336 decision = ACC1-O
+node_num = 1337 decision = ACC1-9
+node_num = 1338 decision = u
+node_num = 1339 decision = w
+node_num = 1340 decision = u
+node_num = 1341 decision = w
+node_num = 1342 decision = w
+node_num = 1343 decision = O
+node_num = 1344 decision = O_O
+node_num = 1345 decision = y
+node_num = 1346 decision = O_O
+node_num = 1347 decision = R
+node_num = 1348 decision = _epsilon_
+node_num = 1349 decision = R
+node_num = 1350 decision = _epsilon_
+node_num = 1351 decision = (-t-)
+node_num = 1352 decision = t
+node_num = 1353 decision = (-t-)
+node_num = 1354 decision = Þ
+node_num = 1355 decision = Þ
+node_num = 1356 decision = t
+node_num = 1357 decision = _epsilon_
+node_num = 1358 decision = _epsilon_
+node_num = 1359 decision = e
+node_num = 1360 decision = t
+node_num = 1361 decision = _epsilon_
+node_num = 1362 decision = s
+node_num = 1363 decision = t
+node_num = 1364 decision = t
+node_num = 1365 decision = _epsilon_
+node_num = 1366 decision = Þ
+node_num = 1367 decision = m
+node_num = 1368 decision = m
+node_num = 1369 decision = n
+node_num = 1370 decision = J
+node_num = 1371 decision = _epsilon_
+node_num = 1372 decision = (-t-)
+node_num = 1373 decision = S
+node_num = 1374 decision = f
+node_num = 1375 decision = f
+node_num = 1376 decision = a_a
+node_num = 1377 decision = a_a
+node_num = 1378 decision = a
+node_num = 1379 decision = _epsilon_
+node_num = 1380 decision = ACC1-~a
+node_num = 1381 decision = ACC1-o
+node_num = 1382 decision = a
+node_num = 1383 decision = p
+node_num = 1384 decision = _epsilon_
+node_num = 1385 decision = p
+node_num = 1386 decision = g
+node_num = 1387 decision = Þ
+node_num = 1388 decision = _epsilon_
+node_num = 1389 decision = N
+node_num = 1390 decision = s-Þ
+node_num = 1391 decision = (-z-)-Þ
+node_num = 1392 decision = (-z-)-Þ
+node_num = 1393 decision = l-Þ
+node_num = 1394 decision = Þ
+node_num = 1395 decision = _epsilon_
+node_num = 1396 decision = l
+node_num = 1397 decision = k
+node_num = 1398 decision = _epsilon_
+node_num = 1399 decision = l
+node_num = 1400 decision = l
+node_num = 1401 decision = _epsilon_
+node_num = 1402 decision = l
+node_num = 1403 decision = s
+node_num = 1404 decision = z
+node_num = 1405 decision = _epsilon_
+node_num = 1406 decision = s
+node_num = 1407 decision = z
+node_num = 1408 decision = _epsilon_
+node_num = 1409 decision = s
+node_num = 1410 decision = k
+node_num = 1411 decision = s
+node_num = 1412 decision = k
+node_num = 1413 decision = _epsilon_
+node_num = 1414 decision = Þ
+node_num = 1415 decision = _epsilon_
+node_num = 1416 decision = _epsilon_
+node_num = 1417 decision = d
+node_num = 1418 decision = _epsilon_
+node_num = 1419 decision = g-z
+node_num = 1420 decision = k-s
+node_num = 1421 decision = Þ
+node_num = 1422 decision = ACC1-e
+node_num = 1423 decision = ACC1-e-Þ
+node_num = 1424 decision = ACC1-E
+node_num = 1425 decision = _epsilon_
+node_num = 1426 decision = ACC1-i
+node_num = 1427 decision = ACC1-E
+node_num = 1428 decision = e
+node_num = 1429 decision = e
+node_num = 1430 decision = E
+node_num = 1431 decision = i
+node_num = 1432 decision = ACC1-E
+node_num = 1433 decision = ACC1-~a
+node_num = 1434 decision = _epsilon_
+node_num = 1435 decision = ACC1-2
+node_num = 1436 decision = E
+node_num = 1437 decision = @
+node_num = 1438 decision = _epsilon_
+node_num = 1439 decision = (-@-)
+node_num = 1440 decision = @
+node_num = 1441 decision = E
+node_num = 1442 decision = _epsilon_
+node_num = 1443 decision = (-@-)
+node_num = 1444 decision = E
+node_num = 1445 decision = @
+node_num = 1446 decision = E
+node_num = 1447 decision = _epsilon_
+node_num = 1448 decision = ACC1-~E
+node_num = 1449 decision = j
+node_num = 1450 decision = ACC1-i
+node_num = 1451 decision = _epsilon_
+node_num = 1452 decision = j
+node_num = 1453 decision = _epsilon_
+node_num = 1454 decision = (-t-)
+node_num = 1455 decision = ACC1-i
+node_num = 1456 decision = ACC1-~E
+node_num = 1457 decision = ACC1-i
+node_num = 1458 decision = j
+node_num = 1459 decision = ACC1-i
+node_num = 1460 decision = j
+node_num = 1461 decision = i-j
+node_num = 1462 decision = i
+node_num = 1463 decision = i-j
+node_num = 1464 decision = _epsilon_
+node_num = 1465 decision = j
+node_num = 1466 decision = _epsilon_
+node_num = 1467 decision = _epsilon_
+node_num = 1468 decision = j
+node_num = 1469 decision = i
+node_num = 1470 decision = ~E
+node_num = 1471 decision = i
+node_num = 1472 decision = ACC1-O
+node_num = 1473 decision = ACC1-u
+node_num = 1474 decision = ACC1-O
+node_num = 1475 decision = ACC1-2
+node_num = 1476 decision = ACC1-9
+node_num = 1477 decision = ACC1-o
+node_num = 1478 decision = _epsilon_
+node_num = 1479 decision = ACC1-u
+node_num = 1480 decision = ACC1-o
+node_num = 1481 decision = u
+node_num = 1482 decision = Ü-w
+node_num = 1483 decision = v
+node_num = 1484 decision = w-a
+node_num = 1485 decision = _epsilon_
+node_num = 1486 decision = u
+node_num = 1487 decision = 2
+node_num = 1488 decision = 9
+node_num = 1489 decision = O
+node_num = 1490 decision = O_O
+node_num = 1491 decision = y
+node_num = 1492 decision = ~O
+node_num = 1493 decision = Ü-w
+node_num = 1494 decision = _epsilon_
+node_num = 1495 decision = (-t-)
+node_num = 1496 decision = _epsilon_
+node_num = 1497 decision = (-t-)
+node_num = 1498 decision = Þ
+node_num = 1499 decision = Þ
+node_num = 1500 decision = (-t-)-Þ
+node_num = 1501 decision = t
+node_num = 1502 decision = s
+node_num = 1503 decision = s
+node_num = 1504 decision = t
+node_num = 1505 decision = t
+node_num = 1506 decision = s
+node_num = 1507 decision = t
+node_num = 1508 decision = _epsilon_
+node_num = 1509 decision = ~a
+node_num = 1510 decision = _epsilon_
+node_num = 1511 decision = m
+node_num = 1512 decision = m
+node_num = 1513 decision = _epsilon_
+node_num = 1514 decision = n
+node_num = 1515 decision = J
+node_num = 1516 decision = n
+node_num = 1517 decision = ACC1-~a
+node_num = 1518 decision = n
+node_num = 1519 decision = Þ
+node_num = 1520 decision = _epsilon_
+node_num = 1521 decision = ACC1-~a
+node_num = 1522 decision = S
+node_num = 1523 decision = _epsilon_
+node_num = 1524 decision = S
+node_num = 1525 decision = _epsilon_
+node_num = 1526 decision = f
+node_num = 1527 decision = _epsilon_
+node_num = 1528 decision = _epsilon_
+node_num = 1529 decision = a_a
+node_num = 1530 decision = a_a
+node_num = 1531 decision = a
+node_num = 1532 decision = _epsilon_
+node_num = 1533 decision = ACC1-E
+node_num = 1534 decision = ACC1-~a
+node_num = 1535 decision = ACC1-a
+node_num = 1536 decision = ACC1-o
+node_num = 1537 decision = ACC1-a
+node_num = 1538 decision = E
+node_num = 1539 decision = E
+node_num = 1540 decision = E_E
+node_num = 1541 decision = p
+node_num = 1542 decision = _epsilon_
+node_num = 1543 decision = p
+node_num = 1544 decision = _epsilon_
+node_num = 1545 decision = _epsilon_
+node_num = 1546 decision = Þ
+node_num = 1547 decision = _epsilon_
+node_num = 1548 decision = N
+node_num = 1549 decision = _epsilon_
+node_num = 1550 decision = Þ
+node_num = 1551 decision = (-z-)-Þ
+node_num = 1552 decision = _epsilon_
+node_num = 1553 decision = (-z-)-Þ
+node_num = 1554 decision = Þ
+node_num = 1555 decision = j
+node_num = 1556 decision = _epsilon_
+node_num = 1557 decision = l
+node_num = 1558 decision = _epsilon_
+node_num = 1559 decision = z
+node_num = 1560 decision = s
+node_num = 1561 decision = s
+node_num = 1562 decision = _epsilon_
+node_num = 1563 decision = k
+node_num = 1564 decision = s
+node_num = 1565 decision = k-t
+node_num = 1566 decision = (-t-)
+node_num = 1567 decision = _epsilon_
+node_num = 1568 decision = _epsilon_
+node_num = 1569 decision = d
+node_num = 1570 decision = _epsilon_
+node_num = 1571 decision = g-z
+node_num = 1572 decision = k-s
+node_num = 1573 decision = k-s
+node_num = 1574 decision = g-z
+node_num = 1575 decision = k-s
+node_num = 1576 decision = _epsilon_
+node_num = 1577 decision = (-z-)-Þ
+node_num = 1578 decision = ACC1-E
+node_num = 1579 decision = ACC1-E-s
+node_num = 1580 decision = e
+node_num = 1581 decision = e
+node_num = 1582 decision = e
+node_num = 1583 decision = E_E
+node_num = 1584 decision = E
+node_num = 1585 decision = E_E
+node_num = 1586 decision = E
+node_num = 1587 decision = E
+node_num = 1588 decision = ACC1-E-n
+node_num = 1589 decision = ACC1-~E
+node_num = 1590 decision = (-@-)-Þ
+node_num = 1591 decision = _epsilon_
+node_num = 1592 decision = (-@-)-Þ
+node_num = 1593 decision = (-@-)
+node_num = 1594 decision = ACC1-e
+node_num = 1595 decision = ACC1-e
+node_num = 1596 decision = ACC1-i
+node_num = 1597 decision = _epsilon_
+node_num = 1598 decision = @
+node_num = 1599 decision = E
+node_num = 1600 decision = _epsilon_
+node_num = 1601 decision = @
+node_num = 1602 decision = _epsilon_
+node_num = 1603 decision = E
+node_num = 1604 decision = E
+node_num = 1605 decision = _epsilon_
+node_num = 1606 decision = (-@-)
+node_num = 1607 decision = E
+node_num = 1608 decision = E_E
+node_num = 1609 decision = 6
+node_num = 1610 decision = @
+node_num = 1611 decision = @
+node_num = 1612 decision = 6
+node_num = 1613 decision = E
+node_num = 1614 decision = E
+node_num = 1615 decision = E
+node_num = 1616 decision = _epsilon_
+node_num = 1617 decision = j
+node_num = 1618 decision = ACC1-~E
+node_num = 1619 decision = _epsilon_
+node_num = 1620 decision = _epsilon_
+node_num = 1621 decision = j
+node_num = 1622 decision = ACC1-i
+node_num = 1623 decision = Ü-j
+node_num = 1624 decision = j
+node_num = 1625 decision = j
+node_num = 1626 decision = i-j
+node_num = 1627 decision = j
+node_num = 1628 decision = _epsilon_
+node_num = 1629 decision = i
+node_num = 1630 decision = j
+node_num = 1631 decision = j
+node_num = 1632 decision = j
+node_num = 1633 decision = _epsilon_
+node_num = 1634 decision = _epsilon_
+node_num = 1635 decision = j
+node_num = 1636 decision = i
+node_num = 1637 decision = ~E
+node_num = 1638 decision = i
+node_num = 1639 decision = i
+node_num = 1640 decision = ACC1-O
+node_num = 1641 decision = ACC1-2
+node_num = 1642 decision = Þ
+node_num = 1643 decision = ACC1-9
+node_num = 1644 decision = ACC1-9
+node_num = 1645 decision = ACC1-2
+node_num = 1646 decision = ACC1-o
+node_num = 1647 decision = ACC1-o
+node_num = 1648 decision = Þ
+node_num = 1649 decision = ACC1-O
+node_num = 1650 decision = ACC1-o
+node_num = 1651 decision = ACC1-u
+node_num = 1652 decision = Þ
+node_num = 1653 decision = ACC1-9
+node_num = 1654 decision = ACC1-y
+node_num = 1655 decision = w
+node_num = 1656 decision = u
+node_num = 1657 decision = w
+node_num = 1658 decision = w-a
+node_num = 1659 decision = H
+node_num = 1660 decision = _epsilon_
+node_num = 1661 decision = u
+node_num = 1662 decision = w
+node_num = 1663 decision = 2
+node_num = 1664 decision = 9
+node_num = 1665 decision = O_O
+node_num = 1666 decision = y
+node_num = 1667 decision = y
+node_num = 1668 decision = O
+node_num = 1669 decision = O_O
+node_num = 1670 decision = Þ
+node_num = 1671 decision = (-t-)-Þ
+node_num = 1672 decision = s
+node_num = 1673 decision = t
+node_num = 1674 decision = t
+node_num = 1675 decision = s
+node_num = 1676 decision = _epsilon_
+node_num = 1677 decision = _epsilon_
+node_num = 1678 decision = ACC1-~a
+node_num = 1679 decision = Þ
+node_num = 1680 decision = _epsilon_
+node_num = 1681 decision = ~a
+node_num = 1682 decision = _epsilon_
+node_num = 1683 decision = m
+node_num = 1684 decision = ~a
+node_num = 1685 decision = n
+node_num = 1686 decision = J
+node_num = 1687 decision = n
+node_num = 1688 decision = ACC1-~a
+node_num = 1689 decision = ACC1-~E
+node_num = 1690 decision = _epsilon_
+node_num = 1691 decision = _epsilon_
+node_num = 1692 decision = S
+node_num = 1693 decision = Þ
+node_num = 1694 decision = _epsilon_
+node_num = 1695 decision = S
+node_num = 1696 decision = S
+node_num = 1697 decision = E_E
+node_num = 1698 decision = _epsilon_
+node_num = 1699 decision = f
+node_num = 1700 decision = Ü
+node_num = 1701 decision = _epsilon_
+node_num = 1702 decision = Þ
+node_num = 1703 decision = S
+node_num = 1704 decision = _epsilon_
+node_num = 1705 decision = _epsilon_
+node_num = 1706 decision = a_a
+node_num = 1707 decision = a
+node_num = 1708 decision = a
+node_num = 1709 decision = a_a
+node_num = 1710 decision = ACC1-a
+node_num = 1711 decision = ACC1-a-Þ
+node_num = 1712 decision = _epsilon_
+node_num = 1713 decision = ACC1-~a
+node_num = 1714 decision = ACC1-a
+node_num = 1715 decision = ACC1-a
+node_num = 1716 decision = E
+node_num = 1717 decision = E_E
+node_num = 1718 decision = E_E
+node_num = 1719 decision = a
+node_num = 1720 decision = p
+node_num = 1721 decision = _epsilon_
+node_num = 1722 decision = _epsilon_
+node_num = 1723 decision = (-z-)-Þ
+node_num = 1724 decision = _epsilon_
+node_num = 1725 decision = Þ
+node_num = 1726 decision = Þ
+node_num = 1727 decision = (-z-)-Þ
+node_num = 1728 decision = j
+node_num = 1729 decision = l
+node_num = 1730 decision = _epsilon_
+node_num = 1731 decision = j
+node_num = 1732 decision = _epsilon_
+node_num = 1733 decision = (-z-)
+node_num = 1734 decision = z
+node_num = 1735 decision = _epsilon_
+node_num = 1736 decision = z
+node_num = 1737 decision = d
+node_num = 1738 decision = z
+node_num = 1739 decision = s
+node_num = 1740 decision = z
+node_num = 1741 decision = s
+node_num = 1742 decision = _epsilon_
+node_num = 1743 decision = s
+node_num = 1744 decision = k-t
+node_num = 1745 decision = _epsilon_
+node_num = 1746 decision = d
+node_num = 1747 decision = _epsilon_
+node_num = 1748 decision = _epsilon_
+node_num = 1749 decision = (-t-)
+node_num = 1750 decision = k-s-Þ
+node_num = 1751 decision = (-z-)-Þ
+node_num = 1752 decision = ACC1-E
+node_num = 1753 decision = ACC1-E-s
+node_num = 1754 decision = e
+node_num = 1755 decision = E_E
+node_num = 1756 decision = e
+node_num = 1757 decision = e
+node_num = 1758 decision = E_E
+node_num = 1759 decision = E_E
+node_num = 1760 decision = E
+node_num = 1761 decision = E
+node_num = 1762 decision = _epsilon_
+node_num = 1763 decision = _epsilon_
+node_num = 1764 decision = (-@-)-Þ
+node_num = 1765 decision = _epsilon_
+node_num = 1766 decision = Þ
+node_num = 1767 decision = _epsilon_
+node_num = 1768 decision = (-@-)
+node_num = 1769 decision = Þ
+node_num = 1770 decision = (-@-)-Þ
+node_num = 1771 decision = (-@-)-Þ
+node_num = 1772 decision = ACC1-e
+node_num = 1773 decision = @
+node_num = 1774 decision = 6
+node_num = 1775 decision = @
+node_num = 1776 decision = 6
+node_num = 1777 decision = _epsilon_
+node_num = 1778 decision = E
+node_num = 1779 decision = (-@-)
+node_num = 1780 decision = E
+node_num = 1781 decision = E_E
+node_num = 1782 decision = _epsilon_
+node_num = 1783 decision = (-@-)
+node_num = 1784 decision = E_E
+node_num = 1785 decision = E_E
+node_num = 1786 decision = @
+node_num = 1787 decision = @
+node_num = 1788 decision = E
+node_num = 1789 decision = _epsilon_
+node_num = 1790 decision = E
+node_num = 1791 decision = E
+node_num = 1792 decision = _epsilon_
+node_num = 1793 decision = E_E
+node_num = 1794 decision = (-t-)
+node_num = 1795 decision = _epsilon_
+node_num = 1796 decision = ACC1-i
+node_num = 1797 decision = ACC1-i-s
+node_num = 1798 decision = j
+node_num = 1799 decision = Ü-j
+node_num = 1800 decision = _epsilon_
+node_num = 1801 decision = j
+node_num = 1802 decision = i
+node_num = 1803 decision = i-j
+node_num = 1804 decision = j
+node_num = 1805 decision = i
+node_num = 1806 decision = j
+node_num = 1807 decision = _epsilon_
+node_num = 1808 decision = j
+node_num = 1809 decision = _epsilon_
+node_num = 1810 decision = j
+node_num = 1811 decision = j
+node_num = 1812 decision = i
+node_num = 1813 decision = j
+node_num = 1814 decision = i
+node_num = 1815 decision = i
+node_num = 1816 decision = j
+node_num = 1817 decision = i
+node_num = 1818 decision = j
+node_num = 1819 decision = ~E
+node_num = 1820 decision = i
+node_num = 1821 decision = _epsilon_
+node_num = 1822 decision = w-ACC1-a
+node_num = 1823 decision = ACC1-~O
+node_num = 1824 decision = ACC1-O
+node_num = 1825 decision = ACC1-O
+node_num = 1826 decision = ACC1-o
+node_num = 1827 decision = ACC1-y
+node_num = 1828 decision = ACC1-9
+node_num = 1829 decision = ACC1-y
+node_num = 1830 decision = ACC1-y-Þ
+node_num = 1831 decision = ACC1-y
+node_num = 1832 decision = _epsilon_
+node_num = 1833 decision = u
+node_num = 1834 decision = w
+node_num = 1835 decision = u
+node_num = 1836 decision = O_O
+node_num = 1837 decision = w-a
+node_num = 1838 decision = w
+node_num = 1839 decision = w-a
+node_num = 1840 decision = O
+node_num = 1841 decision = y
+node_num = 1842 decision = H
+node_num = 1843 decision = 2
+node_num = 1844 decision = 9
+node_num = 1845 decision = _epsilon_
+node_num = 1846 decision = _epsilon_
+node_num = 1847 decision = y
+node_num = 1848 decision = 9
+node_num = 1849 decision = o
+node_num = 1850 decision = O
+node_num = 1851 decision = O_O
+node_num = 1852 decision = O_O
+node_num = 1853 decision = H
+node_num = 1854 decision = ~9
+node_num = 1855 decision = y
+node_num = 1856 decision = u
+node_num = 1857 decision = H
+node_num = 1858 decision = y
+node_num = 1859 decision = o
+node_num = 1860 decision = O_O
+node_num = 1861 decision = O_O
+node_num = 1862 decision = O
+node_num = 1863 decision = o
+node_num = 1864 decision = O
+node_num = 1865 decision = O_O
+node_num = 1866 decision = O
+node_num = 1867 decision = O_O
+node_num = 1868 decision = Þ
+node_num = 1869 decision = (-t-)-Þ
+node_num = 1870 decision = s
+node_num = 1871 decision = s
+node_num = 1872 decision = _epsilon_
+node_num = 1873 decision = t
+node_num = 1874 decision = J
+node_num = 1875 decision = ~a
+node_num = 1876 decision = n
+node_num = 1877 decision = n
+node_num = 1878 decision = ACC1-~a
+node_num = 1879 decision = N
+node_num = 1880 decision = n
+node_num = 1881 decision = ~a
+node_num = 1882 decision = _epsilon_
+node_num = 1883 decision = n
+node_num = 1884 decision = _epsilon_
+node_num = 1885 decision = ACC1-~a
+node_num = 1886 decision = ~a
+node_num = 1887 decision = _epsilon_
+node_num = 1888 decision = ACC1-~E
+node_num = 1889 decision = _epsilon_
+node_num = 1890 decision = ~E
+node_num = 1891 decision = ACC1-~E
+node_num = 1892 decision = n
+node_num = 1893 decision = _epsilon_
+node_num = 1894 decision = n
+node_num = 1895 decision = S
+node_num = 1896 decision = S
+node_num = 1897 decision = f
+node_num = 1898 decision = E_E
+node_num = 1899 decision = Ü
+node_num = 1900 decision = _epsilon_
+node_num = 1901 decision = _epsilon_
+node_num = 1902 decision = _epsilon_
+node_num = 1903 decision = a_a
+node_num = 1904 decision = ACC1-a
+node_num = 1905 decision = ACC1-a
+node_num = 1906 decision = E
+node_num = 1907 decision = E
+node_num = 1908 decision = E_E
+node_num = 1909 decision = E
+node_num = 1910 decision = _epsilon_
+node_num = 1911 decision = E_E
+node_num = 1912 decision = a
+node_num = 1913 decision = _epsilon_
+node_num = 1914 decision = a
+node_num = 1915 decision = E_E
+node_num = 1916 decision = l
+node_num = 1917 decision = j
+node_num = 1918 decision = j
+node_num = 1919 decision = _epsilon_
+node_num = 1920 decision = j
+node_num = 1921 decision = l
+node_num = 1922 decision = j
+node_num = 1923 decision = j
+node_num = 1924 decision = _epsilon_
+node_num = 1925 decision = _epsilon_
+node_num = 1926 decision = s
+node_num = 1927 decision = z
+node_num = 1928 decision = z
+node_num = 1929 decision = z
+node_num = 1930 decision = z
+node_num = 1931 decision = s-t
+node_num = 1932 decision = d
+node_num = 1933 decision = s
+node_num = 1934 decision = s
+node_num = 1935 decision = s
+node_num = 1936 decision = e
+node_num = 1937 decision = E_E
+node_num = 1938 decision = e
+node_num = 1939 decision = E_E
+node_num = 1940 decision = _epsilon_
+node_num = 1941 decision = Þ
+node_num = 1942 decision = (-@-)-Þ
+node_num = 1943 decision = ACC1-~E
+node_num = 1944 decision = (-@-)
+node_num = 1945 decision = ACC1-E-n
+node_num = 1946 decision = ACC1-E
+node_num = 1947 decision = (-@-)
+node_num = 1948 decision = _epsilon_
+node_num = 1949 decision = ACC1-E
+node_num = 1950 decision = _epsilon_
+node_num = 1951 decision = (-@-)
+node_num = 1952 decision = (-@-)
+node_num = 1953 decision = ACC1-e
+node_num = 1954 decision = j-ACC1-e
+node_num = 1955 decision = E_E
+node_num = 1956 decision = 6
+node_num = 1957 decision = E
+node_num = 1958 decision = @
+node_num = 1959 decision = @
+node_num = 1960 decision = _epsilon_
+node_num = 1961 decision = ~a
+node_num = 1962 decision = _epsilon_
+node_num = 1963 decision = E_E
+node_num = 1964 decision = 6
+node_num = 1965 decision = _epsilon_
+node_num = 1966 decision = 6
+node_num = 1967 decision = (-@-)
+node_num = 1968 decision = E
+node_num = 1969 decision = _epsilon_
+node_num = 1970 decision = E_E
+node_num = 1971 decision = E
+node_num = 1972 decision = E_E
+node_num = 1973 decision = 6
+node_num = 1974 decision = @
+node_num = 1975 decision = _epsilon_
+node_num = 1976 decision = E
+node_num = 1977 decision = E_E
+node_num = 1978 decision = @
+node_num = 1979 decision = 6
+node_num = 1980 decision = E
+node_num = 1981 decision = E
+node_num = 1982 decision = @
+node_num = 1983 decision = 6
+node_num = 1984 decision = E
+node_num = 1985 decision = E
+node_num = 1986 decision = E_E
+node_num = 1987 decision = _epsilon_
+node_num = 1988 decision = ACC1-i
+node_num = 1989 decision = ACC1-i-s
+node_num = 1990 decision = i-j
+node_num = 1991 decision = j
+node_num = 1992 decision = i
+node_num = 1993 decision = j
+node_num = 1994 decision = i
+node_num = 1995 decision = i-j
+node_num = 1996 decision = j
+node_num = 1997 decision = j
+node_num = 1998 decision = j
+node_num = 1999 decision = i
+node_num = 2000 decision = _epsilon_
+node_num = 2001 decision = j
+node_num = 2002 decision = i
+node_num = 2003 decision = ~E
+node_num = 2004 decision = ACC1-O
+node_num = 2005 decision = ACC1-o
+node_num = 2006 decision = ACC1-O
+node_num = 2007 decision = ACC1-o
+node_num = 2008 decision = ACC1-O
+node_num = 2009 decision = ACC1-y
+node_num = 2010 decision = ACC1-u
+node_num = 2011 decision = ACC1-y
+node_num = 2012 decision = w-a
+node_num = 2013 decision = O_O
+node_num = 2014 decision = H
+node_num = 2015 decision = _epsilon_
+node_num = 2016 decision = _epsilon_
+node_num = 2017 decision = H
+node_num = 2018 decision = _epsilon_
+node_num = 2019 decision = w
+node_num = 2020 decision = O_O
+node_num = 2021 decision = y
+node_num = 2022 decision = 2
+node_num = 2023 decision = 9
+node_num = 2024 decision = O_O
+node_num = 2025 decision = O
+node_num = 2026 decision = O_O
+node_num = 2027 decision = y
+node_num = 2028 decision = o
+node_num = 2029 decision = O_O
+node_num = 2030 decision = O
+node_num = 2031 decision = ~O
+node_num = 2032 decision = O_O
+node_num = 2033 decision = O_O
+node_num = 2034 decision = O
+node_num = 2035 decision = O_O
+node_num = 2036 decision = s
+node_num = 2037 decision = t
+node_num = 2038 decision = t
+node_num = 2039 decision = s
+node_num = 2040 decision = s
+node_num = 2041 decision = t
+node_num = 2042 decision = s
+node_num = 2043 decision = t
+node_num = 2044 decision = s
+node_num = 2045 decision = J
+node_num = 2046 decision = n
+node_num = 2047 decision = ACC1-~a
+node_num = 2048 decision = n
+node_num = 2049 decision = n
+node_num = 2050 decision = J
+node_num = 2051 decision = _epsilon_
+node_num = 2052 decision = (-n-)
+node_num = 2053 decision = ACC1-~E
+node_num = 2054 decision = ACC1-~a
+node_num = 2055 decision = _epsilon_
+node_num = 2056 decision = ~a
+node_num = 2057 decision = n
+node_num = 2058 decision = ACC1-~E
+node_num = 2059 decision = ~E
+node_num = 2060 decision = n
+node_num = 2061 decision = _epsilon_
+node_num = 2062 decision = n
+node_num = 2063 decision = n
+node_num = 2064 decision = ACC1-~E
+node_num = 2065 decision = N
+node_num = 2066 decision = _epsilon_
+node_num = 2067 decision = S
+node_num = 2068 decision = S
+node_num = 2069 decision = _epsilon_
+node_num = 2070 decision = _epsilon_
+node_num = 2071 decision = S
+node_num = 2072 decision = f
+node_num = 2073 decision = E_E
+node_num = 2074 decision = Ü
+node_num = 2075 decision = _epsilon_
+node_num = 2076 decision = Ü
+node_num = 2077 decision = _epsilon_
+node_num = 2078 decision = Ü
+node_num = 2079 decision = _epsilon_
+node_num = 2080 decision = Ü
+node_num = 2081 decision = _epsilon_
+node_num = 2082 decision = S
+node_num = 2083 decision = a_a
+node_num = 2084 decision = a
+node_num = 2085 decision = _epsilon_
+node_num = 2086 decision = ACC1-a
+node_num = 2087 decision = ACC1-a
+node_num = 2088 decision = ACC1-a
+node_num = 2089 decision = ACC1-a-Þ
+node_num = 2090 decision = _epsilon_
+node_num = 2091 decision = E
+node_num = 2092 decision = E_E
+node_num = 2093 decision = E
+node_num = 2094 decision = _epsilon_
+node_num = 2095 decision = a
+node_num = 2096 decision = _epsilon_
+node_num = 2097 decision = a
+node_num = 2098 decision = E_E
+node_num = 2099 decision = E_E
+node_num = 2100 decision = l
+node_num = 2101 decision = j
+node_num = 2102 decision = l
+node_num = 2103 decision = j
+node_num = 2104 decision = _epsilon_
+node_num = 2105 decision = l
+node_num = 2106 decision = s
+node_num = 2107 decision = z
+node_num = 2108 decision = z
+node_num = 2109 decision = s
+node_num = 2110 decision = z
+node_num = 2111 decision = z
+node_num = 2112 decision = s
+node_num = 2113 decision = s
+node_num = 2114 decision = s
+node_num = 2115 decision = e
+node_num = 2116 decision = E_E
+node_num = 2117 decision = E
+node_num = 2118 decision = E_E
+node_num = 2119 decision = E_E
+node_num = 2120 decision = E
+node_num = 2121 decision = (-@-)-Þ
+node_num = 2122 decision = (-@-)-Þ
+node_num = 2123 decision = (-@-)
+node_num = 2124 decision = 6
+node_num = 2125 decision = @
+node_num = 2126 decision = 6
+node_num = 2127 decision = E_E
+node_num = 2128 decision = 6
+node_num = 2129 decision = @
+node_num = 2130 decision = @
+node_num = 2131 decision = E_E
+node_num = 2132 decision = @
+node_num = 2133 decision = _epsilon_
+node_num = 2134 decision = _epsilon_
+node_num = 2135 decision = 6
+node_num = 2136 decision = E_E
+node_num = 2137 decision = _epsilon_
+node_num = 2138 decision = _epsilon_
+node_num = 2139 decision = (-@-)
+node_num = 2140 decision = E_E
+node_num = 2141 decision = @
+node_num = 2142 decision = (-@-)
+node_num = 2143 decision = E
+node_num = 2144 decision = @
+node_num = 2145 decision = E_E
+node_num = 2146 decision = (-@-)
+node_num = 2147 decision = 6
+node_num = 2148 decision = @
+node_num = 2149 decision = E_E
+node_num = 2150 decision = E_E
+node_num = 2151 decision = @
+node_num = 2152 decision = @
+node_num = 2153 decision = 6
+node_num = 2154 decision = E
+node_num = 2155 decision = E_E
+node_num = 2156 decision = ACC1-~E
+node_num = 2157 decision = _epsilon_
+node_num = 2158 decision = i-j
+node_num = 2159 decision = j
+node_num = 2160 decision = j
+node_num = 2161 decision = i
+node_num = 2162 decision = j
+node_num = 2163 decision = j
+node_num = 2164 decision = i-j
+node_num = 2165 decision = j
+node_num = 2166 decision = i
+node_num = 2167 decision = _epsilon_
+node_num = 2168 decision = ACC1-o
+node_num = 2169 decision = ACC1-O
+node_num = 2170 decision = ACC1-o
+node_num = 2171 decision = ACC1-O
+node_num = 2172 decision = ACC1-O
+node_num = 2173 decision = ACC1-o
+node_num = 2174 decision = ACC1-O
+node_num = 2175 decision = ACC1-y
+node_num = 2176 decision = ACC1-~9
+node_num = 2177 decision = _epsilon_
+node_num = 2178 decision = H
+node_num = 2179 decision = H
+node_num = 2180 decision = _epsilon_
+node_num = 2181 decision = _epsilon_
+node_num = 2182 decision = O_O
+node_num = 2183 decision = _epsilon_
+node_num = 2184 decision = w
+node_num = 2185 decision = _epsilon_
+node_num = 2186 decision = 9
+node_num = 2187 decision = _epsilon_
+node_num = 2188 decision = _epsilon_
+node_num = 2189 decision = O_O
+node_num = 2190 decision = y
+node_num = 2191 decision = y
+node_num = 2192 decision = 9
+node_num = 2193 decision = 2
+node_num = 2194 decision = 9
+node_num = 2195 decision = 9
+node_num = 2196 decision = o
+node_num = 2197 decision = O
+node_num = 2198 decision = o
+node_num = 2199 decision = O_O
+node_num = 2200 decision = O_O
+node_num = 2201 decision = u
+node_num = 2202 decision = 6
+node_num = 2203 decision = y
+node_num = 2204 decision = O_O
+node_num = 2205 decision = O
+node_num = 2206 decision = O
+node_num = 2207 decision = O_O
+node_num = 2208 decision = O
+node_num = 2209 decision = O_O
+node_num = 2210 decision = O
+node_num = 2211 decision = s
+node_num = 2212 decision = t
+node_num = 2213 decision = s
+node_num = 2214 decision = ACC1-~a
+node_num = 2215 decision = ACC1-~E
+node_num = 2216 decision = ACC1-~a
+node_num = 2217 decision = ACC1-~a
+node_num = 2218 decision = Þ
+node_num = 2219 decision = ACC1-~a
+node_num = 2220 decision = ~E
+node_num = 2221 decision = ~a
+node_num = 2222 decision = _epsilon_
+node_num = 2223 decision = ~a
+node_num = 2224 decision = n
+node_num = 2225 decision = ~E
+node_num = 2226 decision = _epsilon_
+node_num = 2227 decision = ACC1-~E
+node_num = 2228 decision = N
+node_num = 2229 decision = S
+node_num = 2230 decision = _epsilon_
+node_num = 2231 decision = _epsilon_
+node_num = 2232 decision = S
+node_num = 2233 decision = Ü
+node_num = 2234 decision = Ü
+node_num = 2235 decision = _epsilon_
+node_num = 2236 decision = _epsilon_
+node_num = 2237 decision = Ü
+node_num = 2238 decision = Ü
+node_num = 2239 decision = _epsilon_
+node_num = 2240 decision = Ü
+node_num = 2241 decision = _epsilon_
+node_num = 2242 decision = _epsilon_
+node_num = 2243 decision = ACC1-a
+node_num = 2244 decision = ACC1-o
+node_num = 2245 decision = ACC1-a
+node_num = 2246 decision = E
+node_num = 2247 decision = E_E
+node_num = 2248 decision = E
+node_num = 2249 decision = E_E
+node_num = 2250 decision = E
+node_num = 2251 decision = E
+node_num = 2252 decision = E_E
+node_num = 2253 decision = E_E
+node_num = 2254 decision = a
+node_num = 2255 decision = E_E
+node_num = 2256 decision = E
+node_num = 2257 decision = E_E
+node_num = 2258 decision = j
+node_num = 2259 decision = z
+node_num = 2260 decision = z
+node_num = 2261 decision = s
+node_num = 2262 decision = z
+node_num = 2263 decision = s
+node_num = 2264 decision = s
+node_num = 2265 decision = z
+node_num = 2266 decision = s
+node_num = 2267 decision = z
+node_num = 2268 decision = s
+node_num = 2269 decision = _epsilon_
+node_num = 2270 decision = s-t
+node_num = 2271 decision = _epsilon_
+node_num = 2272 decision = s
+node_num = 2273 decision = E_E
+node_num = 2274 decision = E
+node_num = 2275 decision = E_E
+node_num = 2276 decision = E
+node_num = 2277 decision = (-@-)-Þ
+node_num = 2278 decision = Þ
+node_num = 2279 decision = 6
+node_num = 2280 decision = E_E
+node_num = 2281 decision = @
+node_num = 2282 decision = @
+node_num = 2283 decision = @
+node_num = 2284 decision = 6
+node_num = 2285 decision = @
+node_num = 2286 decision = 6
+node_num = 2287 decision = @
+node_num = 2288 decision = 6
+node_num = 2289 decision = @
+node_num = 2290 decision = _epsilon_
+node_num = 2291 decision = _epsilon_
+node_num = 2292 decision = _epsilon_
+node_num = 2293 decision = _epsilon_
+node_num = 2294 decision = 6
+node_num = 2295 decision = (-@-)
+node_num = 2296 decision = 6
+node_num = 2297 decision = 6
+node_num = 2298 decision = E_E
+node_num = 2299 decision = E
+node_num = 2300 decision = E
+node_num = 2301 decision = E
+node_num = 2302 decision = @
+node_num = 2303 decision = E
+node_num = 2304 decision = E_E
+node_num = 2305 decision = _epsilon_
+node_num = 2306 decision = E_E
+node_num = 2307 decision = E_E
+node_num = 2308 decision = 6
+node_num = 2309 decision = @
+node_num = 2310 decision = i
+node_num = 2311 decision = j
+node_num = 2312 decision = j
+node_num = 2313 decision = j
+node_num = 2314 decision = ACC1-~O
+node_num = 2315 decision = ACC1-O
+node_num = 2316 decision = ACC1-o
+node_num = 2317 decision = ACC1-O
+node_num = 2318 decision = ACC1-O
+node_num = 2319 decision = ACC1-o
+node_num = 2320 decision = ACC1-o
+node_num = 2321 decision = ACC1-O
+node_num = 2322 decision = ACC1-9
+node_num = 2323 decision = ACC1-y
+node_num = 2324 decision = ACC1-u
+node_num = 2325 decision = ACC1-~9
+node_num = 2326 decision = ACC1-9
+node_num = 2327 decision = ACC1-O
+node_num = 2328 decision = _epsilon_
+node_num = 2329 decision = _epsilon_
+node_num = 2330 decision = w
+node_num = 2331 decision = _epsilon_
+node_num = 2332 decision = _epsilon_
+node_num = 2333 decision = H
+node_num = 2334 decision = w
+node_num = 2335 decision = w
+node_num = 2336 decision = H
+node_num = 2337 decision = O_O
+node_num = 2338 decision = _epsilon_
+node_num = 2339 decision = O
+node_num = 2340 decision = w-a
+node_num = 2341 decision = 2
+node_num = 2342 decision = H
+node_num = 2343 decision = y
+node_num = 2344 decision = 9
+node_num = 2345 decision = 2
+node_num = 2346 decision = o
+node_num = 2347 decision = O
+node_num = 2348 decision = O_O
+node_num = 2349 decision = O
+node_num = 2350 decision = ~9
+node_num = 2351 decision = 6
+node_num = 2352 decision = y
+node_num = 2353 decision = O
+node_num = 2354 decision = O_O
+node_num = 2355 decision = O_O
+node_num = 2356 decision = O
+node_num = 2357 decision = O
+node_num = 2358 decision = O_O
+node_num = 2359 decision = O_O
+node_num = 2360 decision = O
+node_num = 2361 decision = O
+node_num = 2362 decision = O_O
+node_num = 2363 decision = O
+node_num = 2364 decision = O_O
+node_num = 2365 decision = t
+node_num = 2366 decision = s
+node_num = 2367 decision = t
+node_num = 2368 decision = n
+node_num = 2369 decision = ACC1-~a
+node_num = 2370 decision = ACC1-~a
+node_num = 2371 decision = (-t-)
+node_num = 2372 decision = _epsilon_
+node_num = 2373 decision = ~a
+node_num = 2374 decision = _epsilon_
+node_num = 2375 decision = ~a
+node_num = 2376 decision = ~a
+node_num = 2377 decision = _epsilon_
+node_num = 2378 decision = _epsilon_
+node_num = 2379 decision = S
+node_num = 2380 decision = _epsilon_
+node_num = 2381 decision = Ü
+node_num = 2382 decision = Ü
+node_num = 2383 decision = _epsilon_
+node_num = 2384 decision = Ü
+node_num = 2385 decision = E_E
+node_num = 2386 decision = E
+node_num = 2387 decision = E
+node_num = 2388 decision = _epsilon_
+node_num = 2389 decision = E_E
+node_num = 2390 decision = E
+node_num = 2391 decision = l
+node_num = 2392 decision = j
+node_num = 2393 decision = s
+node_num = 2394 decision = z
+node_num = 2395 decision = z
+node_num = 2396 decision = s
+node_num = 2397 decision = s
+node_num = 2398 decision = z
+node_num = 2399 decision = z
+node_num = 2400 decision = z
+node_num = 2401 decision = s
+node_num = 2402 decision = z
+node_num = 2403 decision = s
+node_num = 2404 decision = s
+node_num = 2405 decision = @
+node_num = 2406 decision = 6
+node_num = 2407 decision = 6
+node_num = 2408 decision = @
+node_num = 2409 decision = @
+node_num = 2410 decision = 6
+node_num = 2411 decision = 6
+node_num = 2412 decision = @
+node_num = 2413 decision = 6
+node_num = 2414 decision = @
+node_num = 2415 decision = 6
+node_num = 2416 decision = @
+node_num = 2417 decision = _epsilon_
+node_num = 2418 decision = 6
+node_num = 2419 decision = 6
+node_num = 2420 decision = _epsilon_
+node_num = 2421 decision = _epsilon_
+node_num = 2422 decision = 6
+node_num = 2423 decision = E_E
+node_num = 2424 decision = (-@-)-Þ
+node_num = 2425 decision = _epsilon_
+node_num = 2426 decision = E_E
+node_num = 2427 decision = _epsilon_
+node_num = 2428 decision = _epsilon_
+node_num = 2429 decision = 6
+node_num = 2430 decision = 6
+node_num = 2431 decision = _epsilon_
+node_num = 2432 decision = _epsilon_
+node_num = 2433 decision = 6
+node_num = 2434 decision = 6
+node_num = 2435 decision = E_E
+node_num = 2436 decision = E
+node_num = 2437 decision = E
+node_num = 2438 decision = @
+node_num = 2439 decision = E_E
+node_num = 2440 decision = E
+node_num = 2441 decision = E_E
+node_num = 2442 decision = E_E
+node_num = 2443 decision = _epsilon_
+node_num = 2444 decision = E
+node_num = 2445 decision = E_E
+node_num = 2446 decision = E
+node_num = 2447 decision = E_E
+node_num = 2448 decision = E_E
+node_num = 2449 decision = E_E
+node_num = 2450 decision = E
+node_num = 2451 decision = i
+node_num = 2452 decision = j
+node_num = 2453 decision = _epsilon_
+node_num = 2454 decision = j
+node_num = 2455 decision = _epsilon_
+node_num = 2456 decision = O_O
+node_num = 2457 decision = _epsilon_
+node_num = 2458 decision = w
+node_num = 2459 decision = _epsilon_
+node_num = 2460 decision = y
+node_num = 2461 decision = y
+node_num = 2462 decision = 6
+node_num = 2463 decision = O_O
+node_num = 2464 decision = O
+node_num = 2465 decision = O_O
+node_num = 2466 decision = O
+node_num = 2467 decision = O_O
+node_num = 2468 decision = O
+node_num = 2469 decision = O_O
+node_num = 2470 decision = s
+node_num = 2471 decision = ACC1-~a
+node_num = 2472 decision = (-t-)
+node_num = 2473 decision = ~a
+node_num = 2474 decision = _epsilon_
+node_num = 2475 decision = ~a
+node_num = 2476 decision = ~E
+node_num = 2477 decision = ~E
+node_num = 2478 decision = ~a
+node_num = 2479 decision = (-n-)
+node_num = 2480 decision = Ü
+node_num = 2481 decision = Ü
+node_num = 2482 decision = _epsilon_
+node_num = 2483 decision = _epsilon_
+node_num = 2484 decision = E_E
+node_num = 2485 decision = E
+node_num = 2486 decision = _epsilon_
+node_num = 2487 decision = E_E
+node_num = 2488 decision = a
+node_num = 2489 decision = E_E
+node_num = 2490 decision = s
+node_num = 2491 decision = z
+node_num = 2492 decision = s
+node_num = 2493 decision = z
+node_num = 2494 decision = s
+node_num = 2495 decision = z
+node_num = 2496 decision = s
+node_num = 2497 decision = z
+node_num = 2498 decision = s
+node_num = 2499 decision = @
+node_num = 2500 decision = 6
+node_num = 2501 decision = _epsilon_
+node_num = 2502 decision = @
+node_num = 2503 decision = _epsilon_
+node_num = 2504 decision = _epsilon_
+node_num = 2505 decision = 6
+node_num = 2506 decision = 6
+node_num = 2507 decision = _epsilon_
+node_num = 2508 decision = _epsilon_
+node_num = 2509 decision = 6
+node_num = 2510 decision = _epsilon_
+node_num = 2511 decision = 6
+node_num = 2512 decision = _epsilon_
+node_num = 2513 decision = @
+node_num = 2514 decision = _epsilon_
+node_num = 2515 decision = E_E
+node_num = 2516 decision = _epsilon_
+node_num = 2517 decision = _epsilon_
+node_num = 2518 decision = _epsilon_
+node_num = 2519 decision = 6
+node_num = 2520 decision = _epsilon_
+node_num = 2521 decision = _epsilon_
+node_num = 2522 decision = 6
+node_num = 2523 decision = E
+node_num = 2524 decision = E_E
+node_num = 2525 decision = E
+node_num = 2526 decision = E
+node_num = 2527 decision = E_E
+node_num = 2528 decision = E_E
+node_num = 2529 decision = E
+node_num = 2530 decision = _epsilon_
+node_num = 2531 decision = 6
+node_num = 2532 decision = E
+node_num = 2533 decision = @
+node_num = 2534 decision = E_E
+node_num = 2535 decision = @
+node_num = 2536 decision = E_E
+node_num = 2537 decision = 6
+node_num = 2538 decision = E_E
+node_num = 2539 decision = E_E
+node_num = 2540 decision = _epsilon_
+node_num = 2541 decision = i
+node_num = 2542 decision = i
+node_num = 2543 decision = j
+node_num = 2544 decision = _epsilon_
+node_num = 2545 decision = w
+node_num = 2546 decision = y
+node_num = 2547 decision = H
+node_num = 2548 decision = 9
+node_num = 2549 decision = O
+node_num = 2550 decision = O_O
+node_num = 2551 decision = O
+node_num = 2552 decision = O_O
+node_num = 2553 decision = s
+node_num = 2554 decision = t
+node_num = 2555 decision = n
+node_num = 2556 decision = Þ
+node_num = 2557 decision = (-t-)
+node_num = 2558 decision = _epsilon_
+node_num = 2559 decision = Ü
+node_num = 2560 decision = E
+node_num = 2561 decision = E_E
+node_num = 2562 decision = s
+node_num = 2563 decision = s
+node_num = 2564 decision = _epsilon_
+node_num = 2565 decision = E_E
+node_num = 2566 decision = 6
+node_num = 2567 decision = _epsilon_
+node_num = 2568 decision = 6
+node_num = 2569 decision = @
+node_num = 2570 decision = _epsilon_
+node_num = 2571 decision = 6
+node_num = 2572 decision = _epsilon_
+node_num = 2573 decision = @
+node_num = 2574 decision = @
+node_num = 2575 decision = 6
+node_num = 2576 decision = _epsilon_
+node_num = 2577 decision = E_E
+node_num = 2578 decision = 6
+node_num = 2579 decision = _epsilon_
+node_num = 2580 decision = _epsilon_
+node_num = 2581 decision = @
+node_num = 2582 decision = E
+node_num = 2583 decision = E_E
+node_num = 2584 decision = E_E
+node_num = 2585 decision = @
+node_num = 2586 decision = 6
+node_num = 2587 decision = E_E
+node_num = 2588 decision = E_E
+node_num = 2589 decision = E
+node_num = 2590 decision = E_E
+node_num = 2591 decision = _epsilon_
+node_num = 2592 decision = H
+node_num = 2593 decision = O
+node_num = 2594 decision = O_O
+node_num = 2595 decision = O_O
+node_num = 2596 decision = O
+node_num = 2597 decision = n
+node_num = 2598 decision = ~a
+node_num = 2599 decision = ~a
+node_num = 2600 decision = E_E
+node_num = 2601 decision = a
+node_num = 2602 decision = s
+node_num = 2603 decision = z
+node_num = 2604 decision = z
+node_num = 2605 decision = E
+node_num = 2606 decision = _epsilon_
+node_num = 2607 decision = E_E
+node_num = 2608 decision = 6
+node_num = 2609 decision = 6
+node_num = 2610 decision = _epsilon_
+node_num = 2611 decision = E_E
+node_num = 2612 decision = 6
+node_num = 2613 decision = _epsilon_
+node_num = 2614 decision = 6
+node_num = 2615 decision = 6
+node_num = 2616 decision = _epsilon_
+node_num = 2617 decision = _epsilon_
+node_num = 2618 decision = @
+node_num = 2619 decision = @
+node_num = 2620 decision = _epsilon_
+node_num = 2621 decision = E_E
+node_num = 2622 decision = _epsilon_
+node_num = 2623 decision = _epsilon_
+node_num = 2624 decision = 6
+node_num = 2625 decision = 6
+node_num = 2626 decision = _epsilon_
+node_num = 2627 decision = _epsilon_
+node_num = 2628 decision = E
+node_num = 2629 decision = (-@-)
+node_num = 2630 decision = _epsilon_
+node_num = 2631 decision = @
+node_num = 2632 decision = _epsilon_
+node_num = 2633 decision = @
+node_num = 2634 decision = _epsilon_
+node_num = 2635 decision = _epsilon_
+node_num = 2636 decision = _epsilon_
+node_num = 2637 decision = E_E
+node_num = 2638 decision = H
+node_num = 2639 decision = ~a
+node_num = 2640 decision = ~E
+node_num = 2641 decision = ~E
+node_num = 2642 decision = ~a
+node_num = 2643 decision = E_E
+node_num = 2644 decision = z
+node_num = 2645 decision = s
+node_num = 2646 decision = (-@-)
+node_num = 2647 decision = _epsilon_
+node_num = 2648 decision = E_E
+node_num = 2649 decision = _epsilon_
+node_num = 2650 decision = 6
+node_num = 2651 decision = _epsilon_
+node_num = 2652 decision = _epsilon_
+node_num = 2653 decision = @
+node_num = 2654 decision = (-@-)
+node_num = 2655 decision = @
+node_num = 2656 decision = @
+node_num = 2657 decision = (-@-)
+node_num = 2658 decision = _epsilon_
+node_num = 2659 decision = @
+node_num = 2660 decision = @
+node_num = 2661 decision = _epsilon_
+node_num = 2662 decision = 6
+node_num = 2663 decision = _epsilon_
+node_num = 2664 decision = E_E
+node_num = 2665 decision = 6
+node_num = 2666 decision = _epsilon_
+node_num = 2667 decision = E_E
+node_num = 2668 decision = E
+node_num = 2669 decision = (-@-)
+node_num = 2670 decision = _epsilon_
+node_num = 2671 decision = _epsilon_
+node_num = 2672 decision = 6
+node_num = 2673 decision = _epsilon_
+node_num = 2674 decision = @
+node_num = 2675 decision = _epsilon_
+node_num = 2676 decision = E_E
+node_num = 2677 decision = @
+node_num = 2678 decision = H
+node_num = 2679 decision = _epsilon_
+node_num = 2680 decision = ~E
+node_num = 2681 decision = ~a
+node_num = 2682 decision = E_E
+node_num = 2683 decision = E
+node_num = 2684 decision = _epsilon_
+node_num = 2685 decision = @
+node_num = 2686 decision = _epsilon_
+node_num = 2687 decision = _epsilon_
+node_num = 2688 decision = 6
+node_num = 2689 decision = @
+node_num = 2690 decision = _epsilon_
+node_num = 2691 decision = E_E
+node_num = 2692 decision = _epsilon_
+node_num = 2693 decision = 6
+node_num = 2694 decision = @
+node_num = 2695 decision = @
+node_num = 2696 decision = _epsilon_
+node_num = 2697 decision = _epsilon_
+node_num = 2698 decision = _epsilon_
+node_num = 2699 decision = @
+node_num = 2700 decision = _epsilon_
+node_num = 2701 decision = @
+node_num = 2702 decision = _epsilon_
+node_num = 2703 decision = @
+node_num = 2704 decision = _epsilon_
+node_num = 2705 decision = _epsilon_
+node_num = 2706 decision = _epsilon_
+node_num = 2707 decision = _epsilon_
+node_num = 2708 decision = E_E
+node_num = 2709 decision = _epsilon_
+node_num = 2710 decision = _epsilon_
+node_num = 2711 decision = 6
+node_num = 2712 decision = @
+node_num = 2713 decision = _epsilon_
+node_num = 2714 decision = _epsilon_
+node_num = 2715 decision = @
+node_num = 2716 decision = E_E
+node_num = 2717 decision = _epsilon_
+node_num = 2718 decision = _epsilon_
+node_num = 2719 decision = _epsilon_
+node_num = 2720 decision = _epsilon_
+node_num = 2721 decision = @
+node_num = 2722 decision = _epsilon_
+node_num = 2723 decision = @
+node_num = 2724 decision = 6
+node_num = 2725 decision = _epsilon_
+node_num = 2726 decision = _epsilon_
+node_num = 2727 decision = _epsilon_
+node_num = 2728 decision = 6
+node_num = 2729 decision = _epsilon_
+node_num = 2730 decision = @
+node_num = 2731 decision = _epsilon_
+node_num = 2732 decision = _epsilon_
+node_num = 2733 decision = @
+node_num = 2734 decision = 6
+node_num = 2735 decision = _epsilon_
+node_num = 2736 decision = E
+node_num = 2737 decision = _epsilon_
+node_num = 2738 decision = _epsilon_
+node_num = 2739 decision = _epsilon_
+node_num = 2740 decision = @
+node_num = 2741 decision = _epsilon_
+node_num = 2742 decision = @
+node_num = 2743 decision = _epsilon_
+node_num = 2744 decision = _epsilon_
+node_num = 2745 decision = @
+node_num = 2746 decision = _epsilon_
+node_num = 2747 decision = E
+node_num = 2748 decision = @
+node_num = 2749 decision = _epsilon_
+node_num = 2750 decision = _epsilon_
+node_num = 2751 decision = _epsilon_
+node_num = 2752 decision = 6
+node_num = 2753 decision = _epsilon_
+node_num = 2754 decision = @
+node_num = 2755 decision = _epsilon_
+node_num = 2756 decision = _epsilon_
+node_num = 2757 decision = @
+node_num = 2758 decision = _epsilon_
+node_num = 2759 decision = _epsilon_
+node_num = 2760 decision = E
+node_num = 2761 decision = _epsilon_
+node_num = 2762 decision = _epsilon_
+node_num = 2763 decision = _epsilon_
+node_num = 2764 decision = _epsilon_
+node_num = 2765 decision = @
+node_num = 2766 decision = _epsilon_
+node_num = 2767 decision = @
+node_num = 2768 decision = _epsilon_
+node_num = 2769 decision = _epsilon_
+node_num = 2770 decision = @
+node_num = 2771 decision = _epsilon_
+node_num = 2772 decision = 6
+node_num = 2773 decision = _epsilon_
+node_num = 2774 decision = 6
+node_num = 2775 decision = _epsilon_
+node_num = 2776 decision = @

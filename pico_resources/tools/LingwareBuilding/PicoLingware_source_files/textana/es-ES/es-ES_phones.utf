@@ -1,0 +1,75 @@
+! ------------------------------------------------------------------------
+! @file es-ES_phones.utf
+!
+! Phones Symbol Table for language es-ES
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! phones set Pico
+! ------------------
+!
+! mapval: decimal number encoded in a single byte (max 255)
+!   reserved values for all languages (0-31):
+!     0: error state
+!     1: not applicable
+!     5: used to mark :G2P handling need
+
+
+! reserved value for the word boundary
+
+:SYM "{#WB}"  :PROP mapval = 32,                          wordbound = 1
+
+! main phones alphabet
+
+:SYM "'"      :PROP mapval = 33,                          primstress = 1
+:SYM ","      :PROP mapval = 34,                          secstress = 1
+:SYM "-"      :PROP mapval = 35,                          syllbound = 1
+:SYM "B"      :PROP mapval = 36
+:SYM "D"      :PROP mapval = 37
+:SYM "G"      :PROP mapval = 38
+:SYM "J"      :PROP mapval = 39
+:SYM "L"      :PROP mapval = 40
+:SYM "N"      :PROP mapval = 41
+:SYM "T"      :PROP mapval = 42
+:SYM "^u"     :PROP mapval = 43, vowel = 1, nonsyllvowel = 1
+:SYM "a"      :PROP mapval = 44, vowel = 1
+:SYM "b"      :PROP mapval = 45
+:SYM "d"      :PROP mapval = 46
+:SYM "e"      :PROP mapval = 47, vowel = 1
+:SYM "f"      :PROP mapval = 48
+:SYM "g"      :PROP mapval = 49
+:SYM "i"      :PROP mapval = 50, vowel = 1
+:SYM "j"      :PROP mapval = 51
+:SYM "j_j"    :PROP mapval = 52
+:SYM "k"      :PROP mapval = 53
+:SYM "l"      :PROP mapval = 54
+:SYM "m"      :PROP mapval = 55
+:SYM "n"      :PROP mapval = 56
+:SYM "o"      :PROP mapval = 57, vowel = 1
+:SYM "p"      :PROP mapval = 58
+:SYM "r"      :PROP mapval = 59
+:SYM "r_r"    :PROP mapval = 60
+:SYM "s"      :PROP mapval = 61
+:SYM "t"      :PROP mapval = 62
+:SYM "t_S"    :PROP mapval = 63
+:SYM "u"      :PROP mapval = 64, vowel = 1
+:SYM "x"      :PROP mapval = 65
+:SYM "z"      :PROP mapval = 66
+:SYM "Ä"      :PROP mapval = 67
+:SYM "Þ"      :PROP mapval = 68
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! sentence-level FSTs additions
+!
+
+:SYM "pau"    :PROP mapval = 69,                          pause = 1
+:SYM "u_c"    :PROP mapval = 70
+:SYM "v_c"    :PROP mapval = 71
+:SYM "t_mark" :PROP mapval = 72
+:SYM "d_mark" :PROP mapval = 73
+

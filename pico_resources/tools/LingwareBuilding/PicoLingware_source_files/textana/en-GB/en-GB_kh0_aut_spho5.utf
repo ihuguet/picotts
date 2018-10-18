@@ -1,0 +1,47 @@
+! ------------------------------------------------------------------------
+! @file en-GB_kh0_aut_spho5.utf
+!
+! Finite-State Transducer <Sentence Phonology 5> for voice en-GB_kh0
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+:ALPHABET
+    @/'v_c'  @/'u_c'  '#'  '&'  '-'  ','  ''''  '{P0}'  '{P3}'  '{P2}'  '{P1}'  '{WB}'  '{P:SYMBOL_E}'  '{P:V_PAST}'  '{P:V_MODAL}'
+  '{P:V_AUX}'  '{P:V}'  '{P:Q_PTCL}'  '{P:PRO_V}'  '{P:PRO}'  '{P:PREP}'  '{P:N_ING}'  '{P:N_GEN}'  '{P:N}'  '{P:DET}'  '{P:CONJ_SUB}'  '{P:CONJ_INF}'  '{P:CONJ_CO}'  '{P:CARD}'  '{P:ADV}'
+  '{P:ADJ}'  '{P:0}'  '{A4}'  '{A3}'  '{A2}'  '{A1}'  '{A0}'  'v_c'  'u_c'  'o_U'  'O_I'  'U_@'  'I_@'  'e_@'  'e_I'
+  'a_U'  'a_I'  '@_r'  'A:'  'A'  '3'  'O:'  'u:'  'U'  'i:'  'I'  'e'  'V'  'q'  '@'
+  '=l'  'w'  'l'  'r'  'h'  'x'  'j'  'Z'  'S'  'z'  's'  'D'  'T'  'v'  'f'
+  'N'  'n'  'm'  '?'  'd_Z'  'g'  'd'  'b'  'k_h'  't_h'  'p_h'  't_S'  'k'  't'  'p'
+  'l'/'=l'
+*
+
+
+:AUTOMATON ""
+:DEFAULTCLASS 1
+:CLASS 2 :IS  @/'u_c'
+:CLASS 3 :IS  '#'  '&'  ','  ''''  '{P:SYMBOL_E}'  '{P:V_PAST}'  '{P:V_MODAL}'  '{P:V_AUX}'  '{P:V}'  '{P:Q_PTCL}'  '{P:PRO_V}'  '{P:PRO}'  '{P:PREP}'  '{P:N_ING}'  '{P:N_GEN}'  '{P:N}'  '{P:DET}'  '{P:CONJ_SUB}'  '{P:CONJ_INF}'  '{P:CONJ_CO}'  '{P:CARD}'  '{P:ADV}'  '{P:ADJ}'  '{P:0}'  '{A4}'  '{A3}'  '{A2}'  '{A1}'  '{A0}'  'v_c'  'u_c'  'o_U'  'O_I'  'U_@'  'I_@'  'e_@'  'e_I'  'a_U'  'a_I'  '@_r'  'A:'  'A'  '3'  'O:'  'u:'  'U'  'i:'  'I'  'e'  'V'  'q'  '@'  '=l'
+:CLASS 4 :IS  '-'  '{P0}'  '{P3}'  '{P2}'  '{P1}'  '{WB}'
+:CLASS 5 :IS  'w'  'h'  'x'  'j'  'Z'  'S'  'z'  's'  'D'  'T'  'v'  'f'  'N'  'n'  'm'  '?'
+:CLASS 6 :IS  'l'
+:CLASS 7 :IS  'r'
+:CLASS 8 :IS  'd_Z'  'g'  'd'  'b'
+:CLASS 9 :IS  'k_h'  't_h'  'p_h'  't_S'  'k'  't'  'p'
+:CLASS 10 :IS  'l'/'=l'
+:TRANS  1 :TO  2  3  1  1  4  4  1  0  0  0
+:TRANS  2 :TO  0  0  0  0  0  0  0  4  0  0
+:TRANS  3 :TO  0  0  0  0  0  0  0  0  4  0
+:TRANS  4 :TO  2  3  1  1  4  5  1  0  0  6
+:TRANS  5 :TO  7  8  1  0  5  5  9  0  0  6
+:TRANS  6 :TO 10 11  0  1 12 12  6  0  0  0
+:TRANS  7 :TO  0  0  0  0  0  0  0  5  0  0
+:TRANS  8 :TO  0  0  0  0  0  0  0  0  5  0
+:TRANS  9 :TO  7  8  1  0  5  5  9  0  0  0
+:TRANS 10 :TO  0  0  0  0  0  0  0 12  0  0
+:TRANS 11 :TO  0  0  0  0  0  0  0  0 12  0
+:TRANS 12 :TO 10 11  0  1 12  0  6  0  0  0
+*

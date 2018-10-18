@@ -1,0 +1,20 @@
+﻿
+# BEGIN_TEST
+
+#------------------------------
+# Spanish (es-ES)
+#
+# Notes: These tests cover known issues and previous bugs that have been fixed. Those
+#        latter are to be used for regression testing
+#        When a test is marked as "BUG", if possible, the tester will capture an approximate
+#        transcription of what was heard inside [ ].
+
+# TEST (old bug: burst of noise at end of sentence)
+<speak xml:lang="es-ES">El sintetizador de voz</speak>
+
+# END_TEST
+
+
+# ---------
+
+

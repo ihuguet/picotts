@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Instalador de dados de reprodução de voz"</string>
+    <string name="installing_message" msgid="8792926973732354514">"A instalar dados de voz no cartão SD."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"Os dados de voz foram instalados com êxito. Agora já pode remover este instalador com segurança."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Desinstalar"</string>
+    <string name="retry_message" msgid="6519833625675608678">"A instalação dos dados de voz falhou. Certifique-se de que o seu cartão SD está inserido no respectivo dispositivo e de que possui, pelo menos, 6 MB de espaço livre. Se o cartão já estiver no dispositivo, experimente retirá-lo e voltar a inseri-lo."</string>
+    <string name="retry" msgid="7470276488993209974">"Tentar novamente"</string>
+</resources>

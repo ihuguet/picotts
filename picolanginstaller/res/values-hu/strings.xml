@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Beszédszintézis-adatok telepítője"</string>
+    <string name="installing_message" product="nosdcard" msgid="737236126329813405">"Hangadatok telepítése az USB-tárra."</string>
+    <string name="installing_message" product="default" msgid="8792926973732354514">"Hangadatok telepítése az SD-kártyára."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"A hangadatok telepítése megtörtént. Most már nyugodtan törölheti ezt a telepítőt."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Eltávolítás"</string>
+    <string name="retry_message" product="nosdcard" msgid="8048316007107408391">"Nem sikerült telepíteni a hangadatokat. Győződjön meg róla, hogy az USB-tárolón van legalább 6 MB szabad hely."</string>
+    <string name="retry_message" product="default" msgid="4262829785604216441">"Nem sikerült telepíteni a hangadatokat. Győződjön meg róla, hogy az SD-kártya benne van-e a készülékében, és hogy van-e rajta legalább 6 MB szabad hely. Ha a kártya már benne van az eszközben, próbálja meg kivenni, majd visszatenni."</string>
+    <string name="retry" msgid="7470276488993209974">"Újra"</string>
+</resources>

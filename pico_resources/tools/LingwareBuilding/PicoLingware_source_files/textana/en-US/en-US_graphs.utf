@@ -1,0 +1,233 @@
+! ------------------------------------------------------------------------
+! @file en-US_graphs.utf
+!
+! Graphs Symbol Table for language en-US
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! All input characters to be submitted to analysis must have at least
+! one property of any kind. All other characters are simply ignored!
+
+! punctuation characters
+! by default: may occur inside a word
+! punct = 1: not sentence-final punctuation mark
+! punct = 2: sentence-final punctuation mark
+
+! 'stoken' property, all are mutualy exclusive
+!   1 'vowel-like' letter (part of letter simple token       -> L)
+!     (e.g. a, e, i, o, u, y, umlaute, etc.)
+!   2 'consonant-like' letter (part of letter simple token   -> L)
+!     (other alphabetical graphemes)
+!   3 digit (part of digit simple token                      -> D)
+!     (1 - 9)
+!   4 non-L/non-D (part of sequence simple token             -> S)
+!     (e.g. hash, pound, etc.)
+!   5 non-L/non-D (part of single char simple token          -> C)
+!     (e.g. punctuation, '<', '>')
+
+! chars in the code range [0-32] are treated as white space  -> W
+
+:SYM "!"  :PROP stoken = 5, punct = 2
+:SYM '"'  :PROP stoken = 5, punct = 1
+:SYM "#"  :PROP stoken = 4
+:SYM "$"  :PROP stoken = 4
+:SYM "%"  :PROP stoken = 4
+:SYM "&"  :PROP stoken = 4
+:SYM "'"  :PROP stoken = 4
+:SYM "("  :PROP stoken = 5, punct = 1
+:SYM ")"  :PROP stoken = 5, punct = 1
+:SYM "*"  :PROP stoken = 4
+:SYM "+"  :PROP stoken = 4
+:SYM ","  :PROP stoken = 5, punct = 1
+:SYM "-"  :PROP stoken = 4
+:SYM "."  :PROP stoken = 5, punct = 2
+:SYM "/"  :PROP stoken = 4
+:SYM "0"  :PROP stoken = 3
+:SYM "1"  :PROP stoken = 3
+:SYM "2"  :PROP stoken = 3
+:SYM "3"  :PROP stoken = 3
+:SYM "4"  :PROP stoken = 3
+:SYM "5"  :PROP stoken = 3
+:SYM "6"  :PROP stoken = 3
+:SYM "7"  :PROP stoken = 3
+:SYM "8"  :PROP stoken = 3
+:SYM "9"  :PROP stoken = 3
+:SYM ":"  :PROP stoken = 5, punct = 1
+:SYM ";"  :PROP stoken = 5, punct = 1
+:SYM "<"  :PROP stoken = 5
+:SYM "="  :PROP stoken = 4
+:SYM ">"  :PROP stoken = 5
+:SYM "?"  :PROP stoken = 5, punct = 2
+:SYM "@"  :PROP stoken = 4
+:SYM "A"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "B"  :PROP stoken = 2, graphsubs1 = "b"
+:SYM "C"  :PROP stoken = 2, graphsubs1 = "c"
+:SYM "D"  :PROP stoken = 2, graphsubs1 = "d"
+:SYM "E"  :PROP stoken = 1, graphsubs1 = "e"
+:SYM "F"  :PROP stoken = 2, graphsubs1 = "f"
+:SYM "G"  :PROP stoken = 2, graphsubs1 = "g"
+:SYM "H"  :PROP stoken = 2, graphsubs1 = "h"
+:SYM "I"  :PROP stoken = 1, graphsubs1 = "i"
+:SYM "J"  :PROP stoken = 2, graphsubs1 = "j"
+:SYM "K"  :PROP stoken = 2, graphsubs1 = "k"
+:SYM "L"  :PROP stoken = 2, graphsubs1 = "l"
+:SYM "M"  :PROP stoken = 2, graphsubs1 = "m"
+:SYM "N"  :PROP stoken = 2, graphsubs1 = "n"
+:SYM "O"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "P"  :PROP stoken = 2, graphsubs1 = "p"
+:SYM "Q"  :PROP stoken = 2, graphsubs1 = "q"
+:SYM "R"  :PROP stoken = 2, graphsubs1 = "r"
+:SYM "S"  :PROP stoken = 2, graphsubs1 = "s"
+:SYM "T"  :PROP stoken = 2, graphsubs1 = "t"
+:SYM "U"  :PROP stoken = 1, graphsubs1 = "u"
+:SYM "V"  :PROP stoken = 2, graphsubs1 = "v"
+:SYM "W"  :PROP stoken = 2, graphsubs1 = "w"
+:SYM "X"  :PROP stoken = 2, graphsubs1 = "x"
+:SYM "Y"  :PROP stoken = 1, graphsubs1 = "y"
+:SYM "Z"  :PROP stoken = 2, graphsubs1 = "z"
+:SYM "["  :PROP stoken = 4
+:SYM "\"  :PROP stoken = 4
+:SYM "]"  :PROP stoken = 4
+:SYM "^"  :PROP stoken = 4
+:SYM "_"  :PROP stoken = 4
+:SYM "`"  :PROP stoken = 4
+:SYM "a"  :PROP stoken = 1
+:SYM "b"  :PROP stoken = 2
+:SYM "c"  :PROP stoken = 2
+:SYM "d"  :PROP stoken = 2
+:SYM "e"  :PROP stoken = 1
+:SYM "f"  :PROP stoken = 2
+:SYM "g"  :PROP stoken = 2
+:SYM "h"  :PROP stoken = 2
+:SYM "i"  :PROP stoken = 1
+:SYM "j"  :PROP stoken = 2
+:SYM "k"  :PROP stoken = 2
+:SYM "l"  :PROP stoken = 2
+:SYM "m"  :PROP stoken = 2
+:SYM "n"  :PROP stoken = 2
+:SYM "o"  :PROP stoken = 1
+:SYM "p"  :PROP stoken = 2
+:SYM "q"  :PROP stoken = 2
+:SYM "r"  :PROP stoken = 2
+:SYM "s"  :PROP stoken = 2
+:SYM "t"  :PROP stoken = 2
+:SYM "u"  :PROP stoken = 1
+:SYM "v"  :PROP stoken = 2
+:SYM "w"  :PROP stoken = 2
+:SYM "x"  :PROP stoken = 2
+:SYM "y"  :PROP stoken = 1
+:SYM "z"  :PROP stoken = 2
+:SYM "{"  :PROP stoken = 4
+:SYM "|"  :PROP stoken = 4
+:SYM "}"  :PROP stoken = 4
+:SYM "~"  :PROP stoken = 4
+:SYM "€"  :PROP stoken = 4
+:SYM "‰"  :PROP stoken = 4
+:SYM "Š"  :PROP stoken = 2, graphsubs1 = "s", lowercase = "s"
+:SYM "Œ"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Ž"  :PROP stoken = 2, graphsubs1 = "z", lowercase = "z"
+:SYM "‘"  :PROP stoken = 4, graphsubs1 = "'"
+:SYM "’"  :PROP stoken = 4, graphsubs1 = "'"
+:SYM "š"  :PROP stoken = 2, graphsubs1 = "s", lowercase = "s"
+:SYM "œ"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "ž"  :PROP stoken = 2, graphsubs1 = "z", lowercase = "z"
+:SYM "Ÿ"  :PROP stoken = 1, graphsubs1 = "y", lowercase = "y"
+:SYM "¡"  :PROP stoken = 4
+:SYM "¢"  :PROP stoken = 4
+:SYM "£"  :PROP stoken = 4
+:SYM "¤"  :PROP stoken = 4
+:SYM "¥"  :PROP stoken = 4
+:SYM "¦"  :PROP stoken = 4
+:SYM "§"  :PROP stoken = 4
+:SYM "¨"  :PROP stoken = 4
+:SYM "©"  :PROP stoken = 4
+:SYM "ª"  :PROP stoken = 4
+:SYM "«"  :PROP stoken = 5, punct = 1
+:SYM "¬"  :PROP stoken = 4
+:SYM "­"  :PROP stoken = 4
+:SYM "®"  :PROP stoken = 4
+:SYM "¯"  :PROP stoken = 4
+:SYM "°"  :PROP stoken = 4
+:SYM "±"  :PROP stoken = 4
+:SYM "²"  :PROP stoken = 4
+:SYM "³"  :PROP stoken = 4
+:SYM "´"  :PROP stoken = 4
+:SYM "µ"  :PROP stoken = 4
+:SYM "¶"  :PROP stoken = 4
+:SYM "·"  :PROP stoken = 4
+:SYM "¹"  :PROP stoken = 4
+:SYM "º"  :PROP stoken = 4
+:SYM "»"  :PROP stoken = 5, punct = 1
+:SYM "¼"  :PROP stoken = 4
+:SYM "½"  :PROP stoken = 4
+:SYM "¾"  :PROP stoken = 4
+:SYM "¿"  :PROP stoken = 4
+:SYM "À"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Á"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Â"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Ã"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Ä"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Å"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Æ"  :PROP stoken = 1, graphsubs1 = "a", lowercase = "a"
+:SYM "Ç"  :PROP stoken = 2, graphsubs1 = "c", lowercase = "c"
+:SYM "È"  :PROP stoken = 1, graphsubs1 = "e", lowercase = "e"
+:SYM "É"  :PROP stoken = 1, graphsubs1 = "e", lowercase = "e"
+:SYM "Ê"  :PROP stoken = 1, graphsubs1 = "e", lowercase = "e"
+:SYM "Ë"  :PROP stoken = 1, graphsubs1 = "e", lowercase = "e"
+:SYM "Ì"  :PROP stoken = 1, graphsubs1 = "i", lowercase = "i"
+:SYM "Í"  :PROP stoken = 1, graphsubs1 = "i", lowercase = "i"
+:SYM "Î"  :PROP stoken = 1, graphsubs1 = "i", lowercase = "i"
+:SYM "Ï"  :PROP stoken = 1, graphsubs1 = "i", lowercase = "i"
+:SYM "Ð"  :PROP stoken = 2, graphsubs1 = "d", lowercase = "d"
+:SYM "Ñ"  :PROP stoken = 2, graphsubs1 = "n", lowercase = "n"
+:SYM "Ò"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Ó"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Ô"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Õ"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Ö"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "×"  :PROP stoken = 4
+:SYM "Ø"  :PROP stoken = 1, graphsubs1 = "o", lowercase = "o"
+:SYM "Ù"  :PROP stoken = 1, graphsubs1 = "u", lowercase = "u"
+:SYM "Ú"  :PROP stoken = 1, graphsubs1 = "u", lowercase = "u"
+:SYM "Û"  :PROP stoken = 1, graphsubs1 = "u", lowercase = "u"
+:SYM "Ü"  :PROP stoken = 1, graphsubs1 = "u", lowercase = "u"
+:SYM "Ý"  :PROP stoken = 1, graphsubs1 = "y", lowercase = "y"
+:SYM "Þ"  :PROP stoken = 2, graphsubs1 = "d", lowercase = "d"
+:SYM "ß"  :PROP stoken = 2, graphsubs1 = "s", graphsubs2 = "s"
+:SYM "à"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "á"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "â"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "ã"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "ä"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "å"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "æ"  :PROP stoken = 1, graphsubs1 = "a"
+:SYM "ç"  :PROP stoken = 2, graphsubs1 = "c"
+:SYM "è"  :PROP stoken = 1, graphsubs1 = "e"
+:SYM "é"  :PROP stoken = 1, graphsubs1 = "e"
+:SYM "ê"  :PROP stoken = 1, graphsubs1 = "e"
+:SYM "ë"  :PROP stoken = 1, graphsubs1 = "e"
+:SYM "ì"  :PROP stoken = 1, graphsubs1 = "i"
+:SYM "í"  :PROP stoken = 1, graphsubs1 = "i"
+:SYM "î"  :PROP stoken = 1, graphsubs1 = "i"
+:SYM "ï"  :PROP stoken = 1, graphsubs1 = "i"
+:SYM "ð"  :PROP stoken = 2, graphsubs1 = "o"
+:SYM "ñ"  :PROP stoken = 2, graphsubs1 = "n"
+:SYM "ò"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "ó"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "ô"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "õ"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "ö"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "÷"  :PROP stoken = 4
+:SYM "ø"  :PROP stoken = 1, graphsubs1 = "o"
+:SYM "ù"  :PROP stoken = 1, graphsubs1 = "u"
+:SYM "ú"  :PROP stoken = 1, graphsubs1 = "u"
+:SYM "û"  :PROP stoken = 1, graphsubs1 = "u"
+:SYM "ü"  :PROP stoken = 1, graphsubs1 = "u"
+:SYM "ý"  :PROP stoken = 1, graphsubs1 = "y"
+:SYM "þ"  :PROP stoken = 1, graphsubs1 = "d"
+:SYM "ÿ"  :PROP stoken = 1, graphsubs1 = "u"

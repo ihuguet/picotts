@@ -1,0 +1,36 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# Sample debian/rules that uses debhelper.
+# This file was originally written by Joey Hess and Craig Small.
+# As a special exception, when this file is copied by dh-make into a
+# dh-make output file, you may use that output file without restriction.
+# This special exception was added by Craig Small in version 0.37 of dh-make.
+
+DEB_HOST_MULTIARCH  ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+DESTDIR=$(CURDIR)/debian/svox
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@ --sourcedirectory=pico
+
+override_dh_auto_configure:
+	chmod +x ./pico/autogen.sh
+	cd pico && ./autogen.sh
+	cd pico && ./configure --prefix=/usr --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
+
+override_dh_auto_build:
+	dh_auto_build
+	help2man --name 'Small Footprint TTS' --version-string ' ' --no-info \
+	  ./pico/pico2wave > ./pico/pico2wave.1
+
+override_dh_auto_clean:
+	rm pico/pico2wave.1 ||:
+	cd pico && test -f Makefile && make clean ||:
+	chmod +x ./pico/autogen.sh
+	cd pico && ./autogen.sh clean
+

@@ -1,0 +1,32 @@
+# collection of fr-FR textana knowledge bases
+
+# header fields:
+
+NAME                    fr-FR_ta_1.0.0.3-0-2
+VERSION                 1.0.0.3-0-2
+DATE                    2009-05-20
+TIME                    17:00:00.000
+CONTENT_TYPE            TEXTANA
+
+
+TPP_MAIN                "../pkb/fr-FR/fr-FR_kpr.pkb"
+TAB_GRAPHS              "../pkb/fr-FR/fr-FR_ktab_graphs.pkb"
+TAB_PHONES              "../pkb/fr-FR/fr-FR_ktab_phones.pkb"
+TAB_POS                 "../pkb/fr-FR/fr-FR_ktab_pos.pkb"
+LEX_MAIN                "../pkb/fr-FR/fr-FR_klex.pkb"
+DT_POSP                 "../pkb/fr-FR/fr-FR_kdt_posp.pkb"
+DT_POSD                 "../pkb/fr-FR/fr-FR_kdt_posd.pkb"
+DT_G2P                  "../pkb/fr-FR/fr-FR_kdt_g2p.pkb"
+FST_WPHO_1              "../pkb/fr-FR/fr-FR_kfst_wpho1.pkb"
+DT_PHR                  "../pkb/fr-FR/fr-FR_kdt_phr.pkb"
+DT_ACC                  "../pkb/fr-FR/fr-FR_kdt_acc.pkb"
+FST_SPHO_1              "../pkb/fr-FR/fr-FR_kfst_spho1.pkb"
+FST_SPHO_2              "../pkb/fr-FR/fr-FR_kfst_spho2.pkb"
+FST_SPHO_3              "../pkb/fr-FR/fr-FR_kfst_spho3.pkb"
+FST_SPHO_4              "../pkb/fr-FR/fr-FR_kfst_spho4.pkb"
+FST_SPHO_5              "../pkb/fr-FR/fr-FR_kfst_spho5.pkb"
+FST_SPHO_6              "../pkb/fr-FR/fr-FR_kfst_spho6.pkb"
+FST_SPHO_7              "../pkb/fr-FR/fr-FR_kfst_spho7.pkb"
+FST_SPHO_8              "../pkb/fr-FR/fr-FR_kfst_spho8.pkb"
+FST_XSPA_PARSE          "../pkb/kfst_parse-xsampa.pkb"
+FST_XS2SVPA             "../pkb/fr-FR/fr-FR_kfst_map-xsampa.pkb"

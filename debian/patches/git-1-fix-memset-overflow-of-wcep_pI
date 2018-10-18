@@ -1,0 +1,27 @@
+commit 66c08f71f6ac519fb36f3d75b176e0f020d8f890
+Author: ganxiaolin <ganxiaolin@xiaomi.com>
+Date:   Thu Jan 21 20:06:00 2016 +0800
+
+    fix memset overflow of wcep_pI
+    
+    In the sigAllocate, the allocation size is only sizeof(picoos_int32) * PICODSP_FFTSIZE.
+    It will cover next cell's header to 0, which usually is int_vec29. wcep_pI is int_vec28.
+    And that will cause crash in picoos_deallocate, because int_vec29's header is error.
+    In 32 bits machine, this problem don't appear because size is covered by 0.
+    And in 64 bits machine, the size is covered by 0x100000000, that cause segment fault.
+    
+    Signed-off-by: ganxiaolin <ganxiaolin@xiaomi.com>
+
+diff --git a/pico/lib/picosig2.c b/pico/lib/picosig2.c
+index c2a69cc..c25cbe4 100644
+--- a/pico/lib/picosig2.c
++++ b/pico/lib/picosig2.c
+@@ -552,7 +552,7 @@ void mel_2_lin_lookup(sig_innerobj_t *sig_inObj, picoos_uint32 scmeanMGC)
+     for (nI = 1; nI < m1; nI++) {
+         XXr[nI] = c1[nI] << shift;
+     }
+-    i = sizeof(picoos_int32) * (PICODSP_FFTSIZE + 1 - m1);
++    i = sizeof(picoos_int32) * (PICODSP_FFTSIZE - m1);
+     picoos_mem_set(XXr + m1, 0, i);
+     dfct_nmf(m4, XXr); /* DFCT directly in fixed point */
+ 

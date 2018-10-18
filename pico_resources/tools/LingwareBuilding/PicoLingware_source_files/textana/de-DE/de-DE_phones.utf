@@ -1,0 +1,98 @@
+! ------------------------------------------------------------------------
+! @file de-DE_phones.utf
+!
+! Phones Symbol Table for language de-DE
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! phones set Pico
+! ------------------
+!
+! mapval: decimal number encoded in a single byte (max 255)
+!   reserved values for all languages (0-31):
+!     0: error state
+!     1: not applicable
+!     5: used to mark :G2P handling need
+
+:SYM "{#WB}"  :PROP mapval = 32,                              wordbound = 1
+
+:SYM "'"      :PROP mapval = 33,                              primstress = 1
+:SYM ","      :PROP mapval = 34,                              secstress = 1
+:SYM "-"      :PROP mapval = 35,                              syllbound = 1
+:SYM "2"      :PROP mapval = 36, vowel = 1
+:SYM "2:"     :PROP mapval = 37, vowel = 1
+:SYM "6"      :PROP mapval = 38, vowel = 1
+:SYM "9"      :PROP mapval = 39, vowel = 1
+:SYM "=l"     :PROP mapval = 40,            syllcons = 1
+:SYM "=m"     :PROP mapval = 41,            syllcons = 1
+:SYM "=n"     :PROP mapval = 42,            syllcons = 1
+:SYM "?"      :PROP mapval = 43,                              glott = 1
+:SYM "@"      :PROP mapval = 44, vowel = 1
+:SYM "C"      :PROP mapval = 45
+:SYM "E"      :PROP mapval = 46, vowel = 1
+:SYM "E:"     :PROP mapval = 47, vowel = 1
+:SYM "I"      :PROP mapval = 48, vowel = 1
+:SYM "N"      :PROP mapval = 49
+:SYM "O"      :PROP mapval = 50, vowel = 1
+:SYM "O_y"    :PROP mapval = 51, vowel = 1, diphth = 1
+:SYM "S"      :PROP mapval = 52
+:SYM "U"      :PROP mapval = 53, vowel = 1
+:SYM "Y"      :PROP mapval = 54, vowel = 1
+:SYM "Z"      :PROP mapval = 55
+:SYM "^6"     :PROP mapval = 56, vowel = 1, nonsyllvowel = 1
+:SYM "^i"     :PROP mapval = 57, vowel = 1, nonsyllvowel = 1
+:SYM "^o"     :PROP mapval = 58, vowel = 1, nonsyllvowel = 1
+:SYM "^u"     :PROP mapval = 59, vowel = 1, nonsyllvowel = 1
+:SYM "a"      :PROP mapval = 60, vowel = 1
+:SYM "a:"     :PROP mapval = 61, vowel = 1
+:SYM "a_i"    :PROP mapval = 62, vowel = 1, diphth = 1
+:SYM "a_u"    :PROP mapval = 63, vowel = 1, diphth = 1
+:SYM "b"      :PROP mapval = 64
+:SYM "d"      :PROP mapval = 65
+:SYM "d_Z"    :PROP mapval = 66
+:SYM "e"      :PROP mapval = 67, vowel = 1
+:SYM "e:"     :PROP mapval = 68, vowel = 1
+:SYM "f"      :PROP mapval = 69
+:SYM "g"      :PROP mapval = 70
+:SYM "h"      :PROP mapval = 71
+:SYM "i"      :PROP mapval = 72, vowel = 1
+:SYM "i:"     :PROP mapval = 73, vowel = 1
+:SYM "j"      :PROP mapval = 74
+:SYM "k"      :PROP mapval = 75
+:SYM "l"      :PROP mapval = 76
+:SYM "m"      :PROP mapval = 77
+:SYM "n"      :PROP mapval = 78
+:SYM "o"      :PROP mapval = 79, vowel = 1
+:SYM "o:"     :PROP mapval = 80, vowel = 1
+:SYM "p"      :PROP mapval = 81
+:SYM "p_f"    :PROP mapval = 82
+:SYM "r"      :PROP mapval = 83
+:SYM "s"      :PROP mapval = 84
+:SYM "t"      :PROP mapval = 85
+:SYM "t_S"    :PROP mapval = 86
+:SYM "t_s"    :PROP mapval = 87
+:SYM "u"      :PROP mapval = 88, vowel = 1
+:SYM "u:"     :PROP mapval = 89, vowel = 1
+:SYM "v"      :PROP mapval = 90
+:SYM "x"      :PROP mapval = 91
+:SYM "y"      :PROP mapval = 92, vowel = 1
+:SYM "y:"     :PROP mapval = 93, vowel = 1
+:SYM "z"      :PROP mapval = 94
+:SYM "~9:"    :PROP mapval = 95, vowel = 1
+:SYM "~E:"    :PROP mapval = 96, vowel = 1
+:SYM "~a:"    :PROP mapval = 97, vowel = 1
+:SYM "~o:"    :PROP mapval = 98, vowel = 1
+
+! photopho additions
+
+:SYM "v_c"    :PROP mapval = 99
+:SYM "u_c"    :PROP mapval = 100
+:SYM "p_h"    :PROP mapval = 101
+:SYM "t_h"    :PROP mapval = 102
+:SYM "k_h"    :PROP mapval = 103
+:SYM "pau"    :PROP mapval = 104,                             pause = 1

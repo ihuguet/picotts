@@ -1,0 +1,53 @@
+! ------------------------------------------------------------------------
+! @file it-IT_kdt_acc.dtfmt
+!
+! Decision Tree Configuration <Accentuation> for language it-IT
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+!************************************************************************
+! configuration file for the input DT vector
+! is loaded during the compilation of the binary file
+! the file describes the values type of the attributes in the vector
+! character/string type is splitted to three types:
+! 	- phone (phoneme values)
+!		- graph (grapheme values)
+!		- pos   (part of speech tags)
+! for the :ATTR the values in the range [1, 255] or
+! reserved word "target" are available
+! history type: the input value is the output decision
+!************************************************************************
+
+
+:ATTR "1" :PROP table = "it-IT_pos.utf" type = pos
+
+:ATTR "2" :PROP table = "it-IT_pos.utf" type = pos
+
+:ATTR "3" :PROP table = "it-IT_pos.utf" type = pos
+
+:ATTR "4" :PROP table = "it-IT_pos.utf" type = pos
+
+:ATTR "5" :PROP table = "it-IT_pos.utf" type = pos
+
+:ATTR "6" :PROP type = history
+
+:ATTR "7" :PROP type = history
+
+:ATTR "8" :PROP type = numeric
+
+:ATTR "9" :PROP type = numeric
+
+:ATTR "10" :PROP type = numeric
+
+:ATTR "11" :PROP type = numeric
+
+:ATTR "12" :PROP type = numeric
+
+:ATTR "13" :PROP type = numeric
+
+:ATTR "target" :PROP table = "..\acctab.utf" type = phone

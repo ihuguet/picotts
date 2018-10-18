@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+**
+** Copyright 2009, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License");
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" msgid="3853942104135735825">"Installasjonsprogram for tale-syntesedata"</string>
+    <string name="installing_message" msgid="8792926973732354514">"Installer stemmedata på SD-kort."</string>
+    <string name="uninstall_message" msgid="174096141356529599">"Stemmedata er installert. Du kan fjerne dette installasjonsprogrammet nå."</string>
+    <string name="uninstall" msgid="6195983436684617741">"Avinstaller"</string>
+    <string name="retry_message" msgid="6519833625675608678">"Stemmedata kunne ikke installere. Kontroller at SD-kortet er i enheten, og at det har ledig plass på minst 6 MB. Hvis kortet er i enheten, prøv å ta ut kortet og sette det inn igjen."</string>
+    <string name="retry" msgid="7470276488993209974">"Prøv på nytt"</string>
+</resources>

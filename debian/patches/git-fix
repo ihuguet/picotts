@@ -1,0 +1,10 @@
+--- a/pico/lib/picopal.h
++++ b/pico/lib/picopal.h
+@@ -37,6 +37,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <stdarg.h>
++#include <stdint.h>
+ #include <math.h>
+ #include <stddef.h>
+ #include "picopltf.h"

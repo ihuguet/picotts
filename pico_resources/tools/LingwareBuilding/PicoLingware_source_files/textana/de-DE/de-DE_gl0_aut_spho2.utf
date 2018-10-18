@@ -1,0 +1,34 @@
+! ------------------------------------------------------------------------
+! @file de-DE_gl0_aut_spho2.utf
+!
+! Finite-State Transducer <Sentence Phonology 2> for voice de-DE_gl0
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+:ALPHABET
+    '@'  'e'  'e:'  'E'  'E:'  'i'  'i:'  'I'  '2'  '2:'  '9'  'y'  'y:'  'Y'  '6'
+  'a'  'a:'  'o'  'o:'  'O'  'u'  'u:'  'U'  'a_i'  'a_u'  'O_y'  '~a:'  '~o:'  '~E:'  '~9:'
+  '=l'  '=m'  '=n'  '?'  'm'  'n'  'N'  'r'  'f'  'v'  's'  'z'  'S'  'Z'  'C'
+  'j'  'x'  'h'  'l'  '^6'  '^o'  '^i'  '^u'  '{A0}'  '{A1}'  '{A2}'  '{A3}'  '{A4}'  '{P:0}'  '{P:ADJ}'
+  '{P:ADV}'  '{P:CARD}'  '{P:CONJ_CO}'  '{P:CONJ_SUB}'  '{P:DET}'  '{P:DET_PRE}'  '{P:N}'  '{P:POSTP}'  '{P:PREF_V}'  '{P:PREP}'  '{P:PRO}'  '{P:PRO_REL}'  '{P:PTCL}'  '{P:Q_DET}'  '{P:Q_PTCL}'
+  '{P:V}'  '{P:V_AUX}'  '{P:V_INF}'  '{P:V_MODAL}'  '{P:V_MODAL_INF}'  '{P:V_PART}'  '{WB}'  '{P1}'  '{P2}'  '{P3}'  '{P0}'  ''''  '-'  '&'  '#'
+  @/'u_c'  @/'v_c'  'p'  't'  'k'  'p_h'  't_h'  'k_h'  'p_f'  't_s'  't_S'  'b'  'd'  'g'  'd_Z'
+
+*
+
+
+:AUTOMATON ""
+:DEFAULTCLASS 1
+:CLASS 2 :IS  @/'u_c'
+:CLASS 3 :IS  @/'v_c'
+:CLASS 4 :IS  'p'  't'  'k'  'p_h'  't_h'  'k_h'  'p_f'  't_s'  't_S'
+:CLASS 5 :IS  'b'  'd'  'g'  'd_Z'
+:TRANS  1 :TO  1  2  3  0  0
+:TRANS  2 :TO  0  0  0  1  0
+:TRANS  3 :TO  0  0  0  0  1
+*

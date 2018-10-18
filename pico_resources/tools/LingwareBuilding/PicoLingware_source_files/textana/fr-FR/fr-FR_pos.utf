@@ -1,0 +1,216 @@
+! ------------------------------------------------------------------------
+! @file fr-FR_pos.utf
+!
+! Part-Of-Speech Symbol Table for language fr-FR
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+! PoS tags set Pico
+! ------------------
+! (automatic output)
+!
+! mapval: decimal number encoded in a single byte (max 255)
+!   reserved values for all languages (0-31):
+!     0: error state
+!     1: not applicable
+!     7: empty value
+!     20: alias XNPR for the user lexicon
+!     21: alias XN for the user lexicon
+!     22: alias XV for the user lexicon
+!     23: alias XA for the user lexicon
+!     24: alias XADV for the user lexicon
+!     25: alias XX for the user lexicon
+
+
+
+! unique PoS tags
+
+:SYM "0"                                      :PROP mapval = 33  
+:SYM "ABBREV"                                 :PROP mapval = 34  
+:SYM "ADJ_PL"                                 :PROP mapval = 35  
+:SYM "ADJ_SG"                                 :PROP mapval = 36  
+:SYM "ADV"                                    :PROP mapval = 37  
+:SYM "CARD"                                   :PROP mapval = 38  
+:SYM "CLITIC"                                 :PROP mapval = 39  
+:SYM "CONJ_CO"                                :PROP mapval = 40  
+:SYM "CONJ_QUE"                               :PROP mapval = 41  
+:SYM "CONJ_SUB"                               :PROP mapval = 42  
+:SYM "DET_PL"                                 :PROP mapval = 43  
+:SYM "DET_SG"                                 :PROP mapval = 44  
+:SYM "NEG"                                    :PROP mapval = 45  
+:SYM "N_ADJ_F_PL"                             :PROP mapval = 46  
+:SYM "N_ADJ_F_SG"                             :PROP mapval = 47  
+:SYM "N_ADJ_M_PL"                             :PROP mapval = 48  
+:SYM "N_ADJ_M_SG"                             :PROP mapval = 49  
+:SYM "N_F_PL"                                 :PROP mapval = 50  
+:SYM "N_F_SG"                                 :PROP mapval = 51  
+:SYM "N_M_PL"                                 :PROP mapval = 52  
+:SYM "N_M_SG"                                 :PROP mapval = 53  
+:SYM "N_SG"                                   :PROP mapval = 54  
+:SYM "PREP"                                   :PROP mapval = 55  
+:SYM "PRON_ADV"                               :PROP mapval = 56  
+:SYM "PRO_PL"                                 :PROP mapval = 57  
+:SYM "PRO_SG"                                 :PROP mapval = 58  
+:SYM "Q_PTCL"                                 :PROP mapval = 59  
+:SYM "V_AUX_INF"                              :PROP mapval = 60  
+:SYM "V_AUX_PART"                             :PROP mapval = 61  
+:SYM "V_AUX_PL"                               :PROP mapval = 62  
+:SYM "V_AUX_SG"                               :PROP mapval = 63  
+:SYM "V_INF"                                  :PROP mapval = 64  
+:SYM "V_MODAL_INF"                            :PROP mapval = 65  
+:SYM "V_MODAL_PART"                           :PROP mapval = 66  
+:SYM "V_MODAL_PL"                             :PROP mapval = 67  
+:SYM "V_MODAL_SG"                             :PROP mapval = 68  
+:SYM "V_PART"                                 :PROP mapval = 69  
+:SYM "V_PART_PRES"                            :PROP mapval = 70  
+:SYM "V_PL"                                   :PROP mapval = 71  
+:SYM "V_SG"                                   :PROP mapval = 72  
+
+! composed PoS tags
+
+:SYM "ADJ_PL^ADJ_SG"                          :PROP mapval = 73  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^ADV"                      :PROP mapval = 74  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^ADV^N_ADJ_M_SG"           :PROP mapval = 75  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^ADV^N_M_SG"               :PROP mapval = 76  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^DET_PL"                   :PROP mapval = 77  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^N_ADJ_M_PL"               :PROP mapval = 78  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^N_ADJ_M_PL^N_ADJ_M_SG"    :PROP mapval = 79  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^N_M_SG"                   :PROP mapval = 80  ,  iscombined = 1
+:SYM "ADJ_PL^ADJ_SG^N_M_SG^V_SG"              :PROP mapval = 81  ,  iscombined = 1
+:SYM "ADJ_PL^ADV^V_MODAL_PART^V_MODAL_SG"     :PROP mapval = 82  ,  iscombined = 1
+:SYM "ADJ_PL^DET_PL"                          :PROP mapval = 83  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_F_PL"                      :PROP mapval = 84  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_F_PL^N_ADJ_M_PL"           :PROP mapval = 85  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_F_PL^V_PART"               :PROP mapval = 86  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_F_PL^V_SG"                 :PROP mapval = 87  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_M_PL"                      :PROP mapval = 88  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_M_PL^V_PART"               :PROP mapval = 89  ,  iscombined = 1
+:SYM "ADJ_PL^N_ADJ_M_PL^V_PART^V_SG"          :PROP mapval = 90  ,  iscombined = 1
+:SYM "ADJ_PL^N_F_PL"                          :PROP mapval = 91  ,  iscombined = 1
+:SYM "ADJ_PL^N_F_PL^V_PART"                   :PROP mapval = 92  ,  iscombined = 1
+:SYM "ADJ_PL^N_M_PL"                          :PROP mapval = 93  ,  iscombined = 1
+:SYM "ADJ_PL^PRO_PL"                          :PROP mapval = 94  ,  iscombined = 1
+:SYM "ADJ_PL^V_MODAL_PART"                    :PROP mapval = 95  ,  iscombined = 1
+:SYM "ADJ_PL^V_MODAL_PART^V_MODAL_SG"         :PROP mapval = 96  ,  iscombined = 1
+:SYM "ADJ_PL^V_PART"                          :PROP mapval = 97  ,  iscombined = 1
+:SYM "ADJ_PL^V_PART^V_SG"                     :PROP mapval = 98  ,  iscombined = 1
+:SYM "ADJ_PL^V_SG"                            :PROP mapval = 99  ,  iscombined = 1
+:SYM "ADJ_SG^ADV"                             :PROP mapval = 100  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^DET_SG^PRO_SG"               :PROP mapval = 101  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_ADJ_F_SG^N_ADJ_M_SG"       :PROP mapval = 102  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_ADJ_M_SG"                  :PROP mapval = 103  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_ADJ_M_SG^PREP"             :PROP mapval = 104  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_ADJ_M_SG^V_PART_PRES"      :PROP mapval = 105  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_F_SG"                      :PROP mapval = 106  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_F_SG^V_SG"                 :PROP mapval = 107  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_M_PL"                      :PROP mapval = 108  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_M_SG"                      :PROP mapval = 109  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^N_M_SG^V_SG"                 :PROP mapval = 110  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^PRO_SG"                      :PROP mapval = 111  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^V_PART"                      :PROP mapval = 112  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^V_PART_PRES"                 :PROP mapval = 113  ,  iscombined = 1
+:SYM "ADJ_SG^ADV^V_SG"                        :PROP mapval = 114  ,  iscombined = 1
+:SYM "ADJ_SG^DET_SG^N_ADJ_F_SG"               :PROP mapval = 115  ,  iscombined = 1
+:SYM "ADJ_SG^DET_SG^N_ADJ_M_SG"               :PROP mapval = 116  ,  iscombined = 1
+:SYM "ADJ_SG^DET_SG^PRO_SG"                   :PROP mapval = 117  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_F_SG"                      :PROP mapval = 118  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_F_SG^N_ADJ_M_SG"           :PROP mapval = 119  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_F_SG^N_ADJ_M_SG^V_SG"      :PROP mapval = 120  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_F_SG^V_PART"               :PROP mapval = 121  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_F_SG^V_SG"                 :PROP mapval = 122  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_M_PL^N_ADJ_M_SG"           :PROP mapval = 123  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_M_SG"                      :PROP mapval = 124  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_M_SG^PREP^V_PART"          :PROP mapval = 125  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_M_SG^V_PART"               :PROP mapval = 126  ,  iscombined = 1
+:SYM "ADJ_SG^N_ADJ_M_SG^V_SG"                 :PROP mapval = 127  ,  iscombined = 1
+:SYM "ADJ_SG^N_F_SG"                          :PROP mapval = 128  ,  iscombined = 1
+:SYM "ADJ_SG^N_F_SG^V_PART"                   :PROP mapval = 129  ,  iscombined = 1
+:SYM "ADJ_SG^N_M_SG"                          :PROP mapval = 130  ,  iscombined = 1
+:SYM "ADJ_SG^N_M_SG^V_PART^V_SG"              :PROP mapval = 131  ,  iscombined = 1
+:SYM "ADJ_SG^N_M_SG^V_PART_PRES"              :PROP mapval = 132  ,  iscombined = 1
+:SYM "ADJ_SG^PREP"                            :PROP mapval = 133  ,  iscombined = 1
+:SYM "ADJ_SG^V_INF"                           :PROP mapval = 134  ,  iscombined = 1
+:SYM "ADJ_SG^V_MODAL_PART"                    :PROP mapval = 135  ,  iscombined = 1
+:SYM "ADJ_SG^V_MODAL_PART^V_SG"               :PROP mapval = 136  ,  iscombined = 1
+:SYM "ADJ_SG^V_PART"                          :PROP mapval = 137  ,  iscombined = 1
+:SYM "ADJ_SG^V_PART^V_SG"                     :PROP mapval = 138  ,  iscombined = 1
+:SYM "ADJ_SG^V_PART_PRES"                     :PROP mapval = 139  ,  iscombined = 1
+:SYM "ADJ_SG^V_SG"                            :PROP mapval = 140  ,  iscombined = 1
+:SYM "ADV^CONJ_CO"                            :PROP mapval = 141  ,  iscombined = 1
+:SYM "ADV^CONJ_CO^CONJ_SUB"                   :PROP mapval = 142  ,  iscombined = 1
+:SYM "ADV^CONJ_CO^V_AUX_SG"                   :PROP mapval = 143  ,  iscombined = 1
+:SYM "ADV^CONJ_SUB"                           :PROP mapval = 144  ,  iscombined = 1
+:SYM "ADV^CONJ_SUB^Q_PTCL"                    :PROP mapval = 145  ,  iscombined = 1
+:SYM "ADV^DET_SG"                             :PROP mapval = 146  ,  iscombined = 1
+:SYM "ADV^NEG"                                :PROP mapval = 147  ,  iscombined = 1
+:SYM "ADV^N_ADJ_M_PL^N_ADJ_M_SG"              :PROP mapval = 148  ,  iscombined = 1
+:SYM "ADV^N_ADJ_M_PL^N_ADJ_M_SG^V_SG"         :PROP mapval = 149  ,  iscombined = 1
+:SYM "ADV^N_ADJ_M_SG"                         :PROP mapval = 150  ,  iscombined = 1
+:SYM "ADV^N_F_SG"                             :PROP mapval = 151  ,  iscombined = 1
+:SYM "ADV^N_F_SG^V_SG"                        :PROP mapval = 152  ,  iscombined = 1
+:SYM "ADV^N_M_PL^N_M_SG"                      :PROP mapval = 153  ,  iscombined = 1
+:SYM "ADV^N_M_PL^N_M_SG^PREP"                 :PROP mapval = 154  ,  iscombined = 1
+:SYM "ADV^N_M_SG"                             :PROP mapval = 155  ,  iscombined = 1
+:SYM "ADV^N_M_SG^V_SG"                        :PROP mapval = 156  ,  iscombined = 1
+:SYM "ADV^PREP"                               :PROP mapval = 157  ,  iscombined = 1
+:SYM "ADV^PRO_PL^PRO_SG^Q_PTCL"               :PROP mapval = 158  ,  iscombined = 1
+:SYM "ADV^PRO_SG"                             :PROP mapval = 159  ,  iscombined = 1
+:SYM "ADV^V_PART_PRES"                        :PROP mapval = 160  ,  iscombined = 1
+:SYM "CARD^DET_SG"                            :PROP mapval = 161  ,  iscombined = 1
+:SYM "CARD^N_M_SG"                            :PROP mapval = 162  ,  iscombined = 1
+:SYM "CLITIC^CONJ_QUE^CONJ_SUB"               :PROP mapval = 163  ,  iscombined = 1
+:SYM "CLITIC^CONJ_SUB"                        :PROP mapval = 164  ,  iscombined = 1
+:SYM "CLITIC^DET_SG^PRON_ADV"                 :PROP mapval = 165  ,  iscombined = 1
+:SYM "CLITIC^PRON_ADV"                        :PROP mapval = 166  ,  iscombined = 1
+:SYM "CONJ_QUE^PRO_PL^PRO_SG"                 :PROP mapval = 167  ,  iscombined = 1
+:SYM "DET_PL^DET_SG^PREP"                     :PROP mapval = 168  ,  iscombined = 1
+:SYM "DET_PL^PREP"                            :PROP mapval = 169  ,  iscombined = 1
+:SYM "DET_PL^PRO_PL"                          :PROP mapval = 170  ,  iscombined = 1
+:SYM "DET_SG^PREP"                            :PROP mapval = 171  ,  iscombined = 1
+:SYM "DET_SG^PRO_PL"                          :PROP mapval = 172  ,  iscombined = 1
+:SYM "DET_SG^PRO_SG"                          :PROP mapval = 173  ,  iscombined = 1
+:SYM "N_ADJ_F_PL^N_ADJ_M_PL"                  :PROP mapval = 174  ,  iscombined = 1
+:SYM "N_ADJ_F_SG^N_ADJ_M_SG"                  :PROP mapval = 175  ,  iscombined = 1
+:SYM "N_ADJ_M_PL^V_PART"                      :PROP mapval = 176  ,  iscombined = 1
+:SYM "N_F_PL^N_F_SG"                          :PROP mapval = 177  ,  iscombined = 1
+:SYM "N_F_PL^N_F_SG^V_SG"                     :PROP mapval = 178  ,  iscombined = 1
+:SYM "N_F_PL^N_M_PL"                          :PROP mapval = 179  ,  iscombined = 1
+:SYM "N_F_PL^V_AUX_SG"                        :PROP mapval = 180  ,  iscombined = 1
+:SYM "N_F_PL^V_PART"                          :PROP mapval = 181  ,  iscombined = 1
+:SYM "N_F_PL^V_PL"                            :PROP mapval = 182  ,  iscombined = 1
+:SYM "N_F_PL^V_SG"                            :PROP mapval = 183  ,  iscombined = 1
+:SYM "N_F_SG^N_M_PL"                          :PROP mapval = 184  ,  iscombined = 1
+:SYM "N_F_SG^N_M_SG"                          :PROP mapval = 185  ,  iscombined = 1
+:SYM "N_F_SG^N_M_SG^V_SG"                     :PROP mapval = 186  ,  iscombined = 1
+:SYM "N_F_SG^PRO_SG"                          :PROP mapval = 187  ,  iscombined = 1
+:SYM "N_F_SG^V_PART"                          :PROP mapval = 188  ,  iscombined = 1
+:SYM "N_F_SG^V_SG"                            :PROP mapval = 189  ,  iscombined = 1
+:SYM "N_M_PL^N_M_SG"                          :PROP mapval = 190  ,  iscombined = 1
+:SYM "N_M_PL^V_AUX_PL"                        :PROP mapval = 191  ,  iscombined = 1
+:SYM "N_M_PL^V_PART"                          :PROP mapval = 192  ,  iscombined = 1
+:SYM "N_M_PL^V_PL"                            :PROP mapval = 193  ,  iscombined = 1
+:SYM "N_M_PL^V_SG"                            :PROP mapval = 194  ,  iscombined = 1
+:SYM "N_M_SG^V_AUX_INF"                       :PROP mapval = 195  ,  iscombined = 1
+:SYM "N_M_SG^V_AUX_PART"                      :PROP mapval = 196  ,  iscombined = 1
+:SYM "N_M_SG^V_AUX_SG"                        :PROP mapval = 197  ,  iscombined = 1
+:SYM "N_M_SG^V_INF"                           :PROP mapval = 198  ,  iscombined = 1
+:SYM "N_M_SG^V_MODAL_INF"                     :PROP mapval = 199  ,  iscombined = 1
+:SYM "N_M_SG^V_PART"                          :PROP mapval = 200  ,  iscombined = 1
+:SYM "N_M_SG^V_PART_PRES"                     :PROP mapval = 201  ,  iscombined = 1
+:SYM "N_M_SG^V_SG"                            :PROP mapval = 202  ,  iscombined = 1
+:SYM "PREP^PRON_ADV^PRO_SG"                   :PROP mapval = 203  ,  iscombined = 1
+:SYM "PRON_ADV^PRO_SG"                        :PROP mapval = 204  ,  iscombined = 1
+:SYM "PRO_PL^PRO_SG"                          :PROP mapval = 205  ,  iscombined = 1
+:SYM "V_AUX_PART^V_AUX_SG"                    :PROP mapval = 206  ,  iscombined = 1
+:SYM "V_AUX_PL^V_PL"                          :PROP mapval = 207  ,  iscombined = 1
+:SYM "V_AUX_PL^V_SG"                          :PROP mapval = 208  ,  iscombined = 1
+:SYM "V_AUX_SG^V_SG"                          :PROP mapval = 209  ,  iscombined = 1
+:SYM "V_MODAL_PL^V_PL"                        :PROP mapval = 210  ,  iscombined = 1
+:SYM "V_MODAL_SG^V_SG"                        :PROP mapval = 211  ,  iscombined = 1
+:SYM "V_PART^V_SG"                            :PROP mapval = 212  ,  iscombined = 1
+:SYM "V_PL^V_SG"                              :PROP mapval = 213  ,  iscombined = 1

@@ -1,0 +1,26 @@
+# collection of fr-FR nk0 siggen knowledge bases
+
+# header fields:
+
+NAME                    fr-FR_nk0_sg_1.0.0.3-0-2
+VERSION                 1.0.0.3-0-2
+DATE                    2009-05-20
+TIME                    17:00:00.000
+CONTENT_TYPE            SIGGEN
+
+FST_SPHO_9              "../pkb/fr-FR/fr-FR_nk0_kfst_spho9.pkb"
+DT_DUR                  "../pkb/fr-FR/fr-FR_nk0_kdt_dur.pkb"
+DT_LFZ1                 "../pkb/fr-FR/fr-FR_nk0_kdt_lfz1.pkb"
+DT_LFZ2                 "../pkb/fr-FR/fr-FR_nk0_kdt_lfz2.pkb"
+DT_LFZ3                 "../pkb/fr-FR/fr-FR_nk0_kdt_lfz3.pkb"
+DT_LFZ4                 "../pkb/fr-FR/fr-FR_nk0_kdt_lfz4.pkb"
+DT_LFZ5                 "../pkb/fr-FR/fr-FR_nk0_kdt_lfz5.pkb"
+DT_MGC1                 "../pkb/fr-FR/fr-FR_nk0_kdt_mgc1.pkb"
+DT_MGC2                 "../pkb/fr-FR/fr-FR_nk0_kdt_mgc2.pkb"
+DT_MGC3                 "../pkb/fr-FR/fr-FR_nk0_kdt_mgc3.pkb"
+DT_MGC4                 "../pkb/fr-FR/fr-FR_nk0_kdt_mgc4.pkb"
+DT_MGC5                 "../pkb/fr-FR/fr-FR_nk0_kdt_mgc5.pkb"
+PDF_DUR                 "../pkb/fr-FR/fr-FR_nk0_kpdf_dur.pkb"
+PDF_LFZ                 "../pkb/fr-FR/fr-FR_nk0_kpdf_lfz.pkb"
+PDF_MGC                 "../pkb/fr-FR/fr-FR_nk0_kpdf_mgc.pkb"
+PDF_PHS                 "../pkb/fr-FR/fr-FR_nk0_kpdf_phs.pkb"

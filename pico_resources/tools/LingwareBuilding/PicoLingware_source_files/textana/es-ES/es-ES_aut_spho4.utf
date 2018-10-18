@@ -1,0 +1,102 @@
+! ------------------------------------------------------------------------
+! @file es-ES_aut_spho4.utf
+!
+! Finite-State Transducer <Sentence Phonology 4> for language es-ES
+!
+! Copyright (C) 2008-2009 SVOX AG, Baslerstr. 30, 8048 Zuerich, Switzerland
+! All rights reserved.
+!
+! History:
+! - 2009-05-30 -- initial version
+!
+! ------------------------------------------------------------------------
+:ALPHABET
+    @/'-'  'B'  'D'  'G'  'J'  'L'  'N'  'T'  '^u'  'a'  'b'  'd'  'e'  'f'  'g'
+  'i'  'j'  'j_j'  'k'  'l'  'm'  'n'  'o'  'p'  'r'  'r_r'  's'  't'  't_S'  'u'
+  'x'  'z'  'Ä'/@  'Þ'/@  'd_mark'/'d'  '{A0}'  '{A1}'  '{A2}'  '{A3}'  '{A3}'/'{A1}'  '{A4}'  '{P:ABBREV}'  '{P:ADJ_PL}'  '{P:ADJ_SG}'  '{P:ADV}'
+  '{P:ART_PL}'  '{P:ART_SG}'  '{P:AUXB_PL}'  '{P:AUXB_SG}'  '{P:AUXH_PL}'  '{P:AUXH_SG}'  '{P:CARD}'  '{P:CONJ_CO}'  '{P:CONJ_SUB}'  '{P:DEM_PL}'  '{P:DEM_SG}'  '{P:INDEF_ART_PL}'  '{P:INDEF_ART_SG}'  '{P:INDEF_PL}'  '{P:INDEF_SG}'
+  '{P:NEG}'  '{P:N_F_PL}'  '{P:N_F_SG}'  '{P:N_M_PL}'  '{P:N_M_SG}'  '{P:PERS_PRO_OBJ}'  '{P:PERS_PRO_SUBJ}'  '{P:POSS_PL}'  '{P:POSS_SG}'  '{P:PREP}'  '{P:PRO_PL}'  '{P:PRO_SG}'  '{P:Q_ADJ_PL}'  '{P:Q_ADJ_SG}'  '{P:Q_PRO_PL}'
+  '{P:Q_PRO_SG}'  '{P:Q_PTCL}'  '{P:REL_PRO}'  '{P:V_GER}'  '{P:V_INF}'  '{P:V_MODAL_PL}'  '{P:V_MODAL_SG}'  '{P:V_PART_PL}'  '{P:V_PART_SG}'  '{P:V_PL}'  '{P:V_SG}'  '{WB}'  '{P1}'  '{P2}'  '{P3}'
+  '{P0}'  '-'  '&'  '#'  @/'{A0}'  '{P1}'/'{WB}'  @/'{P:N_M_PL}'  @/'{P:N_F_PL}'  @/'{P:ADJ_PL}'  @/'{P:V_PART_PL}'  @/'{P:CARD}'  't_mark'/'t'
+*
+
+
+:AUTOMATON ""
+:DEFAULTCLASS 1
+:CLASS 2 :IS  'B'  'D'  'G'  'J'  'L'  'N'  'T'  '^u'  'a'  'b'  'd'  'f'  'g'  'j'  'j_j'  'k'  'n'  'o'  'p'  'r'  'r_r'  's'  't'  't_S'  'u'  'x'  'z'  'Ä'/@  'Þ'/@  '{P2}'  '{P3}'  '-'  '&'  '#'
+:CLASS 3 :IS  'e'
+:CLASS 4 :IS  'i'
+:CLASS 5 :IS  'l'
+:CLASS 6 :IS  'm'
+:CLASS 7 :IS  'd_mark'/'d'
+:CLASS 8 :IS  '{A0}'  '{A1}'  '{A2}'  '{A4}'
+:CLASS 9 :IS  '{A3}'
+:CLASS 10 :IS  '{A3}'/'{A1}'
+:CLASS 11 :IS  '{P:ABBREV}'  '{P:ADJ_SG}'  '{P:ADV}'  '{P:ART_PL}'  '{P:ART_SG}'  '{P:AUXB_PL}'  '{P:AUXB_SG}'  '{P:AUXH_PL}'  '{P:AUXH_SG}'  '{P:CONJ_CO}'  '{P:CONJ_SUB}'  '{P:DEM_PL}'  '{P:DEM_SG}'  '{P:INDEF_ART_PL}'  '{P:INDEF_ART_SG}'  '{P:INDEF_PL}'  '{P:INDEF_SG}'  '{P:NEG}'  '{P:N_F_SG}'  '{P:N_M_SG}'  '{P:PERS_PRO_OBJ}'  '{P:PERS_PRO_SUBJ}'  '{P:POSS_PL}'  '{P:POSS_SG}'  '{P:PREP}'  '{P:PRO_PL}'  '{P:PRO_SG}'  '{P:Q_ADJ_PL}'  '{P:Q_ADJ_SG}'  '{P:Q_PRO_PL}'  '{P:Q_PRO_SG}'  '{P:Q_PTCL}'  '{P:REL_PRO}'  '{P:V_GER}'  '{P:V_INF}'  '{P:V_MODAL_PL}'  '{P:V_MODAL_SG}'  '{P:V_PART_SG}'  '{P:V_PL}'  '{P:V_SG}'
+:CLASS 12 :IS  '{P:ADJ_PL}'
+:CLASS 13 :IS  '{P:CARD}'
+:CLASS 14 :IS  '{P:N_F_PL}'
+:CLASS 15 :IS  '{P:N_M_PL}'
+:CLASS 16 :IS  '{P:V_PART_PL}'
+:CLASS 17 :IS  '{WB}'
+:CLASS 18 :IS  '{P1}'
+:CLASS 19 :IS  '{P0}'
+:CLASS 20 :IS  @/'{A0}'
+:CLASS 21 :IS  '{P1}'/'{WB}'
+:CLASS 22 :IS  @/'{P:N_M_PL}'
+:CLASS 23 :IS  @/'{P:N_F_PL}'
+:CLASS 24 :IS  @/'{P:ADJ_PL}'
+:CLASS 25 :IS  @/'{P:V_PART_PL}'
+:CLASS 26 :IS  @/'{P:CARD}'
+:CLASS 27 :IS  't_mark'/'t'
+:TRANS  1 :TO  2  1  1  1  1  1  3  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS  2 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  9  0  0  0  0  0  0  0
+:TRANS  3 :TO  2  1 10  1  1  1  3  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS  4 :TO  2  1  1  1  1  1  3  1  4  5  6  6 11  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS  5 :TO  0  0  0  0  0  0  0  0  0  0  0  0 12  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS  6 :TO  2  1  1  1  1  1 13  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS  7 :TO  2  1  1  1  1  1  3  1  4  5  6  6  6  6  6  6  1  0  7  8  1  0  0  0  0  0  0
+:TRANS  8 :TO  0  0  0  0  0  0  0  0  0  0 14 14 14 14 14 14  0  0  0  0  0 15 16 17 18  0  0
+:TRANS  9 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 19  0
+:TRANS 10 :TO 20  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 11 :TO  2  1  1  1  1 21 13  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS 12 :TO  0  0  0  0  0 22  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 13 :TO  2  1  0  1  1  1  3  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS 14 :TO  0  0  0  0  0  0 23  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 15 :TO  0  0  0  0  0  0 24  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 16 :TO  0  0  0  0  0  0 25  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 17 :TO  0  0  0  0  0  0 26  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 18 :TO  0  0  0  0  0  0 27  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 19 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1
+:TRANS 20 :TO  2  1  1  1  1  1  3 28 29  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS 21 :TO  2  1  1 30  1  1  3  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS 22 :TO  0  0  0 31  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 23 :TO  0  0 10  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 24 :TO  0  0 32  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 25 :TO  0  0 33  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 26 :TO  0  0 34  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 27 :TO  0  0 35  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 28 :TO  2  1  1  1  1  1  3  1  4  5  6  0  6  0  0  0  1  1  7 36  0  0  0  0  0  0  0
+:TRANS 29 :TO  2  1  1  1  1  1  3  1  4  5  6  0 11  0  0  0  1  1  7 36  0  0  0  0  0  0  0
+:TRANS 30 :TO  2  1  1  1 37  1  3  1  4  5  6  6  6  6  6  6  1  1  7  8  0  0  0  0  0  0  0
+:TRANS 31 :TO  0  0  0  0 38  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 32 :TO 39  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 33 :TO 40  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 34 :TO 41  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 35 :TO 42  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 36 :TO  0  0  0  0  0  0  0  0  0  0 14  0 14  0  0  0  0  0  0  0  0 15 16 17 18  0  0
+:TRANS 37 :TO  2  1  1  1  1  1  3  1  4  5  6  6  6  6  6  6  0  1  7  8  0  0  0  0  0  0  0
+:TRANS 38 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0
+:TRANS 39 :TO  0  0  0  0  0  0  0 43 43  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 40 :TO  0  0  0  0  0  0  0 44 44  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 41 :TO  0  0  0  0  0  0  0 45 45  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 42 :TO  0  0  0  0  0  0  0 46 46  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 43 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0  0  0  0 47  0  0  0  0  0  0  0
+:TRANS 44 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0  0  0  0  0 48  0  0  0  0  0  0  0
+:TRANS 45 :TO  0  0  0  0  0  0  0  0  0  0  0  6  0  0  0  0  0  0  0 49  0  0  0  0  0  0  0
+:TRANS 46 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  6  0  0  0 50  0  0  0  0  0  0  0
+:TRANS 47 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 48 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 49 :TO  0  0  0  0  0  0  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+:TRANS 50 :TO  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0 14  0  0  0  0  0  0  0  0  0  0  0
+*
