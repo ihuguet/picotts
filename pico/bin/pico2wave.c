@@ -371,8 +371,6 @@ terminate:
         pico_terminate(&picoSystem);
         picoSystem = NULL;
     }
-    if (text)
-      free(text);
     exit(ret);
 }
 

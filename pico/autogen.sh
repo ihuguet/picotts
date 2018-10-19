@@ -26,9 +26,9 @@ fi
 
 IPATHS="-I lib"
 
-libtoolize
+libtoolize --copy
 aclocal $IPATHS
-automake --add-missing
+automake --add-missing --copy
 autoconf $IPATHS
 
 rm -rf autom4te.cache
