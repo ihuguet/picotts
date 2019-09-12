@@ -1,0 +1,54 @@
+#!/bin/sh
+
+# at least 1 arg (the message to play)
+if [ $# -eq 0 ]; then
+	echo "pitotts-lc: no arguments were given" >&2
+	exit 1
+fi
+
+# help message
+if [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
+	echo "Usage: picotts-lc <msg>"
+	echo "Language will be automatically detected from system locale"
+	echo "Supported languages: English, Spanish, German, French and Italian"
+	exit 0
+fi
+
+# get language configured in locale environment variable
+if [ "$LC_ALL" != "" ]; then
+	lang=$LC_ALL
+elif [ "$LC_MESSAGES" != "" ]; then
+	lang=$LC_MESSAGES
+elif [ "$LANG" != "" ]; then
+	lang=$LANG
+else
+	lang="C"
+fi
+
+# check if language is supported by picoTTS
+case "$lang" in
+	en_US*)
+		lang_pico="en-US"
+		;;
+	en*)
+		lang_pico="en-GB"
+		;;
+	es*)
+		lang_pico="es-ES"
+		;;
+	de*)
+		lang_pico="de-DE"
+		;;
+	fr*)
+		lang_pico="fr-FR"
+		;;
+	it*)
+		lang_pico="it-IT"
+		;;
+	*)
+		echo "picotts-lc: unsupported language: $lang" >&2
+		exit 1
+		;;
+esac
+
+picotts $lang_pico "$@"
