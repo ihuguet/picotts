@@ -74,12 +74,18 @@ libttspico_la_LIBADD = -lm
 
 picolangdir = $(datadir)/pico/lang
 picolang_DATA = \
-    lang/de-DE*.bin \
-    lang/en-GB*.bin \
-    lang/en-US*.bin \
-    lang/es-ES*.bin \
-    lang/fr-FR*.bin \
-    lang/it-IT*.bin
+    lang/de-DE_gl0_sg.bin \
+    lang/de-DE_ta.bin \
+    lang/en-GB_kh0_sg.bin \
+    lang/en-GB_ta.bin \
+    lang/en-US_lh0_sg.bin \
+    lang/en-US_ta.bin \
+    lang/es-ES_ta.bin \
+    lang/es-ES_zl0_sg.bin \
+    lang/fr-FR_nk0_sg.bin \
+    lang/fr-FR_ta.bin \
+    lang/it-IT_cm0_sg.bin \
+    lang/it-IT_ta.bin
 
 bin_PROGRAMS = pico2wave
 pico2wave_SOURCES = \
