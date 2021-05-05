@@ -66,7 +66,14 @@
 #define PICO_PLATFORM_STRING "UnknownPlatform"
 #endif
 
+#if defined(__FreeBSD__)
+#define __BYTE_ORDER _BYTE_ORDER
+#define __BIG_ENDIAN _BIG_ENDIAN
+#include <sys/endian.h>
+#else
 #include <endian.h>
+#endif
+
 #if __BYTE_ORDER == __BIG_ENDIAN
 #define PICO_ENDIANNESS ENDIANNESS_BIG
 #else
