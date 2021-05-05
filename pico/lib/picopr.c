@@ -1755,7 +1755,7 @@ static void pr_getOutputItemList (picodata_ProcessingUnit this,
                                 lid = picoktab_graphOffset(pr->graphs,pr->tmpItem.data);
                                 if (lid > 0) {
                                     if (picoktab_getIntPropTokenType(pr->graphs, lid, &ltype)) {
-                                        if ((ltype == PICODATA_ITEMINFO1_TOKTYPE_LETTERV)/* || (ltype == PICODATA_ITEMINFO1_TOKTYPE_DIGIT)*/) {
+                                        if (ltype == PICODATA_ITEMINFO1_TOKTYPE_LETTERV) {
                                             pr->tmpItem.head.len = pr_strcat(pr->tmpItem.data,(picoos_uchar*)SPEC_CHAR);
                                         }
                                     }
@@ -2085,7 +2085,7 @@ static void pr_getOutput (picodata_ProcessingUnit this, pr_subobj_t * pr,
                     lvar->last = lit;
                     lfirst = FALSE;
                 } else {
-                    if ((pr->ritems[with__0->ritemid+1]->head.info1 == PICODATA_ITEMINFO1_TOKTYPE_SPACE)) {
+                    if (pr->ritems[with__0->ritemid+1]->head.info1 == PICODATA_ITEMINFO1_TOKTYPE_SPACE) {
                         lvar->last->head.len = pr_strcat(lvar->last->data,(picoos_uchar*)"_");
                     } else {
                         lvar->last->head.len = pr_strcat(lvar->last->data,pr->ritems[with__0->ritemid+1]->data);
@@ -2901,7 +2901,7 @@ void pr_processToken (picodata_ProcessingUnit this, pr_subobj_t * pr)
 
     do {
         pr->rgState = PR_GSContinue;
-        if ((pr->ractpath.rlen == 0)) {
+        if (pr->ractpath.rlen == 0) {
             if (pr_getTopLevelToken(this, pr, FALSE)) {
                 pr->rgState = PR_GSContinue;
             } else if (pr->rbestpath.rlen == 0) {

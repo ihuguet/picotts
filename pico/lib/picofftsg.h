@@ -26,7 +26,7 @@
  *
 */
 #ifndef PICOFFTSG_H_
-#define PCOFFTSG_H_
+#define PICOFFTSG_H_
 
 #include "picoos.h"
 #include "picodsp.h"

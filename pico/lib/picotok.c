@@ -441,7 +441,7 @@ static picoos_int32 tok_putToUtf (tok_subobj_t * tok, picoos_uchar ch)
             tok->utflen = 0;
         }
         (tok->utfpos)++;
-        if ((tok->utfpos == tok->utflen)) {
+        if (tok->utfpos == tok->utflen) {
             if ((tok->utfpos < PICOBASE_UTF8_MAXLEN)) {
                 tok->utf[tok->utfpos] = 0;
             }
@@ -1339,7 +1339,7 @@ static void tok_treatChar (picodata_ProcessingUnit this, tok_subobj_t * tok, pic
             }
             if ((tok->utf[tok->utfpos-1] > (picoos_uchar)' ')) {
                 tok->nrEOL = 0;
-            } else if ((tok->utf[tok->utfpos-1] == EOL)) {
+            } else if (tok->utf[tok->utfpos-1] == EOL) {
                 tok->nrEOL++;
             }
             if (markupHandling && (tok->markupState != MSNotInMarkup)) {

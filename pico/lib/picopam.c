@@ -3533,7 +3533,7 @@ static pico_status_t pam_process_event_feature(
                         pam->d2_syllable_in_word = 0;
                         /*pam->d2_current_primary_phrase_word++;*/
                     }
-                    if ((event_type == PICOPAM_EVENT_P_BOUND)) {
+                    if (event_type == PICOPAM_EVENT_P_BOUND) {
                         pam->d2_current_primary_phrase_word = 0;
                     }
                     break;
