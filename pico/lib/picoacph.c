@@ -358,7 +358,7 @@ static picoos_uint8 acphPhrItemSeqGetPosLeft(register picodata_ProcessingUnit th
 
     val = PICOKDT_EPSILON;
     for (i = ind - 1; ((val == PICOKDT_EPSILON) && (i >= 0)); i--) {
-        if ((acph->headx[i].head.type == PICODATA_ITEM_WORDPHON)) {
+        if (acph->headx[i].head.type == PICODATA_ITEM_WORDPHON) {
             val = acph->headx[i].head.info1;
         }
     }
@@ -623,7 +623,7 @@ static picoos_uint8 acphAccItemSeqGetPosLeft(register picodata_ProcessingUnit th
 
     val = PICOKDT_EPSILON;
     for (i = ind - 1; ((val == PICOKDT_EPSILON) && (i >= 0)); i--) {
-        if ((acph->headx[i].head.type == PICODATA_ITEM_WORDPHON)) {
+        if (acph->headx[i].head.type == PICODATA_ITEM_WORDPHON) {
             val = acph->headx[i].head.info1;
         }
     }
