@@ -306,28 +306,52 @@ picopal_char picopal_eol(void)
     If the opening of the file is successful a file pointer is given
     back. Otherwise a NIL-File is given back.
 */
-picopal_File picopal_fopen (picopal_char filename[], picopal_access_mode mode)
-{
-    picopal_File res;
-
-     switch (mode) {
-     case PICOPAL_TEXT_READ :
-         res = (picopal_File) fopen((char *)filename, (char *)"r");
-         break;
-     case PICOPAL_TEXT_WRITE :
-         res = (picopal_File) fopen((char *)filename, (char *)"w");
-         break;
-     case PICOPAL_BINARY_READ :
-         res = (picopal_File) fopen((char *)filename, (char *)"rb");
-         break;
-     case PICOPAL_BINARY_WRITE :
-         res = (picopal_File) fopen((char *)filename, (char *)"wb");
-         break;
-     default :
-         res = (picopal_File) NULL;
-     }
-     return res;
-
+picopal_File picopal_fopen(picopal_char filename[], picopal_access_mode mode) {
+  picopal_File res;
+#ifdef _WIN32
+  wchar_t *m;
+  switch (mode) {
+  case PICOPAL_TEXT_READ:
+    m = L"r";
+    break;
+  case PICOPAL_TEXT_WRITE:
+    m = L"w";
+    break;
+  case PICOPAL_BINARY_READ:
+    m = L"rb";
+    break;
+  case PICOPAL_BINARY_WRITE:
+    m = L"wb";
+    break;
+  default:
+    return (picopal_File)NULL;
+  }
+  const int len = strlen(filename) + 1;
+  wchar_t *wFileName = (wchar_t *)malloc(sizeof(wchar_t) * len);
+  MultiByteToWideChar(CP_UTF8, 0, filename, -1, wFileName, len);
+  res = (picopal_File)_wfopen(wFileName, m);
+  free(wFileName);
+#else
+  char *m;
+  switch (mode) {
+  case PICOPAL_TEXT_READ:
+    m = "r";
+    break;
+  case PICOPAL_TEXT_WRITE:
+    m = "w";
+    break;
+  case PICOPAL_BINARY_READ:
+    m = "rb";
+    break;
+  case PICOPAL_BINARY_WRITE:
+    m = "wb";
+    break;
+  default:
+    return (picopal_File)NULL;
+  }
+  res = (picopal_File)fopen((char *)filename, m);
+#endif
+  return res;
 }
 
 
