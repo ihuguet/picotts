@@ -164,7 +164,7 @@ typedef enum picoknow_kb_id {
  */
 typedef struct picoknow_knowledge_base * picoknow_KnowledgeBase;
 
-typedef pico_status_t (* picoknow_kbSubDeallocate) (register picoknow_KnowledgeBase this, picoos_MemoryManager mm);
+typedef pico_status_t (* picoknow_kbSubDeallocate) (picoknow_KnowledgeBase this, picoos_MemoryManager mm);
 
 typedef struct picoknow_knowledge_base {
     /* public */
