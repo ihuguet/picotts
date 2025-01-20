@@ -70,6 +70,10 @@
 #define __BYTE_ORDER _BYTE_ORDER
 #define __BIG_ENDIAN _BIG_ENDIAN
 #include <sys/endian.h>
+#elif (PICO_PLATFORM == PICO_MacOSX)
+#define __BYTE_ORDER BYTE_ORDER
+#define __BIG_ENDIAN BIG_ENDIAN
+#include <machine/endian.h>
 #else
 #include <endian.h>
 #endif
