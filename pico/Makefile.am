@@ -34,6 +34,13 @@ libttspico_la_SOURCES = \
 	lib/picotrns.c \
 	lib/picowa.c
 
+if ENABLE_TENSORFLOW
+libttspico_la_SOURCES += \
+	lib/ttsdlbased.cc \
+	lib/text_processor.cc \
+	lib/text_symbols.cc
+endif
+
 libttspico_ladir = $(includedir)
 libttspico_la_HEADERS = \
     lib/picoacph.h \
@@ -90,7 +97,14 @@ picolang_DATA = \
 bin_PROGRAMS = pico2wave
 pico2wave_SOURCES = \
 	bin/pico2wave.c
+
 pico2wave_LDADD = \
 	libttspico.la -lpopt
+
 pico2wave_CFLAGS = -Wall -Dpicolangdir=\"$(picolangdir)\" -I lib
+
+if ENABLE_TENSORFLOW
+    pico2wave_LDADD += -ltensorflowlite_c -ltensorflowlite_flex
+    pico2wave_LDFLAGS = -Wl,--no-as-needed
+endif
 

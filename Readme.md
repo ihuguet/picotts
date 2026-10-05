@@ -41,6 +41,30 @@ Languages can be: en-EN, en-GB, es-ES, de-DE, fr-FR, it-IT
 
 Output file must be .wav
 
+## TensorFlow TTS Support
+
+**Dependencies**: Before building with TensorFlow support, install:
+- `libtensorflowlite-c`
+- `libtensorflowlite-flex`
+
+Build with TensorFlow support:
+```
+cd pico
+
+./autogen.sh
+
+./configure --enable-tensorflow
+
+make
+
+make install
+```
+
+Run TTS with deep learning models:
+```
+pico2wave -d true -t <text_to_mel.tflite> -g <vocoder.tflite> -p processor.json -s "Hello world" -w output.wav
+```
+
 ## License
 
 License Apache-2.0 (see pico_resources/NOTICE)

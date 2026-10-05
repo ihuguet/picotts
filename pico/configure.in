@@ -7,6 +7,18 @@ AC_INIT([svox], [1.0], [math.parent@gmail.com])
 AM_INIT_AUTOMAKE([1.9 foreign])
 
 AC_PROG_CC
+AC_PROG_CXX
+
+AC_ARG_ENABLE([tensorflow],
+    AS_HELP_STRING([--enable-tensorflow], [Enable TensorFlow support]),
+    [tensorflow=$enableval],
+    [tensorflow=no])
+
+AM_CONDITIONAL([ENABLE_TENSORFLOW], [test "x$tensorflow" = "xyes"])
+
+if test "x$tensorflow" = "xyes"; then
+    AC_DEFINE([ENABLE_TENSORFLOW], [1], [Define if TensorFlow support is enabled])
+fi
 LT_INIT
 AC_PROG_LIBTOOL
 
